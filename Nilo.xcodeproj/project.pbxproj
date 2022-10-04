@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ADC14C2628ECD5C300065D97 /* ReplicateAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC14C2528ECD5C300065D97 /* ReplicateAPI.swift */; };
+		ADC14C2A28ECDF9100065D97 /* ReplicateAPIGetModelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC14C2928ECDF9100065D97 /* ReplicateAPIGetModelResponse.swift */; };
 		CF46D3ED28ECD0040052C018 /* NiloApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF46D3EC28ECD0040052C018 /* NiloApp.swift */; };
 		CF46D3EF28ECD0040052C018 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF46D3EE28ECD0040052C018 /* ContentView.swift */; };
 		CF46D3F128ECD0050052C018 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF46D3F028ECD0050052C018 /* Assets.xcassets */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ADC14C2528ECD5C300065D97 /* ReplicateAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPI.swift; sourceTree = "<group>"; };
+		ADC14C2928ECDF9100065D97 /* ReplicateAPIGetModelResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIGetModelResponse.swift; sourceTree = "<group>"; };
 		CF46D3E928ECD0040052C018 /* Nilo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nilo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF46D3EC28ECD0040052C018 /* NiloApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiloApp.swift; sourceTree = "<group>"; };
 		CF46D3EE28ECD0040052C018 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -23,7 +27,6 @@
 		CF46D3FF28ECD1CC0052C018 /* ContentViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewExtension.swift; sourceTree = "<group>"; };
 		CF46D40128ECD21F0052C018 /* dummyModel.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = dummyModel.md; sourceTree = "<group>"; };
 		CF46D40228ECD2340052C018 /* dummyView.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = dummyView.md; sourceTree = "<group>"; };
-		CF46D40328ECD2480052C018 /* dummyReplicate.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = dummyReplicate.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +40,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ADC14C2728ECDF5900065D97 /* ReplicateAPI */ = {
+			isa = PBXGroup;
+			children = (
+				ADC14C2928ECDF9100065D97 /* ReplicateAPIGetModelResponse.swift */,
+			);
+			path = ReplicateAPI;
+			sourceTree = "<group>";
+		};
+		ADC14C2828ECDF7300065D97 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				ADC14C2728ECDF5900065D97 /* ReplicateAPI */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		CF46D3E028ECD0040052C018 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +114,7 @@
 		CF46D3FD28ECD11D0052C018 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				ADC14C2828ECDF7300065D97 /* API */,
 				CF46D40128ECD21F0052C018 /* dummyModel.md */,
 			);
 			path = Model;
@@ -103,7 +123,7 @@
 		CF46D3FE28ECD1590052C018 /* ReplicateAPI */ = {
 			isa = PBXGroup;
 			children = (
-				CF46D40328ECD2480052C018 /* dummyReplicate.md */,
+				ADC14C2528ECD5C300065D97 /* ReplicateAPI.swift */,
 			);
 			path = ReplicateAPI;
 			sourceTree = "<group>";
@@ -178,9 +198,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADC14C2628ECD5C300065D97 /* ReplicateAPI.swift in Sources */,
 				CF46D40028ECD1CC0052C018 /* ContentViewExtension.swift in Sources */,
 				CF46D3EF28ECD0040052C018 /* ContentView.swift in Sources */,
 				CF46D3ED28ECD0040052C018 /* NiloApp.swift in Sources */,
+				ADC14C2A28ECDF9100065D97 /* ReplicateAPIGetModelResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
