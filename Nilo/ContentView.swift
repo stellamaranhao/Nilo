@@ -16,10 +16,8 @@ struct ContentView: View {
                 .foregroundColor(.accentColor)
             Text("Hello, world!")
         }
-        .onAppear {
-            print("tap")
-            api.validateToken()
-            print(api.authTokenValid)
+        .onTapGesture{
+            api.validateToken(sucessCallback: {print("Sucesso!")}, errorCallback: {print("Erro!")})
         }
         .padding()
     }

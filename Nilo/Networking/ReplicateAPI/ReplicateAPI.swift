@@ -21,7 +21,7 @@ class ReplicateAPI {
         self.authToken = ""
     }
     
-    func validateToken (){
+    func validateToken (sucessCallback:@escaping()->Void,errorCallback:@escaping()->Void){
         let url  = URL(string: "https://api.replicate.com/v1/models/replicate/hello-world")
         guard let requestURL = url else {fatalError()}
         
@@ -38,11 +38,13 @@ class ReplicateAPI {
         let task = URLSession.shared.dataTask(with:request){ (data, response, error) in
             guard let data = data else {
                 print("Handle no response failure \(error)")
+                errorCallback()
                 return
             }
             
             guard error == nil else{
                 print("Handle Network Error")
+                errorCallback()
                 return
             }
             
@@ -54,13 +56,15 @@ class ReplicateAPI {
                 
                 if (objResponse.name != nil){
                     self.authTokenValid = true
-                    print("valido !!!")
+                    sucessCallback()
                 }else{
+                    errorCallback()
                     self.authTokenValid = false
                 }
 
                 
             }catch{
+                errorCallback()
                 print("Json Parse Error \(error)")
                 return
             }
