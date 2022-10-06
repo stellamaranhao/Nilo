@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD6F91B728EE221300195F12 /* ReplicateAPIPostModelPrediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6F91B628EE221300195F12 /* ReplicateAPIPostModelPrediction.swift */; };
+		ADBD423628EF4C0200E0C8CF /* UIImage_Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD423528EF4C0200E0C8CF /* UIImage_Extention.swift */; };
 		ADC14C2628ECD5C300065D97 /* ReplicateAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC14C2528ECD5C300065D97 /* ReplicateAPI.swift */; };
 		ADC14C2A28ECDF9100065D97 /* ReplicateAPIGetModelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC14C2928ECDF9100065D97 /* ReplicateAPIGetModelResponse.swift */; };
 		CF46D3ED28ECD0040052C018 /* NiloApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF46D3EC28ECD0040052C018 /* NiloApp.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD6F91B628EE221300195F12 /* ReplicateAPIPostModelPrediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIPostModelPrediction.swift; sourceTree = "<group>"; };
+		ADBD423528EF4C0200E0C8CF /* UIImage_Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage_Extention.swift; sourceTree = "<group>"; };
 		ADC14C2528ECD5C300065D97 /* ReplicateAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPI.swift; sourceTree = "<group>"; };
 		ADC14C2928ECDF9100065D97 /* ReplicateAPIGetModelResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIGetModelResponse.swift; sourceTree = "<group>"; };
 		CF46D3E928ECD0040052C018 /* Nilo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nilo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				ADC14C2928ECDF9100065D97 /* ReplicateAPIGetModelResponse.swift */,
+				AD6F91B628EE221300195F12 /* ReplicateAPIPostModelPrediction.swift */,
 			);
 			path = ReplicateAPI;
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				ADC14C2528ECD5C300065D97 /* ReplicateAPI.swift */,
+				ADBD423528EF4C0200E0C8CF /* UIImage_Extention.swift */,
 			);
 			path = ReplicateAPI;
 			sourceTree = "<group>";
@@ -199,6 +205,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADC14C2628ECD5C300065D97 /* ReplicateAPI.swift in Sources */,
+				ADBD423628EF4C0200E0C8CF /* UIImage_Extention.swift in Sources */,
+				AD6F91B728EE221300195F12 /* ReplicateAPIPostModelPrediction.swift in Sources */,
 				CF46D40028ECD1CC0052C018 /* ContentViewExtension.swift in Sources */,
 				CF46D3EF28ECD0040052C018 /* ContentView.swift in Sources */,
 				CF46D3ED28ECD0040052C018 /* NiloApp.swift in Sources */,
@@ -331,7 +339,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Nilo/Preview Content\"";
-				DEVELOPMENT_TEAM = 5Y8ZK9WBN9;
+				DEVELOPMENT_TEAM = S7ZK5B3N8D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -344,7 +352,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = JoaoPedroMaia.Nilo;
+				PRODUCT_BUNDLE_IDENTIFIER = JoaoPedroMaia.NiloX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
