@@ -33,7 +33,7 @@ struct ContentView: View {
             }
             .onTapGesture{
                 api.validateToken(sucessCallback: {print("Sucesso!")}, errorCallback: {print("Erro!")})
-//               api.createPrediction(image: UIImage(imageLiteralResourceName: "ImageAnne"), sucessCallback: {print("2Sucesso2!")}, errorCallback: {print("2Erro!2")})
+               api.createPrediction(image: UIImage(imageLiteralResourceName: "ImageAnne"), sucessCallback: {print("2Sucesso2!")}, errorCallback: {print("2Erro!2")})
             }
             .onAppear {
                 NetworkMonitor.shared.startMonitoring()

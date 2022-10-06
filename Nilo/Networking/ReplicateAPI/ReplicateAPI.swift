@@ -11,8 +11,10 @@ import UIKit
 
 class ReplicateAPI {
     
-    private var authToken:String  // cria var para receber o token
+    var authToken:String  // cria var para receber o token
     var authTokenValid:Bool = false // cria var que define se o token e valido
+    
+    
     
     init (authToken: String) {  // init para token com valor
         self.authToken = authToken
@@ -33,7 +35,8 @@ class ReplicateAPI {
             }
         }
     }
-    let recebeID = nomesId.Primeiro
+    let recebeID = nomesId.Primeiro.description
+    
     
     
     func validateToken (sucessCallback:@escaping()->Void,errorCallback:@escaping()->Void){
@@ -83,7 +86,9 @@ class ReplicateAPI {
                 print("Json Parse Error \(error)")
                 return
             }
-            
+            let userDefaults = UserDefaults.standard
+            userDefaults.string(forKey: self.authToken)
+
         }
         task.resume()
     }
@@ -114,8 +119,11 @@ class ReplicateAPI {
        //---------------------------------------------------------------------------------------
         
         // Traduz para json
-        let jsonData = try? JSONSerialization.data(withJSONObject: json)
-        request.httpBody = jsonData!
+        guard let jsonData = try? JSONSerialization.data(withJSONObject: json) else {
+            fatalError("deu cao")
+        }
+        
+        request.httpBody = jsonData
         
 
         // Perform HTTP Request
@@ -125,7 +133,11 @@ class ReplicateAPI {
                 errorCallback()
                 return
             }
-            print("data: \(String(describing: String(bytes: data, encoding: .utf8)))")
+            
+            
+          //print("data: \(String(describing: String(bytes: data, encoding: .utf8)))")
+            
+            
             guard error == nil else {
                 // handle network error
                 print("handle network error \(error.debugDescription)")
@@ -143,6 +155,8 @@ class ReplicateAPI {
         }
         task.resume()
     }
+    
+    
 }
 
 final class NetworkMonitor: ObservableObject {
@@ -172,3 +186,9 @@ final class NetworkMonitor: ObservableObject {
     }
     
 }
+//
+//func saveToken (token: ReplicateAPI) {
+//    let data: Data = NSKeyedArchiver.archivedData(withRootObject: token)
+//    UserDefaults.standard.set(data, forKey: token.authToken)
+//
+//}
