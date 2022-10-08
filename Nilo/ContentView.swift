@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    let api = ReplicateAPI(authToken: "c7a7ef617f35f71f74a7ce1d0ef45853d6b58cec")
+    let api = ReplicateAPI(fromToken: "c7a7ef617f35f71f74a7ce1d0ef45853d6b58cec")
     @State var imageName = ""
     
     
@@ -32,8 +32,15 @@ struct ContentView: View {
                 Text(networkMonitor.isConnected ? "Conectado" : "Não conectado")
             }
             .onTapGesture{
-                api.validateToken(sucessCallback: {print("Sucesso!")}, errorCallback: {print("Erro!")})
-               api.createPrediction(image: UIImage(imageLiteralResourceName: "ImageAnne"), sucessCallback: {print("2Sucesso2!")}, errorCallback: {print("2Erro!2")})
+                print("tap tap")
+                api.validateToken(){erro in}
+//
+//
+//                let replicatePrediction = ReplicateAPIInput()
+//                replicatePrediction.GFPGAN(image: UIImage(imageLiteralResourceName: "ImageAnne"), version: "v1.3", scaleFactor: 2)
+//
+//
+//                api.createPrediction(using:replicatePrediction, sucessCallback: {print("2Sucesso2!")}, errorCallback: {print("2Erro!2")})
             }
             .onAppear {
                 NetworkMonitor.shared.startMonitoring()

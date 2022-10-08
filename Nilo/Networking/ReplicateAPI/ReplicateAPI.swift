@@ -9,94 +9,92 @@ import Foundation
 import Network
 import UIKit
 
-class ReplicateAPI {
+final class ReplicateAPI {
     
-    var authToken:String  // cria var para receber o token
-    var authTokenValid:Bool = false // cria var que define se o token e valido
+    var authToken:String
+    var authTokenValid:Bool = false
+    
+    var buffer:ReplicateAPIBuffer
     
     
-    
-    init (authToken: String) {  // init para token com valor
+    init (fromToken authToken: String) {
         self.authToken = authToken
+        
+        
+        
+        do{
+            buffer = try ReplicateAPIBuffer.load(from: ReplicateAPIBuffer.tokenToSHA(authToken))
+        }catch{
+            buffer = ReplicateAPIBuffer(fromToken: authToken)
+        }
+        
     }
     
     init (){ // init para receber valor do token no Replicate
         // TODO: Implementar metodo de carregamento por persistencia
         self.authToken = ""
-    }
-    
-    // Enum e var que recebem o valor da ID e manda pra func createPrediction()
-    enum nomesId : CustomStringConvertible {
-        case Primeiro
-        
-        var description : String {
-            switch self {
-            case .Primeiro: return "9283608cc6b7be6b65a8e44983db012355fde4132009bf99d976b2f0896856a3"
-            }
+        do{
+            buffer = try ReplicateAPIBuffer.load(from: authToken)
+        }catch{
+            buffer = ReplicateAPIBuffer(fromToken: authToken)
         }
-    }
-    let recebeID = nomesId.Primeiro.description
-    
-    
-    
-    func validateToken (sucessCallback:@escaping()->Void,errorCallback:@escaping()->Void){
-        //cria var url que recebe endereço da api
-        let url  = URL(string: "https://api.replicate.com/v1/models/replicate/hello-world")
-        // cria guard let que verifica se a url é valida, caso nao seja cai em fatalError()
-        guard let requestURL = url else {fatalError()} // var que a url valida fica armazenada
         
-        //Prerate URL request object
-        // Faz um request da var de url validada do tipo GET
+    }
+    
+    deinit {
+        saveBuffer()
+    }
+    
+    /// Validate class token
+    /// - Parameter completionCallback: CompletionCallback
+    func validateToken (onCompletion completionCallback:@escaping(Result<Void,ReplicateError>)->Void){
+        
+        let url  = URL(string: "https://api.replicate.com/v1/models/replicate/hello-world")
+        guard let requestURL = url else {fatalError()}
+        
         var request = URLRequest(url:requestURL)
         request.httpMethod = "GET"
         
-        //Prepare Header
-        // associa as infos -H nome + valor
         request.setValue("Token \(self.authToken)", forHTTPHeaderField: "Authorization")
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-                
-        // Faz o Request:
-        //Perform the HTTP Request
+        
         let task = URLSession.shared.dataTask(with:request){ (data, response, error) in
             guard let data = data else {
-                print("Handle no response failure \(String(describing: error))")
-                errorCallback()
+                print("No response failure \(String(describing: error))")
+                completionCallback(.failure(.networkError))
                 return
             }
             
             guard error == nil else{
                 print("Handle Network Error")
-                errorCallback()
+                completionCallback(.failure(.noInternet))
                 return
             }
-            do{ // Caso o request seja bem sucedido entra
-                //Sucesso !!!
-                let decoder = JSONDecoder()  // decodifica para o jason
+            do{
+                let decoder = JSONDecoder()
                 let objResponse = try decoder.decode(ReplicateAPIGetModelResponse.self, from: data)
                 
                 if (objResponse.name != nil){
                     self.authTokenValid = true
-                    sucessCallback()
+                    completionCallback(.success(()))
                 }else{
-                    errorCallback()
+                    completionCallback(.failure(.invalidToken))
                     self.authTokenValid = false
                 }
             }catch{
-                errorCallback()
+                completionCallback(.failure(.responseParsingError(response: data.description)))
                 print("Json Parse Error \(error)")
                 return
             }
             let userDefaults = UserDefaults.standard
             userDefaults.string(forKey: self.authToken)
-
+            
         }
         task.resume()
     }
     
-    func createPrediction(image: UIImage,sucessCallback:@escaping()->Void,errorCallback:@escaping()->Void) {
-        
-        let url = URL(string: "https://api.replicate.com/v1/predictions")
-        guard let requestUrl = url else { fatalError() }
+    func createPrediction(using model:ReplicateAPIInput,onCompletion completionCallback:@escaping(Result<ReplicateAPIPredictionInfo,ReplicateError>)->Void) {
+        guard let requestUrl = Constants.url else { fatalError() }
         
         // Prepare URL Request Object
         var request = URLRequest(url: requestUrl)
@@ -105,59 +103,193 @@ class ReplicateAPI {
         // Set HTTP Requst Header
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.setValue("Token \(self.authToken)", forHTTPHeaderField: "Authorization")
-         
-        //---------------------------------------------------------------------------------------
         
-        // Dict dos dados de inpput - ID + dados da foto
-        let json: [String: Any] = [
-            "version": recebeID,
-            "input": ["img":image.dataURL()!,
-                      "version":"v1.3",
-                      "scale":"2"]
-            ]
-        
-       //---------------------------------------------------------------------------------------
-        
-        // Traduz para json
-        guard let jsonData = try? JSONSerialization.data(withJSONObject: json) else {
-            fatalError("deu cao")
+        guard let httpBody = model.httpBody else{
+            completionCallback(.failure(.unexpected(message: "[createPrediction] No body in input")))
+            return
         }
         
-        request.httpBody = jsonData
+        request.httpBody = httpBody
         
-
+        
         // Perform HTTP Request
         let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
             guard let data = data else {
                 print("handle no response failure \(error.debugDescription)")
-                errorCallback()
+                completionCallback(.failure(.networkError))
                 return
             }
             
-            
-          //print("data: \(String(describing: String(bytes: data, encoding: .utf8)))")
-            
-            
+            //print("data: \(String(describing: String(bytes: data, encoding: .utf8)))"
             guard error == nil else {
                 // handle network error
                 print("handle network error \(error.debugDescription)")
-                errorCallback()
+                completionCallback(.failure(.noInternet))
                 return
             }
             do {
-                print("Deu tudo certo com o modelo")
-                sucessCallback()
+                
+                let decoder = JSONDecoder()
+                let objResponse = try decoder.decode(ReplicateAPIMakePredictionResponse.self, from: data)
+                
+                let output = ReplicateAPIPredictionInfo(from: objResponse)
+                self.buffer.append(output)
+                self.saveBuffer()
+                completionCallback(.success(output))
+                
             } catch {
-                // handle json decoding error
-                errorCallback()
-                print("handle json decoding error \(error)")
+                completionCallback(.failure(.responseParsingError(response: data.description)))
+                print("Json Parse Error \(error)")
+                return
             }
         }
         task.resume()
     }
     
+    func getImagePrediction(fromId id:String, onCompletion completionCallback:@escaping(Result<UIImage?,ReplicateError>)->Void){
+        let url = URL(string: "https://api.replicate.com/v1/predictions/\(id)")
+        guard let requestUrl = url else { fatalError() }
+        
+        // Prepare URL Request Object
+        var request = URLRequest(url: requestUrl)
+        request.httpMethod = "GET"
+        
+        // Set HTTP Requst Header
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.setValue("Token \(self.authToken)", forHTTPHeaderField: "Authorization")
+        
+        // Perform HTTP Request
+        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+            guard let data = data else {
+                print("handle no response failure \(error.debugDescription)")
+                return
+            }
+            
+            //print("data: \(String(describing: String(bytes: data, encoding: .utf8)))")
+            guard error == nil else {
+                // handle network error
+                print("handle network error \(error.debugDescription)")
+                return
+            }
+            do {
+                // decode json data
+                let decoder = JSONDecoder()
+                let object = try decoder.decode(ReplicateAPIMakePredictionResponse.self, from: data)
+                
+                
+                guard let predictionOutput = object.output else{
+                    return
+                }
+                
+                
+
+                DispatchQueue.global().async {
+                        // Fetch Image Data
+                    if let data = try? Data(contentsOf: URL(string: (predictionOutput))!) {
+                            DispatchQueue.main.async {
+                                self.buffer.append(ReplicateAPIPredictionInfo.init(from: object))
+                                self.saveBuffer()
+                                completionCallback(.success(UIImage(data: data)))
+                            }
+                        }
+                    }
+//
+                //completionCallback(.success(object.urls?.urlsGet))
+                
+                
+            } catch {
+                // handle json decoding error
+                print("handle json decoding error \(error)")
+            }
+        }
+        task.resume()
+        
+    }
+    
+    func getImagePrediction(onCompletion completionCallback:@escaping(Result<UIImage?,ReplicateError>)->Void){
+        guard let last = buffer.getLast() else{
+            completionCallback(.failure(.unexpected(message: "Empty buffer")))
+            return
+        }
+        
+        let url = URL(string: "https://api.replicate.com/v1/predictions/\(last.id)")
+        guard let requestUrl = url else { fatalError() }
+        
+        // Prepare URL Request Object
+        var request = URLRequest(url: requestUrl)
+        request.httpMethod = "GET"
+        
+        // Set HTTP Requst Header
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.setValue("Token \(self.authToken)", forHTTPHeaderField: "Authorization")
+        
+        // Perform HTTP Request
+        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+            guard let data = data else {
+                print("handle no response failure \(error.debugDescription)")
+                completionCallback(.failure(.networkError))
+                return
+            }
+            
+            //print("data: \(String(describing: String(bytes: data, encoding: .utf8)))")
+            guard error == nil else {
+                // handle network error
+                print("handle network error \(error.debugDescription)")
+                return
+            }
+            do {
+                let decoder = JSONDecoder()
+                let object = try decoder.decode(ReplicateAPIMakePredictionResponse.self, from: data)
+                
+                
+                guard let predictionOutput = object.output else{
+                    return
+                }
+                
+                DispatchQueue.global().async {
+                    if let data = try? Data(contentsOf: URL(string: (predictionOutput))!) {
+                            DispatchQueue.main.async {
+                                let infoObj = ReplicateAPIPredictionInfo.init(from: object)
+                                infoObj.presented.toggle()
+                                self.buffer.append(infoObj)
+                                self.saveBuffer()
+                                completionCallback(.success(UIImage(data: data)))
+                            }
+                        }
+                    }
+                
+            } catch {
+                completionCallback(.failure(.responseParsingError(response: data.description)))
+                print("Json Parse Error \(error)")
+            }
+        }
+        task.resume()
+        
+    }
     
 }
+
+extension ReplicateAPI{
+    struct Constants{
+        static let url = URL(string: "https://api.replicate.com/v1/predictions")
+    }
+}
+
+extension ReplicateAPI{
+    func saveBuffer(){
+        do{
+            if !buffer.buffer.isEmpty{
+                try buffer.save(in:buffer.name)
+            }
+        }catch{
+            print("Erro saving ReplicateAPIbuffer")
+        }
+    }
+}
+
+
+
+
 
 final class NetworkMonitor: ObservableObject {
     static let shared = NetworkMonitor()
@@ -186,9 +318,3 @@ final class NetworkMonitor: ObservableObject {
     }
     
 }
-//
-//func saveToken (token: ReplicateAPI) {
-//    let data: Data = NSKeyedArchiver.archivedData(withRootObject: token)
-//    UserDefaults.standard.set(data, forKey: token.authToken)
-//
-//}

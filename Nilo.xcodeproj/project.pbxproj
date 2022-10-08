@@ -16,6 +16,14 @@
 		CF46D3F128ECD0050052C018 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF46D3F028ECD0050052C018 /* Assets.xcassets */; };
 		CF46D3F428ECD0050052C018 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF46D3F328ECD0050052C018 /* Preview Assets.xcassets */; };
 		CF46D40028ECD1CC0052C018 /* ContentViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF46D3FF28ECD1CC0052C018 /* ContentViewExtension.swift */; };
+		CF52E58A28F0A8910074326F /* ReplicateAPIModelsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF52E58928F0A8910074326F /* ReplicateAPIModelsEnum.swift */; };
+		CF52E58C28F0ACDA0074326F /* ReplicateAPIInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF52E58B28F0ACDA0074326F /* ReplicateAPIInput.swift */; };
+		CF52E58E28F0B64C0074326F /* ReplicateAPIErro.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF52E58D28F0B64C0074326F /* ReplicateAPIErro.swift */; };
+		CF52E59028F0BEB50074326F /* ReplicateAPIPredictionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF52E58F28F0BEB50074326F /* ReplicateAPIPredictionInfo.swift */; };
+		CFEA98E328F108A10058F16F /* ReplicateAPIMakePredictionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEA98E228F108A00058F16F /* ReplicateAPIMakePredictionResponse.swift */; };
+		CFEA98E828F1114F0058F16F /* ReplicateAPIBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEA98E728F1114F0058F16F /* ReplicateAPIBuffer.swift */; };
+		CFEA98EB28F114D50058F16F /* CodableExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = CFEA98EA28F114D50058F16F /* CodableExtensions */; };
+		CFEA98ED28F120040058F16F /* test_replicateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEA98EC28F120040058F16F /* test_replicateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +39,13 @@
 		CF46D3FF28ECD1CC0052C018 /* ContentViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewExtension.swift; sourceTree = "<group>"; };
 		CF46D40128ECD21F0052C018 /* dummyModel.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = dummyModel.md; sourceTree = "<group>"; };
 		CF46D40228ECD2340052C018 /* dummyView.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = dummyView.md; sourceTree = "<group>"; };
+		CF52E58928F0A8910074326F /* ReplicateAPIModelsEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIModelsEnum.swift; sourceTree = "<group>"; };
+		CF52E58B28F0ACDA0074326F /* ReplicateAPIInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIInput.swift; sourceTree = "<group>"; };
+		CF52E58D28F0B64C0074326F /* ReplicateAPIErro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIErro.swift; sourceTree = "<group>"; };
+		CF52E58F28F0BEB50074326F /* ReplicateAPIPredictionInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIPredictionInfo.swift; sourceTree = "<group>"; };
+		CFEA98E228F108A00058F16F /* ReplicateAPIMakePredictionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIMakePredictionResponse.swift; sourceTree = "<group>"; };
+		CFEA98E728F1114F0058F16F /* ReplicateAPIBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIBuffer.swift; sourceTree = "<group>"; };
+		CFEA98EC28F120040058F16F /* test_replicateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_replicateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFEA98EB28F114D50058F16F /* CodableExtensions in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,8 +63,14 @@
 		ADC14C2728ECDF5900065D97 /* ReplicateAPI */ = {
 			isa = PBXGroup;
 			children = (
+				CF52E58928F0A8910074326F /* ReplicateAPIModelsEnum.swift */,
 				ADC14C2928ECDF9100065D97 /* ReplicateAPIGetModelResponse.swift */,
 				AD6F91B628EE221300195F12 /* ReplicateAPIPostModelPrediction.swift */,
+				CF52E58B28F0ACDA0074326F /* ReplicateAPIInput.swift */,
+				CF52E58D28F0B64C0074326F /* ReplicateAPIErro.swift */,
+				CF52E58F28F0BEB50074326F /* ReplicateAPIPredictionInfo.swift */,
+				CFEA98E228F108A00058F16F /* ReplicateAPIMakePredictionResponse.swift */,
+				CFEA98E728F1114F0058F16F /* ReplicateAPIBuffer.swift */,
 			);
 			path = ReplicateAPI;
 			sourceTree = "<group>";
@@ -130,6 +152,7 @@
 			children = (
 				ADC14C2528ECD5C300065D97 /* ReplicateAPI.swift */,
 				ADBD423528EF4C0200E0C8CF /* UIImage_Extention.swift */,
+				CFEA98EC28F120040058F16F /* test_replicateView.swift */,
 			);
 			path = ReplicateAPI;
 			sourceTree = "<group>";
@@ -150,6 +173,9 @@
 			dependencies = (
 			);
 			name = Nilo;
+			packageProductDependencies = (
+				CFEA98EA28F114D50058F16F /* CodableExtensions */,
+			);
 			productName = Nilo;
 			productReference = CF46D3E928ECD0040052C018 /* Nilo.app */;
 			productType = "com.apple.product-type.application";
@@ -178,6 +204,9 @@
 				Base,
 			);
 			mainGroup = CF46D3E028ECD0040052C018;
+			packageReferences = (
+				CFEA98E928F114D50058F16F /* XCRemoteSwiftPackageReference "CodableExtensions" */,
+			);
 			productRefGroup = CF46D3EA28ECD0040052C018 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -204,11 +233,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFEA98E828F1114F0058F16F /* ReplicateAPIBuffer.swift in Sources */,
 				ADC14C2628ECD5C300065D97 /* ReplicateAPI.swift in Sources */,
 				ADBD423628EF4C0200E0C8CF /* UIImage_Extention.swift in Sources */,
 				AD6F91B728EE221300195F12 /* ReplicateAPIPostModelPrediction.swift in Sources */,
+				CF52E58A28F0A8910074326F /* ReplicateAPIModelsEnum.swift in Sources */,
+				CF52E58E28F0B64C0074326F /* ReplicateAPIErro.swift in Sources */,
+				CF52E58C28F0ACDA0074326F /* ReplicateAPIInput.swift in Sources */,
+				CFEA98E328F108A10058F16F /* ReplicateAPIMakePredictionResponse.swift in Sources */,
 				CF46D40028ECD1CC0052C018 /* ContentViewExtension.swift in Sources */,
 				CF46D3EF28ECD0040052C018 /* ContentView.swift in Sources */,
+				CFEA98ED28F120040058F16F /* test_replicateView.swift in Sources */,
+				CF52E59028F0BEB50074326F /* ReplicateAPIPredictionInfo.swift in Sources */,
 				CF46D3ED28ECD0040052C018 /* NiloApp.swift in Sources */,
 				ADC14C2A28ECDF9100065D97 /* ReplicateAPIGetModelResponse.swift in Sources */,
 			);
@@ -339,7 +375,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Nilo/Preview Content\"";
-				DEVELOPMENT_TEAM = S7ZK5B3N8D;
+				DEVELOPMENT_TEAM = 5Y8ZK9WBN9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -411,6 +447,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CFEA98E928F114D50058F16F /* XCRemoteSwiftPackageReference "CodableExtensions" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rvenieris/CodableExtensions";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CFEA98EA28F114D50058F16F /* CodableExtensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CFEA98E928F114D50058F16F /* XCRemoteSwiftPackageReference "CodableExtensions" */;
+			productName = CodableExtensions;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CF46D3E128ECD0040052C018 /* Project object */;
 }

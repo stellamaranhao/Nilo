@@ -10,6 +10,8 @@ import UIKit
 
 extension UIImage {
     
+    /// Check if image has alpha
+    /// - Returns: Boolean if image has alpha
     func hasAlpha() -> Bool {
         guard let cgImage = cgImage else {
             return false
@@ -18,6 +20,8 @@ extension UIImage {
         return alpha == .first || alpha == .last || alpha == .premultipliedFirst || alpha == .premultipliedLast
     }
     
+    /// Convert UIimage to dataURL (formatted)
+    /// - Returns: dataURL
     func dataURL() -> String? {
         var imageData: Data? = nil
         var mimeType: String? = nil
@@ -33,3 +37,5 @@ extension UIImage {
         return "data:\(mimeType ?? "");base64,\(imageData?.base64EncodedString(options: []) ?? "")"
     }
 }
+
+
