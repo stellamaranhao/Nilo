@@ -8,18 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
-    let api = ReplicateAPI(authToken: "c7a7ef617f35f71f74a7ce1d0ef45853d6b58cec")
+    //let api = ReplicateAPI(authToken: "c7a7ef617f35f71f74a7ce1d0ef45853d6b58cec")
+    let colorize = ColorizeML()
+    @State var minhaimagem: UIImage = UIImage(named: "chopin")!
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .onAppear {
-            print("tap")
-            api.validateToken()
-            print(api.authTokenValid)
+            test_colorizeML()
         }
         .padding()
     }
