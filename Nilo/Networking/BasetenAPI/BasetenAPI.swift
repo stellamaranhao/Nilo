@@ -26,14 +26,7 @@ final class BasetenAPI{
     func imagePredictionPipeline(fromImage image:UIImage, onCompletion completionCallback:@escaping()->Void){
         //Upload Imade to cloud
         imageKit.uploadImage(image){Result in
-            switch Result{
-            case is Error:
-                print("Deu errado o upload")
-            case is ImageKitUploadResponse:
-                let input = BasetenAPIInput()
-                input.GFPGAN(imageURL: Result)
-                
-            }
+            
             
         }
         
