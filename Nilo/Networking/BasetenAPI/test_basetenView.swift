@@ -22,26 +22,22 @@ struct test_basetenView: View {
     @State private var selectedImageData: Data? = nil
     @State var imageShown:UIImage?
     
-    @State var message:String = "Hello World"
-    //let api = BasetenAPI()
-    let api = ImageKitAPI()
+    @State var message:String = "GFP-GAN"
+    @State var progressMsg:String = "progress: not started"
+    let api = BasetenAPI()
     
     var body: some View {
         VStack{
             Text(message).font(.largeTitle)
+            Text(progressMsg).font(.subheadline)
             
             if let selectedImageData,
                let uiImage = UIImage(data: selectedImageData) {
                 HStack{
-//                    Image(uiImage: uiImage)
-//                        .resizable()
-//                        .scaledToFit()
-//                    .frame(width: 250, height: 250)
-                    
                     Image(uiImage: imageShown!)
                         .resizable()
                         .scaledToFit()
-                    .frame(width: 250, height: 250)
+                        .frame(width: 250, height: 250)
                     
                 }
             }
@@ -62,37 +58,21 @@ struct test_basetenView: View {
                     }
                 }
             
-            
-            //Validar Token
-//            Button("Validar Token") {
-//                api.validateToken{result in
-//                    switch result {
-//                    case .success(_):
-//                        message = "Token Valido: \(api.authTokenValid.description)"
-//                    case .failure(let failure):
-//                        print(failure)
-//                    }
-//                }
-//            }
-//            .padding()
-//            .foregroundColor(.white)
-//            .background(.blue)
-//            .cornerRadius(21)
-            
-            
             //Criar uma preddiction com a foto
             Button("Enviar predicao do modelo") {
                 if let image = imageShown{
-                    //api.deleteImage()
-//                    api.uploadImage(image){ Result in
-//                        switch Result {
-//                        case is Error:
-//                            print("Errey aqui")
-//                        default:
-//                            print(Result)
-//                        }
-//
-//                    }
+                    api.imagePredictionPipeline(fromImage: image, progressUpdate:{progress in
+                        progressMsg = "\(progress)%"
+                        
+                    }){ result in
+                        api.imagePredictionPipelineCleanUp()
+                        switch result {
+                        case .success(let success):
+                            imageShown = success
+                        case .failure(let failure):
+                            print(failure.asString)
+                        }
+                    }
                 }
             }
             .padding()
@@ -100,26 +80,14 @@ struct test_basetenView: View {
             .background(.blue)
             .cornerRadius(21)
             
-            //Receber preddiction de uma foto
-//            Button("Mostrar resultado") {
-//                api.getImagePrediction{ result in
-//                    switch result {
-//                    case .success(let success):
-//                        if let image = success{
-//                            imageShown = image
-//                            message = "Exibindo imagem alterada"
-//                        }else{
-//                            message = "Trabalhando..."}
-//                    case .failure(let failure):
-//                        print(failure)
-//                    }
-//
-//                }
-//            }
-//            .padding()
-//            .foregroundColor(.white)
-//            .background(.blue)
-//            .cornerRadius(21)
+            //Salvar foto
+            Button("Salvar Foto") {
+                UIImageWriteToSavedPhotosAlbum(imageShown!, nil, nil, nil)
+            }
+            .padding()
+            .foregroundColor(.white)
+            .background(.blue)
+            .cornerRadius(21)
             
             
             

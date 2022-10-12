@@ -47,13 +47,13 @@ final class ImageKitAPI{
         request.addValue("Basic cHJpdmF0ZV90bEV0TUVIY2ErZXU1eDVYWHdNdHZsS2hFbDg9Og==", forHTTPHeaderField: "Authorization")
 
         request.httpMethod = "DELETE"
-
+        print("trying to delete \(id)")
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
           guard let data = data else {
             print(String(describing: error))
             return
           }
-          print(String(data: data, encoding: .utf8)!)
+          print("DELETED \(id)")
         }
 
         task.resume()

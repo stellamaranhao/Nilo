@@ -12,6 +12,7 @@ final class BasetenAPI{
     var authToken:String
     var authTokenValid:Bool = false
     var imageKit = ImageKitAPI()
+    var lastProcessedID = ""
     
     
     init (fromToken authToken: String) {
@@ -23,28 +24,75 @@ final class BasetenAPI{
     }
     
     
-    func imagePredictionPipeline(fromImage image:UIImage, onCompletion completionCallback:@escaping()->Void){
-        //Upload Imade to cloud
-        imageKit.uploadImage(image){Result in
-            
+    func imagePredictionPipeline(fromImage image:UIImage, onCompletion completionCallback:@escaping(Result<UIImage,BasetenError>)->Void){
+        imageKit.uploadImage(image){result in
+            switch result {
+            case .success(let success):
+                guard let url = success.url else {fatalError()}
+                self.lastProcessedID = success.fileId!
+                let input = BasetenAPIInput()
+                input.GFPGAN(imageURL: url)
+                
+                self.createPrediction(using: input){result in
+                    switch result {
+                    case .success(let success):
+                        completionCallback(.success(success))
+                    case .failure(let failure):
+                        completionCallback(.failure(.pipelineError(response: "")))
+                    }
+                }
+                
+                
+            case .failure(let failure):
+                completionCallback(.failure(.imageKitError(response: "")))
+                fatalError()
+            }
             
         }
-        
-        //Send Image to Baseten
-        
-        //Download URL imade
-        
-        //Delete image
+    }
+    
+    func imagePredictionPipeline(fromImage image:UIImage, progressUpdate:@escaping(Int)->Void, onCompletion completionCallback:@escaping(Result<UIImage,BasetenError>)->Void){
+        progressUpdate(0)
+        imageKit.uploadImage(image){result in
+            switch result {
+            case .success(let success):
+                guard let url = success.url else {fatalError()}
+                self.lastProcessedID = success.fileId!
+                let input = BasetenAPIInput()
+                input.GFPGAN(imageURL: url)
+                progressUpdate(50)
+                
+                self.createPrediction(using: input){result in
+                    switch result {
+                    case .success(let success):
+                        progressUpdate(100)
+                        completionCallback(.success(success))
+                    case .failure(let failure):
+                        completionCallback(.failure(.pipelineError(response: "")))
+                    }
+                }
+                
+                
+            case .failure(let failure):
+                completionCallback(.failure(.imageKitError(response: "")))
+                fatalError()
+            }
+            
+        }
     }
     
     
-    func createPrediction(using data:BasetenAPIInput, onCompletion completionCallback:@escaping()->Void){
+    func imagePredictionPipelineCleanUp(){
+        imageKit.deleteImage(fromID: self.lastProcessedID)
+    }
+    
+    func createPrediction(using data:BasetenAPIInput, onCompletion completionCallback:@escaping(Result<UIImage,BasetenError>)->Void){
         let url = URL(string: "https://app.baseten.co/model_versions/\(data.using!)/predict")
         
-        guard let requestURL = url else {fatalError()}
-        
-        
-        print(requestURL)
+        guard let requestURL = url else {
+            completionCallback(.failure(BasetenError.badRequestedUrl(response: url?.description ?? "")))
+            fatalError()
+        }
         
         // Prepare URL Request Object
         var request = URLRequest(url: requestURL)
@@ -58,36 +106,37 @@ final class BasetenAPI{
         request.httpBody = data.httpBody
         
         // Perform HTTP Request
+        print("Starting preciton")
         let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
             guard let data = data else {
-                print("handle no response failure \(error.debugDescription)")
-                //completionCallback(.failure(.networkError))
+                completionCallback(.failure(BasetenError.noResponse(response: error.debugDescription)))
                 return
             }
-            
-            print("data: \(String(describing: String(bytes: data, encoding: .utf8)))")
-            
             guard error == nil else {
-                // handle network error
-                print("handle network error \(error.debugDescription)")
-                //completionCallback(.failure(.noInternet))
+                completionCallback(.failure(BasetenError.networkError(response: error.debugDescription)))
                 return
             }
             do {
-                
-                print("Sucess: \(String(describing: String(bytes: data, encoding: .utf8)))")
-                print("DONE !")
-                //                let decoder = JSONDecoder()
-                //                let objResponse = try decoder.decode(ReplicateAPIMakePredictionResponse.self, from: data)
-                //
-                //                let output = ReplicateAPIPredictionInfo(from: objResponse)
-                //                self.buffer.append(output)
-                //                self.saveBuffer()
-                //                completionCallback(.success(output))
+                print("Prediction recived")
+                let decoder = JSONDecoder()
+                let objResponse = try decoder.decode(BasetenAPIGFPGANResponse.self, from: data)
+                guard let predictionUrl = objResponse.predictions?.first else {
+                    completionCallback(.failure(BasetenError.invalidReResponseObj(response: "")))
+                    fatalError()
+                }
+
+                DispatchQueue.global().async {
+                    // Fetch Image Data
+                    if let data = try? Data(contentsOf: URL(string: (predictionUrl))!) {
+                        DispatchQueue.main.async {
+                            let image = UIImage(data: data)!
+                            completionCallback(.success(image))
+                        }
+                    }
+                }
                 
             } catch {
-                // completionCallback(.failure(.responseParsingError(response: data.description)))
-                print("Json Parse Error \(error)")
+                completionCallback(.failure(BasetenError.responseJsonParseError(response: "")))
                 return
             }
             
