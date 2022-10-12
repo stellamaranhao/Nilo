@@ -20,6 +20,10 @@
 		CF52E58C28F0ACDA0074326F /* ReplicateAPIInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF52E58B28F0ACDA0074326F /* ReplicateAPIInput.swift */; };
 		CF52E58E28F0B64C0074326F /* ReplicateAPIErro.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF52E58D28F0B64C0074326F /* ReplicateAPIErro.swift */; };
 		CF52E59028F0BEB50074326F /* ReplicateAPIPredictionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF52E58F28F0BEB50074326F /* ReplicateAPIPredictionInfo.swift */; };
+		CF86A67428F5E51B009B6DE3 /* BasetenAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF86A67328F5E51B009B6DE3 /* BasetenAPI.swift */; };
+		CF86A67728F5E5FA009B6DE3 /* BasetenAPIInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF86A67628F5E5FA009B6DE3 /* BasetenAPIInput.swift */; };
+		CF86A67928F5E6F3009B6DE3 /* BasetenAPIModelEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF86A67828F5E6F3009B6DE3 /* BasetenAPIModelEnum.swift */; };
+		CF86A67B28F5EB6D009B6DE3 /* test_basetenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF86A67A28F5EB6D009B6DE3 /* test_basetenView.swift */; };
 		CFEA98E328F108A10058F16F /* ReplicateAPIMakePredictionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEA98E228F108A00058F16F /* ReplicateAPIMakePredictionResponse.swift */; };
 		CFEA98E828F1114F0058F16F /* ReplicateAPIBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEA98E728F1114F0058F16F /* ReplicateAPIBuffer.swift */; };
 		CFEA98EB28F114D50058F16F /* CodableExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = CFEA98EA28F114D50058F16F /* CodableExtensions */; };
@@ -43,6 +47,10 @@
 		CF52E58B28F0ACDA0074326F /* ReplicateAPIInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIInput.swift; sourceTree = "<group>"; };
 		CF52E58D28F0B64C0074326F /* ReplicateAPIErro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIErro.swift; sourceTree = "<group>"; };
 		CF52E58F28F0BEB50074326F /* ReplicateAPIPredictionInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIPredictionInfo.swift; sourceTree = "<group>"; };
+		CF86A67328F5E51B009B6DE3 /* BasetenAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasetenAPI.swift; sourceTree = "<group>"; };
+		CF86A67628F5E5FA009B6DE3 /* BasetenAPIInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasetenAPIInput.swift; sourceTree = "<group>"; };
+		CF86A67828F5E6F3009B6DE3 /* BasetenAPIModelEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasetenAPIModelEnum.swift; sourceTree = "<group>"; };
+		CF86A67A28F5EB6D009B6DE3 /* test_basetenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_basetenView.swift; sourceTree = "<group>"; };
 		CFEA98E228F108A00058F16F /* ReplicateAPIMakePredictionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIMakePredictionResponse.swift; sourceTree = "<group>"; };
 		CFEA98E728F1114F0058F16F /* ReplicateAPIBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIBuffer.swift; sourceTree = "<group>"; };
 		CFEA98EC28F120040058F16F /* test_replicateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_replicateView.swift; sourceTree = "<group>"; };
@@ -78,6 +86,7 @@
 		ADC14C2828ECDF7300065D97 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				CF86A67528F5E5AE009B6DE3 /* BasetenAPI */,
 				ADC14C2728ECDF5900065D97 /* ReplicateAPI */,
 			);
 			path = API;
@@ -125,6 +134,7 @@
 		CF46D3FA28ECD0FC0052C018 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				CF86A67228F5E507009B6DE3 /* BasetenAPI */,
 				CF46D3FE28ECD1590052C018 /* ReplicateAPI */,
 			);
 			path = Networking;
@@ -155,6 +165,24 @@
 				CFEA98EC28F120040058F16F /* test_replicateView.swift */,
 			);
 			path = ReplicateAPI;
+			sourceTree = "<group>";
+		};
+		CF86A67228F5E507009B6DE3 /* BasetenAPI */ = {
+			isa = PBXGroup;
+			children = (
+				CF86A67328F5E51B009B6DE3 /* BasetenAPI.swift */,
+				CF86A67A28F5EB6D009B6DE3 /* test_basetenView.swift */,
+			);
+			path = BasetenAPI;
+			sourceTree = "<group>";
+		};
+		CF86A67528F5E5AE009B6DE3 /* BasetenAPI */ = {
+			isa = PBXGroup;
+			children = (
+				CF86A67628F5E5FA009B6DE3 /* BasetenAPIInput.swift */,
+				CF86A67828F5E6F3009B6DE3 /* BasetenAPIModelEnum.swift */,
+			);
+			path = BasetenAPI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,10 +261,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF86A67428F5E51B009B6DE3 /* BasetenAPI.swift in Sources */,
 				CFEA98E828F1114F0058F16F /* ReplicateAPIBuffer.swift in Sources */,
 				ADC14C2628ECD5C300065D97 /* ReplicateAPI.swift in Sources */,
 				ADBD423628EF4C0200E0C8CF /* UIImage_Extention.swift in Sources */,
 				AD6F91B728EE221300195F12 /* ReplicateAPIPostModelPrediction.swift in Sources */,
+				CF86A67B28F5EB6D009B6DE3 /* test_basetenView.swift in Sources */,
 				CF52E58A28F0A8910074326F /* ReplicateAPIModelsEnum.swift in Sources */,
 				CF52E58E28F0B64C0074326F /* ReplicateAPIErro.swift in Sources */,
 				CF52E58C28F0ACDA0074326F /* ReplicateAPIInput.swift in Sources */,
@@ -244,8 +274,10 @@
 				CF46D40028ECD1CC0052C018 /* ContentViewExtension.swift in Sources */,
 				CF46D3EF28ECD0040052C018 /* ContentView.swift in Sources */,
 				CFEA98ED28F120040058F16F /* test_replicateView.swift in Sources */,
+				CF86A67728F5E5FA009B6DE3 /* BasetenAPIInput.swift in Sources */,
 				CF52E59028F0BEB50074326F /* ReplicateAPIPredictionInfo.swift in Sources */,
 				CF46D3ED28ECD0040052C018 /* NiloApp.swift in Sources */,
+				CF86A67928F5E6F3009B6DE3 /* BasetenAPIModelEnum.swift in Sources */,
 				ADC14C2A28ECDF9100065D97 /* ReplicateAPIGetModelResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
