@@ -6,10 +6,12 @@
 //
 
 import Foundation
+import UIKit
 
 final class BasetenAPI{
     var authToken:String
     var authTokenValid:Bool = false
+    var imageKit = ImageKitAPI()
     
     
     init (fromToken authToken: String) {
@@ -18,6 +20,28 @@ final class BasetenAPI{
     
     init(){
         self.authToken = "vjbG7ScV.Ej9addGGST88VD7vhGO2fbCW7sry5n1u"
+    }
+    
+    
+    func imagePredictionPipeline(fromImage image:UIImage, onCompletion completionCallback:@escaping()->Void){
+        //Upload Imade to cloud
+        imageKit.uploadImage(image){Result in
+            switch Result{
+            case is Error:
+                print("Deu errado o upload")
+            case is ImageKitUploadResponse:
+                let input = BasetenAPIInput()
+                input.GFPGAN(imageURL: Result)
+                
+            }
+            
+        }
+        
+        //Send Image to Baseten
+        
+        //Download URL imade
+        
+        //Delete image
     }
     
     

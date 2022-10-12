@@ -24,6 +24,8 @@
 		CF86A67728F5E5FA009B6DE3 /* BasetenAPIInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF86A67628F5E5FA009B6DE3 /* BasetenAPIInput.swift */; };
 		CF86A67928F5E6F3009B6DE3 /* BasetenAPIModelEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF86A67828F5E6F3009B6DE3 /* BasetenAPIModelEnum.swift */; };
 		CF86A67B28F5EB6D009B6DE3 /* test_basetenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF86A67A28F5EB6D009B6DE3 /* test_basetenView.swift */; };
+		CFE1570328F71A4000502EB1 /* ImageKitAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE1570228F71A4000502EB1 /* ImageKitAPI.swift */; };
+		CFE1570628F747FC00502EB1 /* ImageKitAPIUploadResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE1570528F747FC00502EB1 /* ImageKitAPIUploadResponse.swift */; };
 		CFEA98E328F108A10058F16F /* ReplicateAPIMakePredictionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEA98E228F108A00058F16F /* ReplicateAPIMakePredictionResponse.swift */; };
 		CFEA98E828F1114F0058F16F /* ReplicateAPIBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEA98E728F1114F0058F16F /* ReplicateAPIBuffer.swift */; };
 		CFEA98EB28F114D50058F16F /* CodableExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = CFEA98EA28F114D50058F16F /* CodableExtensions */; };
@@ -51,6 +53,8 @@
 		CF86A67628F5E5FA009B6DE3 /* BasetenAPIInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasetenAPIInput.swift; sourceTree = "<group>"; };
 		CF86A67828F5E6F3009B6DE3 /* BasetenAPIModelEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasetenAPIModelEnum.swift; sourceTree = "<group>"; };
 		CF86A67A28F5EB6D009B6DE3 /* test_basetenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_basetenView.swift; sourceTree = "<group>"; };
+		CFE1570228F71A4000502EB1 /* ImageKitAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageKitAPI.swift; sourceTree = "<group>"; };
+		CFE1570528F747FC00502EB1 /* ImageKitAPIUploadResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageKitAPIUploadResponse.swift; sourceTree = "<group>"; };
 		CFEA98E228F108A00058F16F /* ReplicateAPIMakePredictionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIMakePredictionResponse.swift; sourceTree = "<group>"; };
 		CFEA98E728F1114F0058F16F /* ReplicateAPIBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIBuffer.swift; sourceTree = "<group>"; };
 		CFEA98EC28F120040058F16F /* test_replicateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_replicateView.swift; sourceTree = "<group>"; };
@@ -86,6 +90,7 @@
 		ADC14C2828ECDF7300065D97 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				CFE1570428F747E800502EB1 /* ImageKitAPI */,
 				CF86A67528F5E5AE009B6DE3 /* BasetenAPI */,
 				ADC14C2728ECDF5900065D97 /* ReplicateAPI */,
 			);
@@ -134,6 +139,7 @@
 		CF46D3FA28ECD0FC0052C018 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				CFE1570128F71A3400502EB1 /* ImageKitAPI */,
 				CF86A67228F5E507009B6DE3 /* BasetenAPI */,
 				CF46D3FE28ECD1590052C018 /* ReplicateAPI */,
 			);
@@ -183,6 +189,22 @@
 				CF86A67828F5E6F3009B6DE3 /* BasetenAPIModelEnum.swift */,
 			);
 			path = BasetenAPI;
+			sourceTree = "<group>";
+		};
+		CFE1570128F71A3400502EB1 /* ImageKitAPI */ = {
+			isa = PBXGroup;
+			children = (
+				CFE1570228F71A4000502EB1 /* ImageKitAPI.swift */,
+			);
+			path = ImageKitAPI;
+			sourceTree = "<group>";
+		};
+		CFE1570428F747E800502EB1 /* ImageKitAPI */ = {
+			isa = PBXGroup;
+			children = (
+				CFE1570528F747FC00502EB1 /* ImageKitAPIUploadResponse.swift */,
+			);
+			path = ImageKitAPI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +294,8 @@
 				CF52E58C28F0ACDA0074326F /* ReplicateAPIInput.swift in Sources */,
 				CFEA98E328F108A10058F16F /* ReplicateAPIMakePredictionResponse.swift in Sources */,
 				CF46D40028ECD1CC0052C018 /* ContentViewExtension.swift in Sources */,
+				CFE1570628F747FC00502EB1 /* ImageKitAPIUploadResponse.swift in Sources */,
+				CFE1570328F71A4000502EB1 /* ImageKitAPI.swift in Sources */,
 				CF46D3EF28ECD0040052C018 /* ContentView.swift in Sources */,
 				CFEA98ED28F120040058F16F /* test_replicateView.swift in Sources */,
 				CF86A67728F5E5FA009B6DE3 /* BasetenAPIInput.swift in Sources */,

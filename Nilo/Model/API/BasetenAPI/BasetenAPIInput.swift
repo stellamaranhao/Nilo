@@ -13,15 +13,13 @@ class BasetenAPIInput{
     var httpBody:Data?
     
     
-    func GFPGAN(image:UIImage){
-        var json:[String: Any] = [
-            //"inputs": [["image_url" : image.dataURL()!]]
-            "inputs": [["image_url" : "https://akvis.com/img/examples/retoucher/man-photoshop/source.jpg"]]
+    func GFPGAN(imageURL:String){
+        let json:[String: Any] = [
+            "inputs": [["image_url" : imageURL]]
         ]
         
         using = BasetenAPIModelEnum.GFPGAN.rawValue
         httpBody = try! JSONSerialization.data(withJSONObject: json)
-        print(String(data: httpBody!, encoding: .utf8)!)
     }
     
     

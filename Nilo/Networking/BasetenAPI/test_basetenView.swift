@@ -23,7 +23,8 @@ struct test_basetenView: View {
     @State var imageShown:UIImage?
     
     @State var message:String = "Hello World"
-    let api = BasetenAPI()
+    //let api = BasetenAPI()
+    let api = ImageKitAPI()
     
     var body: some View {
         VStack{
@@ -82,18 +83,16 @@ struct test_basetenView: View {
             //Criar uma preddiction com a foto
             Button("Enviar predicao do modelo") {
                 if let image = imageShown{
-                    let input = BasetenAPIInput()
-                    input.GFPGAN(image: image)
-                    api.createPrediction(using: input){
-//                        switch result {
-//                        case .success(let sucess):
-//                            message = "Processando Modelo...\nURL:\(sucess)"
-//                        case .failure(let failure):
-//                            print(failure)
+                    //api.deleteImage()
+//                    api.uploadImage(image){ Result in
+//                        switch Result {
+//                        case is Error:
+//                            print("Errey aqui")
+//                        default:
+//                            print(Result)
 //                        }
-                        
-                        print("Bateu no callback")
-                    }
+//
+//                    }
                 }
             }
             .padding()
