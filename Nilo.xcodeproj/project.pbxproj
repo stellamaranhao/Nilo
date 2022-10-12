@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ADA29A9C28F617EE006863D0 /* TelaResultado.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA29A9B28F617EE006863D0 /* TelaResultado.swift */; };
 		ADC14C2628ECD5C300065D97 /* ReplicateAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC14C2528ECD5C300065D97 /* ReplicateAPI.swift */; };
 		ADC14C2A28ECDF9100065D97 /* ReplicateAPIGetModelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC14C2928ECDF9100065D97 /* ReplicateAPIGetModelResponse.swift */; };
 		CF46D3ED28ECD0040052C018 /* NiloApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF46D3EC28ECD0040052C018 /* NiloApp.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ADA29A9B28F617EE006863D0 /* TelaResultado.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaResultado.swift; sourceTree = "<group>"; };
 		ADC14C2528ECD5C300065D97 /* ReplicateAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPI.swift; sourceTree = "<group>"; };
 		ADC14C2928ECDF9100065D97 /* ReplicateAPIGetModelResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIGetModelResponse.swift; sourceTree = "<group>"; };
 		CF46D3E928ECD0040052C018 /* Nilo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nilo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +120,7 @@
 				EC6032C728EE01D300646F4C /* ImagePickerView.swift */,
 				EC6032C928EE028E00646F4C /* ImagePicker.swift */,
 				EC6032CB28EE031600646F4C /* AlbumView.swift */,
+				ADA29A9B28F617EE006863D0 /* TelaResultado.swift */,
 				EC6032CD28EE063F00646F4C /* CameraView.swift */,
 				EC6032D328EE254500646F4C /* Artefato */,
 				EC6032D128EE252700646F4C /* Cores.swift */,
@@ -220,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADC14C2628ECD5C300065D97 /* ReplicateAPI.swift in Sources */,
+				ADA29A9C28F617EE006863D0 /* TelaResultado.swift in Sources */,
 				CF46D40028ECD1CC0052C018 /* ContentViewExtension.swift in Sources */,
 				CF46D3EF28ECD0040052C018 /* ContentView.swift in Sources */,
 				EC6032CE28EE063F00646F4C /* CameraView.swift in Sources */,
@@ -357,7 +361,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Nilo/Preview Content\"";
-				DEVELOPMENT_TEAM = UW3Y79FS5R;
+				DEVELOPMENT_TEAM = S7ZK5B3N8D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Quero usar sua camera";
@@ -371,7 +375,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Nilo;
+				PRODUCT_BUNDLE_IDENTIFIER = Nilo2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -387,7 +391,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Nilo/Preview Content\"";
-				DEVELOPMENT_TEAM = UW3Y79FS5R;
+				DEVELOPMENT_TEAM = S7ZK5B3N8D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Quero usar sua camera";
@@ -401,7 +405,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Nilo;
+				PRODUCT_BUNDLE_IDENTIFIER = Nilo2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

@@ -11,7 +11,7 @@ import SwiftUI
 struct NiloApp: App {
     var body: some Scene {
         WindowGroup {
-            AlbumView()
+            TelaResultado()
         }
     }
 }
