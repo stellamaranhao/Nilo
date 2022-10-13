@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// How each model is named inside de API
 enum BasetenAPIModelEnum: String{
     case GFPGAN = "5qex803"
 }

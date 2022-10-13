@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+/// Class to make calls to the BasetenAPI
 final class BasetenAPI{
     var authToken:String
     var authTokenValid:Bool = false
@@ -20,10 +21,14 @@ final class BasetenAPI{
     }
     
     init(){
-        self.authToken = "vjbG7ScV.Ej9addGGST88VD7vhGO2fbCW7sry5n1u"
+        self.authToken = ProcessInfo.processInfo.environment["BASETEN_KEY"]!
     }
     
     
+    /// Create a image prediction using GFP-GAN. This Pipeline salves the image in the imageKit.io, then, passes the URL to the BasetenAPI. Finally the image is generated and retrived as a UIImage
+    /// - Parameters:
+    ///   - image: Image to be upscaled using the GFP-GAN
+    ///   - completionCallback: Completion Callback
     func imagePredictionPipeline(fromImage image:UIImage, onCompletion completionCallback:@escaping(Result<UIImage,BasetenError>)->Void){
         imageKit.uploadImage(image){result in
             switch result {
@@ -33,7 +38,7 @@ final class BasetenAPI{
                 let input = BasetenAPIInput()
                 input.GFPGAN(imageURL: url)
                 
-                self.createPrediction(using: input){result in
+                self.createImagePrediction(using: input){result in
                     switch result {
                     case .success(let success):
                         completionCallback(.success(success))
@@ -51,6 +56,12 @@ final class BasetenAPI{
         }
     }
     
+    
+    /// Create a image prediction using GFP-GAN. This Pipeline salves the image in the imageKit.io, then, passes the URL to the BasetenAPI. Finally the image is generated and retrived as a UIImage
+    /// - Parameters:
+    ///   - image: Image to be upscaled using the GFP-GAN
+    ///   - progressUpdate: Updates the progress during all steps via a callback function
+    ///   - completionCallback: Completion Callback
     func imagePredictionPipeline(fromImage image:UIImage, progressUpdate:@escaping(Int)->Void, onCompletion completionCallback:@escaping(Result<UIImage,BasetenError>)->Void){
         progressUpdate(0)
         imageKit.uploadImage(image){result in
@@ -62,7 +73,7 @@ final class BasetenAPI{
                 input.GFPGAN(imageURL: url)
                 progressUpdate(50)
                 
-                self.createPrediction(using: input){result in
+                self.createImagePrediction(using: input){result in
                     switch result {
                     case .success(let success):
                         progressUpdate(100)
@@ -82,11 +93,17 @@ final class BasetenAPI{
     }
     
     
+    /// Clean the last image preddicted from the MediaServer in the ImageKit.io
     func imagePredictionPipelineCleanUp(){
         imageKit.deleteImage(fromID: self.lastProcessedID)
     }
     
-    func createPrediction(using data:BasetenAPIInput, onCompletion completionCallback:@escaping(Result<UIImage,BasetenError>)->Void){
+    
+    /// Make a prediction call to the BasetenAPI
+    /// - Parameters:
+    ///   - data: Baseten Input
+    ///   - completionCallback: Callback when call is completed
+    func createImagePrediction(using data:BasetenAPIInput, onCompletion completionCallback:@escaping(Result<UIImage,BasetenError>)->Void){
         let url = URL(string: "https://app.baseten.co/model_versions/\(data.using!)/predict")
         
         guard let requestURL = url else {

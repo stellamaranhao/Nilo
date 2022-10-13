@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Customized Basten API errors
 enum BasetenError:Error{
     case badRequestedUrl(response:String)
     case noResponse(response:String)

@@ -8,8 +8,13 @@
 import Foundation
 import UIKit
 
+/// ImagiKitAPI connects to the ImageKit.io site - Used to host Media in CDNs
 final class ImageKitAPI{
     
+    /// Send a Image to the ImageKit.io media server
+    /// - Parameters:
+    ///   - image: UIimage to be sended
+    ///   - completionCallback: Callback when API call is finished
     func uploadImage(_ image:UIImage, onCompletion completionCallback: @escaping(Result<ImageKitUploadResponse,Error>)->Void){
         let boundary = "Boundary-\(UUID().uuidString)"
         let parameters = generateParametres(image, named: Date().timeIntervalSince1970.description)
@@ -41,7 +46,8 @@ final class ImageKitAPI{
         task.resume()
     }
     
-    //fromID id:String
+    /// Delete a image in the ImageKit.io media server
+    /// - Parameter id: image id (provided by ImageKit.io)
     func deleteImage(fromID id:String){
         var request = URLRequest(url: URL(string: "https://api.imagekit.io/v1/files/\(id)")!,timeoutInterval: Double.infinity)
         request.addValue("Basic cHJpdmF0ZV90bEV0TUVIY2ErZXU1eDVYWHdNdHZsS2hFbDg9Og==", forHTTPHeaderField: "Authorization")
@@ -59,6 +65,11 @@ final class ImageKitAPI{
         task.resume()
     }
     
+    /// Since ImageKit.io uses a special type of request, first we have to built it
+    /// - Parameters:
+    ///   - image: image to be saved
+    ///   - name: Name of the image
+    /// - Returns: Paraments of the call
     private func generateParametres(_ image:UIImage, named name:String)->[[String : Any]]{
         let parameters = [
           [
@@ -80,6 +91,11 @@ final class ImageKitAPI{
         return parameters
     }
     
+    /// Since ImageKit.io uses a special type of request, first we have to built it
+    /// - Parameters:
+    ///   - parameters: Paramerts of the request
+    ///   - boundary: request boundary
+    /// - Returns: request body
     private func generateBody(fromBody parameters:[[String : Any]], usingBoundary boundary:String)->String{
         var body = ""
         var error: Error? = nil

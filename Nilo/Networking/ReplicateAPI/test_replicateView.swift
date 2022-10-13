@@ -14,7 +14,7 @@ struct test_replicateView: View {
     @State var imageShown:UIImage?
     
     @State var message:String = "Hello World"
-    let api = ReplicateAPI(fromToken: "e5eb3cfc79fd104b1294fbf1c9fff0d751db4b33")
+    let api = ReplicateAPI(fromToken:ProcessInfo.processInfo.environment["REPLICATE_KEY"]!)
     
     var body: some View {
         VStack{
