@@ -168,6 +168,8 @@
 			dependencies = (
 			);
 			name = Nilo;
+			packageProductDependencies = (
+			);
 			productName = Nilo;
 			productReference = CF46D3E928ECD0040052C018 /* Nilo.app */;
 			productType = "com.apple.product-type.application";
@@ -196,6 +198,9 @@
 				Base,
 			);
 			mainGroup = CF46D3E028ECD0040052C018;
+			packageReferences = (
+				ADA29A9D28F760F1006863D0 /* XCRemoteSwiftPackageReference "HalfASheet" */,
+			);
 			productRefGroup = CF46D3EA28ECD0040052C018 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -435,6 +440,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ADA29A9D28F760F1006863D0 /* XCRemoteSwiftPackageReference "HalfASheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/franklynw/HalfASheet.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = CF46D3E128ECD0040052C018 /* Project object */;
 }

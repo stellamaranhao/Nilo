@@ -172,6 +172,7 @@ struct AlbumView: View {
                         }
                 }
             }
+            .navigationBarBackButtonHidden(true) 
         }
         
         .fullScreenCover(item: $imagePickingState) { state in
