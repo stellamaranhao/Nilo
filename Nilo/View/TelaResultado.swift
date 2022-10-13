@@ -42,12 +42,13 @@ struct TelaResultado: View {
                     //                        .presentationDetents([.fraction(0.40)])
                     //                }
                 }
-               // VStack{
+                
                 ZStack{
-                        RoundedRectangle(cornerRadius: 30, style: .continuous)
-                            .fill(Color.corDeFundo)
-                            .frame(width:.infinity,height: 300)
-                            .offset(x:0,y:350)
+                    RoundedRectangle(cornerRadius: 30, style: .continuous)
+                        .fill(Color.corDeFundo)
+                        .frame(width:.infinity,height: 300)
+                        .offset(x:0,y:350)
+                    
                     VStack{
                         HStack{
                             VStack (spacing: 5){
@@ -70,15 +71,25 @@ struct TelaResultado: View {
                                 .foregroundColor(Color.corTexto)
                             
                         }
-                        HStack{
-                            
-                            
-                            
-                            
+                        
+                        
+
+                    }
+                    HStack{
+                       
+                        NavigationLink(destination: AlbumView()) {
+                            Image("exportarMemoria").resizable().renderingMode(.original).aspectRatio( contentMode: .fit)
                         }
+                        .frame(width: 170)
+                        
+                        NavigationLink(destination: AlbumView()) {
+                            Image("resgatarOutraMemoria").resizable().renderingMode(.original).aspectRatio( contentMode: .fit)
+                        }
+                        .frame(width: 170)
                     }
-                    }
-               // }
+                       .offset(x:0,y:340)
+                }
+                
             }
         }
         .navigationBarBackButtonHidden(true)
