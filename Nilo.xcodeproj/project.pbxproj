@@ -53,21 +53,21 @@
 		CF46D3F128ECD0050052C018 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF46D3F028ECD0050052C018 /* Assets.xcassets */; };
 		CF46D3F428ECD0050052C018 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF46D3F328ECD0050052C018 /* Preview Assets.xcassets */; };
 		CF46D40028ECD1CC0052C018 /* ContentViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF46D3FF28ECD1CC0052C018 /* ContentViewExtension.swift */; };
+		CF52E58A28F0A8910074326F /* ReplicateAPIModelsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF52E58928F0A8910074326F /* ReplicateAPIModelsEnum.swift */; };
+		CF52E58C28F0ACDA0074326F /* ReplicateAPIInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF52E58B28F0ACDA0074326F /* ReplicateAPIInput.swift */; };
+		CF52E58E28F0B64C0074326F /* ReplicateAPIErro.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF52E58D28F0B64C0074326F /* ReplicateAPIErro.swift */; };
+		CF52E59028F0BEB50074326F /* ReplicateAPIPredictionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF52E58F28F0BEB50074326F /* ReplicateAPIPredictionInfo.swift */; };
+		CF77F8D428EFBA2D00C1BBD2 /* coremlColorizer.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = CF77F8D328EFBA2D00C1BBD2 /* coremlColorizer.mlmodel */; };
+		CF77F8D628EFBD9A00C1BBD2 /* test_colorizeML.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF77F8D528EFBD9A00C1BBD2 /* test_colorizeML.swift */; };
+		CFEA98E328F108A10058F16F /* ReplicateAPIMakePredictionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEA98E228F108A00058F16F /* ReplicateAPIMakePredictionResponse.swift */; };
+		CFEA98E828F1114F0058F16F /* ReplicateAPIBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEA98E728F1114F0058F16F /* ReplicateAPIBuffer.swift */; };
+		CFEA98EB28F114D50058F16F /* CodableExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = CFEA98EA28F114D50058F16F /* CodableExtensions */; };
+		CFEA98ED28F120040058F16F /* test_replicateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEA98EC28F120040058F16F /* test_replicateView.swift */; };
 		EC6032C828EE01D300646F4C /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6032C728EE01D300646F4C /* ImagePickerView.swift */; };
 		EC6032CA28EE028E00646F4C /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6032C928EE028E00646F4C /* ImagePicker.swift */; };
 		EC6032CC28EE031600646F4C /* AlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6032CB28EE031600646F4C /* AlbumView.swift */; };
 		EC6032CE28EE063F00646F4C /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6032CD28EE063F00646F4C /* CameraView.swift */; };
 		EC6032D228EE252700646F4C /* Cores.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6032D128EE252700646F4C /* Cores.swift */; };
-		CF52E58A28F0A8910074326F /* ReplicateAPIModelsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF52E58928F0A8910074326F /* ReplicateAPIModelsEnum.swift */; };
-		CF52E58C28F0ACDA0074326F /* ReplicateAPIInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF52E58B28F0ACDA0074326F /* ReplicateAPIInput.swift */; };
-		CF52E58E28F0B64C0074326F /* ReplicateAPIErro.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF52E58D28F0B64C0074326F /* ReplicateAPIErro.swift */; };
-		CF52E59028F0BEB50074326F /* ReplicateAPIPredictionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF52E58F28F0BEB50074326F /* ReplicateAPIPredictionInfo.swift */; };
-		CFEA98E328F108A10058F16F /* ReplicateAPIMakePredictionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEA98E228F108A00058F16F /* ReplicateAPIMakePredictionResponse.swift */; };
-		CFEA98E828F1114F0058F16F /* ReplicateAPIBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEA98E728F1114F0058F16F /* ReplicateAPIBuffer.swift */; };
-		CFEA98EB28F114D50058F16F /* CodableExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = CFEA98EA28F114D50058F16F /* CodableExtensions */; };
-		CFEA98ED28F120040058F16F /* test_replicateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEA98EC28F120040058F16F /* test_replicateView.swift */; };
-		CF77F8D428EFBA2D00C1BBD2 /* coremlColorizer.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = CF77F8D328EFBA2D00C1BBD2 /* coremlColorizer.mlmodel */; };
-		CF77F8D628EFBD9A00C1BBD2 /* test_colorizeML.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF77F8D528EFBD9A00C1BBD2 /* test_colorizeML.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -124,21 +124,20 @@
 		CF46D3F328ECD0050052C018 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CF46D3FF28ECD1CC0052C018 /* ContentViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewExtension.swift; sourceTree = "<group>"; };
 		CF46D40128ECD21F0052C018 /* dummyModel.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = dummyModel.md; sourceTree = "<group>"; };
+		CF52E58928F0A8910074326F /* ReplicateAPIModelsEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIModelsEnum.swift; sourceTree = "<group>"; };
+		CF52E58B28F0ACDA0074326F /* ReplicateAPIInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIInput.swift; sourceTree = "<group>"; };
+		CF52E58D28F0B64C0074326F /* ReplicateAPIErro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIErro.swift; sourceTree = "<group>"; };
+		CF52E58F28F0BEB50074326F /* ReplicateAPIPredictionInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIPredictionInfo.swift; sourceTree = "<group>"; };
+		CF77F8D328EFBA2D00C1BBD2 /* coremlColorizer.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = coremlColorizer.mlmodel; path = "../../../../../Projetos Pesoais/colorizeCoreML/coremlColorizer.mlmodel"; sourceTree = "<group>"; };
+		CF77F8D528EFBD9A00C1BBD2 /* test_colorizeML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_colorizeML.swift; sourceTree = "<group>"; };
+		CFEA98E228F108A00058F16F /* ReplicateAPIMakePredictionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIMakePredictionResponse.swift; sourceTree = "<group>"; };
+		CFEA98E728F1114F0058F16F /* ReplicateAPIBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIBuffer.swift; sourceTree = "<group>"; };
+		CFEA98EC28F120040058F16F /* test_replicateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_replicateView.swift; sourceTree = "<group>"; };
 		EC6032C728EE01D300646F4C /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 		EC6032C928EE028E00646F4C /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		EC6032CB28EE031600646F4C /* AlbumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumView.swift; sourceTree = "<group>"; };
 		EC6032CD28EE063F00646F4C /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		EC6032D128EE252700646F4C /* Cores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Cores.swift; path = Artefatos/Cores.swift; sourceTree = "<group>"; };
-		CF46D40228ECD2340052C018 /* dummyView.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = dummyView.md; sourceTree = "<group>"; };
-		CF52E58928F0A8910074326F /* ReplicateAPIModelsEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIModelsEnum.swift; sourceTree = "<group>"; };
-		CF52E58B28F0ACDA0074326F /* ReplicateAPIInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIInput.swift; sourceTree = "<group>"; };
-		CF52E58D28F0B64C0074326F /* ReplicateAPIErro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIErro.swift; sourceTree = "<group>"; };
-		CF52E58F28F0BEB50074326F /* ReplicateAPIPredictionInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIPredictionInfo.swift; sourceTree = "<group>"; };
-		CFEA98E228F108A00058F16F /* ReplicateAPIMakePredictionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIMakePredictionResponse.swift; sourceTree = "<group>"; };
-		CFEA98E728F1114F0058F16F /* ReplicateAPIBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIBuffer.swift; sourceTree = "<group>"; };
-		CFEA98EC28F120040058F16F /* test_replicateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_replicateView.swift; sourceTree = "<group>"; };
-		CF77F8D328EFBA2D00C1BBD2 /* coremlColorizer.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = coremlColorizer.mlmodel; path = "../../../../../Projetos Pesoais/colorizeCoreML/coremlColorizer.mlmodel"; sourceTree = "<group>"; };
-		CF77F8D528EFBD9A00C1BBD2 /* test_colorizeML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_colorizeML.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +170,7 @@
 		ADC14C2828ECDF7300065D97 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				CF6849C128F9107C005970ED /* New Group */,
 				ADC14C2728ECDF5900065D97 /* ReplicateAPI */,
 			);
 			path = API;
@@ -321,6 +321,13 @@
 				CFEA98EC28F120040058F16F /* test_replicateView.swift */,
 			);
 			path = ReplicateAPI;
+			sourceTree = "<group>";
+		};
+		CF6849C128F9107C005970ED /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		EC6032D328EE254500646F4C /* Artefato */ = {
@@ -608,13 +615,13 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Nilo;
 				OTHER_CFLAGS = "";
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-std=c++11",
 					"-Wno-deprecated-register",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = Nilo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Nilo/Model/ColorizeML/Util/Nilo-Bridging-Header.h";
@@ -647,13 +654,13 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Nilo;
 				OTHER_CFLAGS = "";
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-std=c++11",
 					"-Wno-deprecated-register",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = Nilo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Nilo/Model/ColorizeML/Util/Nilo-Bridging-Header.h";
