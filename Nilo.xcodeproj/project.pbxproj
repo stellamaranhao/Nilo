@@ -19,6 +19,7 @@
 		EC6032CC28EE031600646F4C /* AlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6032CB28EE031600646F4C /* AlbumView.swift */; };
 		EC6032CE28EE063F00646F4C /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6032CD28EE063F00646F4C /* CameraView.swift */; };
 		EC6032D228EE252700646F4C /* Cores.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6032D128EE252700646F4C /* Cores.swift */; };
+		EC60334028F8EC0000646F4C /* teste.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC60333F28F8EC0000646F4C /* teste.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		EC6032CB28EE031600646F4C /* AlbumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumView.swift; sourceTree = "<group>"; };
 		EC6032CD28EE063F00646F4C /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		EC6032D128EE252700646F4C /* Cores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Cores.swift; path = Artefatos/Cores.swift; sourceTree = "<group>"; };
+		EC60333F28F8EC0000646F4C /* teste.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teste.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				EC6032C928EE028E00646F4C /* ImagePicker.swift */,
 				EC6032CB28EE031600646F4C /* AlbumView.swift */,
 				EC6032CD28EE063F00646F4C /* CameraView.swift */,
+				EC60333F28F8EC0000646F4C /* teste.swift */,
 				EC6032D328EE254500646F4C /* Artefato */,
 				EC6032D128EE252700646F4C /* Cores.swift */,
 			);
@@ -225,6 +228,7 @@
 				EC6032CE28EE063F00646F4C /* CameraView.swift in Sources */,
 				EC6032D228EE252700646F4C /* Cores.swift in Sources */,
 				EC6032CA28EE028E00646F4C /* ImagePicker.swift in Sources */,
+				EC60334028F8EC0000646F4C /* teste.swift in Sources */,
 				CF46D3ED28ECD0040052C018 /* NiloApp.swift in Sources */,
 				EC6032C828EE01D300646F4C /* ImagePickerView.swift in Sources */,
 				EC6032CC28EE031600646F4C /* AlbumView.swift in Sources */,

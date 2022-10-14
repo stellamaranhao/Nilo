@@ -12,5 +12,5 @@ extension Color {
     static let txtTirarImportar  = Color("txtTirarImportar")
     static let letratelarestauracao  = Color("letratelarestauracao")
     static let melhoriaQualidade  = Color("melhoriaQualidade")
-    
+    static let branco  = Color("branco")
 }

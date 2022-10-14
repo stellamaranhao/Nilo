@@ -69,6 +69,7 @@ struct ImagePicker: UIViewControllerRepresentable {
                     self.parent.pickedPhoto = PickedPhoto(selectedImage: image)
                 }
             }
+            
         }
     }
 }
