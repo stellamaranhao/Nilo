@@ -26,7 +26,7 @@ final class ColorizeML{
         do {
             let inputImageLab = try preProcess(inputImage: inputImage)
             let input = try coloriserInput(from: inputImageLab)
-            let output = try coremlColorizer(configuration: MLModelConfiguration()).prediction(fromFeatures: input)
+            let output = try coremlColorizer(configuration: MLModelConfiguration()).prediction(input: input)
             let outputImageLab = imageLab(from: output, inputImageLab: inputImageLab)
             let resultImage = try postProcess(outputLAB: outputImageLab, inputImage: inputImage)
             return .success(resultImage)
