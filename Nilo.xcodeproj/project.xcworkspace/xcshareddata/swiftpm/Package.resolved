@@ -1,12 +1,12 @@
 {
   "pins" : [
     {
-      "identity" : "halfasheet",
+      "identity" : "codableextensions",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/franklynw/HalfASheet.git",
+      "location" : "https://github.com/rvenieris/CodableExtensions",
       "state" : {
-        "revision" : "4f43296b3722082dd5735521ee0fbf25e61cd21c",
-        "version" : "1.0.2"
+        "revision" : "e671737b81ffe39c17523f0caac73e93cce36927",
+        "version" : "1.0.0"
       }
     }
   ],

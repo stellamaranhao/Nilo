@@ -8,13 +8,70 @@
 
 /* Begin PBXBuildFile section */
 		ADA29A9C28F617EE006863D0 /* TelaResultado.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA29A9B28F617EE006863D0 /* TelaResultado.swift */; };
+		AD6F91B728EE221300195F12 /* ReplicateAPIPostModelPrediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6F91B628EE221300195F12 /* ReplicateAPIPostModelPrediction.swift */; };
+		ADBD423628EF4C0200E0C8CF /* UIImage_Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD423528EF4C0200E0C8CF /* UIImage_Extention.swift */; };
 		ADC14C2628ECD5C300065D97 /* ReplicateAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC14C2528ECD5C300065D97 /* ReplicateAPI.swift */; };
 		ADC14C2A28ECDF9100065D97 /* ReplicateAPIGetModelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC14C2928ECDF9100065D97 /* ReplicateAPIGetModelResponse.swift */; };
+		CF0FB08C28EF5AE00009C275 /* ColorizeML.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0FB08B28EF5AE00009C275 /* ColorizeML.swift */; };
+		CF0FB10B28EF69FE0009C275 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0FB10528EF69FD0009C275 /* UIViewController+Utils.swift */; };
+		CF0FB10C28EF69FE0009C275 /* UIImage+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0FB10728EF69FD0009C275 /* UIImage+Utils.swift */; };
+		CF0FB10D28EF69FE0009C275 /* DispatchQueue+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0FB10828EF69FD0009C275 /* DispatchQueue+Utils.swift */; };
+		CF0FB10E28EF69FE0009C275 /* UIImage+Lab.mm in Sources */ = {isa = PBXBuildFile; fileRef = CF0FB10928EF69FD0009C275 /* UIImage+Lab.mm */; };
+		CF0FB11228EF6A7D0009C275 /* Nilo-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = CF0FB10428EF69FD0009C275 /* Nilo-Bridging-Header.h */; };
+		CF0FB13628EF6AD40009C275 /* cmsnamed.c in Sources */ = {isa = PBXBuildFile; fileRef = CF0FB11428EF6AD10009C275 /* cmsnamed.c */; };
+		CF0FB13728EF6AD40009C275 /* cmsio0.c in Sources */ = {isa = PBXBuildFile; fileRef = CF0FB11528EF6AD10009C275 /* cmsio0.c */; };
+		CF0FB13828EF6AD40009C275 /* cmscam02.c in Sources */ = {isa = PBXBuildFile; fileRef = CF0FB11628EF6AD20009C275 /* cmscam02.c */; };
+		CF0FB13928EF6AD40009C275 /* sRGB_v4_ICC_preference.icc in Resources */ = {isa = PBXBuildFile; fileRef = CF0FB11728EF6AD20009C275 /* sRGB_v4_ICC_preference.icc */; };
+		CF0FB13A28EF6AD40009C275 /* Makefile.am in Resources */ = {isa = PBXBuildFile; fileRef = CF0FB11828EF6AD20009C275 /* Makefile.am */; };
+		CF0FB13B28EF6AD40009C275 /* cmsps2.c in Sources */ = {isa = PBXBuildFile; fileRef = CF0FB11928EF6AD20009C275 /* cmsps2.c */; };
+		CF0FB13C28EF6AD40009C275 /* cmswtpnt.c in Sources */ = {isa = PBXBuildFile; fileRef = CF0FB11A28EF6AD20009C275 /* cmswtpnt.c */; };
+		CF0FB13D28EF6AD40009C275 /* cmshalf.c in Sources */ = {isa = PBXBuildFile; fileRef = CF0FB11B28EF6AD20009C275 /* cmshalf.c */; };
+		CF0FB13E28EF6AD40009C275 /* cmsgamma.c in Sources */ = {isa = PBXBuildFile; fileRef = CF0FB11C28EF6AD20009C275 /* cmsgamma.c */; };
+		CF0FB13F28EF6AD40009C275 /* cmsopt.c in Sources */ = {isa = PBXBuildFile; fileRef = CF0FB11D28EF6AD20009C275 /* cmsopt.c */; };
+		CF0FB14028EF6AD40009C275 /* cmsintrp.c in Sources */ = {isa = PBXBuildFile; fileRef = CF0FB11E28EF6AD20009C275 /* cmsintrp.c */; };
+		CF0FB14128EF6AD40009C275 /* cmsxform.c in Sources */ = {isa = PBXBuildFile; fileRef = CF0FB11F28EF6AD20009C275 /* cmsxform.c */; };
+		CF0FB14228EF6AD40009C275 /* cmsio1.c in Sources */ = {isa = PBXBuildFile; fileRef = CF0FB12328EF6AD20009C275 /* cmsio1.c */; };
+		CF0FB14328EF6AD40009C275 /* cmsmd5.c in Sources */ = {isa = PBXBuildFile; fileRef = CF0FB12428EF6AD20009C275 /* cmsmd5.c */; };
+		CF0FB14428EF6AD40009C275 /* cmsmtrx.c in Sources */ = {isa = PBXBuildFile; fileRef = CF0FB12528EF6AD30009C275 /* cmsmtrx.c */; };
+		CF0FB14528EF6AD40009C275 /* lcms2.def in Resources */ = {isa = PBXBuildFile; fileRef = CF0FB12628EF6AD30009C275 /* lcms2.def */; };
+		CF0FB14628EF6AD40009C275 /* cmspcs.c in Sources */ = {isa = PBXBuildFile; fileRef = CF0FB12728EF6AD30009C275 /* cmspcs.c */; };
+		CF0FB14728EF6AD40009C275 /* Makefile.in in Resources */ = {isa = PBXBuildFile; fileRef = CF0FB12828EF6AD30009C275 /* Makefile.in */; };
+		CF0FB14828EF6AD40009C275 /* cmssm.c in Sources */ = {isa = PBXBuildFile; fileRef = CF0FB12928EF6AD30009C275 /* cmssm.c */; };
+		CF0FB14928EF6AD40009C275 /* cmsalpha.c in Sources */ = {isa = PBXBuildFile; fileRef = CF0FB12A28EF6AD30009C275 /* cmsalpha.c */; };
+		CF0FB14A28EF6AD40009C275 /* cmsplugin.c in Sources */ = {isa = PBXBuildFile; fileRef = CF0FB12B28EF6AD30009C275 /* cmsplugin.c */; };
+		CF0FB14B28EF6AD40009C275 /* cmserr.c in Sources */ = {isa = PBXBuildFile; fileRef = CF0FB12C28EF6AD30009C275 /* cmserr.c */; };
+		CF0FB14C28EF6AD40009C275 /* cmscgats.c in Sources */ = {isa = PBXBuildFile; fileRef = CF0FB12D28EF6AD30009C275 /* cmscgats.c */; };
+		CF0FB14D28EF6AD40009C275 /* cmsvirt.c in Sources */ = {isa = PBXBuildFile; fileRef = CF0FB12E28EF6AD30009C275 /* cmsvirt.c */; };
+		CF0FB14E28EF6AD40009C275 /* cmstypes.c in Sources */ = {isa = PBXBuildFile; fileRef = CF0FB12F28EF6AD30009C275 /* cmstypes.c */; };
+		CF0FB14F28EF6AD40009C275 /* cmslut.c in Sources */ = {isa = PBXBuildFile; fileRef = CF0FB13028EF6AD30009C275 /* cmslut.c */; };
+		CF0FB15028EF6AD40009C275 /* cmssamp.c in Sources */ = {isa = PBXBuildFile; fileRef = CF0FB13128EF6AD30009C275 /* cmssamp.c */; };
+		CF0FB15128EF6AD40009C275 /* sRGB_ICC_v4_Appearance.icc in Resources */ = {isa = PBXBuildFile; fileRef = CF0FB13228EF6AD40009C275 /* sRGB_ICC_v4_Appearance.icc */; };
+		CF0FB15228EF6AD40009C275 /* cmscnvrt.c in Sources */ = {isa = PBXBuildFile; fileRef = CF0FB13328EF6AD40009C275 /* cmscnvrt.c */; };
+		CF0FB15328EF6AD40009C275 /* cmspack.c in Sources */ = {isa = PBXBuildFile; fileRef = CF0FB13428EF6AD40009C275 /* cmspack.c */; };
+		CF0FB15428EF6AD40009C275 /* cmsgmt.c in Sources */ = {isa = PBXBuildFile; fileRef = CF0FB13528EF6AD40009C275 /* cmsgmt.c */; };
 		CF46D3ED28ECD0040052C018 /* NiloApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF46D3EC28ECD0040052C018 /* NiloApp.swift */; };
 		CF46D3EF28ECD0040052C018 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF46D3EE28ECD0040052C018 /* ContentView.swift */; };
 		CF46D3F128ECD0050052C018 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF46D3F028ECD0050052C018 /* Assets.xcassets */; };
 		CF46D3F428ECD0050052C018 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF46D3F328ECD0050052C018 /* Preview Assets.xcassets */; };
 		CF46D40028ECD1CC0052C018 /* ContentViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF46D3FF28ECD1CC0052C018 /* ContentViewExtension.swift */; };
+		CF52E58A28F0A8910074326F /* ReplicateAPIModelsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF52E58928F0A8910074326F /* ReplicateAPIModelsEnum.swift */; };
+		CF52E58C28F0ACDA0074326F /* ReplicateAPIInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF52E58B28F0ACDA0074326F /* ReplicateAPIInput.swift */; };
+		CF52E58E28F0B64C0074326F /* ReplicateAPIErro.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF52E58D28F0B64C0074326F /* ReplicateAPIErro.swift */; };
+		CF52E59028F0BEB50074326F /* ReplicateAPIPredictionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF52E58F28F0BEB50074326F /* ReplicateAPIPredictionInfo.swift */; };
+		CF77F8D428EFBA2D00C1BBD2 /* coremlColorizer.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = CF77F8D328EFBA2D00C1BBD2 /* coremlColorizer.mlmodel */; };
+		CF77F8D628EFBD9A00C1BBD2 /* test_colorizeML.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF77F8D528EFBD9A00C1BBD2 /* test_colorizeML.swift */; };
+		CF86A67428F5E51B009B6DE3 /* BasetenAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF86A67328F5E51B009B6DE3 /* BasetenAPI.swift */; };
+		CF86A67728F5E5FA009B6DE3 /* BasetenAPIInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF86A67628F5E5FA009B6DE3 /* BasetenAPIInput.swift */; };
+		CF86A67928F5E6F3009B6DE3 /* BasetenAPIModelEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF86A67828F5E6F3009B6DE3 /* BasetenAPIModelEnum.swift */; };
+		CF86A67B28F5EB6D009B6DE3 /* test_basetenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF86A67A28F5EB6D009B6DE3 /* test_basetenView.swift */; };
+		CFE1570328F71A4000502EB1 /* ImageKitAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE1570228F71A4000502EB1 /* ImageKitAPI.swift */; };
+		CFE1570628F747FC00502EB1 /* ImageKitAPIUploadResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE1570528F747FC00502EB1 /* ImageKitAPIUploadResponse.swift */; };
+		CFE1570828F752D000502EB1 /* BasetenAPIGFPGANResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE1570728F752D000502EB1 /* BasetenAPIGFPGANResponse.swift */; };
+		CFE1570A28F7593800502EB1 /* BasetenError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE1570928F7593800502EB1 /* BasetenError.swift */; };
+		CFEA98E328F108A10058F16F /* ReplicateAPIMakePredictionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEA98E228F108A00058F16F /* ReplicateAPIMakePredictionResponse.swift */; };
+		CFEA98E828F1114F0058F16F /* ReplicateAPIBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEA98E728F1114F0058F16F /* ReplicateAPIBuffer.swift */; };
+		CFEA98EB28F114D50058F16F /* CodableExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = CFEA98EA28F114D50058F16F /* CodableExtensions */; };
+		CFEA98ED28F120040058F16F /* test_replicateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEA98EC28F120040058F16F /* test_replicateView.swift */; };
 		EC6032C828EE01D300646F4C /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6032C728EE01D300646F4C /* ImagePickerView.swift */; };
 		EC6032CA28EE028E00646F4C /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6032C928EE028E00646F4C /* ImagePicker.swift */; };
 		EC6032CC28EE031600646F4C /* AlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6032CB28EE031600646F4C /* AlbumView.swift */; };
@@ -24,8 +81,52 @@
 
 /* Begin PBXFileReference section */
 		ADA29A9B28F617EE006863D0 /* TelaResultado.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaResultado.swift; sourceTree = "<group>"; };
+		AD6F91B628EE221300195F12 /* ReplicateAPIPostModelPrediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIPostModelPrediction.swift; sourceTree = "<group>"; };
+		ADBD423528EF4C0200E0C8CF /* UIImage_Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage_Extention.swift; sourceTree = "<group>"; };
 		ADC14C2528ECD5C300065D97 /* ReplicateAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPI.swift; sourceTree = "<group>"; };
 		ADC14C2928ECDF9100065D97 /* ReplicateAPIGetModelResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIGetModelResponse.swift; sourceTree = "<group>"; };
+		CF0FB08B28EF5AE00009C275 /* ColorizeML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorizeML.swift; sourceTree = "<group>"; };
+		CF0FB10428EF69FD0009C275 /* Nilo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Nilo-Bridging-Header.h"; sourceTree = "<group>"; };
+		CF0FB10528EF69FD0009C275 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
+		CF0FB10628EF69FD0009C275 /* ImageColoriser-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ImageColoriser-Bridging-Header.h"; sourceTree = "<group>"; };
+		CF0FB10728EF69FD0009C275 /* UIImage+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Utils.swift"; sourceTree = "<group>"; };
+		CF0FB10828EF69FD0009C275 /* DispatchQueue+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Utils.swift"; sourceTree = "<group>"; };
+		CF0FB10928EF69FD0009C275 /* UIImage+Lab.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIImage+Lab.mm"; sourceTree = "<group>"; };
+		CF0FB10A28EF69FE0009C275 /* UIImage+Lab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Lab.h"; sourceTree = "<group>"; };
+		CF0FB11428EF6AD10009C275 /* cmsnamed.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cmsnamed.c; sourceTree = "<group>"; };
+		CF0FB11528EF6AD10009C275 /* cmsio0.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cmsio0.c; sourceTree = "<group>"; };
+		CF0FB11628EF6AD20009C275 /* cmscam02.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cmscam02.c; sourceTree = "<group>"; };
+		CF0FB11728EF6AD20009C275 /* sRGB_v4_ICC_preference.icc */ = {isa = PBXFileReference; lastKnownFileType = file; path = sRGB_v4_ICC_preference.icc; sourceTree = "<group>"; };
+		CF0FB11828EF6AD20009C275 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		CF0FB11928EF6AD20009C275 /* cmsps2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cmsps2.c; sourceTree = "<group>"; };
+		CF0FB11A28EF6AD20009C275 /* cmswtpnt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cmswtpnt.c; sourceTree = "<group>"; };
+		CF0FB11B28EF6AD20009C275 /* cmshalf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cmshalf.c; sourceTree = "<group>"; };
+		CF0FB11C28EF6AD20009C275 /* cmsgamma.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cmsgamma.c; sourceTree = "<group>"; };
+		CF0FB11D28EF6AD20009C275 /* cmsopt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cmsopt.c; sourceTree = "<group>"; };
+		CF0FB11E28EF6AD20009C275 /* cmsintrp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cmsintrp.c; sourceTree = "<group>"; };
+		CF0FB11F28EF6AD20009C275 /* cmsxform.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cmsxform.c; sourceTree = "<group>"; };
+		CF0FB12028EF6AD20009C275 /* lcms2_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lcms2_internal.h; sourceTree = "<group>"; };
+		CF0FB12128EF6AD20009C275 /* lcms2_plugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lcms2_plugin.h; sourceTree = "<group>"; };
+		CF0FB12228EF6AD20009C275 /* lcms2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lcms2.h; sourceTree = "<group>"; };
+		CF0FB12328EF6AD20009C275 /* cmsio1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cmsio1.c; sourceTree = "<group>"; };
+		CF0FB12428EF6AD20009C275 /* cmsmd5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cmsmd5.c; sourceTree = "<group>"; };
+		CF0FB12528EF6AD30009C275 /* cmsmtrx.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cmsmtrx.c; sourceTree = "<group>"; };
+		CF0FB12628EF6AD30009C275 /* lcms2.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lcms2.def; sourceTree = "<group>"; };
+		CF0FB12728EF6AD30009C275 /* cmspcs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cmspcs.c; sourceTree = "<group>"; };
+		CF0FB12828EF6AD30009C275 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		CF0FB12928EF6AD30009C275 /* cmssm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cmssm.c; sourceTree = "<group>"; };
+		CF0FB12A28EF6AD30009C275 /* cmsalpha.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cmsalpha.c; sourceTree = "<group>"; };
+		CF0FB12B28EF6AD30009C275 /* cmsplugin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cmsplugin.c; sourceTree = "<group>"; };
+		CF0FB12C28EF6AD30009C275 /* cmserr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cmserr.c; sourceTree = "<group>"; };
+		CF0FB12D28EF6AD30009C275 /* cmscgats.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cmscgats.c; sourceTree = "<group>"; };
+		CF0FB12E28EF6AD30009C275 /* cmsvirt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cmsvirt.c; sourceTree = "<group>"; };
+		CF0FB12F28EF6AD30009C275 /* cmstypes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cmstypes.c; sourceTree = "<group>"; };
+		CF0FB13028EF6AD30009C275 /* cmslut.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cmslut.c; sourceTree = "<group>"; };
+		CF0FB13128EF6AD30009C275 /* cmssamp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cmssamp.c; sourceTree = "<group>"; };
+		CF0FB13228EF6AD40009C275 /* sRGB_ICC_v4_Appearance.icc */ = {isa = PBXFileReference; lastKnownFileType = file; path = sRGB_ICC_v4_Appearance.icc; sourceTree = "<group>"; };
+		CF0FB13328EF6AD40009C275 /* cmscnvrt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cmscnvrt.c; sourceTree = "<group>"; };
+		CF0FB13428EF6AD40009C275 /* cmspack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cmspack.c; sourceTree = "<group>"; };
+		CF0FB13528EF6AD40009C275 /* cmsgmt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cmsgmt.c; sourceTree = "<group>"; };
 		CF46D3E928ECD0040052C018 /* Nilo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nilo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF46D3EC28ECD0040052C018 /* NiloApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiloApp.swift; sourceTree = "<group>"; };
 		CF46D3EE28ECD0040052C018 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +134,23 @@
 		CF46D3F328ECD0050052C018 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CF46D3FF28ECD1CC0052C018 /* ContentViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewExtension.swift; sourceTree = "<group>"; };
 		CF46D40128ECD21F0052C018 /* dummyModel.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = dummyModel.md; sourceTree = "<group>"; };
+		CF52E58928F0A8910074326F /* ReplicateAPIModelsEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIModelsEnum.swift; sourceTree = "<group>"; };
+		CF52E58B28F0ACDA0074326F /* ReplicateAPIInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIInput.swift; sourceTree = "<group>"; };
+		CF52E58D28F0B64C0074326F /* ReplicateAPIErro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIErro.swift; sourceTree = "<group>"; };
+		CF52E58F28F0BEB50074326F /* ReplicateAPIPredictionInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIPredictionInfo.swift; sourceTree = "<group>"; };
+		CF77F8D328EFBA2D00C1BBD2 /* coremlColorizer.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = coremlColorizer.mlmodel; path = "../../../../../Projetos Pesoais/colorizeCoreML/coremlColorizer.mlmodel"; sourceTree = "<group>"; };
+		CF77F8D528EFBD9A00C1BBD2 /* test_colorizeML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_colorizeML.swift; sourceTree = "<group>"; };
+		CF86A67328F5E51B009B6DE3 /* BasetenAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasetenAPI.swift; sourceTree = "<group>"; };
+		CF86A67628F5E5FA009B6DE3 /* BasetenAPIInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasetenAPIInput.swift; sourceTree = "<group>"; };
+		CF86A67828F5E6F3009B6DE3 /* BasetenAPIModelEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasetenAPIModelEnum.swift; sourceTree = "<group>"; };
+		CF86A67A28F5EB6D009B6DE3 /* test_basetenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_basetenView.swift; sourceTree = "<group>"; };
+		CFE1570228F71A4000502EB1 /* ImageKitAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageKitAPI.swift; sourceTree = "<group>"; };
+		CFE1570528F747FC00502EB1 /* ImageKitAPIUploadResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageKitAPIUploadResponse.swift; sourceTree = "<group>"; };
+		CFE1570728F752D000502EB1 /* BasetenAPIGFPGANResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasetenAPIGFPGANResponse.swift; sourceTree = "<group>"; };
+		CFE1570928F7593800502EB1 /* BasetenError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasetenError.swift; sourceTree = "<group>"; };
+		CFEA98E228F108A00058F16F /* ReplicateAPIMakePredictionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIMakePredictionResponse.swift; sourceTree = "<group>"; };
+		CFEA98E728F1114F0058F16F /* ReplicateAPIBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIBuffer.swift; sourceTree = "<group>"; };
+		CFEA98EC28F120040058F16F /* test_replicateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_replicateView.swift; sourceTree = "<group>"; };
 		EC6032C728EE01D300646F4C /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 		EC6032C928EE028E00646F4C /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		EC6032CB28EE031600646F4C /* AlbumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumView.swift; sourceTree = "<group>"; };
@@ -45,6 +163,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFEA98EB28F114D50058F16F /* CodableExtensions in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,7 +173,14 @@
 		ADC14C2728ECDF5900065D97 /* ReplicateAPI */ = {
 			isa = PBXGroup;
 			children = (
+				CF52E58928F0A8910074326F /* ReplicateAPIModelsEnum.swift */,
 				ADC14C2928ECDF9100065D97 /* ReplicateAPIGetModelResponse.swift */,
+				AD6F91B628EE221300195F12 /* ReplicateAPIPostModelPrediction.swift */,
+				CF52E58B28F0ACDA0074326F /* ReplicateAPIInput.swift */,
+				CF52E58D28F0B64C0074326F /* ReplicateAPIErro.swift */,
+				CF52E58F28F0BEB50074326F /* ReplicateAPIPredictionInfo.swift */,
+				CFEA98E228F108A00058F16F /* ReplicateAPIMakePredictionResponse.swift */,
+				CFEA98E728F1114F0058F16F /* ReplicateAPIBuffer.swift */,
 			);
 			path = ReplicateAPI;
 			sourceTree = "<group>";
@@ -62,9 +188,78 @@
 		ADC14C2828ECDF7300065D97 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				CFE1570428F747E800502EB1 /* ImageKitAPI */,
+				CF86A67528F5E5AE009B6DE3 /* BasetenAPI */,
 				ADC14C2728ECDF5900065D97 /* ReplicateAPI */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		CF0FB08A28EF56AC0009C275 /* ColorizeML */ = {
+			isa = PBXGroup;
+			children = (
+				CF0FB10F28EF6A050009C275 /* Util */,
+				CF0FB08B28EF5AE00009C275 /* ColorizeML.swift */,
+				CF77F8D328EFBA2D00C1BBD2 /* coremlColorizer.mlmodel */,
+				CF77F8D528EFBD9A00C1BBD2 /* test_colorizeML.swift */,
+			);
+			path = ColorizeML;
+			sourceTree = "<group>";
+		};
+		CF0FB10F28EF6A050009C275 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				CF0FB11328EF6ABB0009C275 /* littlecms */,
+				CF0FB10828EF69FD0009C275 /* DispatchQueue+Utils.swift */,
+				CF0FB10628EF69FD0009C275 /* ImageColoriser-Bridging-Header.h */,
+				CF0FB10A28EF69FE0009C275 /* UIImage+Lab.h */,
+				CF0FB10928EF69FD0009C275 /* UIImage+Lab.mm */,
+				CF0FB10728EF69FD0009C275 /* UIImage+Utils.swift */,
+				CF0FB10528EF69FD0009C275 /* UIViewController+Utils.swift */,
+				CF0FB10428EF69FD0009C275 /* Nilo-Bridging-Header.h */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		CF0FB11328EF6ABB0009C275 /* littlecms */ = {
+			isa = PBXGroup;
+			children = (
+				CF0FB12A28EF6AD30009C275 /* cmsalpha.c */,
+				CF0FB11628EF6AD20009C275 /* cmscam02.c */,
+				CF0FB12D28EF6AD30009C275 /* cmscgats.c */,
+				CF0FB13328EF6AD40009C275 /* cmscnvrt.c */,
+				CF0FB12C28EF6AD30009C275 /* cmserr.c */,
+				CF0FB11C28EF6AD20009C275 /* cmsgamma.c */,
+				CF0FB13528EF6AD40009C275 /* cmsgmt.c */,
+				CF0FB11B28EF6AD20009C275 /* cmshalf.c */,
+				CF0FB11E28EF6AD20009C275 /* cmsintrp.c */,
+				CF0FB11528EF6AD10009C275 /* cmsio0.c */,
+				CF0FB12328EF6AD20009C275 /* cmsio1.c */,
+				CF0FB13028EF6AD30009C275 /* cmslut.c */,
+				CF0FB12428EF6AD20009C275 /* cmsmd5.c */,
+				CF0FB12528EF6AD30009C275 /* cmsmtrx.c */,
+				CF0FB11428EF6AD10009C275 /* cmsnamed.c */,
+				CF0FB11D28EF6AD20009C275 /* cmsopt.c */,
+				CF0FB13428EF6AD40009C275 /* cmspack.c */,
+				CF0FB12728EF6AD30009C275 /* cmspcs.c */,
+				CF0FB12B28EF6AD30009C275 /* cmsplugin.c */,
+				CF0FB11928EF6AD20009C275 /* cmsps2.c */,
+				CF0FB13128EF6AD30009C275 /* cmssamp.c */,
+				CF0FB12928EF6AD30009C275 /* cmssm.c */,
+				CF0FB12F28EF6AD30009C275 /* cmstypes.c */,
+				CF0FB12E28EF6AD30009C275 /* cmsvirt.c */,
+				CF0FB11A28EF6AD20009C275 /* cmswtpnt.c */,
+				CF0FB11F28EF6AD20009C275 /* cmsxform.c */,
+				CF0FB12028EF6AD20009C275 /* lcms2_internal.h */,
+				CF0FB12128EF6AD20009C275 /* lcms2_plugin.h */,
+				CF0FB12628EF6AD30009C275 /* lcms2.def */,
+				CF0FB12228EF6AD20009C275 /* lcms2.h */,
+				CF0FB11828EF6AD20009C275 /* Makefile.am */,
+				CF0FB12828EF6AD30009C275 /* Makefile.in */,
+				CF0FB13228EF6AD40009C275 /* sRGB_ICC_v4_Appearance.icc */,
+				CF0FB11728EF6AD20009C275 /* sRGB_v4_ICC_preference.icc */,
+			);
+			path = littlecms;
 			sourceTree = "<group>";
 		};
 		CF46D3E028ECD0040052C018 = {
@@ -109,6 +304,8 @@
 		CF46D3FA28ECD0FC0052C018 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				CFE1570128F71A3400502EB1 /* ImageKitAPI */,
+				CF86A67228F5E507009B6DE3 /* BasetenAPI */,
 				CF46D3FE28ECD1590052C018 /* ReplicateAPI */,
 			);
 			path = Networking;
@@ -131,6 +328,7 @@
 		CF46D3FD28ECD11D0052C018 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CF0FB08A28EF56AC0009C275 /* ColorizeML */,
 				ADC14C2828ECDF7300065D97 /* API */,
 				CF46D40128ECD21F0052C018 /* dummyModel.md */,
 			);
@@ -141,8 +339,46 @@
 			isa = PBXGroup;
 			children = (
 				ADC14C2528ECD5C300065D97 /* ReplicateAPI.swift */,
+				ADBD423528EF4C0200E0C8CF /* UIImage_Extention.swift */,
+				CFEA98EC28F120040058F16F /* test_replicateView.swift */,
 			);
 			path = ReplicateAPI;
+			sourceTree = "<group>";
+		};
+		CF86A67228F5E507009B6DE3 /* BasetenAPI */ = {
+			isa = PBXGroup;
+			children = (
+				CF86A67328F5E51B009B6DE3 /* BasetenAPI.swift */,
+				CF86A67A28F5EB6D009B6DE3 /* test_basetenView.swift */,
+			);
+			path = BasetenAPI;
+			sourceTree = "<group>";
+		};
+		CF86A67528F5E5AE009B6DE3 /* BasetenAPI */ = {
+			isa = PBXGroup;
+			children = (
+				CF86A67628F5E5FA009B6DE3 /* BasetenAPIInput.swift */,
+				CF86A67828F5E6F3009B6DE3 /* BasetenAPIModelEnum.swift */,
+				CFE1570728F752D000502EB1 /* BasetenAPIGFPGANResponse.swift */,
+				CFE1570928F7593800502EB1 /* BasetenError.swift */,
+			);
+			path = BasetenAPI;
+			sourceTree = "<group>";
+		};
+		CFE1570128F71A3400502EB1 /* ImageKitAPI */ = {
+			isa = PBXGroup;
+			children = (
+				CFE1570228F71A4000502EB1 /* ImageKitAPI.swift */,
+			);
+			path = ImageKitAPI;
+			sourceTree = "<group>";
+		};
+		CFE1570428F747E800502EB1 /* ImageKitAPI */ = {
+			isa = PBXGroup;
+			children = (
+				CFE1570528F747FC00502EB1 /* ImageKitAPIUploadResponse.swift */,
+			);
+			path = ImageKitAPI;
 			sourceTree = "<group>";
 		};
 		EC6032D328EE254500646F4C /* Artefato */ = {
@@ -169,6 +405,7 @@
 			);
 			name = Nilo;
 			packageProductDependencies = (
+				CFEA98EA28F114D50058F16F /* CodableExtensions */,
 			);
 			productName = Nilo;
 			productReference = CF46D3E928ECD0040052C018 /* Nilo.app */;
@@ -186,6 +423,7 @@
 				TargetAttributes = {
 					CF46D3E828ECD0040052C018 = {
 						CreatedOnToolsVersion = 14.0;
+						LastSwiftMigration = 1400;
 					};
 				};
 			};
@@ -199,7 +437,7 @@
 			);
 			mainGroup = CF46D3E028ECD0040052C018;
 			packageReferences = (
-				ADA29A9D28F760F1006863D0 /* XCRemoteSwiftPackageReference "HalfASheet" */,
+				CFEA98E928F114D50058F16F /* XCRemoteSwiftPackageReference "CodableExtensions" */,
 			);
 			productRefGroup = CF46D3EA28ECD0040052C018 /* Products */;
 			projectDirPath = "";
@@ -215,8 +453,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF0FB14728EF6AD40009C275 /* Makefile.in in Resources */,
 				CF46D3F428ECD0050052C018 /* Preview Assets.xcassets in Resources */,
+				CF0FB14528EF6AD40009C275 /* lcms2.def in Resources */,
+				CF0FB15128EF6AD40009C275 /* sRGB_ICC_v4_Appearance.icc in Resources */,
+				CF0FB13A28EF6AD40009C275 /* Makefile.am in Resources */,
 				CF46D3F128ECD0050052C018 /* Assets.xcassets in Resources */,
+				CF0FB13928EF6AD40009C275 /* sRGB_v4_ICC_preference.icc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,17 +470,68 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF86A67428F5E51B009B6DE3 /* BasetenAPI.swift in Sources */,
+				CFEA98E828F1114F0058F16F /* ReplicateAPIBuffer.swift in Sources */,
+				CF0FB15328EF6AD40009C275 /* cmspack.c in Sources */,
+				CF0FB14F28EF6AD40009C275 /* cmslut.c in Sources */,
+				CF0FB14428EF6AD40009C275 /* cmsmtrx.c in Sources */,
+				CF0FB11228EF6A7D0009C275 /* Nilo-Bridging-Header.h in Sources */,
+				CF0FB13F28EF6AD40009C275 /* cmsopt.c in Sources */,
+				CF0FB13D28EF6AD40009C275 /* cmshalf.c in Sources */,
+				CF77F8D628EFBD9A00C1BBD2 /* test_colorizeML.swift in Sources */,
 				ADC14C2628ECD5C300065D97 /* ReplicateAPI.swift in Sources */,
+				ADBD423628EF4C0200E0C8CF /* UIImage_Extention.swift in Sources */,
+				AD6F91B728EE221300195F12 /* ReplicateAPIPostModelPrediction.swift in Sources */,
+				CF86A67B28F5EB6D009B6DE3 /* test_basetenView.swift in Sources */,
+				CF52E58A28F0A8910074326F /* ReplicateAPIModelsEnum.swift in Sources */,
+				CFE1570A28F7593800502EB1 /* BasetenError.swift in Sources */,
+				CF52E58E28F0B64C0074326F /* ReplicateAPIErro.swift in Sources */,
+				CF52E58C28F0ACDA0074326F /* ReplicateAPIInput.swift in Sources */,
+				CFEA98E328F108A10058F16F /* ReplicateAPIMakePredictionResponse.swift in Sources */,
+				CF0FB13E28EF6AD40009C275 /* cmsgamma.c in Sources */,
+				CF0FB15228EF6AD40009C275 /* cmscnvrt.c in Sources */,
+				CF0FB14128EF6AD40009C275 /* cmsxform.c in Sources */,
 				ADA29A9C28F617EE006863D0 /* TelaResultado.swift in Sources */,
 				CF46D40028ECD1CC0052C018 /* ContentViewExtension.swift in Sources */,
+				CFE1570628F747FC00502EB1 /* ImageKitAPIUploadResponse.swift in Sources */,
+				CFE1570328F71A4000502EB1 /* ImageKitAPI.swift in Sources */,
+				CF0FB14228EF6AD40009C275 /* cmsio1.c in Sources */,
+				CF0FB14928EF6AD40009C275 /* cmsalpha.c in Sources */,
+				CF0FB14628EF6AD40009C275 /* cmspcs.c in Sources */,
+				CF0FB14B28EF6AD40009C275 /* cmserr.c in Sources */,
+				CF0FB14328EF6AD40009C275 /* cmsmd5.c in Sources */,
+				CF77F8D428EFBA2D00C1BBD2 /* coremlColorizer.mlmodel in Sources */,
+				CF0FB10B28EF69FE0009C275 /* UIViewController+Utils.swift in Sources */,
+				CF0FB14028EF6AD40009C275 /* cmsintrp.c in Sources */,
+				CF0FB10C28EF69FE0009C275 /* UIImage+Utils.swift in Sources */,
+				CF0FB13828EF6AD40009C275 /* cmscam02.c in Sources */,
 				CF46D3EF28ECD0040052C018 /* ContentView.swift in Sources */,
+				CFE1570828F752D000502EB1 /* BasetenAPIGFPGANResponse.swift in Sources */,
 				EC6032CE28EE063F00646F4C /* CameraView.swift in Sources */,
 				EC6032D228EE252700646F4C /* Cores.swift in Sources */,
 				EC6032CA28EE028E00646F4C /* ImagePicker.swift in Sources */,
+				CFEA98ED28F120040058F16F /* test_replicateView.swift in Sources */,
+				CF86A67728F5E5FA009B6DE3 /* BasetenAPIInput.swift in Sources */,
+				CF52E59028F0BEB50074326F /* ReplicateAPIPredictionInfo.swift in Sources */,
+				CF0FB10D28EF69FE0009C275 /* DispatchQueue+Utils.swift in Sources */,
+				CF0FB14E28EF6AD40009C275 /* cmstypes.c in Sources */,
+				CF0FB13628EF6AD40009C275 /* cmsnamed.c in Sources */,
 				CF46D3ED28ECD0040052C018 /* NiloApp.swift in Sources */,
+				CF86A67928F5E6F3009B6DE3 /* BasetenAPIModelEnum.swift in Sources */,
 				EC6032C828EE01D300646F4C /* ImagePickerView.swift in Sources */,
 				EC6032CC28EE031600646F4C /* AlbumView.swift in Sources */,
+				CF0FB14828EF6AD40009C275 /* cmssm.c in Sources */,
+				CF0FB14C28EF6AD40009C275 /* cmscgats.c in Sources */,
+				CF0FB14D28EF6AD40009C275 /* cmsvirt.c in Sources */,
+				CF0FB13B28EF6AD40009C275 /* cmsps2.c in Sources */,
+				CF0FB14A28EF6AD40009C275 /* cmsplugin.c in Sources */,
+				CF0FB13C28EF6AD40009C275 /* cmswtpnt.c in Sources */,
+				CF0FB10E28EF69FE0009C275 /* UIImage+Lab.mm in Sources */,
+				CF0FB15028EF6AD40009C275 /* cmssamp.c in Sources */,
 				ADC14C2A28ECDF9100065D97 /* ReplicateAPIGetModelResponse.swift in Sources */,
+				CF0FB08C28EF5AE00009C275 /* ColorizeML.swift in Sources */,
+				CF0FB13728EF6AD40009C275 /* cmsio0.c in Sources */,
+				CF0FB15428EF6AD40009C275 /* cmsgmt.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +657,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Nilo/Preview Content\"";
@@ -380,9 +675,17 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Nilo2;
+				OTHER_CFLAGS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-std=c++11",
+					"-Wno-deprecated-register",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Nilo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Nilo/Model/ColorizeML/Util/Nilo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -393,6 +696,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Nilo/Preview Content\"";
@@ -410,9 +714,16 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Nilo2;
+				OTHER_CFLAGS = "";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-std=c++11",
+					"-Wno-deprecated-register",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Nilo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Nilo/Model/ColorizeML/Util/Nilo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -442,15 +753,23 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		ADA29A9D28F760F1006863D0 /* XCRemoteSwiftPackageReference "HalfASheet" */ = {
+		CFEA98E928F114D50058F16F /* XCRemoteSwiftPackageReference "CodableExtensions" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/franklynw/HalfASheet.git";
+			repositoryURL = "https://github.com/rvenieris/CodableExtensions";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CFEA98EA28F114D50058F16F /* CodableExtensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CFEA98E928F114D50058F16F /* XCRemoteSwiftPackageReference "CodableExtensions" */;
+			productName = CodableExtensions;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CF46D3E128ECD0040052C018 /* Project object */;
 }
