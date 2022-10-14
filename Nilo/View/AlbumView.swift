@@ -169,12 +169,10 @@ struct AlbumView: View {
                                     .frame(width: 197, height: 60)
                             )
                             .shadow(color: Color.letratelarestauracao.opacity(0.25), radius: 15, y: 8)
-                            
-                            
                         }
-                     
                 }
             }
+            .navigationBarBackButtonHidden(true) 
         }
         
         .fullScreenCover(item: $imagePickingState) { state in
