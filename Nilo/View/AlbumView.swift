@@ -194,9 +194,9 @@ struct AlbumView_Previews: PreviewProvider {
         AlbumView()
     }
 }
-func loadImage() {
-    guard let inputImage = inputImage else { return }
-    image = Image(uiImage: inputImage)
-}
+//func loadImage() {
+//    guard let inputImage = inputImage else { return }
+//    image = Image(uiImage: inputImage)
+//}
 
 
