@@ -14,6 +14,9 @@ struct PickedPhoto: Equatable {
 }
 
 struct AlbumView: View {
+    @State private var showingImagePicker = false
+    @State private var inputImage: UIImage?
+    
     @State var data = [(String, UIImage)]()
     @State var options = ["2x", "3x", "5x", "8x"]
     @State var teste = ["Melhor qualidade ", "Mais detalhes e personalidade"]
@@ -34,21 +37,20 @@ struct AlbumView: View {
     
     var body: some View {
         ScrollView {
+            
             ZStack {
                 
                 VStack{
                     Text("")
                         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
-                    
-                    
+
                     if data.isEmpty {
-                        
-                        
                             VStack {
                                 //Tirar Foto foto
                                 Group {
                                     Button {
                                         imagePickingState = .camera
+                                        showingImagePicker = true
                                         
                                     } label: {
                                         ZStack{
@@ -65,7 +67,6 @@ struct AlbumView: View {
                                         }
                                         
                                     }
-                                    //.padding(.top,200)
                                     .padding(.horizontal, 22)
                                     .background(
                                         RoundedRectangle(cornerRadius: 18).foregroundColor(.white)
@@ -76,7 +77,7 @@ struct AlbumView: View {
                                     .padding(.bottom, 37)
                                     .padding(.top,50)
                                 }
-                                //Iportar foto
+                                //Importar foto
                                 Button {
                                     imagePickingState = .picker
                                     
@@ -94,10 +95,8 @@ struct AlbumView: View {
                                             .position(x: 255, y: 40)
                                     }
                                 }
-                                
-                                
+                               
                                 .padding(12)
-                                //.padding(.horizontal, 22)
                                 .background(
                                     
                                     RoundedRectangle(cornerRadius: 18).foregroundColor(.white)
@@ -109,9 +108,9 @@ struct AlbumView: View {
                                 
                             }
                             
-                            //Modelo de Melhoria
-                            Picker("Select", selection: $selectedOptionPickerMelhorias) {
-                                
+//                            //Modelo de Melhoria
+                        Picker("Select", selection: $selectedOptionPickerMelhorias) {
+
                                 HStack {
                                     Label("Modelo de Melhoria", systemImage: "")
                                     Image(systemName: "chevron.down")
@@ -120,10 +119,10 @@ struct AlbumView: View {
                                         .foregroundColor(.letratelarestauracao)
                                 }
                                 ForEach(options, id: \.self) {
-                                    
+
                                     Text($0)
                                 }
-                                
+
                             }
                             .tint(.melhoriaQualidade)
                             .pickerStyle(.menu)
@@ -133,7 +132,7 @@ struct AlbumView: View {
                             )
                             .shadow(color: Color.letratelarestauracao.opacity(0.25), radius:15 , y: 8)
                             .padding(.bottom, 20)
-                            
+
                             //Qualidade
                             Picker("Select", selection: $selectedOptionPickerQualidade) {
                                 ForEach(teste, id: \.self) {
@@ -180,6 +179,7 @@ struct AlbumView: View {
                 ImagePickerView(selectedImage: $pickedPhoto,
                                 camera: true)
                 .ignoresSafeArea()
+               
             } else if state == .picker {
                 ImagePicker(pickedPhoto: $pickedPhoto)
                     .ignoresSafeArea()
@@ -194,5 +194,9 @@ struct AlbumView_Previews: PreviewProvider {
         AlbumView()
     }
 }
+//func loadImage() {
+//    guard let inputImage = inputImage else { return }
+//    image = Image(uiImage: inputImage)
+//}
 
 
