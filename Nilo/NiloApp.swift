@@ -12,7 +12,7 @@ struct NiloApp: App {
     var body: some Scene {
         WindowGroup {
             //test_replicateView()
-            RestauracaoView()
+            MenuView()
             //TelaResultado()
         }
     }
