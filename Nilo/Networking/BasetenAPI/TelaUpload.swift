@@ -1,23 +1,17 @@
 //
-//  test_basetenView.swift
+//  TelaUpload.swift
 //  Nilo
 //
-//  Created by Joao Pedro Monteiro Maia on 11/10/22.
+//  Created by Stella Maranhao on 14/10/22.
 //
 
-import SwiftUI
 
-//
-//  test_replicateView.swift
-//  Nilo
-//
-//  Created by Joao Pedro Monteiro Maia on 08/10/22.
 //
 
 import SwiftUI
 import PhotosUI
 
-struct test_basetenView: View {
+struct TelaUploadView: View {
     @State private var selectedItem: PhotosPickerItem? = nil
     @State private var selectedImageData: Data? = nil
     @State var imageShown:UIImage?
