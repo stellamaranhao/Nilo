@@ -25,48 +25,71 @@ struct RestauracaoView: View {
     
     var body: some View {
         NavigationView{
-        VStack{
-            //            Text(message).font(.largeTitle)
-            Text(progressMsg).font(.subheadline)
             
-            if let imageShown = imageShown{
-                HStack{
-                    Image(uiImage: imageShown)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 250, height: 250)
+            
+            VStack{
+                //            Text(message).font(.largeTitle)
+                // Text(progressMsg).font(.subheadline)
+                
+                if let imageShown = imageShown{
+ 
+                        HStack{
+                            Image(uiImage: imageShown)
+                                .resizable()
+                                .scaledToFit()
+                                .scaledToFill()
+                             .frame(width: 250, height: 250)
+                            
+                        }
                     
                 }
-            }
-            if !importtake {
-                takePhotoButtom
-                importPhotoButtom
-            }
-
-            
-            escolherQualidade
-            escolherMelhoria
-            
-            NavigationLink(destination: TelaResultado(imageShown: $imageShown), isActive: $isShowingDetailView) { EmptyView() }
-            
-            Button(action: {
+                if !importtake {
+                    takePhotoButtom
+                    importPhotoButtom
+                }
                 
-                linkApiRestauracao()
-                isShowingDetailView = true
-            }){
-                Text("Melhorar Foto")
-                .padding()
-                .foregroundColor(.letratelarestauracao)
-                .background(.white)
-                .cornerRadius(21)
-            }
+                
+                //            escolherQualidade
+                //            escolherMelhoria
+                
+                NavigationLink(destination: TelaResultado(imageShown: $imageShown), isActive: $isShowingDetailView) { EmptyView() }
+                Button(action: {
+                    
+                    linkApiRestauracao()
+                    isShowingDetailView = true
+                }){
+                    ZStack{
+                    RoundedRectangle(cornerRadius: 18).foregroundColor(.white)
+                        .frame(width: 200, height: 100)
+                        .shadow(color: Color.letratelarestauracao.opacity(0.25), radius: 15, y: 8)
+                    Text("Melhorar Foto")
+                        .padding()
+                        .foregroundColor(.letratelarestauracao)
+
+                    
+                }
+
+                }
             }
         }
         .navigationBarBackButtonHidden(true)
     }
     
     var takePhotoButtom: some View {
+      //  HStack {
         ZStack{
+           
+            NavigationLink(destination: MenuView()) {
+                Image("setaMenu").resizable()
+                
+                
+            }
+            .frame(width: 100,height: 100)
+            .scaledToFit()
+            //.offset(x: -0, y: 100)
+            .position(x: 50, y: 20)
+           
+          //  ZStack{
             Image("tirarFoto")//rever
                 .position(x: 325, y: 40)
                 .background(
@@ -86,19 +109,23 @@ struct RestauracaoView: View {
                         .sheet(isPresented: $showSheet) {
                         ImagePicker(sourceType: .camera, selectedImage: self.$image)
                                                     }
-                .onChange(of: image) { newItem in
-                    imageShown = newItem
-//                        Task {
-                        // Retrieve selected asset in the form of Data
-//                            if let data = try? await newItem?.loadTransferable(type: Data.self) {
-//                                selectedImageData = data
-//                                imageShown = UIImage(data: selectedImageData!)
-//                            }
-//                        }
-                }
-             
+                        .onChange(of: image) { newItem in
+                            imageShown = newItem
+                            //                        Task {
+                            // Retrieve selected asset in the form of Data
+                            //                            if let data = try? await newItem?.loadTransferable(type: Data.self) {
+                            //                                selectedImageData = data
+                            //                                imageShown = UIImage(data: selectedImageData!)
+                            //                            }
+                            
+                        }//                        }
+                     //   }
+           //             }
+           
         }
+
     }
+    
     var importPhotoButtom: some View{
         
         
@@ -132,46 +159,46 @@ struct RestauracaoView: View {
             
         }
     }
-    var escolherQualidade: some View{
-        Picker("Select", selection: $selectedOptionPickerQualidade) {
-            ForEach(teste, id: \.self) {
-                Text($0)
-            }
-            .navigationTitle("Modelo de Melhoria")
-        }
-        .tint(.melhoriaQualidade)
-        .pickerStyle(.menu)
-        .background(
-            RoundedRectangle(cornerRadius: 8).foregroundColor(.white)
-                .frame(width: 360, height: 45)
-        )
-        .shadow(color: Color.letratelarestauracao.opacity(0.25), radius: 15, y: 8)
-        .padding(.bottom, 32)
-    }
-    var escolherMelhoria: some View{
-        Picker("Select", selection: $selectedOptionPickerMelhorias) {
-            HStack {
-                Text("Modelo de Melhoria")
-                Image(systemName: "chevron.down")
-                    .symbolRenderingMode(.monochrome)
-                    .tint(.letratelarestauracao)
-                    .foregroundColor(.letratelarestauracao)
-            }
-            ForEach(options, id: \.self) {
-
-                Text($0)
-            }
-
-        }
-        .tint(.melhoriaQualidade)
-        .pickerStyle(.menu)
-        .background(
-            RoundedRectangle(cornerRadius: 8).foregroundColor(.white)
-                .frame(width: 360, height: 45)
-        )
-        .shadow(color: Color.letratelarestauracao.opacity(0.25), radius:15 , y: 8)
-        .padding(.bottom, 20)
-    }
+//    var escolherQualidade: some View{
+//        Picker("Select", selection: $selectedOptionPickerQualidade) {
+//            ForEach(teste, id: \.self) {
+//                Text($0)
+//            }
+//            .navigationTitle("Modelo de Melhoria")
+//        }
+//        .tint(.melhoriaQualidade)
+//        .pickerStyle(.menu)
+//        .background(
+//            RoundedRectangle(cornerRadius: 8).foregroundColor(.white)
+//                .frame(width: 360, height: 45)
+//        )
+//        .shadow(color: Color.letratelarestauracao.opacity(0.25), radius: 15, y: 8)
+//        .padding(.bottom, 32)
+//    }
+//    var escolherMelhoria: some View{
+//        Picker("Select", selection: $selectedOptionPickerMelhorias) {
+//            HStack {
+//                Text("Modelo de Melhoria")
+//                Image(systemName: "chevron.down")
+//                    .symbolRenderingMode(.monochrome)
+//                    .tint(.letratelarestauracao)
+//                    .foregroundColor(.letratelarestauracao)
+//            }
+//            ForEach(options, id: \.self) {
+//
+//                Text($0)
+//            }
+//
+//        }
+//        .tint(.melhoriaQualidade)
+//        .pickerStyle(.menu)
+//        .background(
+//            RoundedRectangle(cornerRadius: 8).foregroundColor(.white)
+//                .frame(width: 360, height: 45)
+//        )
+//        .shadow(color: Color.letratelarestauracao.opacity(0.25), radius:15 , y: 8)
+//        .padding(.bottom, 20)
+//    }
     func linkApiRestauracao (){
         if let image = imageShown{
             api.imagePredictionPipeline(fromImage: image, progressUpdate:{progress in
@@ -199,3 +226,8 @@ struct RestauracaoView: View {
 
 
 
+struct RestauracaoView_Previews: PreviewProvider {
+    static var previews: some View {
+        RestauracaoView()
+    }
+}

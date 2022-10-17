@@ -12,6 +12,8 @@ struct TelaResultado: View {
     @State private var image = UIImage()
     @State private var showSheet = false
     @State var progressMsg:String = "progress: not started"
+    @State var message:String = "GFP-GAN"
+   
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     
@@ -60,6 +62,7 @@ struct TelaResultado: View {
                     VStack{
                         HStack{
                             VStack (spacing: 5){
+                                Text(progressMsg).font(.subheadline)
                                 Text("Memória Resgatada!")
                                 // .offset(x:0,y:350)
                                     .foregroundColor(Color.corTexto)
