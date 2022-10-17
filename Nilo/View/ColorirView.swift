@@ -30,12 +30,11 @@ struct ColorirView: View {
     @State var message:String = "GFP-GAN"
     @State var progressMsg:String = "progress: not started"
     let apicolor = ColorizeML()
-    
     var body: some View {
         NavigationView{
         VStack{
             //            Text(message).font(.largeTitle)
-            //Text(progressMsg).font(.subheadline)
+            Text(progressMsg).font(.subheadline)
             
             if let imageShown = imageShown{
                 HStack{
@@ -47,9 +46,11 @@ struct ColorirView: View {
                 }
             }
             if !importtake {
-               
+                takePhotoButtom
                 importPhotoButtom
             }
+
+
             
             NavigationLink(destination: TelaResultado(imageShown: $imageShown), isActive: $isShowingDetailView) { EmptyView() }
             
@@ -69,13 +70,46 @@ struct ColorirView: View {
         .navigationBarBackButtonHidden(true)
     }
     
-    
+    var takePhotoButtom: some View {
+        ZStack{
+            Image("tirarFoto")//rever
+                .position(x: 325, y: 40)
+                .background(
+                    RoundedRectangle(cornerRadius: 18).foregroundColor(.white)
+                        .frame(width: 275, height: 200)
+                        .shadow(color: Color.letratelarestauracao.opacity(0.25), radius: 15, y: 8))
+           
+             
+                    Text("Tirar uma Foto")
+                        .foregroundColor(.letratelarestauracao)
+                        .fontWeight(.bold)
+                        .font(.title2)
+                        .font(.custom("Poppins-SemiBold", size: 20))
+                        .onTapGesture {
+                        showSheet = true
+                        }
+                        .sheet(isPresented: $showSheet) {
+                        ImagePicker(sourceType: .camera, selectedImage: self.$image)
+                                                    }
+                .onChange(of: image) { newItem in
+                    imageShown = newItem
+//                        Task {
+                        // Retrieve selected asset in the form of Data
+//                            if let data = try? await newItem?.loadTransferable(type: Data.self) {
+//                                selectedImageData = data
+//                                imageShown = UIImage(data: selectedImageData!)
+//                            }
+//                        }
+                }
+             
+        }
+    }
     var importPhotoButtom: some View{
         
         
         ZStack{
             Image("importarFoto")//rever
-                .position(x: 325, y: 200)
+                .position(x: 325, y: 40)
                 .background(
                     RoundedRectangle(cornerRadius: 18).foregroundColor(.white)
                         .frame(width: 275, height: 200)
@@ -103,7 +137,7 @@ struct ColorirView: View {
             
         }
     }
-   
+    
     func linkApiRestauracao (){
         if let image = imageShown{
             apicolor.colorize(image: image)
@@ -128,3 +162,8 @@ struct ColorirView: View {
 
 
 
+struct ColorirView_Previews: PreviewProvider {
+    static var previews: some View {
+        ColorirView()
+    }
+}
