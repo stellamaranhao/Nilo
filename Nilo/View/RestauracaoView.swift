@@ -72,22 +72,24 @@ struct RestauracaoView: View {
                 }
             }
         }
-        .navigationBarBackButtonHidden(true)
+//        .navigationBarBackButtonHidden(true)
     }
-    
+    @Environment(\.dismiss) var dismiss
     var takePhotoButtom: some View {
       //  HStack {
         ZStack{
            
-            NavigationLink(destination: MenuView()) {
-                Image("setaMenu").resizable()
-                
-                
-            }
-            .frame(width: 100,height: 100)
-            .scaledToFit()
-            //.offset(x: -0, y: 100)
-            .position(x: 50, y: 20)
+//            Button {
+//                dismiss()
+//            } label: {
+//                Image("setaMenu").resizable()
+//
+//
+//            }
+//            .frame(width: 100,height: 100)
+//            .scaledToFit()
+//            //.offset(x: -0, y: 100)
+//            .position(x: 50, y: 20)
            
           //  ZStack{
             Image("tirarFoto")//rever

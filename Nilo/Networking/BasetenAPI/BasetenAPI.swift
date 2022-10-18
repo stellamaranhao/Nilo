@@ -21,7 +21,7 @@ final class BasetenAPI{
     }
     
     init(){
-        self.authToken = ProcessInfo.processInfo.environment["BASETEN_KEY"]!
+        self.authToken = ProcessInfo.processInfo.environment["BASETEN_KEY"] ?? "vjbG7ScV.Ej9addGGST88VD7vhGO2fbCW7sry5n1u"
     }
     
     
@@ -42,7 +42,7 @@ final class BasetenAPI{
                     switch result {
                     case .success(let success):
                         completionCallback(.success(success))
-                    case .failure(let failure):
+                    case .failure(_):
                         completionCallback(.failure(.pipelineError(response: "")))
                     }
                 }
