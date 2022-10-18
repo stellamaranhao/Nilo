@@ -330,16 +330,13 @@
 		CF46D3FB28ECD1060052C018 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				CFD0229D28FF3A3C00DBA89F /* Colorir */,
 				CFD0229928FF33CE00DBA89F /* appViewsEnum.swift */,
+				CFD022A228FF42F700DBA89F /* ResultadoView.swift */,
+				CFD022A628FF4AF700DBA89F /* Melhorar */,
+				CFD0229D28FF3A3C00DBA89F /* Colorir */,
 				CFD0229428FF338C00DBA89F /* Menu */,
 				ADA531BD28FDD95C009053E0 /* MenuView.OLDswift */,
-				ADA29A9B28F617EE006863D0 /* TelaResultadoOLD.swift */,
-				CF86A67A28F5EB6D009B6DE3 /* RestauracaoViewOLD.swift */,
-				ECF4ED5528F9A0B00018965B /* ImagePicker.swift */,
-				EC6032CD28EE063F00646F4C /* CameraView.swift */,
 				EC6032D128EE252700646F4C /* Cores.swift */,
-				CFD022A228FF42F700DBA89F /* ResultadoView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -402,6 +399,17 @@
 				CFD022A028FF3D6700DBA89F /* ColorirViewImportPhoto.swift */,
 			);
 			path = Colorir;
+			sourceTree = "<group>";
+		};
+		CFD022A628FF4AF700DBA89F /* Melhorar */ = {
+			isa = PBXGroup;
+			children = (
+				ADA29A9B28F617EE006863D0 /* TelaResultadoOLD.swift */,
+				CF86A67A28F5EB6D009B6DE3 /* RestauracaoViewOLD.swift */,
+				ECF4ED5528F9A0B00018965B /* ImagePicker.swift */,
+				EC6032CD28EE063F00646F4C /* CameraView.swift */,
+			);
+			path = Melhorar;
 			sourceTree = "<group>";
 		};
 		CFE1570128F71A3400502EB1 /* ImageKitAPI */ = {
