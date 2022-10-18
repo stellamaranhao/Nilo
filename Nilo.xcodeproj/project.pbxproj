@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		AD6F91B728EE221300195F12 /* ReplicateAPIPostModelPrediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6F91B628EE221300195F12 /* ReplicateAPIPostModelPrediction.swift */; };
 		ADA29A9C28F617EE006863D0 /* TelaResultado.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA29A9B28F617EE006863D0 /* TelaResultado.swift */; };
-		ADA531BE28FDD95C009053E0 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA531BD28FDD95C009053E0 /* MenuView.swift */; };
+		ADA531BE28FDD95C009053E0 /* MenuView.OLDswift in Sources */ = {isa = PBXBuildFile; fileRef = ADA531BD28FDD95C009053E0 /* MenuView.OLDswift */; };
 		ADA531C428FDE002009053E0 /* ColorirView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA531C328FDE002009053E0 /* ColorirView.swift */; };
 		ADBD423628EF4C0200E0C8CF /* UIImage_Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD423528EF4C0200E0C8CF /* UIImage_Extention.swift */; };
 		ADC14C2628ECD5C300065D97 /* ReplicateAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC14C2528ECD5C300065D97 /* ReplicateAPI.swift */; };
@@ -64,7 +64,12 @@
 		CF86A67428F5E51B009B6DE3 /* BasetenAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF86A67328F5E51B009B6DE3 /* BasetenAPI.swift */; };
 		CF86A67728F5E5FA009B6DE3 /* BasetenAPIInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF86A67628F5E5FA009B6DE3 /* BasetenAPIInput.swift */; };
 		CF86A67928F5E6F3009B6DE3 /* BasetenAPIModelEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF86A67828F5E6F3009B6DE3 /* BasetenAPIModelEnum.swift */; };
-		CF86A67B28F5EB6D009B6DE3 /* RestauracaoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF86A67A28F5EB6D009B6DE3 /* RestauracaoView.swift */; };
+		CF86A67B28F5EB6D009B6DE3 /* RestauracaoViewOLD.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF86A67A28F5EB6D009B6DE3 /* RestauracaoViewOLD.swift */; };
+		CFD0229628FF33AB00DBA89F /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD0229528FF33AB00DBA89F /* MenuView.swift */; };
+		CFD0229A28FF33CE00DBA89F /* appViewsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD0229928FF33CE00DBA89F /* appViewsEnum.swift */; };
+		CFD0229C28FF35B100DBA89F /* ColorirCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD0229B28FF35B100DBA89F /* ColorirCardView.swift */; };
+		CFD0229F28FF3D1300DBA89F /* ColorirViewTakePhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD0229E28FF3D1300DBA89F /* ColorirViewTakePhoto.swift */; };
+		CFD022A128FF3D6700DBA89F /* ColorirViewImportPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD022A028FF3D6700DBA89F /* ColorirViewImportPhoto.swift */; };
 		CFE1570328F71A4000502EB1 /* ImageKitAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE1570228F71A4000502EB1 /* ImageKitAPI.swift */; };
 		CFE1570628F747FC00502EB1 /* ImageKitAPIUploadResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE1570528F747FC00502EB1 /* ImageKitAPIUploadResponse.swift */; };
 		CFE1570828F752D000502EB1 /* BasetenAPIGFPGANResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE1570728F752D000502EB1 /* BasetenAPIGFPGANResponse.swift */; };
@@ -78,13 +83,12 @@
 		ECF4ED5428F9919B0018965B /* TelaUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF4ED5328F9919B0018965B /* TelaUpload.swift */; };
 		ECF4ED5628F9A0B00018965B /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF4ED5528F9A0B00018965B /* ImagePicker.swift */; };
 		ECF4ED5828FDD2480018965B /* coremlColorizer.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = ECF4ED5728FDD2480018965B /* coremlColorizer.mlmodel */; };
-		ECF4ED5A28FDE5970018965B /* coremlColorizer.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = ECF4ED5928FDE5970018965B /* coremlColorizer.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AD6F91B628EE221300195F12 /* ReplicateAPIPostModelPrediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIPostModelPrediction.swift; sourceTree = "<group>"; };
 		ADA29A9B28F617EE006863D0 /* TelaResultado.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaResultado.swift; sourceTree = "<group>"; };
-		ADA531BD28FDD95C009053E0 /* MenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		ADA531BD28FDD95C009053E0 /* MenuView.OLDswift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MenuView.OLDswift; sourceTree = "<group>"; };
 		ADA531C328FDE002009053E0 /* ColorirView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorirView.swift; sourceTree = "<group>"; };
 		ADBD423528EF4C0200E0C8CF /* UIImage_Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage_Extention.swift; sourceTree = "<group>"; };
 		ADC14C2528ECD5C300065D97 /* ReplicateAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPI.swift; sourceTree = "<group>"; };
@@ -146,7 +150,12 @@
 		CF86A67328F5E51B009B6DE3 /* BasetenAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasetenAPI.swift; sourceTree = "<group>"; };
 		CF86A67628F5E5FA009B6DE3 /* BasetenAPIInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasetenAPIInput.swift; sourceTree = "<group>"; };
 		CF86A67828F5E6F3009B6DE3 /* BasetenAPIModelEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasetenAPIModelEnum.swift; sourceTree = "<group>"; };
-		CF86A67A28F5EB6D009B6DE3 /* RestauracaoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestauracaoView.swift; sourceTree = "<group>"; };
+		CF86A67A28F5EB6D009B6DE3 /* RestauracaoViewOLD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestauracaoViewOLD.swift; sourceTree = "<group>"; };
+		CFD0229528FF33AB00DBA89F /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		CFD0229928FF33CE00DBA89F /* appViewsEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appViewsEnum.swift; sourceTree = "<group>"; };
+		CFD0229B28FF35B100DBA89F /* ColorirCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorirCardView.swift; sourceTree = "<group>"; };
+		CFD0229E28FF3D1300DBA89F /* ColorirViewTakePhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorirViewTakePhoto.swift; sourceTree = "<group>"; };
+		CFD022A028FF3D6700DBA89F /* ColorirViewImportPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorirViewImportPhoto.swift; sourceTree = "<group>"; };
 		CFE1570228F71A4000502EB1 /* ImageKitAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageKitAPI.swift; sourceTree = "<group>"; };
 		CFE1570528F747FC00502EB1 /* ImageKitAPIUploadResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageKitAPIUploadResponse.swift; sourceTree = "<group>"; };
 		CFE1570728F752D000502EB1 /* BasetenAPIGFPGANResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasetenAPIGFPGANResponse.swift; sourceTree = "<group>"; };
@@ -159,7 +168,6 @@
 		ECF4ED5328F9919B0018965B /* TelaUpload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaUpload.swift; sourceTree = "<group>"; };
 		ECF4ED5528F9A0B00018965B /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		ECF4ED5728FDD2480018965B /* coremlColorizer.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = coremlColorizer.mlmodel; path = Nilo/Model/ColorizeML/coremlColorizer.mlmodel; sourceTree = SOURCE_ROOT; };
-		ECF4ED5928FDE5970018965B /* coremlColorizer.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = coremlColorizer.mlmodel; path = Nilo/Model/ColorizeML/coremlColorizer.mlmodel; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,7 +221,6 @@
 			isa = PBXGroup;
 			children = (
 				ECF4ED5728FDD2480018965B /* coremlColorizer.mlmodel */,
-				ECF4ED5928FDE5970018965B /* coremlColorizer.mlmodel */,
 				CF0FB11328EF6ABB0009C275 /* littlecms */,
 				CF0FB10828EF69FD0009C275 /* DispatchQueue+Utils.swift */,
 				CF0FB10628EF69FD0009C275 /* ImageColoriser-Bridging-Header.h */,
@@ -319,12 +326,14 @@
 		CF46D3FB28ECD1060052C018 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				ADA531BD28FDD95C009053E0 /* MenuView.swift */,
+				CFD0229D28FF3A3C00DBA89F /* Colorir */,
+				CFD0229928FF33CE00DBA89F /* appViewsEnum.swift */,
+				CFD0229428FF338C00DBA89F /* Menu */,
+				ADA531BD28FDD95C009053E0 /* MenuView.OLDswift */,
 				ADA29A9B28F617EE006863D0 /* TelaResultado.swift */,
-				CF86A67A28F5EB6D009B6DE3 /* RestauracaoView.swift */,
+				CF86A67A28F5EB6D009B6DE3 /* RestauracaoViewOLD.swift */,
 				ECF4ED5528F9A0B00018965B /* ImagePicker.swift */,
 				EC6032CD28EE063F00646F4C /* CameraView.swift */,
-				ADA531C328FDE002009053E0 /* ColorirView.swift */,
 				EC6032D328EE254500646F4C /* Artefato */,
 				EC6032D128EE252700646F4C /* Cores.swift */,
 			);
@@ -369,6 +378,25 @@
 				CFE1570928F7593800502EB1 /* BasetenError.swift */,
 			);
 			path = BasetenAPI;
+			sourceTree = "<group>";
+		};
+		CFD0229428FF338C00DBA89F /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				CFD0229528FF33AB00DBA89F /* MenuView.swift */,
+				CFD0229B28FF35B100DBA89F /* ColorirCardView.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		CFD0229D28FF3A3C00DBA89F /* Colorir */ = {
+			isa = PBXGroup;
+			children = (
+				ADA531C328FDE002009053E0 /* ColorirView.swift */,
+				CFD0229E28FF3D1300DBA89F /* ColorirViewTakePhoto.swift */,
+				CFD022A028FF3D6700DBA89F /* ColorirViewImportPhoto.swift */,
+			);
+			path = Colorir;
 			sourceTree = "<group>";
 		};
 		CFE1570128F71A3400502EB1 /* ImageKitAPI */ = {
@@ -486,9 +514,10 @@
 				CF0FB13D28EF6AD40009C275 /* cmshalf.c in Sources */,
 				CF77F8D628EFBD9A00C1BBD2 /* test_colorizeML.swift in Sources */,
 				ADC14C2628ECD5C300065D97 /* ReplicateAPI.swift in Sources */,
+				CFD0229628FF33AB00DBA89F /* MenuView.swift in Sources */,
 				ADBD423628EF4C0200E0C8CF /* UIImage_Extention.swift in Sources */,
 				AD6F91B728EE221300195F12 /* ReplicateAPIPostModelPrediction.swift in Sources */,
-				CF86A67B28F5EB6D009B6DE3 /* RestauracaoView.swift in Sources */,
+				CF86A67B28F5EB6D009B6DE3 /* RestauracaoViewOLD.swift in Sources */,
 				CF52E58A28F0A8910074326F /* ReplicateAPIModelsEnum.swift in Sources */,
 				CFE1570A28F7593800502EB1 /* BasetenError.swift in Sources */,
 				CF52E58E28F0B64C0074326F /* ReplicateAPIErro.swift in Sources */,
@@ -500,18 +529,19 @@
 				CF0FB14128EF6AD40009C275 /* cmsxform.c in Sources */,
 				ADBD423628EF4C0200E0C8CF /* UIImage_Extention.swift in Sources */,
 				AD6F91B728EE221300195F12 /* ReplicateAPIPostModelPrediction.swift in Sources */,
-				CF86A67B28F5EB6D009B6DE3 /* RestauracaoView.swift in Sources */,
+				CF86A67B28F5EB6D009B6DE3 /* RestauracaoViewOLD.swift in Sources */,
 				CF52E58A28F0A8910074326F /* ReplicateAPIModelsEnum.swift in Sources */,
+				CFD0229F28FF3D1300DBA89F /* ColorirViewTakePhoto.swift in Sources */,
 				CFE1570A28F7593800502EB1 /* BasetenError.swift in Sources */,
 				CF52E58E28F0B64C0074326F /* ReplicateAPIErro.swift in Sources */,
 				CF52E58C28F0ACDA0074326F /* ReplicateAPIInput.swift in Sources */,
 				CFEA98E328F108A10058F16F /* ReplicateAPIMakePredictionResponse.swift in Sources */,
-				ECF4ED5A28FDE5970018965B /* coremlColorizer.mlmodel in Sources */,
 				CF0FB13E28EF6AD40009C275 /* cmsgamma.c in Sources */,
 				ADA531C428FDE002009053E0 /* ColorirView.swift in Sources */,
 				CF0FB15228EF6AD40009C275 /* cmscnvrt.c in Sources */,
 				CF0FB14128EF6AD40009C275 /* cmsxform.c in Sources */,
 				ADA29A9C28F617EE006863D0 /* TelaResultado.swift in Sources */,
+				CFD022A128FF3D6700DBA89F /* ColorirViewImportPhoto.swift in Sources */,
 				CF46D40028ECD1CC0052C018 /* ContentViewExtension.swift in Sources */,
 				CFE1570628F747FC00502EB1 /* ImageKitAPIUploadResponse.swift in Sources */,
 				CFE1570328F71A4000502EB1 /* ImageKitAPI.swift in Sources */,
@@ -528,7 +558,8 @@
 				CFE1570828F752D000502EB1 /* BasetenAPIGFPGANResponse.swift in Sources */,
 				EC6032CE28EE063F00646F4C /* CameraView.swift in Sources */,
 				EC6032D228EE252700646F4C /* Cores.swift in Sources */,
-				ADA531BE28FDD95C009053E0 /* MenuView.swift in Sources */,
+				ADA531BE28FDD95C009053E0 /* MenuView.OLDswift in Sources */,
+				CFD0229A28FF33CE00DBA89F /* appViewsEnum.swift in Sources */,
 				CFEA98ED28F120040058F16F /* test_replicateView.swift in Sources */,
 				CF86A67728F5E5FA009B6DE3 /* BasetenAPIInput.swift in Sources */,
 				CF52E59028F0BEB50074326F /* ReplicateAPIPredictionInfo.swift in Sources */,
@@ -536,6 +567,7 @@
 				CF0FB14E28EF6AD40009C275 /* cmstypes.c in Sources */,
 				CF0FB13628EF6AD40009C275 /* cmsnamed.c in Sources */,
 				CF46D3ED28ECD0040052C018 /* NiloApp.swift in Sources */,
+				CFD0229C28FF35B100DBA89F /* ColorirCardView.swift in Sources */,
 				CF86A67928F5E6F3009B6DE3 /* BasetenAPIModelEnum.swift in Sources */,
 				CF0FB14828EF6AD40009C275 /* cmssm.c in Sources */,
 				CF0FB14C28EF6AD40009C275 /* cmscgats.c in Sources */,

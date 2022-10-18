@@ -2,7 +2,7 @@
 import SwiftUI
 import PhotosUI
 
-struct RestauracaoView: View {
+struct RestauracaoViewOLD: View {
     @State private var isShowingDetailView = false
     private var importtake: Bool {imageShown != nil}
     @State private var image = UIImage()
@@ -52,7 +52,8 @@ struct RestauracaoView: View {
                 //            escolherQualidade
                 //            escolherMelhoria
                 
-                NavigationLink(destination: TelaResultado(imageShown: $imageShown), isActive: $isShowingDetailView) { EmptyView() }
+               // NavigationLink(destination: TelaResultado(imageShown: $imageShown), isActive: $isShowingDetailView) { EmptyView() }
+                
                 Button(action: {
                     
                     linkApiRestauracao()
@@ -79,15 +80,15 @@ struct RestauracaoView: View {
       //  HStack {
         ZStack{
            
-            NavigationLink(destination: MenuView()) {
-                Image("setaMenu").resizable()
-                
-                
-            }
-            .frame(width: 100,height: 100)
-            .scaledToFit()
-            //.offset(x: -0, y: 100)
-            .position(x: 50, y: 20)
+//            NavigationLink(destination: MenuView()) {
+//                Image("setaMenu").resizable()
+//
+//
+//            }
+//            .frame(width: 100,height: 100)
+//            .scaledToFit()
+//            //.offset(x: -0, y: 100)
+//            .position(x: 50, y: 20)
            
           //  ZStack{
             Image("tirarFoto")//rever
@@ -228,6 +229,6 @@ struct RestauracaoView: View {
 
 struct RestauracaoView_Previews: PreviewProvider {
     static var previews: some View {
-        RestauracaoView()
+        RestauracaoViewOLD()
     }
 }

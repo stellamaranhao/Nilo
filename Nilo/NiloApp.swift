@@ -9,11 +9,17 @@ import SwiftUI
 
 @main
 struct NiloApp: App {
+    @State var currentPage:AppPage = AppPage.menuPage
+    
+    
     var body: some Scene {
         WindowGroup {
-            //test_replicateView()
-            MenuView()
-            //TelaResultado()
+            switch currentPage {
+            case .menuPage:
+                MenuView(currentPage:$currentPage)
+            case .colorirPage:
+                ColorirView().transition(.move(edge: .trailing))
+            }
         }
     }
 }
