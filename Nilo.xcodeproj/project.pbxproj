@@ -677,10 +677,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Nilo/Preview Content\"";
-				DEVELOPMENT_TEAM = UW3Y79FS5R;
+				DEVELOPMENT_TEAM = 5Y8ZK9WBN9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Quero usar sua camera";
@@ -700,8 +701,9 @@
 					"-std=c++11",
 					"-Wno-deprecated-register",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Nilo;
+				PRODUCT_BUNDLE_IDENTIFIER = MaiaJp.nilo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Nilo/Model/ColorizeML/Util/Nilo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -716,10 +718,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Nilo/Preview Content\"";
-				DEVELOPMENT_TEAM = UW3Y79FS5R;
+				DEVELOPMENT_TEAM = 5Y8ZK9WBN9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Quero usar sua camera";
@@ -739,8 +742,9 @@
 					"-std=c++11",
 					"-Wno-deprecated-register",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Nilo;
+				PRODUCT_BUNDLE_IDENTIFIER = MaiaJp.nilo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Nilo/Model/ColorizeML/Util/Nilo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
