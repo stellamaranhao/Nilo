@@ -11,4 +11,5 @@ enum AppPage:String, Identifiable {
     var id: String { self.rawValue }
     case menuPage = "menuPage"
     case colorirPage = "colorirPage"
+    case melhorarPage = "melhorarPage"
 }

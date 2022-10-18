@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AD6F91B728EE221300195F12 /* ReplicateAPIPostModelPrediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6F91B628EE221300195F12 /* ReplicateAPIPostModelPrediction.swift */; };
-		ADA29A9C28F617EE006863D0 /* TelaResultado.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA29A9B28F617EE006863D0 /* TelaResultado.swift */; };
+		ADA29A9C28F617EE006863D0 /* TelaResultadoOLD.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA29A9B28F617EE006863D0 /* TelaResultadoOLD.swift */; };
 		ADA531BE28FDD95C009053E0 /* MenuView.OLDswift in Sources */ = {isa = PBXBuildFile; fileRef = ADA531BD28FDD95C009053E0 /* MenuView.OLDswift */; };
 		ADA531C428FDE002009053E0 /* ColorirView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA531C328FDE002009053E0 /* ColorirView.swift */; };
 		ADBD423628EF4C0200E0C8CF /* UIImage_Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD423528EF4C0200E0C8CF /* UIImage_Extention.swift */; };
@@ -70,6 +70,8 @@
 		CFD0229C28FF35B100DBA89F /* ColorirCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD0229B28FF35B100DBA89F /* ColorirCardView.swift */; };
 		CFD0229F28FF3D1300DBA89F /* ColorirViewTakePhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD0229E28FF3D1300DBA89F /* ColorirViewTakePhoto.swift */; };
 		CFD022A128FF3D6700DBA89F /* ColorirViewImportPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD022A028FF3D6700DBA89F /* ColorirViewImportPhoto.swift */; };
+		CFD022A328FF42F700DBA89F /* ResultadoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD022A228FF42F700DBA89F /* ResultadoView.swift */; };
+		CFD022A528FF467500DBA89F /* MelhorarCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD022A428FF467500DBA89F /* MelhorarCardView.swift */; };
 		CFE1570328F71A4000502EB1 /* ImageKitAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE1570228F71A4000502EB1 /* ImageKitAPI.swift */; };
 		CFE1570628F747FC00502EB1 /* ImageKitAPIUploadResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE1570528F747FC00502EB1 /* ImageKitAPIUploadResponse.swift */; };
 		CFE1570828F752D000502EB1 /* BasetenAPIGFPGANResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE1570728F752D000502EB1 /* BasetenAPIGFPGANResponse.swift */; };
@@ -87,7 +89,7 @@
 
 /* Begin PBXFileReference section */
 		AD6F91B628EE221300195F12 /* ReplicateAPIPostModelPrediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIPostModelPrediction.swift; sourceTree = "<group>"; };
-		ADA29A9B28F617EE006863D0 /* TelaResultado.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaResultado.swift; sourceTree = "<group>"; };
+		ADA29A9B28F617EE006863D0 /* TelaResultadoOLD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaResultadoOLD.swift; sourceTree = "<group>"; };
 		ADA531BD28FDD95C009053E0 /* MenuView.OLDswift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MenuView.OLDswift; sourceTree = "<group>"; };
 		ADA531C328FDE002009053E0 /* ColorirView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorirView.swift; sourceTree = "<group>"; };
 		ADBD423528EF4C0200E0C8CF /* UIImage_Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage_Extention.swift; sourceTree = "<group>"; };
@@ -156,6 +158,8 @@
 		CFD0229B28FF35B100DBA89F /* ColorirCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorirCardView.swift; sourceTree = "<group>"; };
 		CFD0229E28FF3D1300DBA89F /* ColorirViewTakePhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorirViewTakePhoto.swift; sourceTree = "<group>"; };
 		CFD022A028FF3D6700DBA89F /* ColorirViewImportPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorirViewImportPhoto.swift; sourceTree = "<group>"; };
+		CFD022A228FF42F700DBA89F /* ResultadoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultadoView.swift; sourceTree = "<group>"; };
+		CFD022A428FF467500DBA89F /* MelhorarCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MelhorarCardView.swift; sourceTree = "<group>"; };
 		CFE1570228F71A4000502EB1 /* ImageKitAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageKitAPI.swift; sourceTree = "<group>"; };
 		CFE1570528F747FC00502EB1 /* ImageKitAPIUploadResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageKitAPIUploadResponse.swift; sourceTree = "<group>"; };
 		CFE1570728F752D000502EB1 /* BasetenAPIGFPGANResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasetenAPIGFPGANResponse.swift; sourceTree = "<group>"; };
@@ -330,12 +334,12 @@
 				CFD0229928FF33CE00DBA89F /* appViewsEnum.swift */,
 				CFD0229428FF338C00DBA89F /* Menu */,
 				ADA531BD28FDD95C009053E0 /* MenuView.OLDswift */,
-				ADA29A9B28F617EE006863D0 /* TelaResultado.swift */,
+				ADA29A9B28F617EE006863D0 /* TelaResultadoOLD.swift */,
 				CF86A67A28F5EB6D009B6DE3 /* RestauracaoViewOLD.swift */,
 				ECF4ED5528F9A0B00018965B /* ImagePicker.swift */,
 				EC6032CD28EE063F00646F4C /* CameraView.swift */,
-				EC6032D328EE254500646F4C /* Artefato */,
 				EC6032D128EE252700646F4C /* Cores.swift */,
+				CFD022A228FF42F700DBA89F /* ResultadoView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -385,6 +389,7 @@
 			children = (
 				CFD0229528FF33AB00DBA89F /* MenuView.swift */,
 				CFD0229B28FF35B100DBA89F /* ColorirCardView.swift */,
+				CFD022A428FF467500DBA89F /* MelhorarCardView.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -413,13 +418,6 @@
 				CFE1570528F747FC00502EB1 /* ImageKitAPIUploadResponse.swift */,
 			);
 			path = ImageKitAPI;
-			sourceTree = "<group>";
-		};
-		EC6032D328EE254500646F4C /* Artefato */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Artefato;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -540,7 +538,7 @@
 				ADA531C428FDE002009053E0 /* ColorirView.swift in Sources */,
 				CF0FB15228EF6AD40009C275 /* cmscnvrt.c in Sources */,
 				CF0FB14128EF6AD40009C275 /* cmsxform.c in Sources */,
-				ADA29A9C28F617EE006863D0 /* TelaResultado.swift in Sources */,
+				ADA29A9C28F617EE006863D0 /* TelaResultadoOLD.swift in Sources */,
 				CFD022A128FF3D6700DBA89F /* ColorirViewImportPhoto.swift in Sources */,
 				CF46D40028ECD1CC0052C018 /* ContentViewExtension.swift in Sources */,
 				CFE1570628F747FC00502EB1 /* ImageKitAPIUploadResponse.swift in Sources */,
@@ -564,6 +562,7 @@
 				CF86A67728F5E5FA009B6DE3 /* BasetenAPIInput.swift in Sources */,
 				CF52E59028F0BEB50074326F /* ReplicateAPIPredictionInfo.swift in Sources */,
 				CF0FB10D28EF69FE0009C275 /* DispatchQueue+Utils.swift in Sources */,
+				CFD022A328FF42F700DBA89F /* ResultadoView.swift in Sources */,
 				CF0FB14E28EF6AD40009C275 /* cmstypes.c in Sources */,
 				CF0FB13628EF6AD40009C275 /* cmsnamed.c in Sources */,
 				CF46D3ED28ECD0040052C018 /* NiloApp.swift in Sources */,
@@ -578,6 +577,7 @@
 				CF0FB10E28EF69FE0009C275 /* UIImage+Lab.mm in Sources */,
 				ECF4ED5628F9A0B00018965B /* ImagePicker.swift in Sources */,
 				ECF4ED5428F9919B0018965B /* TelaUpload.swift in Sources */,
+				CFD022A528FF467500DBA89F /* MelhorarCardView.swift in Sources */,
 				CF0FB15028EF6AD40009C275 /* cmssamp.c in Sources */,
 				ADC14C2A28ECDF9100065D97 /* ReplicateAPIGetModelResponse.swift in Sources */,
 				CF0FB08C28EF5AE00009C275 /* ColorizeML.swift in Sources */,

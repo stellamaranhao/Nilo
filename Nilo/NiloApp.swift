@@ -19,6 +19,8 @@ struct NiloApp: App {
                 MenuView(currentPage:$currentPage)
             case .colorirPage:
                 ColorirView().transition(.move(edge: .trailing))
+            case .melhorarPage:
+                RestauracaoViewOLD().transition(.move(edge: .trailing))
             }
         }
     }

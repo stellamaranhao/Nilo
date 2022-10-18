@@ -10,14 +10,17 @@ import SwiftUI
 
 struct CameraView: View {
     var body: some View {
-        Text("Conteúdo da câmera")
-            .foregroundColor(.white)
-            .padding(.vertical, 300)
-            .padding(.horizontal, 70)
-            .background(
-                RoundedRectangle(cornerRadius: 20)
-                    .foregroundColor(.gray)
-            )
+        HStack{
+            Text("Conteúdo da câmera")
+                .foregroundColor(.white)
+                .padding(.vertical, 300)
+                .padding(.horizontal, 70)
+                .background(
+                    RoundedRectangle(cornerRadius: 20)
+                        .foregroundColor(.gray)
+                )
+            
+        }
     }
 }
 

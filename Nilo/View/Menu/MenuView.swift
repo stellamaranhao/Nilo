@@ -10,7 +10,14 @@ import SwiftUI
 struct MenuView: View {
     @Binding var currentPage:AppPage
     var body: some View {
-        HStack{
+        VStack{
+            MelhorarCardView().onTapGesture {
+                withAnimation{
+                    currentPage = .melhorarPage
+                }
+            }
+            
+            
             ColorirCardView()
                 .onTapGesture {
                     withAnimation{

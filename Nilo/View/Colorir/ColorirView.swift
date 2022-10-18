@@ -67,9 +67,7 @@ struct ColorirView: View {
                 .cornerRadius(21)
             }
         }.fullScreenCover(isPresented: $isShowingDetailView){
-            //EmptyView()
-            //TelaResultado(imageShown: $imageShown)
-            TelaResultado()
+            ResultadoView(imageShown: $imageShown)
             }
     }
     
