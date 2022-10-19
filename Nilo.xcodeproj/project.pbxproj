@@ -325,7 +325,6 @@
 				ECF4ED5528F9A0B00018965B /* ImagePicker.swift */,
 				EC6032CD28EE063F00646F4C /* CameraView.swift */,
 				ADA531C328FDE002009053E0 /* ColorirView.swift */,
-				EC6032D328EE254500646F4C /* Artefato */,
 				EC6032D128EE252700646F4C /* Cores.swift */,
 			);
 			path = View;
@@ -385,13 +384,6 @@
 				CFE1570528F747FC00502EB1 /* ImageKitAPIUploadResponse.swift */,
 			);
 			path = ImageKitAPI;
-			sourceTree = "<group>";
-		};
-		EC6032D328EE254500646F4C /* Artefato */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Artefato;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
