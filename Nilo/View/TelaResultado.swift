@@ -28,9 +28,7 @@ struct TelaResultado: View {
                     .frame(minWidth: 0, maxWidth: .infinity)
                     .edgesIgnoringSafeArea(.all)
                     .offset(x:0,y:-60)
-                    
-                
-                
+    
                 VStack {
                 
                     NavigationLink(destination: RestauracaoView()) {
