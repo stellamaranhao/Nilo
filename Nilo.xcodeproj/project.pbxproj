@@ -673,7 +673,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Nilo/Preview Content\"";
-				DEVELOPMENT_TEAM = 5Y8ZK9WBN9;
+				DEVELOPMENT_TEAM = UW3Y79FS5R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Quero usar sua camera";
@@ -693,7 +693,7 @@
 					"-std=c++11",
 					"-Wno-deprecated-register",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = MaiaJp.nilo;
+				PRODUCT_BUNDLE_IDENTIFIER = SMaiaJp.nilo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -714,7 +714,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Nilo/Preview Content\"";
-				DEVELOPMENT_TEAM = 5Y8ZK9WBN9;
+				DEVELOPMENT_TEAM = UW3Y79FS5R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Quero usar sua camera";
@@ -734,7 +734,7 @@
 					"-std=c++11",
 					"-Wno-deprecated-register",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = MaiaJp.nilo;
+				PRODUCT_BUNDLE_IDENTIFIER = SMaiaJp.nilo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;

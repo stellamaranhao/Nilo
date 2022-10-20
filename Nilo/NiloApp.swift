@@ -11,9 +11,9 @@ import SwiftUI
 struct NiloApp: App {
     var body: some Scene {
         WindowGroup {
-            //test_replicateView()
+
             MenuView()
-            //TelaResultado()
+
         }
     }
 }
