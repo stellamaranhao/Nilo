@@ -73,8 +73,8 @@ struct RestauracaoView: View {
                 }
             }
         }
-//        .navigationBarBackButtonHidden(true)
-    }
+        .navigationBarBackButtonHidden(true)
+    }//.navigationBarBackButtonHidden(true)
     @Environment(\.dismiss) var dismiss
     var takePhotoButtom: some View {
       //  HStack {

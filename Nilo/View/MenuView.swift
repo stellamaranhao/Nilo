@@ -91,7 +91,7 @@ struct MenuView: View {
             }
         }
         .navigationBarBackButtonHidden(true)
-    }
+    }//.navigationBarBackButtonHidden(true)
     
     
   
