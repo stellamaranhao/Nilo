@@ -5,7 +5,7 @@ import PhotosUI
 struct RestauracaoView: View {
     @State private var isShowingDetailView = false
     private var importtake: Bool {imageShown != nil}
-    @State private var image = UIImage()
+    @State var image = UIImage()
     @State private var showSheet = false
  
     @State private var selectedItem: PhotosPickerItem? = nil
@@ -13,6 +13,7 @@ struct RestauracaoView: View {
     @State var imageShown:UIImage?
     @State var options = ["2x", "3x", "5x", "8x"]
     @State var teste = ["Melhor qualidade ", "Mais detalhes e personalidade"]
+   
   
     @State var pickedPhotoName: String = ""
     @State private var selectedOptionPickerQualidade = "One"
@@ -113,6 +114,7 @@ struct RestauracaoView: View {
                                                     }
                         .onChange(of: image) { newItem in
                             imageShown = newItem
+                            
                             //                        Task {
                             // Retrieve selected asset in the form of Data
                             //                            if let data = try? await newItem?.loadTransferable(type: Data.self) {
@@ -158,7 +160,7 @@ struct RestauracaoView: View {
                         }
                     }
                 }
-            
+                .navigationBarBackButtonHidden()
         }
     }
 //    var escolherQualidade: some View{

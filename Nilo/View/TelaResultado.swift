@@ -4,35 +4,51 @@ import SwiftUI
 
 struct TelaResultado: View {
     // @State var backImage = Image("ImagemAnneFinal")
-//    let api = BasetenAPI()
+    //    let api = BasetenAPI()
     @State private var showingSheet = false
     @State var showAlbumView = false
+    
     @Binding var imageShown:UIImage?
+    
+    
     private var importtake: Bool {imageShown != nil}
-    @State private var image = UIImage()
+    @State private var image : Bool = true
     @State private var showSheet = false
     @State var progressMsg:String = "progress: not started"
     @State var message:String = "GFP-GAN"
-   
+
+    
+    
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
+     
     
     var body: some View {
         NavigationView {
             
             
             ZStack {
+                Color.gray
+                    .ignoresSafeArea()
+                
                 Image(uiImage: imageShown!)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(minWidth: 0, maxWidth: .infinity)
                     .edgesIgnoringSafeArea(.all)
                     .offset(x:0,y:-60)
-                    
+                
+                Image(uiImage: image ? imageShown! : imageShown!)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(minWidth: 0, maxWidth: .infinity)
+                    .edgesIgnoringSafeArea(.all)
+                    .offset(x:0,y:-60)
+                
                 
                 
                 VStack {
-                
+                    
                     NavigationLink(destination: RestauracaoView()) {
                         Image("botaoSaida").resizable()
                         
@@ -56,7 +72,7 @@ struct TelaResultado: View {
                 ZStack{
                     RoundedRectangle(cornerRadius: 30, style: .continuous)
                         .fill(Color.corDeFundo)
-                       .frame(width:.infinity,height: 300)
+                        .frame(width:.infinity,height: 300)
                         .offset(x:0,y:350)
                     
                     VStack{
@@ -75,54 +91,95 @@ struct TelaResultado: View {
                             }
                             .offset(x:20,y:245)
                             
-                            Image(systemName: "eye.circle").resizable()
-                                .offset(x:50,y:235)
-                                .frame(width: 30,height: 30)
-                                .scaledToFit()
-                                .foregroundColor(Color.corTexto)
+                            Button {
+                             
+                            } label: {
+                                Image(systemName: "eye.circle").resizable()
+                                    .offset(x:50,y:235)
+                                    .frame(width: 30,height: 30)
+                                    .scaledToFit()
+                                    .foregroundColor(Color.corTexto)
+                            }
+//                            .onLongPressGesture {
+//                                <#code#>
+//                            }
+                             
+                            
+//                            Image(systemName: "eye.circle").resizable()
+//                                .offset(x:50,y:235)
+//                                .frame(width: 30,height: 30)
+//                                .scaledToFit()
+//                                .foregroundColor(Color.corTexto)
                             
                         }
                         
                         
-
+                        
                     }
                     HStack{
-                       
-                        NavigationLink(destination: RestauracaoView()) {
+                        Button {
+                            shareButton()
+                        } label: {
                             Image("exportarMemoria").resizable().renderingMode(.original).aspectRatio( contentMode: .fit)
-                        }
-                        .frame(width: 170)
+                            
+                        }.frame(width: 170)
+                        
+                        //
+                        //                        NavigationLink(destination: RestauracaoView()) {
+                        //                            Image("exportarMemoria").resizable().renderingMode(.original).aspectRatio( contentMode: .fit)
+                        //                        }
+                        //                        .frame(width: 170)
                         
                         NavigationLink(destination: RestauracaoView()) {
                             Image("resgatarOutraMemoria").resizable().renderingMode(.original).aspectRatio( contentMode: .fit)
                         }
                         .frame(width: 170)
                     }
-                       .offset(x:0,y:340)
+                    .offset(x:0,y:340)
                 }
                 
             }
         }
         .navigationBarBackButtonHidden(true)
+        
+        
+        
     }
-//    var resultButtom: UIImage{
-//                    if let image = imageShown{
-//                        api.imagePredictionPipeline(fromImage: image, progressUpdate:{progress in
-//                            progressMsg = "\(progress)%"
-//
-//                        }){ result in
-//                            api.imagePredictionPipelineCleanUp()
-//                            switch result {
-//                            case .success(let success):
-//                                imageShown = success
-//                            case .failure(let failure):
-//                                print(failure.asString)
-//                            }
-//                        }
-////                    }
-//       return imageShown!
-                }
-                
+    func shareButton() {
+        //        let image = Image(uiImage: imageShown!)
+        
+        let activityController = UIActivityViewController(activityItems: [imageShown!], applicationActivities: nil)
+        
+        UIApplication.shared.windows.first?.rootViewController!.present(activityController, animated: true, completion: nil)
+    }
+    
+    func recebeImg() {
+            Image(uiImage: imageShown!)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(minWidth: 0, maxWidth: .infinity)
+                .edgesIgnoringSafeArea(.all)
+                .offset(x:0,y:-60)
+        
+    }
+    //    var resultButtom: UIImage{
+    //                    if let image = imageShown{
+    //                        api.imagePredictionPipeline(fromImage: image, progressUpdate:{progress in
+    //                            progressMsg = "\(progress)%"
+    //
+    //                        }){ result in
+    //                            api.imagePredictionPipelineCleanUp()
+    //                            switch result {
+    //                            case .success(let success):
+    //                                imageShown = success
+    //                            case .failure(let failure):
+    //                                print(failure.asString)
+    //                            }
+    //                        }
+    ////                    }
+    //       return imageShown!
+    
+    
     
     
     
@@ -165,4 +222,11 @@ struct TelaResultado: View {
     //
     //    }
     //
-
+    //
+    //struct TelaResultado_Previews: PreviewProvider {
+    //    static var previews: some View {
+    //        TelaResultado()
+    //    }
+    //}
+    
+}
