@@ -17,19 +17,20 @@ struct TelaResultado2: View {
         
         NavigationView {
             ZStack {
-                
+                Color.gray
+                    .ignoresSafeArea()
                 Image(uiImage: imageShown!)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                 
-                                Color.gray
+                              
                 
                 //                if let imageShown = imageShown {
                 //                    Image(uiImage: imageShown)
-                                Image(uiImage: imageShown!)
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fit)
-                
+//                                Image(uiImage: imageShown!)
+//                                        .resizable()
+//                                        .aspectRatio(contentMode: .fit)
+//                
                                 //}
                                 padding(.top)
                 
@@ -50,10 +51,10 @@ struct TelaResultado2: View {
                                     .padding(.vertical, 100)
                                     .buttonStyle(.borderedProminent)
                                     .frame(maxWidth: .infinity)
-                                    .background {
+//                                    .background {
                                         RoundedRectangle(cornerRadius: 30)
                                             .fill(Color.corDeFundo)
-                                    }
+                                    //}
                                 //    .padding(.horizontal, 50)
                 
                                   //  Spacer()

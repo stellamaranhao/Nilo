@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD16386E29061B7A0022713F /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD16386D29061B7A0022713F /* ButtonsView.swift */; };
 		AD6F91B728EE221300195F12 /* ReplicateAPIPostModelPrediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6F91B628EE221300195F12 /* ReplicateAPIPostModelPrediction.swift */; };
+		AD9E8B2A29032BBD00259CF1 /* TelaResultado3.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9E8B2929032BBD00259CF1 /* TelaResultado3.swift */; };
 		ADA01BA22901B93800450C06 /* TelaResultado2.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA01BA12901B93800450C06 /* TelaResultado2.swift */; };
 		ADA29A9C28F617EE006863D0 /* TelaResultado.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA29A9B28F617EE006863D0 /* TelaResultado.swift */; };
 		ADA531BE28FDD95C009053E0 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA531BD28FDD95C009053E0 /* MenuView.swift */; };
@@ -83,7 +85,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD16386D29061B7A0022713F /* ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
+		AD16387029061F630022713F /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		AD6F91B628EE221300195F12 /* ReplicateAPIPostModelPrediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIPostModelPrediction.swift; sourceTree = "<group>"; };
+		AD9E8B2929032BBD00259CF1 /* TelaResultado3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaResultado3.swift; sourceTree = "<group>"; };
 		ADA01BA12901B93800450C06 /* TelaResultado2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaResultado2.swift; sourceTree = "<group>"; };
 		ADA01BA32902DE3F00450C06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		ADA29A9B28F617EE006863D0 /* TelaResultado.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaResultado.swift; sourceTree = "<group>"; };
@@ -177,6 +182,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD16386F29061F410022713F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AD16387029061F630022713F /* Poppins-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		ADC14C2728ECDF5900065D97 /* ReplicateAPI */ = {
 			isa = PBXGroup;
 			children = (
@@ -273,6 +286,8 @@
 		CF46D3E028ECD0040052C018 = {
 			isa = PBXGroup;
 			children = (
+				AD16386D29061B7A0022713F /* ButtonsView.swift */,
+				AD16386F29061F410022713F /* Fonts */,
 				CF46D3EB28ECD0040052C018 /* Nilo */,
 				CF46D3EA28ECD0040052C018 /* Products */,
 			);
@@ -326,6 +341,7 @@
 				ADA531BD28FDD95C009053E0 /* MenuView.swift */,
 				ADA29A9B28F617EE006863D0 /* TelaResultado.swift */,
 				ADA01BA12901B93800450C06 /* TelaResultado2.swift */,
+				AD9E8B2929032BBD00259CF1 /* TelaResultado3.swift */,
 				CF86A67A28F5EB6D009B6DE3 /* RestauracaoView.swift */,
 				ECF4ED5528F9A0B00018965B /* ImagePicker.swift */,
 				EC6032CD28EE063F00646F4C /* CameraView.swift */,
@@ -479,6 +495,7 @@
 				CF0FB14F28EF6AD40009C275 /* cmslut.c in Sources */,
 				CF0FB14428EF6AD40009C275 /* cmsmtrx.c in Sources */,
 				CF0FB11228EF6A7D0009C275 /* Nilo-Bridging-Header.h in Sources */,
+				AD16386E29061B7A0022713F /* ButtonsView.swift in Sources */,
 				CF0FB13F28EF6AD40009C275 /* cmsopt.c in Sources */,
 				CF0FB13D28EF6AD40009C275 /* cmshalf.c in Sources */,
 				CF77F8D628EFBD9A00C1BBD2 /* test_colorizeML.swift in Sources */,
@@ -549,6 +566,7 @@
 				CF0FB08C28EF5AE00009C275 /* ColorizeML.swift in Sources */,
 				CF0FB13728EF6AD40009C275 /* cmsio0.c in Sources */,
 				CF0FB15428EF6AD40009C275 /* cmsgmt.c in Sources */,
+				AD9E8B2A29032BBD00259CF1 /* TelaResultado3.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

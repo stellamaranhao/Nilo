@@ -23,7 +23,7 @@ struct RestauracaoView: View {
     @State var message:String = "GFP-GAN"
     @State var progressMsg:String = "progress: not started"
     let api = BasetenAPI()
-    
+        
     var body: some View {
         NavigationView{
             
@@ -48,15 +48,17 @@ struct RestauracaoView: View {
                     takePhotoButtom
                     importPhotoButtom
                 }
-                
+               
                 
                 //            escolherQualidade
                 //            escolherMelhoria
                 
-                NavigationLink(destination: TelaResultado(imageShown: $imageShown), isActive: $isShowingDetailView) { EmptyView() }
+                NavigationLink(destination: TelaResultado3(imageShown: $imageShown), isActive: $isShowingDetailView) { EmptyView() }
                 Button(action: {
                     
                     linkApiRestauracao()
+
+                    
                     isShowingDetailView = true
                 }){
                     ZStack{
@@ -66,15 +68,14 @@ struct RestauracaoView: View {
                     Text("Melhorar Foto")
                         .padding()
                         .foregroundColor(.letratelarestauracao)
-
-                    
                 }
-
                 }
+                
             }
         }
         .navigationBarBackButtonHidden(true)
-    }//.navigationBarBackButtonHidden(true)
+    }
+    
     @Environment(\.dismiss) var dismiss
     var takePhotoButtom: some View {
       //  HStack {
@@ -131,8 +132,6 @@ struct RestauracaoView: View {
     }
     
     var importPhotoButtom: some View{
-        
-        
         ZStack{
             Image("importarFoto")//rever
                 .position(x: 325, y: 40)
@@ -160,7 +159,7 @@ struct RestauracaoView: View {
                         }
                     }
                 }
-                .navigationBarBackButtonHidden()
+//                .navigationBarBackButtonHidden(true)
         }
     }
 //    var escolherQualidade: some View{
@@ -225,8 +224,9 @@ struct RestauracaoView: View {
         }
     
     }
-    
+
 }
+
 
 
 

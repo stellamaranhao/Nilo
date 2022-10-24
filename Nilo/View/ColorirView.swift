@@ -160,9 +160,3 @@ struct ColorirView: View {
 }
 
 
-//
-//struct ColorirView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ColorirView()
-//    }
-//}
