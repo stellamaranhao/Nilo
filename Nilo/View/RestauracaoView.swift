@@ -53,7 +53,7 @@ struct RestauracaoView: View {
                 //            escolherQualidade
                 //            escolherMelhoria
                 
-                NavigationLink(destination: TelaResultado3(imageShown: $imageShown), isActive: $isShowingDetailView) { EmptyView() }
+                NavigationLink(destination: TelaResultado3(selectedItem: $selectedItem,selectedImageData: $selectedImageData,imageShown: $imageShown), isActive: $isShowingDetailView) { EmptyView() }
                 Button(action: {
                     
                     linkApiRestauracao()

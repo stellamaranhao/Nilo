@@ -6,9 +6,11 @@
 //
 
 import SwiftUI
+import PhotosUI
 
 struct TelaResultado3: View {
-    
+    @Binding var selectedItem: PhotosPickerItem?
+    @Binding var selectedImageData: Data?
     @Binding var imageShown:UIImage?
     
     @State private var image : Bool = true
@@ -24,8 +26,8 @@ struct TelaResultado3: View {
                 
                 VStack(spacing: 50){
                     Spacer()
-                  //  Image(uiImage: imageShown!)
-                        Image("ImageAnne")
+                   Image(uiImage: imageShown!)
+                     //   Image("ImageAnne")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
   
@@ -33,7 +35,7 @@ struct TelaResultado3: View {
                         Button {
 
                         } label: {
-                            Text("Fazer ABCD")
+                            ButtonsView(imgSistema: "square.and.arrow.up", texto: "Exportar Memória")
                         }
                         Button {
 
@@ -42,8 +44,8 @@ struct TelaResultado3: View {
                         }
                     }
                     .padding(.vertical, 90)
-                    .buttonStyle(.borderedProminent)
-                    .frame(maxWidth: .infinity)
+                   // .buttonStyle(.borderedProminent)
+                   // .frame(maxWidth: .infinity)
                                     .background (
                         RoundedRectangle(cornerRadius: 30)
                             .fill(Color.corDeFundo)
@@ -80,8 +82,8 @@ func botao1 () {
 
 
 
-struct TelaResultado3_Previews: PreviewProvider {
-    static var previews: some View {
-        TelaResultado3(imageShown: .constant(.actions))
-    }
-}
+//struct TelaResultado3_Previews: PreviewProvider {
+//    static var previews: some View {
+//        TelaResultado3(imageShown: .constant(.actions))
+//    }
+//}

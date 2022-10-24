@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AD16386E29061B7A0022713F /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD16386D29061B7A0022713F /* ButtonsView.swift */; };
+		AD163872290621710022713F /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD163871290621710022713F /* Poppins-SemiBold.ttf */; };
+		AD163874290621AE0022713F /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD163873290621AE0022713F /* Poppins-Regular.ttf */; };
 		AD6F91B728EE221300195F12 /* ReplicateAPIPostModelPrediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6F91B628EE221300195F12 /* ReplicateAPIPostModelPrediction.swift */; };
 		AD9E8B2A29032BBD00259CF1 /* TelaResultado3.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9E8B2929032BBD00259CF1 /* TelaResultado3.swift */; };
 		ADA01BA22901B93800450C06 /* TelaResultado2.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA01BA12901B93800450C06 /* TelaResultado2.swift */; };
@@ -86,7 +88,8 @@
 
 /* Begin PBXFileReference section */
 		AD16386D29061B7A0022713F /* ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
-		AD16387029061F630022713F /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		AD163871290621710022713F /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		AD163873290621AE0022713F /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Regular.ttf"; path = "../../../../../Downloads/Poppins/Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		AD6F91B628EE221300195F12 /* ReplicateAPIPostModelPrediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIPostModelPrediction.swift; sourceTree = "<group>"; };
 		AD9E8B2929032BBD00259CF1 /* TelaResultado3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaResultado3.swift; sourceTree = "<group>"; };
 		ADA01BA12901B93800450C06 /* TelaResultado2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaResultado2.swift; sourceTree = "<group>"; };
@@ -185,7 +188,8 @@
 		AD16386F29061F410022713F /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				AD16387029061F630022713F /* Poppins-Regular.ttf */,
+				AD163871290621710022713F /* Poppins-SemiBold.ttf */,
+				AD163873290621AE0022713F /* Poppins-Regular.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -286,8 +290,6 @@
 		CF46D3E028ECD0040052C018 = {
 			isa = PBXGroup;
 			children = (
-				AD16386D29061B7A0022713F /* ButtonsView.swift */,
-				AD16386F29061F410022713F /* Fonts */,
 				CF46D3EB28ECD0040052C018 /* Nilo */,
 				CF46D3EA28ECD0040052C018 /* Products */,
 			);
@@ -304,6 +306,7 @@
 		CF46D3EB28ECD0040052C018 /* Nilo */ = {
 			isa = PBXGroup;
 			children = (
+				AD16386F29061F410022713F /* Fonts */,
 				ADA01BA32902DE3F00450C06 /* Info.plist */,
 				CF46D3FD28ECD11D0052C018 /* Model */,
 				CF46D3FB28ECD1060052C018 /* View */,
@@ -338,6 +341,7 @@
 		CF46D3FB28ECD1060052C018 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AD16386D29061B7A0022713F /* ButtonsView.swift */,
 				ADA531BD28FDD95C009053E0 /* MenuView.swift */,
 				ADA29A9B28F617EE006863D0 /* TelaResultado.swift */,
 				ADA01BA12901B93800450C06 /* TelaResultado2.swift */,
@@ -475,8 +479,10 @@
 				CF0FB14728EF6AD40009C275 /* Makefile.in in Resources */,
 				CF46D3F428ECD0050052C018 /* Preview Assets.xcassets in Resources */,
 				CF0FB14528EF6AD40009C275 /* lcms2.def in Resources */,
+				AD163874290621AE0022713F /* Poppins-Regular.ttf in Resources */,
 				CF0FB15128EF6AD40009C275 /* sRGB_ICC_v4_Appearance.icc in Resources */,
 				CF0FB13A28EF6AD40009C275 /* Makefile.am in Resources */,
+				AD163872290621710022713F /* Poppins-SemiBold.ttf in Resources */,
 				CF46D3F128ECD0050052C018 /* Assets.xcassets in Resources */,
 				CF0FB13928EF6AD40009C275 /* sRGB_v4_ICC_preference.icc in Resources */,
 			);
