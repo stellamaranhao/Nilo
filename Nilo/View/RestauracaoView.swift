@@ -29,80 +29,72 @@ struct RestauracaoView: View {
             
             
             VStack{
-                //            Text(message).font(.largeTitle)
-                // Text(progressMsg).font(.subheadline)
                 
                 if let imageShown = imageShown{
- 
-                        HStack{
-                            Image(uiImage: imageShown)
-                                .resizable()
-                                .scaledToFit()
-                                .scaledToFill()
-                             .frame(width: 250, height: 250)
-                            
-                        }
+
+                    HStack{
+                        Image(uiImage: imageShown)
+                            .resizable()
+                            .scaledToFit()
+                            .scaledToFill()
+                            .cornerRadius(8)
+                            .frame(width: 214, height: 476)
+                            .padding(.bottom, 80)
+                    }
                     
                 }
+
                 if !importtake {
+                    
                     takePhotoButtom
                     importPhotoButtom
                 }
                
                 
-                //            escolherQualidade
-                //            escolherMelhoria
                 
-                NavigationLink(destination: TelaResultado3(selectedItem: $selectedItem,selectedImageData: $selectedImageData,imageShown: $imageShown), isActive: $isShowingDetailView) { EmptyView() }
+                NavigationLink(destination: TelaResultado(imageShown: $imageShown), isActive: $isShowingDetailView) { EmptyView() }
+                //if botaoLiberado{
+                
                 Button(action: {
                     
                     linkApiRestauracao()
 
                     
                     isShowingDetailView = true
+                    
                 }){
                     ZStack{
-                    RoundedRectangle(cornerRadius: 18).foregroundColor(.white)
-                        .frame(width: 200, height: 100)
-                        .shadow(color: Color.letratelarestauracao.opacity(0.25), radius: 15, y: 8)
-                    Text("Melhorar Foto")
-                        .padding()
-                        .foregroundColor(.letratelarestauracao)
-                }
-                }
-                
+                        RoundedRectangle(cornerRadius: 18).foregroundColor(.melhorarfoto)
+                            .frame(width: 200, height: 70)
+                            .shadow(color: Color.letratelarestauracao.opacity(0.25), radius: 15, y: 8)
+                        Text("Melhorar Foto")
+                            .foregroundColor(.white)
+                            .fontWeight(.bold)
+                            .font(.title2)
+                            .font(.custom("Poppins-SemiBold", size: 20))
+                                                }
+                    .padding(.bottom,50)
+                    
+                    
+                }.disabled((imageShown != nil) ? false : true)
             }
+            
         }
         .navigationBarBackButtonHidden(true)
     }
     
     @Environment(\.dismiss) var dismiss
     var takePhotoButtom: some View {
-      //  HStack {
         ZStack{
-           
-//            Button {
-//                dismiss()
-//            } label: {
-//                Image("setaMenu").resizable()
-//
-//
-//            }
-//            .frame(width: 100,height: 100)
-//            .scaledToFit()
-//            //.offset(x: -0, y: 100)
-//            .position(x: 50, y: 20)
-           
-          //  ZStack{
             Image("tirarFoto")//rever
-                .position(x: 325, y: 40)
+                .position(x: 250, y: 40)
                 .background(
                     RoundedRectangle(cornerRadius: 18).foregroundColor(.white)
                         .frame(width: 275, height: 200)
                         .shadow(color: Color.letratelarestauracao.opacity(0.25), radius: 15, y: 8))
-           
+                
              
-                    Text("Tirar uma Foto")
+                    Text("Tirar Foto")
                         .foregroundColor(.letratelarestauracao)
                         .fontWeight(.bold)
                         .font(.title2)
@@ -110,46 +102,43 @@ struct RestauracaoView: View {
                         .onTapGesture {
                         showSheet = true
                         }
+                        .padding(.top,120)
+                        .padding(.trailing,130)
                         .sheet(isPresented: $showSheet) {
                         ImagePicker(sourceType: .camera, selectedImage: self.$image)
                                                     }
                         .onChange(of: image) { newItem in
                             imageShown = newItem
                             
-                            //                        Task {
-                            // Retrieve selected asset in the form of Data
-                            //                            if let data = try? await newItem?.loadTransferable(type: Data.self) {
-                            //                                selectedImageData = data
-                            //                                imageShown = UIImage(data: selectedImageData!)
-                            //                            }
-                            
-                        }//                        }
-                     //   }
-           //             }
-           
+                        }
+                        
         }
-
+        .padding(.top,50)
     }
     
     var importPhotoButtom: some View{
         ZStack{
-            Image("importarFoto")//rever
-                .position(x: 325, y: 40)
-                .background(
-                    RoundedRectangle(cornerRadius: 18).foregroundColor(.white)
-                        .frame(width: 275, height: 200)
-                        .shadow(color: Color.letratelarestauracao.opacity(0.25), radius: 15, y: 8))
-            PhotosPicker(
-                
-                selection: $selectedItem,
-                matching: .images,
-                photoLibrary: .shared()) {
-                    Text("Importar uma Foto")
-                        .foregroundColor(.letratelarestauracao)
-                        .fontWeight(.bold)
-                        .font(.title2)
-                        .font(.custom("Poppins-SemiBold", size: 20))
-                }
+            Group{
+                Image("importarFoto")//rever
+                    .position(x: 280, y: 80)
+                    .background(
+                        RoundedRectangle(cornerRadius: 18).foregroundColor(.white)
+                            .frame(width: 275, height: 200)
+                            .shadow(color: Color.letratelarestauracao.opacity(0.25), radius: 15, y: 8))
+                PhotosPicker(
+                    
+                    selection: $selectedItem,
+                    matching: .images,
+                    photoLibrary: .shared()) {
+                        Text("Importar Foto")
+                            .foregroundColor(.letratelarestauracao)
+                            .fontWeight(.bold)
+                            .font(.title2)
+                            .font(.custom("Poppins-SemiBold", size: 20))
+                    }
+                    .padding(.top,120)
+                    .padding(.trailing,80)
+            }
                 .onChange(of: selectedItem) { newItem in
                     Task {
                         // Retrieve selected asset in the form of Data
@@ -159,7 +148,6 @@ struct RestauracaoView: View {
                         }
                     }
                 }
-//                .navigationBarBackButtonHidden(true)
         }
     }
 //    var escolherQualidade: some View{
@@ -226,10 +214,6 @@ struct RestauracaoView: View {
     }
 
 }
-
-
-
-
 struct RestauracaoView_Previews: PreviewProvider {
     static var previews: some View {
         RestauracaoView()
