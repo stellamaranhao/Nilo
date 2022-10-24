@@ -30,22 +30,28 @@ struct TelaResultado3: View {
                      //   Image("ImageAnne")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-  
-                    HStack(spacing: 20.0) {
-                        Button {
-
-                        } label: {
-                            ButtonsView(imgSistema: "square.and.arrow.up", texto: "Exportar Memória")
+                    VStack{
+                        
+                        VStack{
+                            
                         }
-                        Button {
-
-                        } label: {
-                            Text("Fazer XYZ")
+                        
+                        HStack(spacing: 20.0) {
+                            Button {
+                                
+                            } label: {
+                                ButtonsView(imgSistema: "square.and.arrow.up", texto: "Exportar Memória")
+                            }
+                            Button {
+                                
+                            } label: {
+                                Text("Fazer XYZ")
+                            }
                         }
                     }
                     .padding(.vertical, 90)
                    // .buttonStyle(.borderedProminent)
-                   // .frame(maxWidth: .infinity)
+                    .frame(maxWidth: .infinity)
                                     .background (
                         RoundedRectangle(cornerRadius: 30)
                             .fill(Color.corDeFundo)

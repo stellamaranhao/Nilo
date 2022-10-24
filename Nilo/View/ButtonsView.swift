@@ -14,14 +14,7 @@ struct ButtonsView: View {
     
     
     var body: some View {
-        VStack{
-        Button {
-
-        } label: {
-            Image("exportarMemoria").resizable().renderingMode(.original).aspectRatio( contentMode: .fit)
-
-        }.frame(width: 170)
-
+      
             VStack(alignment:.center,spacing:-20 ){
                 
                 Image(systemName: imgSistema)
@@ -41,10 +34,10 @@ struct ButtonsView: View {
                     
             }.background(
                 RoundedRectangle(cornerRadius: 20)
-                    .fill(Color.melhoriaQualidade)
+                    .fill(Color.melhorarfoto)
                     .frame(width:120 ,height: 90).padding(.bottom)
             )
-        }
+        
     }
 }
 

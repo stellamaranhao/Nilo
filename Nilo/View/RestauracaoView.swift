@@ -52,7 +52,7 @@ struct RestauracaoView: View {
                
                 
                 
-                NavigationLink(destination: TelaResultado(imageShown: $imageShown), isActive: $isShowingDetailView) { EmptyView() }
+                NavigationLink(destination: TelaResultado3(selectedItem: $selectedItem, selectedImageData: $selectedImageData,imageShown: $imageShown), isActive: $isShowingDetailView) { EmptyView() }
                 //if botaoLiberado{
                 
                 Button(action: {
@@ -214,8 +214,8 @@ struct RestauracaoView: View {
     }
 
 }
-struct RestauracaoView_Previews: PreviewProvider {
-    static var previews: some View {
-        RestauracaoView()
-    }
-}
+//struct RestauracaoView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        RestauracaoView()
+//    }
+//}
