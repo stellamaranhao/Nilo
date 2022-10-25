@@ -42,6 +42,7 @@ final class BasetenAPI{
                     switch result {
                     case .success(let success):
                         completionCallback(.success(success))
+                        self.imagePredictionPipelineCleanUp()
                     case .failure(_):
                         completionCallback(.failure(.pipelineError(response: "")))
                     }

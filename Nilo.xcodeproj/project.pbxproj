@@ -14,6 +14,8 @@
 		ADBD423628EF4C0200E0C8CF /* UIImage_Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD423528EF4C0200E0C8CF /* UIImage_Extention.swift */; };
 		ADC14C2628ECD5C300065D97 /* ReplicateAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC14C2528ECD5C300065D97 /* ReplicateAPI.swift */; };
 		ADC14C2A28ECDF9100065D97 /* ReplicateAPIGetModelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC14C2928ECDF9100065D97 /* ReplicateAPIGetModelResponse.swift */; };
+		CF0D8D9E2907184F0075A715 /* MenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0D8D9D2907184F0075A715 /* MenuItemView.swift */; };
+		CF0D8DA1290718B90075A715 /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0D8DA0290718B90075A715 /* MotionManager.swift */; };
 		CF0FB08C28EF5AE00009C275 /* ColorizeML.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0FB08B28EF5AE00009C275 /* ColorizeML.swift */; };
 		CF0FB10B28EF69FE0009C275 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0FB10528EF69FD0009C275 /* UIViewController+Utils.swift */; };
 		CF0FB10C28EF69FE0009C275 /* UIImage+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0FB10728EF69FD0009C275 /* UIImage+Utils.swift */; };
@@ -65,6 +67,8 @@
 		CF86A67728F5E5FA009B6DE3 /* BasetenAPIInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF86A67628F5E5FA009B6DE3 /* BasetenAPIInput.swift */; };
 		CF86A67928F5E6F3009B6DE3 /* BasetenAPIModelEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF86A67828F5E6F3009B6DE3 /* BasetenAPIModelEnum.swift */; };
 		CF86A67B28F5EB6D009B6DE3 /* RestauracaoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF86A67A28F5EB6D009B6DE3 /* RestauracaoView.swift */; };
+		CFC203FF29080BF40012D790 /* MenuTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC203FE29080BF40012D790 /* MenuTitleView.swift */; };
+		CFC2040129081FD30012D790 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFC2040029081FD30012D790 /* Launch Screen.storyboard */; };
 		CFE1570328F71A4000502EB1 /* ImageKitAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE1570228F71A4000502EB1 /* ImageKitAPI.swift */; };
 		CFE1570628F747FC00502EB1 /* ImageKitAPIUploadResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE1570528F747FC00502EB1 /* ImageKitAPIUploadResponse.swift */; };
 		CFE1570828F752D000502EB1 /* BasetenAPIGFPGANResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE1570728F752D000502EB1 /* BasetenAPIGFPGANResponse.swift */; };
@@ -89,6 +93,8 @@
 		ADBD423528EF4C0200E0C8CF /* UIImage_Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage_Extention.swift; sourceTree = "<group>"; };
 		ADC14C2528ECD5C300065D97 /* ReplicateAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPI.swift; sourceTree = "<group>"; };
 		ADC14C2928ECDF9100065D97 /* ReplicateAPIGetModelResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIGetModelResponse.swift; sourceTree = "<group>"; };
+		CF0D8D9D2907184F0075A715 /* MenuItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemView.swift; sourceTree = "<group>"; };
+		CF0D8DA0290718B90075A715 /* MotionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
 		CF0FB08B28EF5AE00009C275 /* ColorizeML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorizeML.swift; sourceTree = "<group>"; };
 		CF0FB10428EF69FD0009C275 /* Nilo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Nilo-Bridging-Header.h"; sourceTree = "<group>"; };
 		CF0FB10528EF69FD0009C275 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
@@ -147,6 +153,8 @@
 		CF86A67628F5E5FA009B6DE3 /* BasetenAPIInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasetenAPIInput.swift; sourceTree = "<group>"; };
 		CF86A67828F5E6F3009B6DE3 /* BasetenAPIModelEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasetenAPIModelEnum.swift; sourceTree = "<group>"; };
 		CF86A67A28F5EB6D009B6DE3 /* RestauracaoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestauracaoView.swift; sourceTree = "<group>"; };
+		CFC203FE29080BF40012D790 /* MenuTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTitleView.swift; sourceTree = "<group>"; };
+		CFC2040029081FD30012D790 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		CFE1570228F71A4000502EB1 /* ImageKitAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageKitAPI.swift; sourceTree = "<group>"; };
 		CFE1570528F747FC00502EB1 /* ImageKitAPIUploadResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageKitAPIUploadResponse.swift; sourceTree = "<group>"; };
 		CFE1570728F752D000502EB1 /* BasetenAPIGFPGANResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasetenAPIGFPGANResponse.swift; sourceTree = "<group>"; };
@@ -197,6 +205,24 @@
 				ADC14C2728ECDF5900065D97 /* ReplicateAPI */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		CF0D8D9C290717DE0075A715 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				ADA531BD28FDD95C009053E0 /* MenuView.swift */,
+				CF0D8D9D2907184F0075A715 /* MenuItemView.swift */,
+				CFC203FE29080BF40012D790 /* MenuTitleView.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		CF0D8D9F290718AA0075A715 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				CF0D8DA0290718B90075A715 /* MotionManager.swift */,
+			);
+			path = Misc;
 			sourceTree = "<group>";
 		};
 		CF0FB08A28EF56AC0009C275 /* ColorizeML */ = {
@@ -270,6 +296,7 @@
 		CF46D3E028ECD0040052C018 = {
 			isa = PBXGroup;
 			children = (
+				CFC2040029081FD30012D790 /* Launch Screen.storyboard */,
 				CF46D3EB28ECD0040052C018 /* Nilo */,
 				CF46D3EA28ECD0040052C018 /* Products */,
 			);
@@ -319,7 +346,8 @@
 		CF46D3FB28ECD1060052C018 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				ADA531BD28FDD95C009053E0 /* MenuView.swift */,
+				CF0D8D9F290718AA0075A715 /* Misc */,
+				CF0D8D9C290717DE0075A715 /* Menu */,
 				ADA29A9B28F617EE006863D0 /* TelaResultado.swift */,
 				CF86A67A28F5EB6D009B6DE3 /* RestauracaoView.swift */,
 				ECF4ED5528F9A0B00018965B /* ImagePicker.swift */,
@@ -453,6 +481,7 @@
 			files = (
 				CF0FB14728EF6AD40009C275 /* Makefile.in in Resources */,
 				CF46D3F428ECD0050052C018 /* Preview Assets.xcassets in Resources */,
+				CFC2040129081FD30012D790 /* Launch Screen.storyboard in Resources */,
 				CF0FB14528EF6AD40009C275 /* lcms2.def in Resources */,
 				CF0FB15128EF6AD40009C275 /* sRGB_ICC_v4_Appearance.icc in Resources */,
 				CF0FB13A28EF6AD40009C275 /* Makefile.am in Resources */,
@@ -478,6 +507,7 @@
 				CF0FB13D28EF6AD40009C275 /* cmshalf.c in Sources */,
 				CF77F8D628EFBD9A00C1BBD2 /* test_colorizeML.swift in Sources */,
 				ADC14C2628ECD5C300065D97 /* ReplicateAPI.swift in Sources */,
+				CFC203FF29080BF40012D790 /* MenuTitleView.swift in Sources */,
 				ADBD423628EF4C0200E0C8CF /* UIImage_Extention.swift in Sources */,
 				AD6F91B728EE221300195F12 /* ReplicateAPIPostModelPrediction.swift in Sources */,
 				CF86A67B28F5EB6D009B6DE3 /* RestauracaoView.swift in Sources */,
@@ -504,6 +534,7 @@
 				CF0FB15228EF6AD40009C275 /* cmscnvrt.c in Sources */,
 				CF0FB14128EF6AD40009C275 /* cmsxform.c in Sources */,
 				ADA29A9C28F617EE006863D0 /* TelaResultado.swift in Sources */,
+				CF0D8D9E2907184F0075A715 /* MenuItemView.swift in Sources */,
 				CF46D40028ECD1CC0052C018 /* ContentViewExtension.swift in Sources */,
 				CFE1570628F747FC00502EB1 /* ImageKitAPIUploadResponse.swift in Sources */,
 				CFE1570328F71A4000502EB1 /* ImageKitAPI.swift in Sources */,
@@ -538,6 +569,7 @@
 				CF0FB10E28EF69FE0009C275 /* UIImage+Lab.mm in Sources */,
 				ECF4ED5628F9A0B00018965B /* ImagePicker.swift in Sources */,
 				ECF4ED5428F9919B0018965B /* TelaUpload.swift in Sources */,
+				CF0D8DA1290718B90075A715 /* MotionManager.swift in Sources */,
 				CF0FB15028EF6AD40009C275 /* cmssamp.c in Sources */,
 				ADC14C2A28ECDF9100065D97 /* ReplicateAPIGetModelResponse.swift in Sources */,
 				CF0FB08C28EF5AE00009C275 /* ColorizeML.swift in Sources */,
@@ -673,13 +705,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Nilo/Preview Content\"";
-				DEVELOPMENT_TEAM = UW3Y79FS5R;
+				DEVELOPMENT_TEAM = 5Y8ZK9WBN9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Quero usar sua camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -693,7 +726,7 @@
 					"-std=c++11",
 					"-Wno-deprecated-register",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = SMaiaJp.nilo;
+				PRODUCT_BUNDLE_IDENTIFIER = MaiaJp.nilo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -714,13 +747,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Nilo/Preview Content\"";
-				DEVELOPMENT_TEAM = UW3Y79FS5R;
+				DEVELOPMENT_TEAM = 5Y8ZK9WBN9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Quero usar sua camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -734,7 +768,7 @@
 					"-std=c++11",
 					"-Wno-deprecated-register",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = SMaiaJp.nilo;
+				PRODUCT_BUNDLE_IDENTIFIER = MaiaJp.nilo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
