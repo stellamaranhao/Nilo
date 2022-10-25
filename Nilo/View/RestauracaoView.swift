@@ -7,7 +7,7 @@ struct RestauracaoView: View {
     private var importtake: Bool {imageShown != nil}
     @State var image = UIImage()
     @State private var showSheet = false
- 
+    @State var oldImage: UIImage?
     @State private var selectedItem: PhotosPickerItem? = nil
     @State private var selectedImageData: Data? = nil
     @State var imageShown:UIImage?
@@ -52,7 +52,7 @@ struct RestauracaoView: View {
                
                 
                 
-                NavigationLink(destination: TelaResultado3(selectedItem: $selectedItem, selectedImageData: $selectedImageData,imageShown: $imageShown), isActive: $isShowingDetailView) { EmptyView() }
+                NavigationLink(destination: TelaResultado3(selectedItem: $selectedItem, oldImage: $oldImage, selectedImageData: $selectedImageData,imageShown: $imageShown), isActive: $isShowingDetailView) { EmptyView() }
                 //if botaoLiberado{
                 
                 Button(action: {
@@ -145,6 +145,7 @@ struct RestauracaoView: View {
                         if let data = try? await newItem?.loadTransferable(type: Data.self) {
                             selectedImageData = data
                             imageShown = UIImage(data: selectedImageData!)
+                            oldImage = UIImage(data: selectedImageData!)
                         }
                     }
                 }
