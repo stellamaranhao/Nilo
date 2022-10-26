@@ -14,7 +14,6 @@
 		AD9E8B2A29032BBD00259CF1 /* TelaResultado3.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9E8B2929032BBD00259CF1 /* TelaResultado3.swift */; };
 		ADA01BA22901B93800450C06 /* TelaResultado2.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA01BA12901B93800450C06 /* TelaResultado2.swift */; };
 		ADA29A9C28F617EE006863D0 /* TelaResultado.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA29A9B28F617EE006863D0 /* TelaResultado.swift */; };
-		ADA531BE28FDD95C009053E0 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA531BD28FDD95C009053E0 /* MenuView.swift */; };
 		ADA531C428FDE002009053E0 /* ColorirView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA531C328FDE002009053E0 /* ColorirView.swift */; };
 		ADBD423628EF4C0200E0C8CF /* UIImage_Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD423528EF4C0200E0C8CF /* UIImage_Extention.swift */; };
 		ADC14C2628ECD5C300065D97 /* ReplicateAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC14C2528ECD5C300065D97 /* ReplicateAPI.swift */; };
@@ -113,13 +112,11 @@
 /* Begin PBXFileReference section */
 		AD16386D29061B7A0022713F /* ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
 		AD163871290621710022713F /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
-		AD163873290621AE0022713F /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Regular.ttf"; path = "../../../../../Downloads/Poppins/Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		AD163873290621AE0022713F /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Regular.ttf"; path = "/Downloads/Poppins/Poppins-Regular.ttf"; sourceTree = "<absolute>"; };
 		AD6F91B628EE221300195F12 /* ReplicateAPIPostModelPrediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIPostModelPrediction.swift; sourceTree = "<group>"; };
 		AD9E8B2929032BBD00259CF1 /* TelaResultado3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaResultado3.swift; sourceTree = "<group>"; };
 		ADA01BA12901B93800450C06 /* TelaResultado2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaResultado2.swift; sourceTree = "<group>"; };
-		ADA01BA32902DE3F00450C06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		ADA29A9B28F617EE006863D0 /* TelaResultado.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaResultado.swift; sourceTree = "<group>"; };
-		ADA531BD28FDD95C009053E0 /* MenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		ADA531C328FDE002009053E0 /* ColorirView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorirView.swift; sourceTree = "<group>"; };
 		ADBD423528EF4C0200E0C8CF /* UIImage_Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage_Extention.swift; sourceTree = "<group>"; };
 		ADC14C2528ECD5C300065D97 /* ReplicateAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPI.swift; sourceTree = "<group>"; };
@@ -234,15 +231,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AD16386F29061F410022713F /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				AD163871290621710022713F /* Poppins-SemiBold.ttf */,
-				AD163873290621AE0022713F /* Poppins-Regular.ttf */,
-			);
-			path = Fonts;
-			sourceTree = "<group>";
-		};
 		ADC14C2728ECDF5900065D97 /* ReplicateAPI */ = {
 			isa = PBXGroup;
 			children = (
@@ -271,7 +259,6 @@
 		CF0D8D9C290717DE0075A715 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
-				ADA531BD28FDD95C009053E0 /* MenuView.swift */,
 				CF0D8D9D2907184F0075A715 /* MenuItemView.swift */,
 				CFC203FE29080BF40012D790 /* MenuTitleView.swift */,
 			);
@@ -361,6 +348,7 @@
 				CFC2040029081FD30012D790 /* Launch Screen.storyboard */,
 				CF46D3EB28ECD0040052C018 /* Nilo */,
 				CF46D3EA28ECD0040052C018 /* Products */,
+				CFC204332908E8380012D790 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -413,7 +401,6 @@
 				CF0D8D9F290718AA0075A715 /* Misc */,
 				CF0D8D9C290717DE0075A715 /* Menu */,
 				AD16386D29061B7A0022713F /* ButtonsView.swift */,
-				ADA531BD28FDD95C009053E0 /* MenuView.swift */,
 				ADA29A9B28F617EE006863D0 /* TelaResultado.swift */,
 				ADA01BA12901B93800450C06 /* TelaResultado2.swift */,
 				AD9E8B2929032BBD00259CF1 /* TelaResultado3.swift */,
@@ -498,6 +485,15 @@
 				CFC2041829085A660012D790 /* Poppins-MediumItalic.ttf */,
 			);
 			path = Poppins;
+			sourceTree = "<group>";
+		};
+		CFC204332908E8380012D790 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				AD163873290621AE0022713F /* Poppins-Regular.ttf */,
+				AD163871290621710022713F /* Poppins-SemiBold.ttf */,
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		CFE1570128F71A3400502EB1 /* ImageKitAPI */ = {
@@ -676,7 +672,6 @@
 				CFE1570828F752D000502EB1 /* BasetenAPIGFPGANResponse.swift in Sources */,
 				EC6032CE28EE063F00646F4C /* CameraView.swift in Sources */,
 				EC6032D228EE252700646F4C /* Cores.swift in Sources */,
-				ADA531BE28FDD95C009053E0 /* MenuView.swift in Sources */,
 				CFEA98ED28F120040058F16F /* test_replicateView.swift in Sources */,
 				CF86A67728F5E5FA009B6DE3 /* BasetenAPIInput.swift in Sources */,
 				CF52E59028F0BEB50074326F /* ReplicateAPIPredictionInfo.swift in Sources */,
