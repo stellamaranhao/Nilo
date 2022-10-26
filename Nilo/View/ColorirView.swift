@@ -15,7 +15,6 @@ struct ColorirView: View {
     private var importtake: Bool {imageShown != nil}
     @State private var image = UIImage()
     @State private var showSheet = false
- 
     @State private var selectedItem: PhotosPickerItem? = nil
     @State private var selectedImageData: Data? = nil
     @State var imageShown:UIImage?
@@ -161,9 +160,3 @@ struct ColorirView: View {
 }
 
 
-
-struct ColorirView_Previews: PreviewProvider {
-    static var previews: some View {
-        ColorirView()
-    }
-}
