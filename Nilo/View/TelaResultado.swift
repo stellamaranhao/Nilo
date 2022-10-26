@@ -3,14 +3,10 @@ import SwiftUI
 
 
 struct TelaResultado: View {
-    // @State var backImage = Image("ImagemAnneFinal")
-    //    let api = BasetenAPI()
-   // @State private var showingSheet = false
-  //  @State var showAlbumView = false
-    //  @State private var showSheet = false
-  //  private var importtake: Bool {imageShown != nil}
-    // @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-    
+    @State var backImage = Image("ImagemAnneFinal")
+ let api = BasetenAPI()
+    @State private var showingSheet = false
+    @State var showAlbumView = false
     @Binding var imageShown:UIImage?
     @State private var image : Bool = true
     @State var progressMsg:String = "progress: not started"
