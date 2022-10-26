@@ -11,6 +11,8 @@ struct TutorialView: View {
     @State private var selectedTab = 1
     @Binding var showingTutorial:Bool
     
+    let generator = UINotificationFeedbackGenerator()
+    
     var body: some View {
         //let yExtension: CGFloat = 50
         GeometryReader{ geometry in
@@ -56,6 +58,7 @@ struct TutorialView: View {
         .background(Color.corDeFundo)
         .onChange(of: selectedTab) { value in
             print("selected tab = \(value)")
+            generator.notificationOccurred(.success)
             if(value == 6){
                 showingTutorial.toggle()
                 UserDefaults.standard.set(false, forKey: "tutorial")
