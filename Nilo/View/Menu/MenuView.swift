@@ -10,14 +10,9 @@ import SwiftUI
 struct MenuView: View {
     @Namespace var namespace
     var motionManager = MotionManager()
-    let feedbackGenerator = UISelectionFeedbackGenerator()
-    
-    //Pages
-    @State private var restauracaoViewNavigation = false
-    @State private var colorirViewNavigation = false
     
     //Animations
-    @State private var yOffsetTitle: Double = 0
+    @State private var yoffsetTitle: Double = 0
     @State private var opacity: Double = 0
     
     var body: some View {
@@ -29,40 +24,31 @@ struct MenuView: View {
                             .ignoresSafeArea()
                         
                         MenuTitleView()
+                            .drawingGroup()
                             .ignoresSafeArea()
-                            .offset(y:yOffsetTitle)
+                            .offset(y:yoffsetTitle)
                             .onAppear{
-                                withAnimation(.easeInOut(duration: 1).delay(2.5)){
-                                    self.yOffsetTitle = -geometry.size.height*0.7
+                                withAnimation(.linear(duration: 0.6)){
+                                    self.yoffsetTitle = -geometry.size.height*0.7
                                 }
                             }
                             
                         
                         
                         VStack(spacing:30){
-                            NavigationLink(destination: RestauracaoView(),isActive: $restauracaoViewNavigation) {
+                            NavigationLink(destination: RestauracaoView()) {
                                 MenuItemView(imageName: "Lotus", objImageName: "Restaurar fotos", title: "Lotus", description: "Restaure fotos danificadas e antigas")
                                     .modifier(ParallaxMotionModifier(manager: motionManager, magnitude: 12))
-                                    .onTapGesture {
-                                        restauracaoViewNavigation = true
-                                        feedbackGenerator.selectionChanged()
-                                    }
                             }
                             
-                            NavigationLink(destination: ColorirView(),isActive: $colorirViewNavigation) {
+                            NavigationLink(destination: ColorirView()) {
                                 MenuItemView(imageName: "Lirio", objImageName: "ColoringTool", title: "Lirio", description: "Colorize fotos antigas")
                                     .modifier(ParallaxMotionModifier(manager: motionManager, magnitude: 12))
-                                    .onTapGesture {
-                                        colorirViewNavigation = true
-                                        feedbackGenerator.selectionChanged()
-                                    }
                             }
-                            
-                            
                         }
                         .opacity(opacity)
                         .onAppear{
-                            withAnimation(.linear(duration: 0.5).delay(3)){
+                            withAnimation(.linear(duration: 0.5).delay(0.5)){
                                 opacity = 1
                             }
                         }

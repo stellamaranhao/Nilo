@@ -69,6 +69,7 @@
 		CF86A67728F5E5FA009B6DE3 /* BasetenAPIInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF86A67628F5E5FA009B6DE3 /* BasetenAPIInput.swift */; };
 		CF86A67928F5E6F3009B6DE3 /* BasetenAPIModelEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF86A67828F5E6F3009B6DE3 /* BasetenAPIModelEnum.swift */; };
 		CF86A67B28F5EB6D009B6DE3 /* RestauracaoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF86A67A28F5EB6D009B6DE3 /* RestauracaoView.swift */; };
+		CFA274032908F9CF00A8C6D9 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA274022908F9CF00A8C6D9 /* MenuView.swift */; };
 		CFC203FF29080BF40012D790 /* MenuTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC203FE29080BF40012D790 /* MenuTitleView.swift */; };
 		CFC2040129081FD30012D790 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFC2040029081FD30012D790 /* Launch Screen.storyboard */; };
 		CFC2041929085A660012D790 /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFC2040629085A660012D790 /* Poppins-ExtraLight.ttf */; };
@@ -179,6 +180,7 @@
 		CF86A67628F5E5FA009B6DE3 /* BasetenAPIInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasetenAPIInput.swift; sourceTree = "<group>"; };
 		CF86A67828F5E6F3009B6DE3 /* BasetenAPIModelEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasetenAPIModelEnum.swift; sourceTree = "<group>"; };
 		CF86A67A28F5EB6D009B6DE3 /* RestauracaoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestauracaoView.swift; sourceTree = "<group>"; };
+		CFA274022908F9CF00A8C6D9 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		CFC203FE29080BF40012D790 /* MenuTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTitleView.swift; sourceTree = "<group>"; };
 		CFC2040029081FD30012D790 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		CFC2040629085A660012D790 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
@@ -261,6 +263,7 @@
 			children = (
 				CF0D8D9D2907184F0075A715 /* MenuItemView.swift */,
 				CFC203FE29080BF40012D790 /* MenuTitleView.swift */,
+				CFA274022908F9CF00A8C6D9 /* MenuView.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -348,7 +351,6 @@
 				CFC2040029081FD30012D790 /* Launch Screen.storyboard */,
 				CF46D3EB28ECD0040052C018 /* Nilo */,
 				CF46D3EA28ECD0040052C018 /* Products */,
-				CFC204332908E8380012D790 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -635,6 +637,7 @@
 				ADC14C2628ECD5C300065D97 /* ReplicateAPI.swift in Sources */,
 				CFC203FF29080BF40012D790 /* MenuTitleView.swift in Sources */,
 				ADBD423628EF4C0200E0C8CF /* UIImage_Extention.swift in Sources */,
+				CFA274032908F9CF00A8C6D9 /* MenuView.swift in Sources */,
 				AD6F91B728EE221300195F12 /* ReplicateAPIPostModelPrediction.swift in Sources */,
 				CF86A67B28F5EB6D009B6DE3 /* RestauracaoView.swift in Sources */,
 				CF52E58A28F0A8910074326F /* ReplicateAPIModelsEnum.swift in Sources */,
