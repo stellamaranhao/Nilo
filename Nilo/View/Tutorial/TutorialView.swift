@@ -9,6 +9,7 @@ import SwiftUI
 
 struct TutorialView: View {
     @State private var selectedTab = 1
+//    var motionManager = MotionManager()
     
     var body: some View {
         let yExtension: CGFloat = 50
@@ -22,16 +23,29 @@ struct TutorialView: View {
                         .font(.custom("Poppins-Regular", size: 16))
                         .padding(.leading, geometry.size.width*0.64)
                 }.offset(y:geometry.size.width*0.25)
-                
 
-                
-                TabView(selection: $selectedTab){
-                    TutorialBVView()
-                    
-                    TutorialBVView()
-                    
-                }.tabViewStyle(.page)
+
+                ZStack(alignment: .top){
+                    TabView(selection: $selectedTab){
+                        
+                        TutorialBVView().tag(1)
+                        
+                        TutorialMenuView().tag(2)
+                        
+                        TutoriaLotusView().tag(3)
+                        
+                        TutorialLiriosView().tag(4)
+                        
+                        NiloTutorialFinalView().tag(5)
+                        
+                        MenuTitleView().tag(6)
+                        
+                        
+                    }
+                    .tabViewStyle(.page(indexDisplayMode: .always))
                     .frame(width: geometry.size.width, height: geometry.size.height + yExtension+50)
+                    
+                }
                 
             }
             

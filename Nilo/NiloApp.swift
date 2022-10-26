@@ -12,6 +12,7 @@ struct NiloApp: App {
     var body: some Scene {
         WindowGroup {
             TutorialView()
+            
 
         }
     }
