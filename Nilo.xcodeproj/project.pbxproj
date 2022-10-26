@@ -8,13 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		AD16386E29061B7A0022713F /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD16386D29061B7A0022713F /* ButtonsView.swift */; };
-		AD163872290621710022713F /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD163871290621710022713F /* Poppins-SemiBold.ttf */; };
-		AD163874290621AE0022713F /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD163873290621AE0022713F /* Poppins-Regular.ttf */; };
 		AD6F91B728EE221300195F12 /* ReplicateAPIPostModelPrediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6F91B628EE221300195F12 /* ReplicateAPIPostModelPrediction.swift */; };
 		AD9E8B2A29032BBD00259CF1 /* TelaResultado3.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9E8B2929032BBD00259CF1 /* TelaResultado3.swift */; };
 		ADA01BA22901B93800450C06 /* TelaResultado2.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA01BA12901B93800450C06 /* TelaResultado2.swift */; };
 		ADA29A9C28F617EE006863D0 /* TelaResultado.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA29A9B28F617EE006863D0 /* TelaResultado.swift */; };
-		ADA531BE28FDD95C009053E0 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA531BD28FDD95C009053E0 /* MenuView.swift */; };
 		ADA531C428FDE002009053E0 /* ColorirView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA531C328FDE002009053E0 /* ColorirView.swift */; };
 		ADBD423628EF4C0200E0C8CF /* UIImage_Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD423528EF4C0200E0C8CF /* UIImage_Extention.swift */; };
 		ADC14C2628ECD5C300065D97 /* ReplicateAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC14C2528ECD5C300065D97 /* ReplicateAPI.swift */; };
@@ -72,6 +69,7 @@
 		CF86A67728F5E5FA009B6DE3 /* BasetenAPIInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF86A67628F5E5FA009B6DE3 /* BasetenAPIInput.swift */; };
 		CF86A67928F5E6F3009B6DE3 /* BasetenAPIModelEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF86A67828F5E6F3009B6DE3 /* BasetenAPIModelEnum.swift */; };
 		CF86A67B28F5EB6D009B6DE3 /* RestauracaoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF86A67A28F5EB6D009B6DE3 /* RestauracaoView.swift */; };
+		CFA274032908F9CF00A8C6D9 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA274022908F9CF00A8C6D9 /* MenuView.swift */; };
 		CFC203FF29080BF40012D790 /* MenuTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC203FE29080BF40012D790 /* MenuTitleView.swift */; };
 		CFC2040129081FD30012D790 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFC2040029081FD30012D790 /* Launch Screen.storyboard */; };
 		CFC2041929085A660012D790 /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFC2040629085A660012D790 /* Poppins-ExtraLight.ttf */; };
@@ -112,14 +110,10 @@
 
 /* Begin PBXFileReference section */
 		AD16386D29061B7A0022713F /* ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
-		AD163871290621710022713F /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
-		AD163873290621AE0022713F /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Regular.ttf"; path = "../../../../../Downloads/Poppins/Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		AD6F91B628EE221300195F12 /* ReplicateAPIPostModelPrediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIPostModelPrediction.swift; sourceTree = "<group>"; };
 		AD9E8B2929032BBD00259CF1 /* TelaResultado3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaResultado3.swift; sourceTree = "<group>"; };
 		ADA01BA12901B93800450C06 /* TelaResultado2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaResultado2.swift; sourceTree = "<group>"; };
-		ADA01BA32902DE3F00450C06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		ADA29A9B28F617EE006863D0 /* TelaResultado.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaResultado.swift; sourceTree = "<group>"; };
-		ADA531BD28FDD95C009053E0 /* MenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		ADA531C328FDE002009053E0 /* ColorirView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorirView.swift; sourceTree = "<group>"; };
 		ADBD423528EF4C0200E0C8CF /* UIImage_Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage_Extention.swift; sourceTree = "<group>"; };
 		ADC14C2528ECD5C300065D97 /* ReplicateAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPI.swift; sourceTree = "<group>"; };
@@ -184,6 +178,7 @@
 		CF86A67628F5E5FA009B6DE3 /* BasetenAPIInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasetenAPIInput.swift; sourceTree = "<group>"; };
 		CF86A67828F5E6F3009B6DE3 /* BasetenAPIModelEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasetenAPIModelEnum.swift; sourceTree = "<group>"; };
 		CF86A67A28F5EB6D009B6DE3 /* RestauracaoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestauracaoView.swift; sourceTree = "<group>"; };
+		CFA274022908F9CF00A8C6D9 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		CFC203FE29080BF40012D790 /* MenuTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTitleView.swift; sourceTree = "<group>"; };
 		CFC2040029081FD30012D790 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		CFC2040629085A660012D790 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
@@ -234,15 +229,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AD16386F29061F410022713F /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				AD163871290621710022713F /* Poppins-SemiBold.ttf */,
-				AD163873290621AE0022713F /* Poppins-Regular.ttf */,
-			);
-			path = Fonts;
-			sourceTree = "<group>";
-		};
 		ADC14C2728ECDF5900065D97 /* ReplicateAPI */ = {
 			isa = PBXGroup;
 			children = (
@@ -271,9 +257,9 @@
 		CF0D8D9C290717DE0075A715 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
-				ADA531BD28FDD95C009053E0 /* MenuView.swift */,
 				CF0D8D9D2907184F0075A715 /* MenuItemView.swift */,
 				CFC203FE29080BF40012D790 /* MenuTitleView.swift */,
+				CFA274022908F9CF00A8C6D9 /* MenuView.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -413,7 +399,6 @@
 				CF0D8D9F290718AA0075A715 /* Misc */,
 				CF0D8D9C290717DE0075A715 /* Menu */,
 				AD16386D29061B7A0022713F /* ButtonsView.swift */,
-				ADA531BD28FDD95C009053E0 /* MenuView.swift */,
 				ADA29A9B28F617EE006863D0 /* TelaResultado.swift */,
 				ADA01BA12901B93800450C06 /* TelaResultado2.swift */,
 				AD9E8B2929032BBD00259CF1 /* TelaResultado3.swift */,
@@ -595,11 +580,9 @@
 				CFC2042029085A660012D790 /* Poppins-ExtraBoldItalic.ttf in Resources */,
 				CFC2042329085A660012D790 /* OFL.txt in Resources */,
 				CF0FB14528EF6AD40009C275 /* lcms2.def in Resources */,
-				AD163874290621AE0022713F /* Poppins-Regular.ttf in Resources */,
 				CF0FB15128EF6AD40009C275 /* sRGB_ICC_v4_Appearance.icc in Resources */,
 				CFC2041B29085A660012D790 /* Poppins-ExtraLightItalic.ttf in Resources */,
 				CF0FB13A28EF6AD40009C275 /* Makefile.am in Resources */,
-				AD163872290621710022713F /* Poppins-SemiBold.ttf in Resources */,
 				CFC2041A29085A660012D790 /* Poppins-ThinItalic.ttf in Resources */,
 				CFC2042129085A660012D790 /* Poppins-ExtraBold.ttf in Resources */,
 				CFC2042529085A660012D790 /* Poppins-LightItalic.ttf in Resources */,
@@ -633,6 +616,7 @@
 				ADC14C2628ECD5C300065D97 /* ReplicateAPI.swift in Sources */,
 				CFC203FF29080BF40012D790 /* MenuTitleView.swift in Sources */,
 				ADBD423628EF4C0200E0C8CF /* UIImage_Extention.swift in Sources */,
+				CFA274032908F9CF00A8C6D9 /* MenuView.swift in Sources */,
 				AD6F91B728EE221300195F12 /* ReplicateAPIPostModelPrediction.swift in Sources */,
 				CF86A67B28F5EB6D009B6DE3 /* RestauracaoView.swift in Sources */,
 				CF52E58A28F0A8910074326F /* ReplicateAPIModelsEnum.swift in Sources */,
@@ -676,7 +660,6 @@
 				CFE1570828F752D000502EB1 /* BasetenAPIGFPGANResponse.swift in Sources */,
 				EC6032CE28EE063F00646F4C /* CameraView.swift in Sources */,
 				EC6032D228EE252700646F4C /* Cores.swift in Sources */,
-				ADA531BE28FDD95C009053E0 /* MenuView.swift in Sources */,
 				CFEA98ED28F120040058F16F /* test_replicateView.swift in Sources */,
 				CF86A67728F5E5FA009B6DE3 /* BasetenAPIInput.swift in Sources */,
 				CF52E59028F0BEB50074326F /* ReplicateAPIPredictionInfo.swift in Sources */,
