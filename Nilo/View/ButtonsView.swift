@@ -41,7 +41,7 @@ struct ButtonsView: View {
                     
             }.background(
                 RoundedRectangle(cornerRadius: 20)
-                    .fill(Color.melhoriaQualidade)
+                    .fill(.red)
                     .frame(width:120 ,height: 90).padding(.bottom)
             )
         }

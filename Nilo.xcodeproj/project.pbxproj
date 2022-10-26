@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		AD16386E29061B7A0022713F /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD16386D29061B7A0022713F /* ButtonsView.swift */; };
-		AD163872290621710022713F /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD163871290621710022713F /* Poppins-SemiBold.ttf */; };
-		AD163874290621AE0022713F /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD163873290621AE0022713F /* Poppins-Regular.ttf */; };
 		AD6F91B728EE221300195F12 /* ReplicateAPIPostModelPrediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6F91B628EE221300195F12 /* ReplicateAPIPostModelPrediction.swift */; };
 		AD9E8B2A29032BBD00259CF1 /* TelaResultado3.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9E8B2929032BBD00259CF1 /* TelaResultado3.swift */; };
 		ADA01BA22901B93800450C06 /* TelaResultado2.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA01BA12901B93800450C06 /* TelaResultado2.swift */; };
@@ -93,6 +91,8 @@
 		CFC2042A29085A660012D790 /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFC2041729085A660012D790 /* Poppins-Italic.ttf */; };
 		CFC2042B29085A660012D790 /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFC2041829085A660012D790 /* Poppins-MediumItalic.ttf */; };
 		CFC2043229086CA90012D790 /* ShakeShake.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC2043129086CA90012D790 /* ShakeShake.swift */; };
+		CFC204362908E9370012D790 /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC204352908E9370012D790 /* TutorialView.swift */; };
+		CFC204382908F0630012D790 /* TutorialBVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC204372908F0630012D790 /* TutorialBVView.swift */; };
 		CFE1570328F71A4000502EB1 /* ImageKitAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE1570228F71A4000502EB1 /* ImageKitAPI.swift */; };
 		CFE1570628F747FC00502EB1 /* ImageKitAPIUploadResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE1570528F747FC00502EB1 /* ImageKitAPIUploadResponse.swift */; };
 		CFE1570828F752D000502EB1 /* BasetenAPIGFPGANResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE1570728F752D000502EB1 /* BasetenAPIGFPGANResponse.swift */; };
@@ -111,8 +111,6 @@
 
 /* Begin PBXFileReference section */
 		AD16386D29061B7A0022713F /* ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
-		AD163871290621710022713F /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
-		AD163873290621AE0022713F /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Regular.ttf"; path = "/Downloads/Poppins/Poppins-Regular.ttf"; sourceTree = "<absolute>"; };
 		AD6F91B628EE221300195F12 /* ReplicateAPIPostModelPrediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIPostModelPrediction.swift; sourceTree = "<group>"; };
 		AD9E8B2929032BBD00259CF1 /* TelaResultado3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaResultado3.swift; sourceTree = "<group>"; };
 		ADA01BA12901B93800450C06 /* TelaResultado2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaResultado2.swift; sourceTree = "<group>"; };
@@ -204,6 +202,8 @@
 		CFC2041829085A660012D790 /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
 		CFC2043029085DB90012D790 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		CFC2043129086CA90012D790 /* ShakeShake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeShake.swift; sourceTree = "<group>"; };
+		CFC204352908E9370012D790 /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
+		CFC204372908F0630012D790 /* TutorialBVView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialBVView.swift; sourceTree = "<group>"; };
 		CFE1570228F71A4000502EB1 /* ImageKitAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageKitAPI.swift; sourceTree = "<group>"; };
 		CFE1570528F747FC00502EB1 /* ImageKitAPIUploadResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageKitAPIUploadResponse.swift; sourceTree = "<group>"; };
 		CFE1570728F752D000502EB1 /* BasetenAPIGFPGANResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasetenAPIGFPGANResponse.swift; sourceTree = "<group>"; };
@@ -397,6 +397,7 @@
 		CF46D3FB28ECD1060052C018 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CFC204342908E8CA0012D790 /* Tutorial */,
 				CFC2040429085A5B0012D790 /* Font */,
 				CF0D8D9F290718AA0075A715 /* Misc */,
 				CF0D8D9C290717DE0075A715 /* Menu */,
@@ -490,10 +491,17 @@
 		CFC204332908E8380012D790 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				AD163873290621AE0022713F /* Poppins-Regular.ttf */,
-				AD163871290621710022713F /* Poppins-SemiBold.ttf */,
 			);
 			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		CFC204342908E8CA0012D790 /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				CFC204352908E9370012D790 /* TutorialView.swift */,
+				CFC204372908F0630012D790 /* TutorialBVView.swift */,
+			);
+			path = Tutorial;
 			sourceTree = "<group>";
 		};
 		CFE1570128F71A3400502EB1 /* ImageKitAPI */ = {
@@ -591,11 +599,9 @@
 				CFC2042029085A660012D790 /* Poppins-ExtraBoldItalic.ttf in Resources */,
 				CFC2042329085A660012D790 /* OFL.txt in Resources */,
 				CF0FB14528EF6AD40009C275 /* lcms2.def in Resources */,
-				AD163874290621AE0022713F /* Poppins-Regular.ttf in Resources */,
 				CF0FB15128EF6AD40009C275 /* sRGB_ICC_v4_Appearance.icc in Resources */,
 				CFC2041B29085A660012D790 /* Poppins-ExtraLightItalic.ttf in Resources */,
 				CF0FB13A28EF6AD40009C275 /* Makefile.am in Resources */,
-				AD163872290621710022713F /* Poppins-SemiBold.ttf in Resources */,
 				CFC2041A29085A660012D790 /* Poppins-ThinItalic.ttf in Resources */,
 				CFC2042129085A660012D790 /* Poppins-ExtraBold.ttf in Resources */,
 				CFC2042529085A660012D790 /* Poppins-LightItalic.ttf in Resources */,
@@ -666,11 +672,13 @@
 				CF0FB10B28EF69FE0009C275 /* UIViewController+Utils.swift in Sources */,
 				CF0FB14028EF6AD40009C275 /* cmsintrp.c in Sources */,
 				CFC2043229086CA90012D790 /* ShakeShake.swift in Sources */,
+				CFC204362908E9370012D790 /* TutorialView.swift in Sources */,
 				CF0FB10C28EF69FE0009C275 /* UIImage+Utils.swift in Sources */,
 				CF0FB13828EF6AD40009C275 /* cmscam02.c in Sources */,
 				CF46D3EF28ECD0040052C018 /* ContentView.swift in Sources */,
 				CFE1570828F752D000502EB1 /* BasetenAPIGFPGANResponse.swift in Sources */,
 				EC6032CE28EE063F00646F4C /* CameraView.swift in Sources */,
+				CFC204382908F0630012D790 /* TutorialBVView.swift in Sources */,
 				EC6032D228EE252700646F4C /* Cores.swift in Sources */,
 				CFEA98ED28F120040058F16F /* test_replicateView.swift in Sources */,
 				CF86A67728F5E5FA009B6DE3 /* BasetenAPIInput.swift in Sources */,
