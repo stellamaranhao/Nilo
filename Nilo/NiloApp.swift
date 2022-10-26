@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct NiloApp: App {
+    @State var showingTutorial = UserDefaults.standard.bool(forKey: "tutorial")
+    
     var body: some Scene {
         WindowGroup {
-            TutorialView()
+            if showingTutorial{
+                TutorialView(showingTutorial: $showingTutorial)
+            }else{
+                MenuView(showingTutorial:  $showingTutorial)
+            }
             
 
         }

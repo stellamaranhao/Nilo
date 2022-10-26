@@ -9,6 +9,8 @@ import SwiftUI
 
 struct MenuView: View {
     @Namespace var namespace
+    @Binding var showingTutorial:Bool
+    
     var motionManager = MotionManager()
     
     //Animations
@@ -58,16 +60,21 @@ struct MenuView: View {
                 }
                 .navigationBarBackButtonHidden(true)
                 
+                Image(systemName: "questionmark.circle.fill")
+                    .offset(x:geometry.size.width*0.35, y:-geometry.size.height*0.45)
+                    .font(.title)
+                    .foregroundColor(.white)
+                    .onTapGesture {
+                        showingTutorial.toggle()
+                    }
+                    .onLongPressGesture(){
+                        UserDefaults.standard.set(true, forKey: "tutorial")
+                        showingTutorial.toggle()
+                    }
+                
             }
             
         }
     }
     
-}
-
-
-struct Menu_Previews: PreviewProvider {
-    static var previews: some View {
-        MenuView()
-    }
 }

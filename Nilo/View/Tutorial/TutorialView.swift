@@ -9,55 +9,58 @@ import SwiftUI
 
 struct TutorialView: View {
     @State private var selectedTab = 1
-//    var motionManager = MotionManager()
+    @Binding var showingTutorial:Bool
     
     var body: some View {
-        let yExtension: CGFloat = 50
+        //let yExtension: CGFloat = 50
         GeometryReader{ geometry in
-            VStack(spacing: -15){
-                Button(){
-                    print("tap tap btn")
-                }label: {
-                    Text("Pular")
-                        .foregroundColor(Color.corTexto)
-                        .font(.custom("Poppins-Regular", size: 16))
-                        .padding(.leading, geometry.size.width*0.64)
-                }.offset(y:geometry.size.width*0.25)
-
-
-                ZStack(alignment: .top){
+                VStack(alignment: .leading, spacing: 0){
                     TabView(selection: $selectedTab){
                         
-                        TutorialBVView().tag(1)
+                        TutorialBVView()
+                            .tabItem({
+                                Image(systemName: "1.square")
+                            })
+                            .tag(1)
                         
-                        TutorialMenuView().tag(2)
+                        TutorialMenuView().tabItem({
+                            Image(systemName: "2.square")
+                        }).tag(2)
                         
-                        TutoriaLotusView().tag(3)
+                        TutoriaLotusView().tabItem({
+                            Image(systemName: "3.square")
+                        }).tag(3)
                         
-                        TutorialLiriosView().tag(4)
+                        TutorialLiriosView().tabItem({
+                            Image(systemName: "4.square")
+                        }).tag(4)
                         
-                        NiloTutorialFinalView().tag(5)
+                        NiloTutorialFinalView().tabItem({
+                            Image(systemName: "5.square")
+                        }).tag(5)
                         
-                        MenuTitleView().tag(6)
+                        MenuTitleView().tabItem({
+                            Image(systemName: "6.square")
+                        }).tag(6)
                         
                         
                     }
                     .tabViewStyle(.page(indexDisplayMode: .always))
-                    .frame(width: geometry.size.width, height: geometry.size.height + yExtension+50)
                     
+                    Spacer().frame(height: 25)
                 }
                 
+            
+        }
+        .edgesIgnoringSafeArea(.all)
+        .background(Color.corDeFundo)
+        .onChange(of: selectedTab) { value in
+            print("selected tab = \(value)")
+            if(value == 6){
+                showingTutorial.toggle()
+                UserDefaults.standard.set(false, forKey: "tutorial")
             }
             
         }
-        .offset(y: -yExtension)
-        .edgesIgnoringSafeArea(.all)
-        .background(Color.corDeFundo)
-    }
-}
-
-struct TutorialView_Previews: PreviewProvider {
-    static var previews: some View {
-        TutorialView()
     }
 }
