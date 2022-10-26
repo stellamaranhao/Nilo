@@ -17,12 +17,16 @@ struct MenuItemView: View {
     var body: some View {
         ZStack(alignment: .bottomLeading){
             HStack(spacing:-64){
-                Image(imageName)
-                    .resizable()
-                    .edgesIgnoringSafeArea(.all)
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 200, height: 200)
+                
+                ZStack{
+                    Image(imageName)
+                        .resizable()
+                        .edgesIgnoringSafeArea(.all)
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 200, height: 200)
                     .offset(x:-50, y:-5)
+                    
+                }
                 
                 Image(objImageName)
                     .resizable()
@@ -42,10 +46,10 @@ struct MenuItemView: View {
                 
                 Text(description)
                     .foregroundColor(Color.corTexto)
-                    .fontWeight(.ultraLight)
-                    .font(.custom("", size: 16))
+                    .font(.custom("Poppins-Regular", size: 16))
                     .offset(x:30)
             }.padding(5)
+
             
         }
         //PAding na view TODO: padding

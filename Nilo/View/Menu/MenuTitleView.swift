@@ -8,32 +8,53 @@
 import SwiftUI
 
 struct MenuTitleView: View {
+    @State var title = "Nilo"
+    @State var titleEgypt = "𓆄𓅃𓇶"
+    
+    @State var desc = "Ferramentas de Restauração"
+    @State var descEgypt = "𓉲𓆄𓅃𓇶𓅀𓌬𓆵𓇇𓇍𓇙𓉤"
+  
+    @State var egyptText:Bool = false
+    
+    
     var body: some View {
         GeometryReader{ geometry in
             ZStack(alignment: .bottomLeading){
-                Image("MenuTitle")
-                    .resizable()
-                    .scaledToFill()
-                    .edgesIgnoringSafeArea(.all)
-                    //.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
-                    //.scaledToFit()
-                    //.aspectRatio(contentMode: .fill)
-                    //.offset(y:geometry.size.height*0.30)
                 
-                VStack(alignment: .leading){
-                    Text("Nilo")
-                        .foregroundColor(.white)
-                        .fontWeight(.bold)
-                        .font(.custom("Poppins", size: 56))
+                ZStack{
+                    Image("MenuTitle")
+                        .resizable()
+                        .scaledToFill()
+                        .edgesIgnoringSafeArea(.all)
                     
-                    Text("Ferramentas de Restauração")
-                        .foregroundColor(.white)
-                        .fontWeight(.ultraLight)
-                        .font(.custom("", size: 16))
+                }
+                
+                
+                VStack(alignment: .leading,spacing: -10){
+                    if(egyptText){
+                        Text(titleEgypt)
+                            .foregroundColor(.white)
+                        .font(.custom("Poppins-SemiBold", size: 64))
+                        
+                        Text(descEgypt)
+                            .foregroundColor(.white)
+                            .font(.custom("Poppins-Regular", size: 16))
+                        
+                    }else{
+                        Text(title)
+                            .foregroundColor(.white)
+                        .font(.custom("Poppins-SemiBold", size: 64))
+                        
+                        
+                        Text(desc)
+                            .foregroundColor(.white)
+                            .font(.custom("Poppins-Regular", size: 16))
+                    }
+                    
+            
                     
                 }.padding(58)
-                .offset(y:-50)
-                
+                .offset(y:-30)
             }
             
         }.cornerRadius(18)

@@ -69,6 +69,26 @@
 		CF86A67B28F5EB6D009B6DE3 /* RestauracaoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF86A67A28F5EB6D009B6DE3 /* RestauracaoView.swift */; };
 		CFC203FF29080BF40012D790 /* MenuTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC203FE29080BF40012D790 /* MenuTitleView.swift */; };
 		CFC2040129081FD30012D790 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFC2040029081FD30012D790 /* Launch Screen.storyboard */; };
+		CFC2041929085A660012D790 /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFC2040629085A660012D790 /* Poppins-ExtraLight.ttf */; };
+		CFC2041A29085A660012D790 /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFC2040729085A660012D790 /* Poppins-ThinItalic.ttf */; };
+		CFC2041B29085A660012D790 /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFC2040829085A660012D790 /* Poppins-ExtraLightItalic.ttf */; };
+		CFC2041C29085A660012D790 /* Poppins-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFC2040929085A660012D790 /* Poppins-BoldItalic.ttf */; };
+		CFC2041D29085A660012D790 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFC2040A29085A660012D790 /* Poppins-Light.ttf */; };
+		CFC2041E29085A660012D790 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFC2040B29085A660012D790 /* Poppins-Medium.ttf */; };
+		CFC2041F29085A660012D790 /* Poppins-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFC2040C29085A660012D790 /* Poppins-SemiBoldItalic.ttf */; };
+		CFC2042029085A660012D790 /* Poppins-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFC2040D29085A660012D790 /* Poppins-ExtraBoldItalic.ttf */; };
+		CFC2042129085A660012D790 /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFC2040E29085A660012D790 /* Poppins-ExtraBold.ttf */; };
+		CFC2042229085A660012D790 /* Poppins-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFC2040F29085A660012D790 /* Poppins-BlackItalic.ttf */; };
+		CFC2042329085A660012D790 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = CFC2041029085A660012D790 /* OFL.txt */; };
+		CFC2042429085A660012D790 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFC2041129085A660012D790 /* Poppins-Regular.ttf */; };
+		CFC2042529085A660012D790 /* Poppins-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFC2041229085A660012D790 /* Poppins-LightItalic.ttf */; };
+		CFC2042629085A660012D790 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFC2041329085A660012D790 /* Poppins-Bold.ttf */; };
+		CFC2042729085A660012D790 /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFC2041429085A660012D790 /* Poppins-Black.ttf */; };
+		CFC2042829085A660012D790 /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFC2041529085A660012D790 /* Poppins-Thin.ttf */; };
+		CFC2042929085A660012D790 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFC2041629085A660012D790 /* Poppins-SemiBold.ttf */; };
+		CFC2042A29085A660012D790 /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFC2041729085A660012D790 /* Poppins-Italic.ttf */; };
+		CFC2042B29085A660012D790 /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFC2041829085A660012D790 /* Poppins-MediumItalic.ttf */; };
+		CFC2043229086CA90012D790 /* ShakeShake.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC2043129086CA90012D790 /* ShakeShake.swift */; };
 		CFE1570328F71A4000502EB1 /* ImageKitAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE1570228F71A4000502EB1 /* ImageKitAPI.swift */; };
 		CFE1570628F747FC00502EB1 /* ImageKitAPIUploadResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE1570528F747FC00502EB1 /* ImageKitAPIUploadResponse.swift */; };
 		CFE1570828F752D000502EB1 /* BasetenAPIGFPGANResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE1570728F752D000502EB1 /* BasetenAPIGFPGANResponse.swift */; };
@@ -155,6 +175,27 @@
 		CF86A67A28F5EB6D009B6DE3 /* RestauracaoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestauracaoView.swift; sourceTree = "<group>"; };
 		CFC203FE29080BF40012D790 /* MenuTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTitleView.swift; sourceTree = "<group>"; };
 		CFC2040029081FD30012D790 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		CFC2040629085A660012D790 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
+		CFC2040729085A660012D790 /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
+		CFC2040829085A660012D790 /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		CFC2040929085A660012D790 /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BoldItalic.ttf"; sourceTree = "<group>"; };
+		CFC2040A29085A660012D790 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		CFC2040B29085A660012D790 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		CFC2040C29085A660012D790 /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		CFC2040D29085A660012D790 /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		CFC2040E29085A660012D790 /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
+		CFC2040F29085A660012D790 /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
+		CFC2041029085A660012D790 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		CFC2041129085A660012D790 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		CFC2041229085A660012D790 /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-LightItalic.ttf"; sourceTree = "<group>"; };
+		CFC2041329085A660012D790 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		CFC2041429085A660012D790 /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
+		CFC2041529085A660012D790 /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
+		CFC2041629085A660012D790 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		CFC2041729085A660012D790 /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
+		CFC2041829085A660012D790 /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
+		CFC2043029085DB90012D790 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CFC2043129086CA90012D790 /* ShakeShake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeShake.swift; sourceTree = "<group>"; };
 		CFE1570228F71A4000502EB1 /* ImageKitAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageKitAPI.swift; sourceTree = "<group>"; };
 		CFE1570528F747FC00502EB1 /* ImageKitAPIUploadResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageKitAPIUploadResponse.swift; sourceTree = "<group>"; };
 		CFE1570728F752D000502EB1 /* BasetenAPIGFPGANResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasetenAPIGFPGANResponse.swift; sourceTree = "<group>"; };
@@ -221,6 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				CF0D8DA0290718B90075A715 /* MotionManager.swift */,
+				CFC2043129086CA90012D790 /* ShakeShake.swift */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -313,6 +355,7 @@
 		CF46D3EB28ECD0040052C018 /* Nilo */ = {
 			isa = PBXGroup;
 			children = (
+				CFC2043029085DB90012D790 /* Info.plist */,
 				CF46D3FD28ECD11D0052C018 /* Model */,
 				CF46D3FB28ECD1060052C018 /* View */,
 				CF46D3FA28ECD0FC0052C018 /* Networking */,
@@ -346,6 +389,7 @@
 		CF46D3FB28ECD1060052C018 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CFC2040429085A5B0012D790 /* Font */,
 				CF0D8D9F290718AA0075A715 /* Misc */,
 				CF0D8D9C290717DE0075A715 /* Menu */,
 				ADA29A9B28F617EE006863D0 /* TelaResultado.swift */,
@@ -396,6 +440,40 @@
 				CFE1570928F7593800502EB1 /* BasetenError.swift */,
 			);
 			path = BasetenAPI;
+			sourceTree = "<group>";
+		};
+		CFC2040429085A5B0012D790 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				CFC2040529085A660012D790 /* Poppins */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		CFC2040529085A660012D790 /* Poppins */ = {
+			isa = PBXGroup;
+			children = (
+				CFC2040629085A660012D790 /* Poppins-ExtraLight.ttf */,
+				CFC2040729085A660012D790 /* Poppins-ThinItalic.ttf */,
+				CFC2040829085A660012D790 /* Poppins-ExtraLightItalic.ttf */,
+				CFC2040929085A660012D790 /* Poppins-BoldItalic.ttf */,
+				CFC2040A29085A660012D790 /* Poppins-Light.ttf */,
+				CFC2040B29085A660012D790 /* Poppins-Medium.ttf */,
+				CFC2040C29085A660012D790 /* Poppins-SemiBoldItalic.ttf */,
+				CFC2040D29085A660012D790 /* Poppins-ExtraBoldItalic.ttf */,
+				CFC2040E29085A660012D790 /* Poppins-ExtraBold.ttf */,
+				CFC2040F29085A660012D790 /* Poppins-BlackItalic.ttf */,
+				CFC2041029085A660012D790 /* OFL.txt */,
+				CFC2041129085A660012D790 /* Poppins-Regular.ttf */,
+				CFC2041229085A660012D790 /* Poppins-LightItalic.ttf */,
+				CFC2041329085A660012D790 /* Poppins-Bold.ttf */,
+				CFC2041429085A660012D790 /* Poppins-Black.ttf */,
+				CFC2041529085A660012D790 /* Poppins-Thin.ttf */,
+				CFC2041629085A660012D790 /* Poppins-SemiBold.ttf */,
+				CFC2041729085A660012D790 /* Poppins-Italic.ttf */,
+				CFC2041829085A660012D790 /* Poppins-MediumItalic.ttf */,
+			);
+			path = Poppins;
 			sourceTree = "<group>";
 		};
 		CFE1570128F71A3400502EB1 /* ImageKitAPI */ = {
@@ -480,13 +558,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF0FB14728EF6AD40009C275 /* Makefile.in in Resources */,
+				CFC2041E29085A660012D790 /* Poppins-Medium.ttf in Resources */,
+				CFC2041D29085A660012D790 /* Poppins-Light.ttf in Resources */,
 				CF46D3F428ECD0050052C018 /* Preview Assets.xcassets in Resources */,
+				CFC2042729085A660012D790 /* Poppins-Black.ttf in Resources */,
 				CFC2040129081FD30012D790 /* Launch Screen.storyboard in Resources */,
+				CFC2041F29085A660012D790 /* Poppins-SemiBoldItalic.ttf in Resources */,
+				CFC2042B29085A660012D790 /* Poppins-MediumItalic.ttf in Resources */,
+				CFC2041C29085A660012D790 /* Poppins-BoldItalic.ttf in Resources */,
+				CFC2042629085A660012D790 /* Poppins-Bold.ttf in Resources */,
+				CFC2041929085A660012D790 /* Poppins-ExtraLight.ttf in Resources */,
+				CFC2042029085A660012D790 /* Poppins-ExtraBoldItalic.ttf in Resources */,
+				CFC2042329085A660012D790 /* OFL.txt in Resources */,
 				CF0FB14528EF6AD40009C275 /* lcms2.def in Resources */,
 				CF0FB15128EF6AD40009C275 /* sRGB_ICC_v4_Appearance.icc in Resources */,
+				CFC2041B29085A660012D790 /* Poppins-ExtraLightItalic.ttf in Resources */,
 				CF0FB13A28EF6AD40009C275 /* Makefile.am in Resources */,
+				CFC2041A29085A660012D790 /* Poppins-ThinItalic.ttf in Resources */,
+				CFC2042129085A660012D790 /* Poppins-ExtraBold.ttf in Resources */,
+				CFC2042529085A660012D790 /* Poppins-LightItalic.ttf in Resources */,
 				CF46D3F128ECD0050052C018 /* Assets.xcassets in Resources */,
+				CFC2042A29085A660012D790 /* Poppins-Italic.ttf in Resources */,
+				CFC2042929085A660012D790 /* Poppins-SemiBold.ttf in Resources */,
+				CFC2042229085A660012D790 /* Poppins-BlackItalic.ttf in Resources */,
+				CFC2042829085A660012D790 /* Poppins-Thin.ttf in Resources */,
 				CF0FB13928EF6AD40009C275 /* sRGB_v4_ICC_preference.icc in Resources */,
+				CFC2042429085A660012D790 /* Poppins-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,6 +642,7 @@
 				CF0FB14328EF6AD40009C275 /* cmsmd5.c in Sources */,
 				CF0FB10B28EF69FE0009C275 /* UIViewController+Utils.swift in Sources */,
 				CF0FB14028EF6AD40009C275 /* cmsintrp.c in Sources */,
+				CFC2043229086CA90012D790 /* ShakeShake.swift in Sources */,
 				CF0FB10C28EF69FE0009C275 /* UIImage+Utils.swift in Sources */,
 				CF0FB13828EF6AD40009C275 /* cmscam02.c in Sources */,
 				CF46D3EF28ECD0040052C018 /* ContentView.swift in Sources */,
@@ -708,6 +806,7 @@
 				DEVELOPMENT_TEAM = 5Y8ZK9WBN9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Nilo/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Quero usar sua camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -750,6 +849,7 @@
 				DEVELOPMENT_TEAM = 5Y8ZK9WBN9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Nilo/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Quero usar sua camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

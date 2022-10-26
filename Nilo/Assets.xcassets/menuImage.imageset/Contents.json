@@ -1,11 +1,12 @@
 {
   "images" : [
     {
-      "filename" : "menuImage.png",
+      "filename" : "Rectangle 27.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "menuImage.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
