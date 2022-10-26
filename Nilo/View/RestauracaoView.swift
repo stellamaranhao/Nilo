@@ -29,8 +29,8 @@ struct RestauracaoView: View {
     var body: some View {
         NavigationView{
             
-            
             VStack{
+               
                 
                 if let imageShown = imageShown{
 
