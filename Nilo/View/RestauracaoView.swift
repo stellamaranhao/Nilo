@@ -7,13 +7,15 @@ struct RestauracaoView: View {
     private var importtake: Bool {imageShown != nil}
     @State var image = UIImage()
     @State private var showSheet = false
+    @State var oldImage: UIImage?
  
     @State private var selectedItem: PhotosPickerItem? = nil
     @State private var selectedImageData: Data? = nil
     @State var imageShown:UIImage?
     @State var options = ["2x", "3x", "5x", "8x"]
     @State var teste = ["Melhor qualidade ", "Mais detalhes e personalidade"]
-   
+    @State var showingTutorial:Bool
+
   
     @State var pickedPhotoName: String = ""
     @State private var selectedOptionPickerQualidade = "One"
@@ -52,8 +54,7 @@ struct RestauracaoView: View {
                
                 
                 
-                NavigationLink(destination: TelaResultado(imageShown: $imageShown), isActive: $isShowingDetailView) { EmptyView() }
-                
+                NavigationLink(destination: TelaResultado3(selectedItem: $selectedItem, oldImage: $oldImage, selectedImageData: $selectedImageData,imageShown: $imageShown,showingTutorial: showingTutorial), isActive: $isShowingDetailView) { EmptyView() }
                 Button(action: {
                     
                     linkApiRestauracao()
@@ -144,6 +145,7 @@ struct RestauracaoView: View {
                         if let data = try? await newItem?.loadTransferable(type: Data.self) {
                             selectedImageData = data
                             imageShown = UIImage(data: selectedImageData!)
+                            oldImage = UIImage(data: selectedImageData!)
                         }
                     }
                 }
@@ -213,8 +215,8 @@ struct RestauracaoView: View {
     }
 
 }
-struct RestauracaoView_Previews: PreviewProvider {
-    static var previews: some View {
-        RestauracaoView()
-    }
-}
+//struct RestauracaoView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        RestauracaoView(showingTutorial: )
+//    }
+//}

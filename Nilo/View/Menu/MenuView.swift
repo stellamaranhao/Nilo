@@ -38,7 +38,7 @@ struct MenuView: View {
                         
                         
                         VStack(spacing:30){
-                            NavigationLink(destination: RestauracaoView()) {
+                            NavigationLink(destination: RestauracaoView(showingTutorial: showingTutorial)) {
                                 MenuItemView(imageName: "Lotus", objImageName: "Restaurar fotos", title: "Lotus", description: "Restaure fotos danificadas e antigas")
                                     .modifier(ParallaxMotionModifier(manager: motionManager, magnitude: 12))
                             }
