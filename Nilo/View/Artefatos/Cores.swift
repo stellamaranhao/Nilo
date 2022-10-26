@@ -15,5 +15,6 @@ extension Color {
     static let corDeFundo  = Color("CorFundo")
     static let corTexto  = Color("corTexto")
     static let fundoEsperaView = Color("fundoEsperaView")
+    static let TextoTelaTutorial = Color("TextoTelaTutorial")
     
 }

@@ -12,16 +12,17 @@ struct TutoriaLotusView: View {
         ZStack(){
             VStack(alignment: .center,spacing: 15){
                 Text("LÓTUS")
-                    .foregroundColor(Color.corTexto)
+                    .foregroundColor(Color.TextoTelaTutorial)
                     .font(.custom("Poppins-Bold", size: 24))
                 
-                MenuItemView(imageName: "Lotus", objImageName: "Restaurar fotos", title: "Lotus", description: "Restaure fotos danificadas e antigas")
-                
-                Text("Use **LÓTUS** para restaurar imagens reduzindo os ruídos e desgastes indesejáveis, além de aprimorar a nitidez e resolução.")
-                    .foregroundColor(Color.corTexto)
-                    .font(.custom("Poppins-Regular", size: 16))
+                Text("Use **LÓTUS** para restaurar imagens reduzindo \nos ruídos e desgastes indesejáveis, além de\n aprimorar a nitidez e resolução.")
+                    .foregroundColor(Color.TextoTelaTutorial)
+                    .font(.custom("Poppins-Regular", size: 12))
                     .frame(maxWidth: 350)
                     .multilineTextAlignment(.center)
+                
+                MenuItemView(imageName: "Lotus", objImageName: "Restaurar fotos", title: "Lotus", description: "Restaure fotos danificadas e antigas")
+
                 
                 
                 SliderView(imageBeforeName: "AnneAntes",imageAferName: "AnneDepois",
@@ -31,6 +32,7 @@ struct TutoriaLotusView: View {
                 
                 
             }
+            .padding(.bottom,45)
         }
     }
 }

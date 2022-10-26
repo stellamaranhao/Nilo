@@ -14,12 +14,12 @@ struct TutorialMenuView: View {
         ZStack(){
             VStack(alignment: .center,spacing: 15){
                 Text("MENU")
-                    .foregroundColor(Color.corTexto)
+                    .foregroundColor(Color.TextoTelaTutorial)
                     .font(.custom("Poppins-Bold", size: 24))
                 
-                Text("Na primeira tela você tem acesso as ferramentas de aperfeiçoamento disponivéis: **Restaurar** e **colorir** as fotos")
-                    .foregroundColor(Color.corTexto)
-                    .font(.custom("Poppins-Regular", size: 16))
+                Text("Na primeira tela você tem acesso as \nferramentas de aperfeiçoamento disponivéis: **Restaurar** e **colorir** as fotos")
+                    .foregroundColor(Color.TextoTelaTutorial)
+                    .font(.custom("Poppins-Regular", size: 12))
                     .frame(maxWidth: UIScreen.main.bounds.width*0.80)
                     .multilineTextAlignment(.center)
                 
@@ -30,6 +30,7 @@ struct TutorialMenuView: View {
                     .modifier(ParallaxMotionModifier(manager: motionManager, magnitude: 12))
                 
             }
+            .padding(.bottom,90)
         }
     }
 }

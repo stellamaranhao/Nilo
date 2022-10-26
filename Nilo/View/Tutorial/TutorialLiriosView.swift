@@ -12,18 +12,16 @@ struct TutorialLiriosView: View {
         ZStack(){
             VStack(alignment: .center,spacing: 15){
                 Text("LÍRIOS")
-                    .foregroundColor(Color.corTexto)
+                    .foregroundColor(Color.TextoTelaTutorial)
                     .font(.custom("Poppins-Bold", size: 24))
                 
-                MenuItemView(imageName: "Lirio", objImageName: "ColoringTool", title: "Lirios", description: "Colorize fotos antigas")
-                    
-                
-                Text("Hora de dar vida a suas fotos! Use **LÍROS** para dar cor as suas memórias mais antigas.")
-                    .foregroundColor(Color.corTexto)
-                    .font(.custom("Poppins-Regular", size: 16))
+                Text("Hora de dar vida a suas fotos! Use **LÍROS** para\n dar cor as suas memórias mais antigas.")
+                    .foregroundColor(Color.TextoTelaTutorial)
+                    .font(.custom("Poppins-Regular", size: 12))
                     .frame(maxWidth: 350)
                     .multilineTextAlignment(.center)
                 
+                MenuItemView(imageName: "Lirio", objImageName: "ColoringTool", title: "Lirios", description: "Colorize fotos antigas")
                 
                 SliderView(imageBeforeName: "MachadoAntes",imageAferName: "MachadoDepois",
                            containerWidth: 364, containerHeight: 250)
@@ -32,6 +30,7 @@ struct TutorialLiriosView: View {
                 
                 
             }
+            .padding(.bottom,45)
         }
     }
 }

@@ -13,12 +13,12 @@ struct TutorialBVView: View {
         ZStack(){
             VStack(alignment: .center,spacing: 15){
                 Text("Bem Vindo!")
-                    .foregroundColor(Color.corTexto)
+                    .foregroundColor(Color.TextoTelaTutorial)
                     .font(.custom("Poppins-Bold", size: 24))
                 
                 Text("Antes de começar, veja algumas ferramentas disponíveis para que possa restaurar suas fotografias.")
-                    .foregroundColor(Color.corTexto)
-                    .font(.custom("Poppins-Regular", size: 16))
+                    .foregroundColor(Color.TextoTelaTutorial)
+                    .font(.custom("Poppins-Regular", size: 12))
                     .frame(maxWidth: UIScreen.main.bounds.width*0.70)
                     .multilineTextAlignment(.center)
                 
