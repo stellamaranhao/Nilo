@@ -3,8 +3,8 @@ import SwiftUI
 
 
 struct TelaResultado: View {
-    // @State var backImage = Image("ImagemAnneFinal")
-//    let api = BasetenAPI()
+    @State var backImage = Image("ImagemAnneFinal")
+ let api = BasetenAPI()
     @State private var showingSheet = false
     @State var showAlbumView = false
     @Binding var imageShown:UIImage?

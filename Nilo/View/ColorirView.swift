@@ -52,7 +52,7 @@ struct ColorirView: View {
 
 
             
-            NavigationLink(destination: TelaResultado(imageShown: $imageShown), isActive: $isShowingDetailView) { EmptyView() }
+            //NavigationLink(destination: TelaResultado(imageShown: $imageShown), isActive: $isShowingDetailView) { EmptyView() }
             
             Button(action: {
                 

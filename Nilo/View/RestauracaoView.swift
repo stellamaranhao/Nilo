@@ -51,7 +51,6 @@ struct RestauracaoView: View {
                 
                 
                 NavigationLink(destination: TelaResultado(imageShown: $imageShown), isActive: $isShowingDetailView) { EmptyView() }
-                //if botaoLiberado{
                 
                 Button(action: {
                     

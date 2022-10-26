@@ -10,6 +10,7 @@ import SwiftUI
 
 extension Color {
     static let txtTirarImportar  = Color("txtTirarImportar")
+    
     static let letratelarestauracao  = Color("letratelarestauracao")
     static let melhorarfoto  = Color("melhorarfoto")
     static let corDeFundo  = Color("CorFundo")
