@@ -68,6 +68,11 @@
 		CF86A67928F5E6F3009B6DE3 /* BasetenAPIModelEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF86A67828F5E6F3009B6DE3 /* BasetenAPIModelEnum.swift */; };
 		CF86A67B28F5EB6D009B6DE3 /* RestauracaoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF86A67A28F5EB6D009B6DE3 /* RestauracaoView.swift */; };
 		CFA274032908F9CF00A8C6D9 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA274022908F9CF00A8C6D9 /* MenuView.swift */; };
+		CFA87A5A290A19200019E802 /* NiloMLAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA87A59290A19200019E802 /* NiloMLAPI.swift */; };
+		CFA87A5D290A1E0A0019E802 /* NiloMLError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA87A5C290A1E0A0019E802 /* NiloMLError.swift */; };
+		CFA87A5F290A1FE10019E802 /* NiloMLTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA87A5E290A1FE10019E802 /* NiloMLTestView.swift */; };
+		CFA87A62290A22E50019E802 /* UniqeArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA87A61290A22E50019E802 /* UniqeArray.swift */; };
+		CFA87A64290A30E60019E802 /* TemporaryMediaFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA87A63290A30E60019E802 /* TemporaryMediaFile.swift */; };
 		CFC203FF29080BF40012D790 /* MenuTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC203FE29080BF40012D790 /* MenuTitleView.swift */; };
 		CFC2040129081FD30012D790 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFC2040029081FD30012D790 /* Launch Screen.storyboard */; };
 		CFC2041929085A660012D790 /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFC2040629085A660012D790 /* Poppins-ExtraLight.ttf */; };
@@ -185,6 +190,11 @@
 		CF86A67828F5E6F3009B6DE3 /* BasetenAPIModelEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasetenAPIModelEnum.swift; sourceTree = "<group>"; };
 		CF86A67A28F5EB6D009B6DE3 /* RestauracaoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestauracaoView.swift; sourceTree = "<group>"; };
 		CFA274022908F9CF00A8C6D9 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		CFA87A59290A19200019E802 /* NiloMLAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiloMLAPI.swift; sourceTree = "<group>"; };
+		CFA87A5C290A1E0A0019E802 /* NiloMLError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiloMLError.swift; sourceTree = "<group>"; };
+		CFA87A5E290A1FE10019E802 /* NiloMLTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiloMLTestView.swift; sourceTree = "<group>"; };
+		CFA87A61290A22E50019E802 /* UniqeArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniqeArray.swift; sourceTree = "<group>"; };
+		CFA87A63290A30E60019E802 /* TemporaryMediaFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporaryMediaFile.swift; sourceTree = "<group>"; };
 		CFC203FE29080BF40012D790 /* MenuTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTitleView.swift; sourceTree = "<group>"; };
 		CFC2040029081FD30012D790 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		CFC2040629085A660012D790 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
@@ -263,6 +273,7 @@
 		ADC14C2828ECDF7300065D97 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				CFA87A5B290A1A250019E802 /* NiloMLAPI */,
 				CFE1570428F747E800502EB1 /* ImageKitAPI */,
 				CF86A67528F5E5AE009B6DE3 /* BasetenAPI */,
 				ADC14C2728ECDF5900065D97 /* ReplicateAPI */,
@@ -403,6 +414,7 @@
 		CF46D3FA28ECD0FC0052C018 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				CFA87A58290A18FC0019E802 /* NiloMLAPI */,
 				CFE1570128F71A3400502EB1 /* ImageKitAPI */,
 				CF86A67228F5E507009B6DE3 /* BasetenAPI */,
 				CF46D3FE28ECD1590052C018 /* ReplicateAPI */,
@@ -468,6 +480,33 @@
 				CFE1570928F7593800502EB1 /* BasetenError.swift */,
 			);
 			path = BasetenAPI;
+			sourceTree = "<group>";
+		};
+		CFA87A58290A18FC0019E802 /* NiloMLAPI */ = {
+			isa = PBXGroup;
+			children = (
+				CFA87A60290A22D80019E802 /* Misc */,
+				CFA87A59290A19200019E802 /* NiloMLAPI.swift */,
+				CFA87A5E290A1FE10019E802 /* NiloMLTestView.swift */,
+			);
+			path = NiloMLAPI;
+			sourceTree = "<group>";
+		};
+		CFA87A5B290A1A250019E802 /* NiloMLAPI */ = {
+			isa = PBXGroup;
+			children = (
+				CFA87A5C290A1E0A0019E802 /* NiloMLError.swift */,
+			);
+			path = NiloMLAPI;
+			sourceTree = "<group>";
+		};
+		CFA87A60290A22D80019E802 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				CFA87A61290A22E50019E802 /* UniqeArray.swift */,
+				CFA87A63290A30E60019E802 /* TemporaryMediaFile.swift */,
+			);
+			path = Misc;
 			sourceTree = "<group>";
 		};
 		CFC2040429085A5B0012D790 /* Font */ = {
@@ -657,6 +696,7 @@
 				CF52E58A28F0A8910074326F /* ReplicateAPIModelsEnum.swift in Sources */,
 				CFE30D722908FC9B00BBE93E /* TutorialMenuView.swift in Sources */,
 				CFE1570A28F7593800502EB1 /* BasetenError.swift in Sources */,
+				CFA87A5F290A1FE10019E802 /* NiloMLTestView.swift in Sources */,
 				CF52E58E28F0B64C0074326F /* ReplicateAPIErro.swift in Sources */,
 				CF52E58C28F0ACDA0074326F /* ReplicateAPIInput.swift in Sources */,
 				CFEA98E328F108A10058F16F /* ReplicateAPIMakePredictionResponse.swift in Sources */,
@@ -669,6 +709,7 @@
 				CF86A67B28F5EB6D009B6DE3 /* RestauracaoView.swift in Sources */,
 				CF52E58A28F0A8910074326F /* ReplicateAPIModelsEnum.swift in Sources */,
 				CFE1570A28F7593800502EB1 /* BasetenError.swift in Sources */,
+				CFA87A64290A30E60019E802 /* TemporaryMediaFile.swift in Sources */,
 				CF52E58E28F0B64C0074326F /* ReplicateAPIErro.swift in Sources */,
 				CF52E58C28F0ACDA0074326F /* ReplicateAPIInput.swift in Sources */,
 				CFEA98E328F108A10058F16F /* ReplicateAPIMakePredictionResponse.swift in Sources */,
@@ -676,6 +717,7 @@
 				CF0FB13E28EF6AD40009C275 /* cmsgamma.c in Sources */,
 				CFE30D782909041E00BBE93E /* TutorialLiriosView.swift in Sources */,
 				CFE30D762908FFC400BBE93E /* SliderView.swift in Sources */,
+				CFA87A5D290A1E0A0019E802 /* NiloMLError.swift in Sources */,
 				ADA531C428FDE002009053E0 /* ColorirView.swift in Sources */,
 				CF0FB15228EF6AD40009C275 /* cmscnvrt.c in Sources */,
 				CF0FB14128EF6AD40009C275 /* cmsxform.c in Sources */,
@@ -683,10 +725,12 @@
 				CF46D40028ECD1CC0052C018 /* ContentViewExtension.swift in Sources */,
 				CFE1570628F747FC00502EB1 /* ImageKitAPIUploadResponse.swift in Sources */,
 				CFE1570328F71A4000502EB1 /* ImageKitAPI.swift in Sources */,
+				CFA87A62290A22E50019E802 /* UniqeArray.swift in Sources */,
 				CF0FB14228EF6AD40009C275 /* cmsio1.c in Sources */,
 				CF0FB14928EF6AD40009C275 /* cmsalpha.c in Sources */,
 				CF0FB14628EF6AD40009C275 /* cmspcs.c in Sources */,
 				CF0FB14B28EF6AD40009C275 /* cmserr.c in Sources */,
+				CFA87A5A290A19200019E802 /* NiloMLAPI.swift in Sources */,
 				CF0FB14328EF6AD40009C275 /* cmsmd5.c in Sources */,
 				CF0FB10B28EF69FE0009C275 /* UIViewController+Utils.swift in Sources */,
 				CF0FB14028EF6AD40009C275 /* cmsintrp.c in Sources */,
@@ -856,7 +900,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Nilo/Preview Content\"";
-				DEVELOPMENT_TEAM = 67AYPRFZH8;
+				DEVELOPMENT_TEAM = 5Y8ZK9WBN9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Nilo/Info.plist;
@@ -879,7 +923,7 @@
 					"-std=c++11",
 					"-Wno-deprecated-register",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = MoaiaJp.nilo;
+				PRODUCT_BUNDLE_IDENTIFIER = MaiaJp.nilo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -901,7 +945,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Nilo/Preview Content\"";
-				DEVELOPMENT_TEAM = 67AYPRFZH8;
+				DEVELOPMENT_TEAM = 5Y8ZK9WBN9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Nilo/Info.plist;
@@ -924,7 +968,7 @@
 					"-std=c++11",
 					"-Wno-deprecated-register",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = MoaiaJp.nilo;
+				PRODUCT_BUNDLE_IDENTIFIER = MaiaJp.nilo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -944,7 +988,7 @@
 				CF46D3F628ECD0050052C018 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		CF46D3F728ECD0050052C018 /* Build configuration list for PBXNativeTarget "Nilo" */ = {
 			isa = XCConfigurationList;
@@ -953,7 +997,7 @@
 				CF46D3F928ECD0050052C018 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 

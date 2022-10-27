@@ -13,12 +13,12 @@ struct NiloApp: App {
     
     var body: some Scene {
         WindowGroup {
-            if showingTutorial{
-                TutorialView(showingTutorial: $showingTutorial)
-            }else{
-                MenuView(showingTutorial:  $showingTutorial)
-            }
-            
+//            if showingTutorial{
+//                TutorialView(showingTutorial: $showingTutorial)
+//            }else{
+//                MenuView(showingTutorial:  $showingTutorial)
+//            }
+            NiloMLTestView()
 
         }
     }

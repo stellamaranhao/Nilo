@@ -49,7 +49,7 @@ final class BasetenAPI{
                 }
                 
                 
-            case .failure(let failure):
+            case .failure(_):
                 completionCallback(.failure(.imageKitError(response: "")))
                 fatalError()
             }
