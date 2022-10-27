@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AD16386E29061B7A0022713F /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD16386D29061B7A0022713F /* ButtonsView.swift */; };
-		AD163872290621710022713F /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD163871290621710022713F /* Poppins-SemiBold.ttf */; };
-		AD163874290621AE0022713F /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD163873290621AE0022713F /* Poppins-Regular.ttf */; };
-		AD347B812909763900D16D45 /* ImageDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD347B802909763900D16D45 /* ImageDetailView.swift */; };
+		AD347B812909763900D16D45 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		AD6F91B728EE221300195F12 /* ReplicateAPIPostModelPrediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6F91B628EE221300195F12 /* ReplicateAPIPostModelPrediction.swift */; };
 		AD9E8B2A29032BBD00259CF1 /* TelaResultado3.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9E8B2929032BBD00259CF1 /* TelaResultado3.swift */; };
 		ADA531C428FDE002009053E0 /* ColorirView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA531C328FDE002009053E0 /* ColorirView.swift */; };
@@ -121,8 +119,6 @@
 
 /* Begin PBXFileReference section */
 		AD16386D29061B7A0022713F /* ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
-		AD163871290621710022713F /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
-		AD163873290621AE0022713F /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Regular.ttf"; path = "../../../../../Downloads/Poppins/Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		AD6F91B628EE221300195F12 /* ReplicateAPIPostModelPrediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIPostModelPrediction.swift; sourceTree = "<group>"; };
 		AD9E8B2929032BBD00259CF1 /* TelaResultado3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaResultado3.swift; sourceTree = "<group>"; };
 		ADA531C328FDE002009053E0 /* ColorirView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorirView.swift; sourceTree = "<group>"; };
@@ -423,9 +419,6 @@
 				CF0D8D9F290718AA0075A715 /* Misc */,
 				CF0D8D9C290717DE0075A715 /* Menu */,
 				AD16386D29061B7A0022713F /* ButtonsView.swift */,
-				ADA29A9B28F617EE006863D0 /* TelaResultado.swift */,
-				AD347B802909763900D16D45 /* ImageDetailView.swift */,
-				ADA01BA12901B93800450C06 /* TelaResultado2.swift */,
 				AD9E8B2929032BBD00259CF1 /* TelaResultado3.swift */,
 				CF86A67A28F5EB6D009B6DE3 /* RestauracaoView.swift */,
 				EC37685C2901F07B00FA802D /* CarregandoView.swift */,
@@ -716,7 +709,7 @@
 				CF0FB14E28EF6AD40009C275 /* cmstypes.c in Sources */,
 				CF0FB13628EF6AD40009C275 /* cmsnamed.c in Sources */,
 				CF46D3ED28ECD0040052C018 /* NiloApp.swift in Sources */,
-				AD347B812909763900D16D45 /* ImageDetailView.swift in Sources */,
+				AD347B812909763900D16D45 /* (null) in Sources */,
 				CF86A67928F5E6F3009B6DE3 /* BasetenAPIModelEnum.swift in Sources */,
 				CF0FB14828EF6AD40009C275 /* cmssm.c in Sources */,
 				CF0FB14C28EF6AD40009C275 /* cmscgats.c in Sources */,
@@ -865,7 +858,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Nilo/Preview Content\"";
-				DEVELOPMENT_TEAM = UW3Y79FS5R;
+				DEVELOPMENT_TEAM = 5Y8ZK9WBN9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Nilo/Info.plist;
@@ -888,7 +881,7 @@
 					"-std=c++11",
 					"-Wno-deprecated-register",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = MoaiaJp.nilo;
+				PRODUCT_BUNDLE_IDENTIFIER = MaiaJp.nilo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -910,7 +903,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Nilo/Preview Content\"";
-				DEVELOPMENT_TEAM = UW3Y79FS5R;
+				DEVELOPMENT_TEAM = 5Y8ZK9WBN9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Nilo/Info.plist;
@@ -933,7 +926,7 @@
 					"-std=c++11",
 					"-Wno-deprecated-register",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = MoaiaJp.nilo;
+				PRODUCT_BUNDLE_IDENTIFIER = MaiaJp.nilo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
