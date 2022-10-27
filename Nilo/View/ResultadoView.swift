@@ -55,17 +55,17 @@ struct ResultadoView: View {
                         Spacer()
                         ZStack {
                             RoundedRectangle(cornerRadius: 30)
-                                .fill(Color.corDeFundo)
+                                .fill(Color.melhorarfoto)
                                 .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height / 3.5)
                             VStack(spacing: 5){
                                 HStack {
                                     VStack (spacing: 5){
                                         Text("Memória Resgatada!")
-                                            .foregroundColor(Color.corTexto)
+                                            .foregroundColor(Color.corDeFundo)
                                             .font(.custom("Poppins-SemiBold", size: 20))
                                             .font(.title3)
                                         Text("Não pare por aqui:")
-                                            .foregroundColor(Color.corTexto)
+                                            .foregroundColor(Color.corDeFundo)
                                             .font(.custom("Poppins-Regular", size: 16))
                                             .font(.body)
                                     }
@@ -159,7 +159,7 @@ struct ResultadoView: View {
             isClicked.toggle()
         } label: {
             Image(systemName: isClicked ? "eye.slash.circle" : "eye.circle")
-                .foregroundColor(Color.corTexto)
+                .foregroundColor(Color.corDeFundo)
                 .font(.system(size: 40))
                 .padding(.trailing, UIScreen.main.bounds.width / 10)
         }

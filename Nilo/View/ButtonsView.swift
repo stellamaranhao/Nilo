@@ -21,19 +21,19 @@ struct ButtonsView: View {
                 .resizable()
                 .aspectRatio( contentMode: .fit)
                 .frame(width: 22, height: 22)
-                .foregroundColor(.white)
+                .foregroundColor(Color.melhorarfoto)
                 .padding(.top)
             
             Text(texto)
                 .font(.custom("Poppins-Regular", size: 12))
-                .foregroundColor(.white)
+                .foregroundColor(Color.melhorarfoto)
                 .lineLimit(2)
                 .frame(width: 95 ,height: 95)
                 .multilineTextAlignment(.center)
             
         }.background(
             RoundedRectangle(cornerRadius: 20)
-                .fill(Color.melhorarfoto)
+                .fill(Color.corDeFundo)
                 .frame(width:120 ,height: 90).padding(.bottom)
         )
         
