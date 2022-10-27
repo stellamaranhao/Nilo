@@ -18,6 +18,7 @@ struct TelaResultado3: View {
     @State var showingTutorial:Bool
 
     
+    
     @State private var image : Bool = true
     @State var progressMsg:String = "progress: not started"
     @State var message:String = "GFP-GAN"

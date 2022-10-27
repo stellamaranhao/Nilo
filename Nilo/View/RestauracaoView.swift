@@ -9,7 +9,6 @@ struct RestauracaoView: View {
     @State var image = UIImage()
     @State private var showSheet = false
     @State var oldImage: UIImage?
- 
     @State private var selectedItem: PhotosPickerItem? = nil
     @State private var selectedImageData: Data? = nil
     @State var imageShown:UIImage?
