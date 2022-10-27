@@ -27,10 +27,10 @@ struct RestauracaoView: View {
         
     var body: some View {
         NavigationView{
-            
+           
+
             VStack{
-               
-                
+            
                 if let imageShown = imageShown{
 
                     HStack{
@@ -70,32 +70,35 @@ struct RestauracaoView: View {
                 
                 NavigationLink(destination: ResultadoView(selectedItem: $selectedItem, oldImage: $oldImage, selectedImageData: $selectedImageData,imageShown: $imageShown,showingTutorial: showingTutorial), isActive: $isShowingDetailView) { EmptyView() }
                 Button(action: {
-                    
                     linkApiRestauracao()
-
-                    
                     isShowingDetailView = true
-                    
                 }){
-                    ZStack{
-                        
-                        RoundedRectangle(cornerRadius: 18).foregroundColor(.melhorarfoto)
-                            .frame(width: 200, height: 70)
-                            .shadow(color: Color.letratelarestauracao.opacity(0.25), radius: 15, y: 8)
-                        Text("Melhorar Foto")
-                            .foregroundColor(.white)
-                            .fontWeight(.bold)
-                            .font(.title2)
-                            .font(.custom("Poppins-SemiBold", size: 20))
-                                                }
-                    .padding(.bottom,50)
                     
+                        ZStack{
+                                RoundedRectangle(cornerRadius: 18).foregroundColor(.melhorarfoto)
+                                    .frame(width: 200, height: 70)
+                                    .shadow(color: Color.letratelarestauracao.opacity(0.25), radius: 15, y: 8)
+                                Text("Melhorar Foto")
+                                    .foregroundColor(.white)
+                                    .fontWeight(.bold)
+                                    .font(.title2)
+                                    .font(.custom("Poppins-SemiBold", size: 20))
+                           
+                            }
+                        .padding(.bottom,50)
+                        .padding(.leading,90)
                     
+                    Color.corDeFundo
+
                 }.disabled((imageShown != nil) ? false : true)
+                    
             }
-            
+            .background(
+            Color.corDeFundo
+                .ignoresSafeArea())
         }
         .navigationBarBackButtonHidden(true)
+       
     }
     
     @Environment(\.dismiss) var dismiss

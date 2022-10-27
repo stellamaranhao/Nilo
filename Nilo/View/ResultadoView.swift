@@ -17,7 +17,8 @@ struct ResultadoView: View {
     @State var showAlert:Bool = false
     @State var showingTutorial:Bool
     @State var isShowingMenu: Bool = false
-    
+    @State private var isShowingDetailView = false
+
     
     @State private var image : Bool = true
     @State var progressMsg:String = "progress: not started"
@@ -30,8 +31,8 @@ struct ResultadoView: View {
         NavigationView{
             ZStack {
                 
-                Color.gray
-                    .ignoresSafeArea()
+//                Color.gray
+//                    .ignoresSafeArea()
                 
                 ZStack {
                     if (!isClicked) { ImageDetailView(image:imageShown!) }
@@ -39,12 +40,53 @@ struct ResultadoView: View {
                     
                     HStack {
                         VStack {
-                            NavigationLink(destination: MenuView(showingTutorial: $showingTutorial)) {
+//                            NavigationLink(destination: MenuView(showingTutorial: $showingTutorial)) {
+//                                Image(systemName: "xmark.circle.fill")
+//                                    .font(.system(size: 30))
+//                                    .padding(.top, UIScreen.main.bounds.height / 15)
+//                                    .padding(.leading)
+//                            }
+                            
+                            
+                            
+                            NavigationLink(destination: MenuView(showingTutorial: $showingTutorial), isActive: $isShowingDetailView) { EmptyView() }
+                            Button(action: {
+                                if !shared {
+                                    showAlert = true
+                                    
+                                } else{
+                                    isShowingDetailView = true
+                                }
+                                
+                                
+                            }){
                                 Image(systemName: "xmark.circle.fill")
                                     .font(.system(size: 30))
                                     .padding(.top, UIScreen.main.bounds.height / 15)
                                     .padding(.leading)
+                            }.alert(isPresented: $showAlert) {
+                                
+                                Alert(title: Text("Tem certeza?")
+                                      ,message: Text("Gostaria de salvar a foto antes de sair ou fazer outra alteração?")
+                                      ,primaryButton: .default(Text("Salvar foto")){
+                                    shareButton()
+                                },secondaryButton: .destructive(Text("Continuar mesmo assim")){
+                                    isShowingDetailView = true
+
+                                }
+                                      
+                                )
                             }
+                            
+                            
+                            
+                            
+                        
+                    
+                            
+                            
+                            
+                            
                             Spacer()
                         }
                         Spacer()
