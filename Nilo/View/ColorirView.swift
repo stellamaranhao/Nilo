@@ -11,6 +11,7 @@ import SwiftUI
 import PhotosUI
 
 struct ColorirView: View {
+    @State var showingTutorial:Bool
     @State private var isShowingDetailView = false
     private var importtake: Bool {imageShown != nil}
     @State private var image = UIImage()
@@ -20,6 +21,8 @@ struct ColorirView: View {
     @State var imageShown:UIImage?
     @State var options = ["2x", "3x", "5x", "8x"]
     @State var teste = ["Melhor qualidade ", "Mais detalhes e personalidade"]
+
+    @State var oldImage: UIImage?
   
     @State var pickedPhotoName: String = ""
     @State private var selectedOptionPickerQualidade = "One"
@@ -33,14 +36,17 @@ struct ColorirView: View {
         NavigationView{
             VStack{
                 //            Text(message).font(.largeTitle)
-                Text(progressMsg).font(.subheadline)
+
                 
                 if let imageShown = imageShown{
                     HStack{
                         Image(uiImage: imageShown)
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 250, height: 250)
+                            .scaledToFill()
+                            .cornerRadius(8)
+                            .frame(width: 214, height: 476)
+                            .padding(.bottom, 80)
                         
                     }
                 }
@@ -49,9 +55,8 @@ struct ColorirView: View {
                     importPhotoButtom
                 }
                 
-                
-                
-                //NavigationLink(destination: TelaResultado(imageShown: $imageShown), isActive: $isShowingDetailView) { EmptyView() }
+                 
+                NavigationLink(destination: CarregandoView(selectedItem: $selectedItem, oldImage: $oldImage, selectedImageData: $selectedImageData,imageShown: $imageShown,showingTutorial: showingTutorial, showingMyself: $isShowingDetailView, apiUsada: ColorizeML()), isActive: $isShowingDetailView) { EmptyView() }
                 
                 Button(action: {
                     
@@ -67,11 +72,13 @@ struct ColorirView: View {
                             .fontWeight(.bold)
                             .font(.title2)
                             .font(.custom("Poppins-SemiBold", size: 20))
+                    }
+                    .padding(.bottom,50)
                     }.disabled((imageShown != nil) ? false : true)
                 }
             }
-        }
-        .navigationBarBackButtonHidden(true)
+        
+       
     }
     
     var takePhotoButtom: some View {
@@ -109,8 +116,7 @@ struct ColorirView: View {
         }
     }
     var importPhotoButtom: some View{
-        
-        
+
         ZStack{
             Image("importarFoto")//rever
                 .position(x: 325, y: 40)
@@ -138,7 +144,7 @@ struct ColorirView: View {
                             imageShown = UIImage(data: selectedImageData!)
                         }
                     }
-                }.disabled((imageShown != nil) ? false : true)
+                }
             
         }
     }

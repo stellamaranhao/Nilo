@@ -16,6 +16,7 @@ struct MenuView: View {
     //Animations
     @State private var yoffsetTitle: Double = 0
     @State private var opacity: Double = 0
+   
     
     var body: some View {
         GeometryReader{ geometry in
@@ -43,7 +44,7 @@ struct MenuView: View {
                                     .modifier(ParallaxMotionModifier(manager: motionManager, magnitude: 12))
                             }
                             
-                            NavigationLink(destination: ColorirView()) {
+                            NavigationLink(destination: ColorirView(showingTutorial: showingTutorial)) {
                                 MenuItemView(imageName: "Lirio", objImageName: "ColoringTool", title: "Lirio", description: "Colorize fotos antigas")
                                     .modifier(ParallaxMotionModifier(manager: motionManager, magnitude: 12))
                             }

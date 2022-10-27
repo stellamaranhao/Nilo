@@ -109,6 +109,7 @@
 		EC37685F2908645500FA802D /* LoadingSpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC37685E2908645500FA802D /* LoadingSpinnerView.swift */; };
 		EC6032CE28EE063F00646F4C /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6032CD28EE063F00646F4C /* CameraView.swift */; };
 		EC6032D228EE252700646F4C /* Cores.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6032D128EE252700646F4C /* Cores.swift */; };
+		EC92E400290B0856007ECAA4 /* APIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC92E3FF290B0856007ECAA4 /* APIProtocol.swift */; };
 		ECC15BE22909CCF300304C65 /* ImageDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC15BE12909CCF300304C65 /* ImageDetailView.swift */; };
 		ECF4ED5428F9919B0018965B /* TelaUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF4ED5328F9919B0018965B /* TelaUpload.swift */; };
 		ECF4ED5628F9A0B00018965B /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF4ED5528F9A0B00018965B /* ImagePicker.swift */; };
@@ -226,6 +227,7 @@
 		EC37685E2908645500FA802D /* LoadingSpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingSpinnerView.swift; sourceTree = "<group>"; };
 		EC6032CD28EE063F00646F4C /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		EC6032D128EE252700646F4C /* Cores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Cores.swift; path = Artefatos/Cores.swift; sourceTree = "<group>"; };
+		EC92E3FF290B0856007ECAA4 /* APIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProtocol.swift; sourceTree = "<group>"; };
 		ECC15BE12909CCF300304C65 /* ImageDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailView.swift; sourceTree = "<group>"; };
 		ECF4ED5328F9919B0018965B /* TelaUpload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaUpload.swift; sourceTree = "<group>"; };
 		ECF4ED5528F9A0B00018965B /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
@@ -406,6 +408,7 @@
 				CFE1570128F71A3400502EB1 /* ImageKitAPI */,
 				CF86A67228F5E507009B6DE3 /* BasetenAPI */,
 				CF46D3FE28ECD1590052C018 /* ReplicateAPI */,
+				EC92E3FF290B0856007ECAA4 /* APIProtocol.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -664,6 +667,7 @@
 				CF0FB13E28EF6AD40009C275 /* cmsgamma.c in Sources */,
 				CF0FB15228EF6AD40009C275 /* cmscnvrt.c in Sources */,
 				CF0FB14128EF6AD40009C275 /* cmsxform.c in Sources */,
+				EC92E400290B0856007ECAA4 /* APIProtocol.swift in Sources */,
 				ADBD423628EF4C0200E0C8CF /* UIImage_Extention.swift in Sources */,
 				AD6F91B728EE221300195F12 /* ReplicateAPIPostModelPrediction.swift in Sources */,
 				CF86A67B28F5EB6D009B6DE3 /* RestauracaoView.swift in Sources */,
