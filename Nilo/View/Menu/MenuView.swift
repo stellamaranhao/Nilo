@@ -63,7 +63,7 @@ struct MenuView: View {
                                     .modifier(ParallaxMotionModifier(manager: motionManager, magnitude: 12))
                                     .onTapGesture {
                                         generatorSelection.selectionChanged()
-                                        showSecondView.toggle()
+                                        showFirstView.toggle()
                                     }
                             }
                             
