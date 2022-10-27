@@ -27,7 +27,7 @@ struct MenuView: View {
     var body: some View {
         GeometryReader{ geometry in
             ZStack{
-                NavigationView {
+                NavigationStack {
                     ZStack{
                         Color.corDeFundo
                             .ignoresSafeArea()
@@ -68,7 +68,7 @@ struct MenuView: View {
                                     }
                             }
                             
-                            NavigationLink(destination: ColorirView(showingTutorial: showingTutorial)) {
+                            NavigationLink(destination: ColorirView(showingTutorial: showingTutorial), isActive: $showSecondView) {
                                 MenuItemView(imageName: "Lirio", objImageName: "ColoringTool", title: "Lirio", description: "Colorize fotos antigas")
                                     .modifier(ParallaxMotionModifier(manager: motionManager, magnitude: 12))
                                     .onTapGesture {
@@ -88,8 +88,6 @@ struct MenuView: View {
 
                     
                 }
-                .navigationBarBackButtonHidden(true)
-                
                 
             }
             

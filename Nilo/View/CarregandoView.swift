@@ -26,11 +26,10 @@ struct CarregandoView: View{
 
     
     @State private var image : Bool = true
-    let apicolor = ColorizeML()
     @State private var spinXLarge = false
     
     var body: some View {
-        NavigationView{
+       
             ZStack{
                 
                 Color.fundoEsperaView
@@ -54,32 +53,33 @@ struct CarregandoView: View{
                         .bold()
                         .foregroundColor(.corTexto)
                         .padding(.bottom,80)
-                    ZStack{
-                        Button() {
-                            showingMyself.toggle()
-                        } label: {
-                            ZStack{
-                                RoundedRectangle(cornerRadius: 18).foregroundColor(.white)
-                                    .frame(width: 181, height: 42)
-                                    .shadow(color: Color.letratelarestauracao.opacity(0.25), radius: 15, y: 8)
-                                
-                                Text("Cancelar")
-                                    .foregroundColor(.letratelarestauracao)
-                                    .fontWeight(.light)
-                                    .font(.title2)
-                                .font(.custom("Poppins-SemiBold", size: 20))
-                                
-                            }
-                        }
-
-                    }
+//                    ZStack{
+//                        Button {
+//                            print("presed na tela de carregar \(showingMyself)")
+//                            showingMyself = false
+//                        } label: {
+//                            ZStack{
+//                                RoundedRectangle(cornerRadius: 18).foregroundColor(.white)
+//                                    .frame(width: 181, height: 42)
+//                                    .shadow(color: Color.letratelarestauracao.opacity(0.25), radius: 15, y: 8)
+//
+//                                Text("Cancelar")
+//                                    .foregroundColor(.letratelarestauracao)
+//                                    .fontWeight(.light)
+//                                    .font(.title2)
+//                                .font(.custom("Poppins-SemiBold", size: 20))
+//
+//                            }
+//                        }
+//
+//                    }
                 }
             }.onAppear
             {
                 linkApiRestauracao()
             }
             
-        }
+        
     }
     
     func linkApiRestauracao (){

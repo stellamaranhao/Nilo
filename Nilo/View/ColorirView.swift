@@ -33,8 +33,7 @@ struct ColorirView: View {
     @State var progressMsg:String = "progress: not started"
     let apicolor = ColorizeML()
     var body: some View {
-        NavigationView{
-            VStack{
+                    VStack{
                 //            Text(message).font(.largeTitle)
 
                 
@@ -60,7 +59,7 @@ struct ColorirView: View {
                 
                 Button(action: {
                     
-                    linkApiRestauracao()
+                    print("presed")
                     isShowingDetailView = true
                 }){
                     ZStack{
@@ -76,7 +75,7 @@ struct ColorirView: View {
                     .padding(.bottom,50)
                     }.disabled((imageShown != nil) ? false : true)
                 }
-            }
+            
         
        
     }

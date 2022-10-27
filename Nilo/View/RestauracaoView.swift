@@ -27,7 +27,7 @@ struct RestauracaoView: View {
     let api = BasetenAPI()
         
     var body: some View {
-        NavigationView{
+        
             
             
             VStack{
@@ -80,7 +80,7 @@ struct RestauracaoView: View {
                 }.disabled((imageShown != nil) ? false : true)
             }
             
-        }
+        
       
     }
     
@@ -136,9 +136,9 @@ struct RestauracaoView: View {
                             .fontWeight(.bold)
                             .font(.title2)
                             .font(.custom("Poppins-SemiBold", size: 20))
+                            .padding(.top,120)
+                            .padding(.trailing,80)
                     }
-                    .padding(.top,120)
-                    .padding(.trailing,80)
             }
                 .onChange(of: selectedItem) { newItem in
                     Task {
