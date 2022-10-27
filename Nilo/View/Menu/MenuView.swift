@@ -12,7 +12,12 @@ struct MenuView: View {
     @Binding var showingTutorial:Bool
     
     let generator = UINotificationFeedbackGenerator()
+    let generatorSelection = UISelectionFeedbackGenerator()
     var motionManager = MotionManager()
+    
+    //Views
+    @State var showFirstView:Bool = false
+    @State var showSecondView:Bool = false
     
     //Animations
     @State private var yoffsetTitle: Double = 0
@@ -53,14 +58,22 @@ struct MenuView: View {
                         
                         
                         VStack(spacing:30){
-                            NavigationLink(destination: RestauracaoView(showingTutorial: showingTutorial)) {
+                            NavigationLink(destination: RestauracaoView(showingTutorial: showingTutorial), isActive: $showFirstView) {
                                 MenuItemView(imageName: "Lotus", objImageName: "Restaurar fotos", title: "Lotus", description: "Restaure fotos danificadas e antigas")
                                     .modifier(ParallaxMotionModifier(manager: motionManager, magnitude: 12))
+                                    .onTapGesture {
+                                        generatorSelection.selectionChanged()
+                                        showSecondView.toggle()
+                                    }
                             }
                             
-                            NavigationLink(destination: ColorirView()) {
+                            NavigationLink(destination: ColorirView(), isActive: $showSecondView) {
                                 MenuItemView(imageName: "Lirio", objImageName: "ColoringTool", title: "Lirio", description: "Colorize fotos antigas")
                                     .modifier(ParallaxMotionModifier(manager: motionManager, magnitude: 12))
+                                    .onTapGesture {
+                                        generatorSelection.selectionChanged()
+                                        showSecondView.toggle()
+                                    }
                             }
                         }
                         .opacity(opacity)
