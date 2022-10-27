@@ -34,8 +34,8 @@ struct ResultadoView: View {
                     .ignoresSafeArea()
                 
                 ZStack {
-                    if (!isClicked) { ImageDetailView(image:Image(uiImage: imageShown!) ) }
-                    else {ImageDetailView(image:Image(uiImage: oldImage!))}
+                    if (!isClicked) { ImageDetailView(image:imageShown!) }
+                    else {ImageDetailView(image:oldImage!)}
                     
                     HStack {
                         VStack {
