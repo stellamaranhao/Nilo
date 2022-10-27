@@ -9,6 +9,7 @@ import SwiftUI
 
 struct NiloTutorialFinalView: View {
     @Binding var encerrar:Bool
+    let generator = UINotificationFeedbackGenerator()
     var body: some View {
         ZStack(){
             VStack(alignment: .center,spacing: 15){
@@ -31,7 +32,7 @@ struct NiloTutorialFinalView: View {
                 Button(action: {
                     encerrar.toggle()
                     UserDefaults.standard.set(false, forKey: "tutorial")
-                    
+                    generator.notificationOccurred(.success)
                 }){
                     ZStack{
                         RoundedRectangle(cornerRadius: 18).foregroundColor(.melhorarfoto)
