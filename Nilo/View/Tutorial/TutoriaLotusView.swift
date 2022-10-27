@@ -15,10 +15,10 @@ struct TutoriaLotusView: View {
                     .foregroundColor(Color.TextoTelaTutorial)
                     .font(.custom("Poppins-Bold", size: 24))
                 
-                Text("Use **LÓTUS** para restaurar imagens reduzindo \nos ruídos e desgastes indesejáveis, além de\n aprimorar a nitidez e resolução.")
+                Text("Use **LÓTUS** para restaurar imagens reduzindo os ruídos e desgastes indesejáveis, além de aprimorar a nitidez e resolução.")
                     .foregroundColor(Color.TextoTelaTutorial)
-                    .font(.custom("Poppins-Regular", size: 12))
-                    .frame(maxWidth: 350)
+                    .font(.custom("Poppins-Regular", size: 14))
+                    .frame(maxWidth: UIScreen.main.bounds.width*0.85)
                     .multilineTextAlignment(.center)
                 
                 MenuItemView(imageName: "Lotus", objImageName: "Restaurar fotos", title: "Lotus", description: "Restaure fotos danificadas e antigas")
@@ -26,7 +26,7 @@ struct TutoriaLotusView: View {
                 
                 
                 SliderView(imageBeforeName: "AnneAntes",imageAferName: "AnneDepois",
-                           containerWidth: 364, containerHeight: 250)
+                           containerWidth: 364, containerHeight: 384)
                     .cornerRadius(18)
                     .shadow(color: Color.corTexto.opacity(0.3), radius: 25, y: 8)
                 

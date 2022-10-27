@@ -11,6 +11,7 @@ struct MenuView: View {
     @Namespace var namespace
     @Binding var showingTutorial:Bool
     
+    let generator = UINotificationFeedbackGenerator()
     var motionManager = MotionManager()
     
     //Animations
@@ -25,6 +26,7 @@ struct MenuView: View {
                         Color.corDeFundo
                             .ignoresSafeArea()
                         
+                        
                         MenuTitleView()
                             .drawingGroup()
                             .ignoresSafeArea()
@@ -33,6 +35,19 @@ struct MenuView: View {
                                 withAnimation(.linear(duration: 0.6)){
                                     self.yoffsetTitle = -geometry.size.height*0.7
                                 }
+                            }
+                        
+                        Image(systemName: "questionmark.circle.fill")
+                            .offset(x:geometry.size.width*0.35, y:-geometry.size.height*0.45)
+                            .font(.title)
+                            .foregroundColor(.white)
+                            .onTapGesture {
+                                showingTutorial.toggle()
+                            }
+                            .onLongPressGesture{
+                                generator.notificationOccurred(.success)
+                                UserDefaults.standard.set(true, forKey: "tutorial")
+                                showingTutorial.toggle()
                             }
                             
                         
@@ -56,21 +71,11 @@ struct MenuView: View {
                         }
                         
                     }
+
                     
                 }
                 .navigationBarBackButtonHidden(true)
                 
-                Image(systemName: "questionmark.circle.fill")
-                    .offset(x:geometry.size.width*0.35, y:-geometry.size.height*0.45)
-                    .font(.title)
-                    .foregroundColor(.white)
-                    .onTapGesture {
-                        showingTutorial.toggle()
-                    }
-                    .onLongPressGesture(){
-                        UserDefaults.standard.set(true, forKey: "tutorial")
-                        showingTutorial.toggle()
-                    }
                 
             }
             
