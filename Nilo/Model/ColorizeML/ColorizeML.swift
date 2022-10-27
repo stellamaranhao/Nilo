@@ -9,10 +9,26 @@ import Foundation
 import UIKit
 import CoreML
 
-final class ColorizeML{
+final class ColorizeML:APIProtocol{
     static let inputDimension = 256
     static let inputSize = CGSize(width: inputDimension, height: inputDimension)
     static let coremlInputShape = [1, 1, NSNumber(value: inputDimension), NSNumber(value: inputDimension)]
+    
+    func predictImage(fromImage image: UIImage, onCompletion completionCallback: @escaping (Result<UIImage, Error>) -> Void) {
+        colorize(image: image)
+        { result in
+            switch result {
+            case .success(let success):
+                completionCallback(.success(success))
+                
+            case .failure(let failure):
+                completionCallback(.failure(Error.self as! Error))
+                
+            }
+        }
+        
+    }
+    
     
     
     func colorize(image inputImage: UIImage, completion: @escaping (Result<UIImage, Error>) -> Void)  {
