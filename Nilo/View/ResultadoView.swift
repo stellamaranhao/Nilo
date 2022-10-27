@@ -34,26 +34,8 @@ struct ResultadoView: View {
                     .ignoresSafeArea()
                 
                 ZStack {
-                    if (!isClicked) {
-                        // Image(uiImage: imageShown!)
-                        // Image("ImageAnne")
-                        ImageDetailView(image:Image(uiImage: imageShown!) )
-                        //                            .resizable()
-                        //                            .aspectRatio(contentMode: .fit)
-                        //                            .cornerRadius(15)
-                        //                            .padding(.bottom, UIScreen.main.bounds.height / 4.5)
-                        //                            .padding(.horizontal)
-                        //  .background(RoundedRectangle(cornerRadius: 15))
-                        
-                    } else {
-                        //Image(uiImage: oldImage!)
-                        ImageDetailView(image:Image(uiImage: oldImage!) )
-                        //                            .resizable()
-                        //                            .aspectRatio(contentMode: .fit)
-                        //                            .cornerRadius(15)
-                        //                            .padding(.bottom, UIScreen.main.bounds.height / 4.5)
-                        //                            .padding(.horizontal)
-                    }
+                    if (!isClicked) { ImageDetailView(image:Image(uiImage: imageShown!) ) }
+                    else {ImageDetailView(image:Image(uiImage: oldImage!))}
                     
                     HStack {
                         VStack {
@@ -81,12 +63,10 @@ struct ResultadoView: View {
                                         Text("Memória Resgatada!")
                                             .foregroundColor(Color.corTexto)
                                             .font(.custom("Poppins-SemiBold", size: 20))
-                                            .fontWeight(.bold)
                                             .font(.title3)
                                         Text("Não pare por aqui:")
                                             .foregroundColor(Color.corTexto)
                                             .font(.custom("Poppins-Regular", size: 16))
-                                            .fontWeight(.ultraLight)
                                             .font(.body)
                                     }
                                     .padding(.leading, UIScreen.main.bounds.width / 4.5)

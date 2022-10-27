@@ -20,7 +20,8 @@ struct ColorirView: View {
     @State var imageShown:UIImage?
     @State var options = ["2x", "3x", "5x", "8x"]
     @State var teste = ["Melhor qualidade ", "Mais detalhes e personalidade"]
-  
+    @State var showingTutorial:Bool
+
     @State var pickedPhotoName: String = ""
     @State private var selectedOptionPickerQualidade = "One"
     @State private var selectedOptionPickerMelhorias = "One"
@@ -33,7 +34,7 @@ struct ColorirView: View {
         NavigationView{
             VStack{
                 //            Text(message).font(.largeTitle)
-                Text(progressMsg).font(.subheadline)
+               // Text(progressMsg).font(.subheadline)
                 
                 if let imageShown = imageShown{
                     HStack{
@@ -45,8 +46,24 @@ struct ColorirView: View {
                     }
                 }
                 if !importtake {
-                    takePhotoButtom
-                    importPhotoButtom
+                    HStack {
+                        VStack {
+                            NavigationLink(destination: MenuView(showingTutorial: $showingTutorial)) {
+                                Image(systemName: "chevron.left")
+                                    .font(.system(size: 30))
+                                    .padding(.top, UIScreen.main.bounds.height / 50)
+                                    .padding(.leading,25)
+                            }
+                            
+                            Spacer()
+                        }
+                        Spacer()
+                    }
+                    VStack(spacing: 200){
+                        takePhotoButtom
+                        importPhotoButtom
+                            .padding(.bottom,150)
+                    }
                 }
                 
                 
@@ -67,7 +84,9 @@ struct ColorirView: View {
                             .fontWeight(.bold)
                             .font(.title2)
                             .font(.custom("Poppins-SemiBold", size: 20))
+                            
                     }.disabled((imageShown != nil) ? false : true)
+                        .padding(.bottom,50)
                 }
             }
         }
@@ -92,9 +111,11 @@ struct ColorirView: View {
                         .onTapGesture {
                         showSheet = true
                         }
+                        .padding(.top,120)
+                        .padding(.trailing,100)
                         .sheet(isPresented: $showSheet) {
                         ImagePicker(sourceType: .camera, selectedImage: self.$image)
-                                                    }
+                        }
                 .onChange(of: image) { newItem in
                     imageShown = newItem
 //                        Task {
@@ -129,6 +150,7 @@ struct ColorirView: View {
                         .fontWeight(.bold)
                         .font(.title2)
                         .font(.custom("Poppins-SemiBold", size: 20))
+               
                 }
                 .onChange(of: selectedItem) { newItem in
                     Task {

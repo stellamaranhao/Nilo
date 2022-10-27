@@ -43,7 +43,7 @@ struct MenuView: View {
                                     .modifier(ParallaxMotionModifier(manager: motionManager, magnitude: 12))
                             }
                             
-                            NavigationLink(destination: ColorirView()) {
+                            NavigationLink(destination: ColorirView(showingTutorial: showingTutorial)) {
                                 MenuItemView(imageName: "Lirio", objImageName: "ColoringTool", title: "Lirio", description: "Colorize fotos antigas")
                                     .modifier(ParallaxMotionModifier(manager: motionManager, magnitude: 12))
                             }

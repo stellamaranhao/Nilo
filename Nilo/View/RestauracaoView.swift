@@ -46,14 +46,29 @@ struct RestauracaoView: View {
                 }
 
                 if !importtake {
-                    
-                    takePhotoButtom
-                    importPhotoButtom
+                    HStack {
+                        VStack {
+                            NavigationLink(destination: MenuView(showingTutorial: $showingTutorial)) {
+                                Image(systemName: "chevron.left")
+                                    .font(.system(size: 30))
+                                    .padding(.top, UIScreen.main.bounds.height / 50)
+                                    .padding(.leading,25)
+                            }
+                            
+                            Spacer()
+                        }
+                        Spacer()
+                    }
+                    VStack(spacing: 130){
+                        takePhotoButtom
+                        importPhotoButtom
+                            .padding(.bottom,100)
+                    }
                 }
                
                 
                 
-                NavigationLink(destination: TelaResultado3(selectedItem: $selectedItem, oldImage: $oldImage, selectedImageData: $selectedImageData,imageShown: $imageShown,showingTutorial: showingTutorial), isActive: $isShowingDetailView) { EmptyView() }
+                NavigationLink(destination: ResultadoView(selectedItem: $selectedItem, oldImage: $oldImage, selectedImageData: $selectedImageData,imageShown: $imageShown,showingTutorial: showingTutorial), isActive: $isShowingDetailView) { EmptyView() }
                 Button(action: {
                     
                     linkApiRestauracao()
@@ -63,6 +78,7 @@ struct RestauracaoView: View {
                     
                 }){
                     ZStack{
+                        
                         RoundedRectangle(cornerRadius: 18).foregroundColor(.melhorarfoto)
                             .frame(width: 200, height: 70)
                             .shadow(color: Color.letratelarestauracao.opacity(0.25), radius: 15, y: 8)
@@ -85,32 +101,35 @@ struct RestauracaoView: View {
     @Environment(\.dismiss) var dismiss
     var takePhotoButtom: some View {
         ZStack{
-            Image("tirarFoto")//rever
-                .position(x: 250, y: 40)
-                .background(
-                    RoundedRectangle(cornerRadius: 18).foregroundColor(.white)
-                        .frame(width: 275, height: 200)
-                        .shadow(color: Color.letratelarestauracao.opacity(0.25), radius: 15, y: 8))
-                
-             
+           
+            
+                    Image("tirarFoto")//rever
+                        .position(x: 250, y: 40)
+                        .background(
+                            RoundedRectangle(cornerRadius: 18).foregroundColor(.white)
+                                .frame(width: 275, height: 200)
+                                .shadow(color: Color.letratelarestauracao.opacity(0.25), radius: 15, y: 8))
+                    
+                    
                     Text("Tirar Foto")
                         .foregroundColor(.letratelarestauracao)
                         .fontWeight(.bold)
                         .font(.title2)
                         .font(.custom("Poppins-SemiBold", size: 20))
                         .onTapGesture {
-                        showSheet = true
+                            showSheet = true
                         }
                         .padding(.top,120)
                         .padding(.trailing,130)
                         .sheet(isPresented: $showSheet) {
-                        ImagePicker(sourceType: .camera, selectedImage: self.$image)
-                                                    }
+                            ImagePicker(sourceType: .camera, selectedImage: self.$image)
+                        }
                         .onChange(of: image) { newItem in
                             imageShown = newItem
                             
                         }
-                        
+                
+            
         }
         .padding(.top,50)
     }
