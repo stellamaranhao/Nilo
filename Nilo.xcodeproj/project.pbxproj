@@ -13,8 +13,6 @@
 		AD347B812909763900D16D45 /* ImageDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD347B802909763900D16D45 /* ImageDetailView.swift */; };
 		AD6F91B728EE221300195F12 /* ReplicateAPIPostModelPrediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6F91B628EE221300195F12 /* ReplicateAPIPostModelPrediction.swift */; };
 		AD9E8B2A29032BBD00259CF1 /* TelaResultado3.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9E8B2929032BBD00259CF1 /* TelaResultado3.swift */; };
-		ADA01BA22901B93800450C06 /* TelaResultado2.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA01BA12901B93800450C06 /* TelaResultado2.swift */; };
-		ADA29A9C28F617EE006863D0 /* TelaResultado.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA29A9B28F617EE006863D0 /* TelaResultado.swift */; };
 		ADA531C428FDE002009053E0 /* ColorirView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA531C328FDE002009053E0 /* ColorirView.swift */; };
 		ADBD423628EF4C0200E0C8CF /* UIImage_Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD423528EF4C0200E0C8CF /* UIImage_Extention.swift */; };
 		ADC14C2628ECD5C300065D97 /* ReplicateAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC14C2528ECD5C300065D97 /* ReplicateAPI.swift */; };
@@ -95,16 +93,26 @@
 		CFC2042A29085A660012D790 /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFC2041729085A660012D790 /* Poppins-Italic.ttf */; };
 		CFC2042B29085A660012D790 /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFC2041829085A660012D790 /* Poppins-MediumItalic.ttf */; };
 		CFC2043229086CA90012D790 /* ShakeShake.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC2043129086CA90012D790 /* ShakeShake.swift */; };
+		CFC204362908E9370012D790 /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC204352908E9370012D790 /* TutorialView.swift */; };
+		CFC204382908F0630012D790 /* TutorialBVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC204372908F0630012D790 /* TutorialBVView.swift */; };
 		CFE1570328F71A4000502EB1 /* ImageKitAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE1570228F71A4000502EB1 /* ImageKitAPI.swift */; };
 		CFE1570628F747FC00502EB1 /* ImageKitAPIUploadResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE1570528F747FC00502EB1 /* ImageKitAPIUploadResponse.swift */; };
 		CFE1570828F752D000502EB1 /* BasetenAPIGFPGANResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE1570728F752D000502EB1 /* BasetenAPIGFPGANResponse.swift */; };
 		CFE1570A28F7593800502EB1 /* BasetenError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE1570928F7593800502EB1 /* BasetenError.swift */; };
+		CFE30D722908FC9B00BBE93E /* TutorialMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE30D712908FC9B00BBE93E /* TutorialMenuView.swift */; };
+		CFE30D742908FED500BBE93E /* TutoriaLotusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE30D732908FED500BBE93E /* TutoriaLotusView.swift */; };
+		CFE30D762908FFC400BBE93E /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE30D752908FFC400BBE93E /* SliderView.swift */; };
+		CFE30D782909041E00BBE93E /* TutorialLiriosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE30D772909041E00BBE93E /* TutorialLiriosView.swift */; };
+		CFE30D7A2909069800BBE93E /* NiloTutorialFinalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE30D792909069800BBE93E /* NiloTutorialFinalView.swift */; };
 		CFEA98E328F108A10058F16F /* ReplicateAPIMakePredictionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEA98E228F108A00058F16F /* ReplicateAPIMakePredictionResponse.swift */; };
 		CFEA98E828F1114F0058F16F /* ReplicateAPIBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEA98E728F1114F0058F16F /* ReplicateAPIBuffer.swift */; };
 		CFEA98EB28F114D50058F16F /* CodableExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = CFEA98EA28F114D50058F16F /* CodableExtensions */; };
 		CFEA98ED28F120040058F16F /* test_replicateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEA98EC28F120040058F16F /* test_replicateView.swift */; };
+		EC37685D2901F07B00FA802D /* CarregandoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC37685C2901F07B00FA802D /* CarregandoView.swift */; };
+		EC37685F2908645500FA802D /* LoadingSpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC37685E2908645500FA802D /* LoadingSpinnerView.swift */; };
 		EC6032CE28EE063F00646F4C /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6032CD28EE063F00646F4C /* CameraView.swift */; };
 		EC6032D228EE252700646F4C /* Cores.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6032D128EE252700646F4C /* Cores.swift */; };
+		ECC15BE22909CCF300304C65 /* ImageDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC15BE12909CCF300304C65 /* ImageDetailView.swift */; };
 		ECF4ED5428F9919B0018965B /* TelaUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF4ED5328F9919B0018965B /* TelaUpload.swift */; };
 		ECF4ED5628F9A0B00018965B /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF4ED5528F9A0B00018965B /* ImagePicker.swift */; };
 		ECF4ED5828FDD2480018965B /* coremlColorizer.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = ECF4ED5728FDD2480018965B /* coremlColorizer.mlmodel */; };
@@ -117,8 +125,6 @@
 		AD163873290621AE0022713F /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Regular.ttf"; path = "../../../../../Downloads/Poppins/Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		AD6F91B628EE221300195F12 /* ReplicateAPIPostModelPrediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIPostModelPrediction.swift; sourceTree = "<group>"; };
 		AD9E8B2929032BBD00259CF1 /* TelaResultado3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaResultado3.swift; sourceTree = "<group>"; };
-		ADA01BA12901B93800450C06 /* TelaResultado2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaResultado2.swift; sourceTree = "<group>"; };
-		ADA29A9B28F617EE006863D0 /* TelaResultado.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaResultado.swift; sourceTree = "<group>"; };
 		ADA531C328FDE002009053E0 /* ColorirView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorirView.swift; sourceTree = "<group>"; };
 		ADBD423528EF4C0200E0C8CF /* UIImage_Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage_Extention.swift; sourceTree = "<group>"; };
 		ADC14C2528ECD5C300065D97 /* ReplicateAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPI.swift; sourceTree = "<group>"; };
@@ -207,15 +213,25 @@
 		CFC2041829085A660012D790 /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
 		CFC2043029085DB90012D790 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		CFC2043129086CA90012D790 /* ShakeShake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeShake.swift; sourceTree = "<group>"; };
+		CFC204352908E9370012D790 /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
+		CFC204372908F0630012D790 /* TutorialBVView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialBVView.swift; sourceTree = "<group>"; };
 		CFE1570228F71A4000502EB1 /* ImageKitAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageKitAPI.swift; sourceTree = "<group>"; };
 		CFE1570528F747FC00502EB1 /* ImageKitAPIUploadResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageKitAPIUploadResponse.swift; sourceTree = "<group>"; };
 		CFE1570728F752D000502EB1 /* BasetenAPIGFPGANResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasetenAPIGFPGANResponse.swift; sourceTree = "<group>"; };
 		CFE1570928F7593800502EB1 /* BasetenError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasetenError.swift; sourceTree = "<group>"; };
+		CFE30D712908FC9B00BBE93E /* TutorialMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialMenuView.swift; sourceTree = "<group>"; };
+		CFE30D732908FED500BBE93E /* TutoriaLotusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutoriaLotusView.swift; sourceTree = "<group>"; };
+		CFE30D752908FFC400BBE93E /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
+		CFE30D772909041E00BBE93E /* TutorialLiriosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialLiriosView.swift; sourceTree = "<group>"; };
+		CFE30D792909069800BBE93E /* NiloTutorialFinalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiloTutorialFinalView.swift; sourceTree = "<group>"; };
 		CFEA98E228F108A00058F16F /* ReplicateAPIMakePredictionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIMakePredictionResponse.swift; sourceTree = "<group>"; };
 		CFEA98E728F1114F0058F16F /* ReplicateAPIBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIBuffer.swift; sourceTree = "<group>"; };
 		CFEA98EC28F120040058F16F /* test_replicateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_replicateView.swift; sourceTree = "<group>"; };
+		EC37685C2901F07B00FA802D /* CarregandoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarregandoView.swift; sourceTree = "<group>"; };
+		EC37685E2908645500FA802D /* LoadingSpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingSpinnerView.swift; sourceTree = "<group>"; };
 		EC6032CD28EE063F00646F4C /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		EC6032D128EE252700646F4C /* Cores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Cores.swift; path = Artefatos/Cores.swift; sourceTree = "<group>"; };
+		ECC15BE12909CCF300304C65 /* ImageDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailView.swift; sourceTree = "<group>"; };
 		ECF4ED5328F9919B0018965B /* TelaUpload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaUpload.swift; sourceTree = "<group>"; };
 		ECF4ED5528F9A0B00018965B /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		ECF4ED5728FDD2480018965B /* coremlColorizer.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = coremlColorizer.mlmodel; path = Nilo/Model/ColorizeML/coremlColorizer.mlmodel; sourceTree = SOURCE_ROOT; };
@@ -265,6 +281,7 @@
 				CF0D8D9D2907184F0075A715 /* MenuItemView.swift */,
 				CFC203FE29080BF40012D790 /* MenuTitleView.swift */,
 				CFA274022908F9CF00A8C6D9 /* MenuView.swift */,
+				ECC15BE12909CCF300304C65 /* ImageDetailView.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -274,6 +291,7 @@
 			children = (
 				CF0D8DA0290718B90075A715 /* MotionManager.swift */,
 				CFC2043129086CA90012D790 /* ShakeShake.swift */,
+				CFE30D752908FFC400BBE93E /* SliderView.swift */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -400,6 +418,7 @@
 		CF46D3FB28ECD1060052C018 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CFC204342908E8CA0012D790 /* Tutorial */,
 				CFC2040429085A5B0012D790 /* Font */,
 				CF0D8D9F290718AA0075A715 /* Misc */,
 				CF0D8D9C290717DE0075A715 /* Menu */,
@@ -409,6 +428,8 @@
 				ADA01BA12901B93800450C06 /* TelaResultado2.swift */,
 				AD9E8B2929032BBD00259CF1 /* TelaResultado3.swift */,
 				CF86A67A28F5EB6D009B6DE3 /* RestauracaoView.swift */,
+				EC37685C2901F07B00FA802D /* CarregandoView.swift */,
+				EC37685E2908645500FA802D /* LoadingSpinnerView.swift */,
 				ECF4ED5528F9A0B00018965B /* ImagePicker.swift */,
 				EC6032CD28EE063F00646F4C /* CameraView.swift */,
 				ADA531C328FDE002009053E0 /* ColorirView.swift */,
@@ -489,6 +510,19 @@
 				CFC2041829085A660012D790 /* Poppins-MediumItalic.ttf */,
 			);
 			path = Poppins;
+			sourceTree = "<group>";
+		};
+		CFC204342908E8CA0012D790 /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				CFC204352908E9370012D790 /* TutorialView.swift */,
+				CFC204372908F0630012D790 /* TutorialBVView.swift */,
+				CFE30D712908FC9B00BBE93E /* TutorialMenuView.swift */,
+				CFE30D732908FED500BBE93E /* TutoriaLotusView.swift */,
+				CFE30D772909041E00BBE93E /* TutorialLiriosView.swift */,
+				CFE30D792909069800BBE93E /* NiloTutorialFinalView.swift */,
+			);
+			path = Tutorial;
 			sourceTree = "<group>";
 		};
 		CFE1570128F71A3400502EB1 /* ImageKitAPI */ = {
@@ -613,9 +647,12 @@
 				CFEA98E828F1114F0058F16F /* ReplicateAPIBuffer.swift in Sources */,
 				CF0FB15328EF6AD40009C275 /* cmspack.c in Sources */,
 				CF0FB14F28EF6AD40009C275 /* cmslut.c in Sources */,
+				CFE30D7A2909069800BBE93E /* NiloTutorialFinalView.swift in Sources */,
+				EC37685D2901F07B00FA802D /* CarregandoView.swift in Sources */,
 				CF0FB14428EF6AD40009C275 /* cmsmtrx.c in Sources */,
 				CF0FB11228EF6A7D0009C275 /* Nilo-Bridging-Header.h in Sources */,
 				AD16386E29061B7A0022713F /* ButtonsView.swift in Sources */,
+				ECC15BE22909CCF300304C65 /* ImageDetailView.swift in Sources */,
 				CF0FB13F28EF6AD40009C275 /* cmsopt.c in Sources */,
 				CF0FB13D28EF6AD40009C275 /* cmshalf.c in Sources */,
 				CF77F8D628EFBD9A00C1BBD2 /* test_colorizeML.swift in Sources */,
@@ -626,6 +663,7 @@
 				AD6F91B728EE221300195F12 /* ReplicateAPIPostModelPrediction.swift in Sources */,
 				CF86A67B28F5EB6D009B6DE3 /* RestauracaoView.swift in Sources */,
 				CF52E58A28F0A8910074326F /* ReplicateAPIModelsEnum.swift in Sources */,
+				CFE30D722908FC9B00BBE93E /* TutorialMenuView.swift in Sources */,
 				CFE1570A28F7593800502EB1 /* BasetenError.swift in Sources */,
 				CF52E58E28F0B64C0074326F /* ReplicateAPIErro.swift in Sources */,
 				CF52E58C28F0ACDA0074326F /* ReplicateAPIInput.swift in Sources */,
@@ -644,10 +682,11 @@
 				CFEA98E328F108A10058F16F /* ReplicateAPIMakePredictionResponse.swift in Sources */,
 				ECF4ED5A28FDE5970018965B /* coremlColorizer.mlmodel in Sources */,
 				CF0FB13E28EF6AD40009C275 /* cmsgamma.c in Sources */,
+				CFE30D782909041E00BBE93E /* TutorialLiriosView.swift in Sources */,
+				CFE30D762908FFC400BBE93E /* SliderView.swift in Sources */,
 				ADA531C428FDE002009053E0 /* ColorirView.swift in Sources */,
 				CF0FB15228EF6AD40009C275 /* cmscnvrt.c in Sources */,
 				CF0FB14128EF6AD40009C275 /* cmsxform.c in Sources */,
-				ADA29A9C28F617EE006863D0 /* TelaResultado.swift in Sources */,
 				CF0D8D9E2907184F0075A715 /* MenuItemView.swift in Sources */,
 				CF46D40028ECD1CC0052C018 /* ContentViewExtension.swift in Sources */,
 				CFE1570628F747FC00502EB1 /* ImageKitAPIUploadResponse.swift in Sources */,
@@ -659,19 +698,22 @@
 				CF0FB14328EF6AD40009C275 /* cmsmd5.c in Sources */,
 				CF0FB10B28EF69FE0009C275 /* UIViewController+Utils.swift in Sources */,
 				CF0FB14028EF6AD40009C275 /* cmsintrp.c in Sources */,
+				CFE30D742908FED500BBE93E /* TutoriaLotusView.swift in Sources */,
 				CFC2043229086CA90012D790 /* ShakeShake.swift in Sources */,
+				CFC204362908E9370012D790 /* TutorialView.swift in Sources */,
+				EC37685F2908645500FA802D /* LoadingSpinnerView.swift in Sources */,
 				CF0FB10C28EF69FE0009C275 /* UIImage+Utils.swift in Sources */,
 				CF0FB13828EF6AD40009C275 /* cmscam02.c in Sources */,
 				CF46D3EF28ECD0040052C018 /* ContentView.swift in Sources */,
 				CFE1570828F752D000502EB1 /* BasetenAPIGFPGANResponse.swift in Sources */,
 				EC6032CE28EE063F00646F4C /* CameraView.swift in Sources */,
+				CFC204382908F0630012D790 /* TutorialBVView.swift in Sources */,
 				EC6032D228EE252700646F4C /* Cores.swift in Sources */,
 				CFEA98ED28F120040058F16F /* test_replicateView.swift in Sources */,
 				CF86A67728F5E5FA009B6DE3 /* BasetenAPIInput.swift in Sources */,
 				CF52E59028F0BEB50074326F /* ReplicateAPIPredictionInfo.swift in Sources */,
 				CF0FB10D28EF69FE0009C275 /* DispatchQueue+Utils.swift in Sources */,
 				CF0FB14E28EF6AD40009C275 /* cmstypes.c in Sources */,
-				ADA01BA22901B93800450C06 /* TelaResultado2.swift in Sources */,
 				CF0FB13628EF6AD40009C275 /* cmsnamed.c in Sources */,
 				CF46D3ED28ECD0040052C018 /* NiloApp.swift in Sources */,
 				AD347B812909763900D16D45 /* ImageDetailView.swift in Sources */,
@@ -817,6 +859,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
@@ -831,7 +874,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -845,7 +888,7 @@
 					"-std=c++11",
 					"-Wno-deprecated-register",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = MaiaJp.nilo;
+				PRODUCT_BUNDLE_IDENTIFIER = MoaiaJp.nilo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -861,6 +904,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
@@ -875,7 +919,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -889,7 +933,7 @@
 					"-std=c++11",
 					"-Wno-deprecated-register",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = MaiaJp.nilo;
+				PRODUCT_BUNDLE_IDENTIFIER = MoaiaJp.nilo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;

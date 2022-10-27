@@ -4,7 +4,6 @@
 //
 //  Created by Clara Thaís Maciel e Silva on 21/10/22.
 //
-
 import SwiftUI
 import PhotosUI
 
@@ -16,6 +15,8 @@ struct TelaResultado3: View {
     @State var isClicked: Bool = false
     @State private var shared = false
     @State var showAlert:Bool = false
+    @State var showingTutorial:Bool
+
     
     
     @State private var image : Bool = true
@@ -56,7 +57,7 @@ struct TelaResultado3: View {
                     
                     HStack {
                         VStack {
-                            NavigationLink(destination: MenuView()) {
+                            NavigationLink(destination: MenuView(showingTutorial: $showingTutorial)) {
                                 Image(systemName: "xmark.circle.fill")
                                     .font(.system(size: 30))
                                     .padding(.top, UIScreen.main.bounds.height / 15)
@@ -133,7 +134,7 @@ struct TelaResultado3: View {
                                         
                                         
                                         
-                                        NavigationLink(destination: RestauracaoView()) {
+                                        NavigationLink(destination: RestauracaoView(showingTutorial: showingTutorial)) {
                                             ButtonsView(imgSistema: "arrow.turn.down.left", texto: "Resgatar outra memória")
                                         }
                                         

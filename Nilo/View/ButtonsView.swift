@@ -4,7 +4,6 @@
 //
 //  Created by Clara Thaís Maciel e Silva on 23/10/22.
 //
-
 import SwiftUI
 
 struct ButtonsView: View {

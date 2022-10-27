@@ -31,39 +31,44 @@ struct ColorirView: View {
     let apicolor = ColorizeML()
     var body: some View {
         NavigationView{
-        VStack{
-            //            Text(message).font(.largeTitle)
-            Text(progressMsg).font(.subheadline)
-            
-            if let imageShown = imageShown{
-                HStack{
-                    Image(uiImage: imageShown)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 250, height: 250)
-                    
-                }
-            }
-            if !importtake {
-                takePhotoButtom
-                importPhotoButtom
-            }
-
-
-            
-            NavigationLink(destination: TelaResultado(imageShown: $imageShown), isActive: $isShowingDetailView) { EmptyView() }
-            
-            Button(action: {
+            VStack{
+                //            Text(message).font(.largeTitle)
+                Text(progressMsg).font(.subheadline)
                 
-                linkApiRestauracao()
-                isShowingDetailView = true
-            }){
-                Text("Melhorar Foto")
-                .padding()
-                .foregroundColor(.letratelarestauracao)
-                .background(.white)
-                .cornerRadius(21)
-            }
+                if let imageShown = imageShown{
+                    HStack{
+                        Image(uiImage: imageShown)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 250, height: 250)
+                        
+                    }
+                }
+                if !importtake {
+                    takePhotoButtom
+                    importPhotoButtom
+                }
+                
+                
+                
+                //NavigationLink(destination: TelaResultado(imageShown: $imageShown), isActive: $isShowingDetailView) { EmptyView() }
+                
+                Button(action: {
+                    
+                    linkApiRestauracao()
+                    isShowingDetailView = true
+                }){
+                    ZStack{
+                        RoundedRectangle(cornerRadius: 18).foregroundColor(.melhorarfoto)
+                            .frame(width: 200, height: 70)
+                            .shadow(color: Color.letratelarestauracao.opacity(0.25), radius: 15, y: 8)
+                        Text("Melhorar Foto")
+                            .foregroundColor(.white)
+                            .fontWeight(.bold)
+                            .font(.title2)
+                            .font(.custom("Poppins-SemiBold", size: 20))
+                    }.disabled((imageShown != nil) ? false : true)
+                }
             }
         }
         .navigationBarBackButtonHidden(true)
@@ -118,6 +123,7 @@ struct ColorirView: View {
                 selection: $selectedItem,
                 matching: .images,
                 photoLibrary: .shared()) {
+                    
                     Text("Importar uma Foto")
                         .foregroundColor(.letratelarestauracao)
                         .fontWeight(.bold)
@@ -132,7 +138,7 @@ struct ColorirView: View {
                             imageShown = UIImage(data: selectedImageData!)
                         }
                     }
-                }
+                }.disabled((imageShown != nil) ? false : true)
             
         }
     }
