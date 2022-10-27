@@ -7,7 +7,7 @@
 import SwiftUI
 import PhotosUI
 
-struct TelaResultado3: View {
+struct ResultadoView: View {
     @Binding var selectedItem: PhotosPickerItem?
     @Binding var oldImage: UIImage?
     @Binding var selectedImageData: Data?
