@@ -74,7 +74,7 @@ struct ColorirView: View {
                     }
                     .padding(.bottom,50)
                     }.disabled((imageShown != nil) ? false : true)
-                }
+                }.background(Color.corDeFundo)
             
         
        

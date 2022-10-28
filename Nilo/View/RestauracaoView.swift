@@ -78,7 +78,7 @@ struct RestauracaoView: View {
                     
                     
                 }.disabled((imageShown != nil) ? false : true)
-            }
+            }.background(Color.corDeFundo)
             
         
       
