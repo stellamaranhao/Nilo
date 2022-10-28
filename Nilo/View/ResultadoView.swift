@@ -161,12 +161,12 @@ struct ResultadoView: View {
                                             ButtonsView(imgSistema: "arrow.turn.down.left", texto: "Resgatar outra memória")
                                         }
                                         
-                                        Button {
-                                            
-                                        } label: {
-                                            ButtonsView(imgSistema: "arrow.turn.down.left", texto: "Outra Função")
-                                        }
-                                        
+//                                        Button {
+//                                            
+//                                        } label: {
+//                                            ButtonsView(imgSistema: "arrow.turn.down.left", texto: "Outra Função")
+//                                        }
+//                                        
                                     }.padding(.horizontal,30)
                                     
                                 }
