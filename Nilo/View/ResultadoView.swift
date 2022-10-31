@@ -16,8 +16,9 @@ struct ResultadoView: View {
     @State private var shared = false
     @State var showAlert:Bool = false
     @State var showingTutorial:Bool
+    @State var isShowingMenu: Bool = false
+    @State private var isShowingDetailView = false
 
-    
     
     @State private var image : Bool = true
     @State var progressMsg:String = "progress: not started"
@@ -30,21 +31,61 @@ struct ResultadoView: View {
         NavigationView{
             ZStack {
                 
-                Color.gray
-                    .ignoresSafeArea()
+//                Color.gray
+//                    .ignoresSafeArea()
                 
                 ZStack {
-                    if (!isClicked) { ImageDetailView(image:Image(uiImage: imageShown!) ) }
-                    else {ImageDetailView(image:Image(uiImage: oldImage!))}
+                    if (!isClicked) { ImageDetailView(image:imageShown!) }
+                    else {ImageDetailView(image:oldImage!)}
                     
                     HStack {
                         VStack {
-                            NavigationLink(destination: MenuView(showingTutorial: $showingTutorial)) {
+//                            NavigationLink(destination: MenuView(showingTutorial: $showingTutorial)) {
+//                                Image(systemName: "xmark.circle.fill")
+//                                    .font(.system(size: 30))
+//                                    .padding(.top, UIScreen.main.bounds.height / 15)
+//                                    .padding(.leading)
+//                            }
+                            
+                            
+                            
+                            NavigationLink(destination: MenuView(showingTutorial: $showingTutorial), isActive: $isShowingDetailView) { EmptyView() }
+                            Button(action: {
+                                if !shared {
+                                    showAlert = true
+                                    
+                                } else{
+                                    isShowingDetailView = true
+                                }
+                                
+                                
+                            }){
                                 Image(systemName: "xmark.circle.fill")
                                     .font(.system(size: 30))
                                     .padding(.top, UIScreen.main.bounds.height / 15)
                                     .padding(.leading)
+                            }.alert(isPresented: $showAlert) {
+                                
+                                Alert(title: Text("Tem certeza?")
+                                      ,message: Text("Gostaria de salvar a foto antes de sair ou fazer outra alteração?")
+                                      ,primaryButton: .default(Text("Salvar foto")){
+                                    shareButton()
+                                },secondaryButton: .destructive(Text("Continuar mesmo assim")){
+                                    isShowingDetailView = true
+
+                                }
+                                      
+                                )
                             }
+                            
+                            
+                            
+                            
+                        
+                    
+                            
+                            
+                            
                             
                             Spacer()
                         }
@@ -57,15 +98,16 @@ struct ResultadoView: View {
                             RoundedRectangle(cornerRadius: 30)
                                 .fill(Color.corDeFundo)
                                 .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height / 3.5)
+                                .shadow(color: Color.letratelarestauracao.opacity(0.50), radius: 15, y: 8)
                             VStack(spacing: 5){
                                 HStack {
                                     VStack (spacing: 5){
                                         Text("Memória Resgatada!")
-                                            .foregroundColor(Color.corTexto)
+                                            .foregroundColor(Color.melhorarfoto)
                                             .font(.custom("Poppins-SemiBold", size: 20))
                                             .font(.title3)
                                         Text("Não pare por aqui:")
-                                            .foregroundColor(Color.corTexto)
+                                            .foregroundColor(Color.melhorarfoto)
                                             .font(.custom("Poppins-Regular", size: 16))
                                             .font(.body)
                                     }
@@ -93,6 +135,7 @@ struct ResultadoView: View {
                                                 showAlert = true
                                                 
                                             } else{
+                                                
                                                 linkApiRestauracao() //entra tela de carregamento
                                             }
                                         } label: {
@@ -118,12 +161,12 @@ struct ResultadoView: View {
                                             ButtonsView(imgSistema: "arrow.turn.down.left", texto: "Resgatar outra memória")
                                         }
                                         
-                                        Button {
-                                            
-                                        } label: {
-                                            ButtonsView(imgSistema: "arrow.turn.down.left", texto: "Outra Função")
-                                        }
-                                        
+//                                        Button {
+//                                            
+//                                        } label: {
+//                                            ButtonsView(imgSistema: "arrow.turn.down.left", texto: "Outra Função")
+//                                        }
+//                                        
                                     }.padding(.horizontal,30)
                                     
                                 }
@@ -137,34 +180,19 @@ struct ResultadoView: View {
         .navigationBarBackButtonHidden(true)
     }
     
-    //    var popUpAlert: some View {
-    //        Button("Alerta") {
-    //            showingPopover = true
-    //        }.alert(isPresented: $showingPopover ) {
-    //            Alert(title: Text("Tem certeza?")
-    //                  ,message: Text("Gostaria de salvar a foto antes de sair ou fazer outra alteração?")
-    //                  ,primaryButton: .default(Text("Salvar foto")){
-    //                shareButton()
-    //            },secondaryButton: .destructive(Text("Continuar mesmo assim")){
-    //                print ("foi")
-    //            }
-    //
-    //            )
-    //        }
-    //
-    //    }
-    
     var eyeButton: some View {
         Button {
             isClicked.toggle()
         } label: {
             Image(systemName: isClicked ? "eye.slash.circle" : "eye.circle")
-                .foregroundColor(Color.corTexto)
+                .foregroundColor(Color.melhorarfoto)
                 .font(.system(size: 40))
                 .padding(.trailing, UIScreen.main.bounds.width / 10)
         }
         
     }
+    
+
     
     func shareButton() {
         //        let image = Image(uiImage: imageShown!)
@@ -196,49 +224,3 @@ struct ResultadoView: View {
     }
 }
 
-
-//struct TelaResultado3_Previews: PreviewProvider {
-//    static var previews: some View {
-//        TelaResultado3(selectedItem: .constant(.none), selectedImageData: ,imageShown:(UIImage(named: "ImageAnne"))),selectedImageData: .constant(.none))
-//    }
-//}
-
-
-//xmark.circle.fill
-//Button("Show Menu") {
-//                                            showingPopover = true
-//                                        }
-//                                        .popover(isPresented: $showingPopover) {
-//                                            VStack(spacing: -10){
-//                                                Image(systemName: "exclamationmark.triangle")
-//                                                    .resizable()
-//                                                    .scaledToFit()
-//                                                    .foregroundColor(Color.melhorarfoto)
-//                                                    .frame(width: UIScreen.main.bounds.width/5,height: UIScreen.main.bounds.width/5)
-//                                                    .padding(.bottom)
-//                                                Text("Tem certeza?")
-//                                                // .font(.title)
-//                                                    .font(.custom("Poppins-SemiBold", size: 26))
-//                                                    .padding()
-//                                                    .foregroundColor(Color.melhorarfoto)
-//                                                Text("Gostaria de salvar a foto antes de sair ou fazer outra alteração?")
-//                                                    .font(.custom("Poppins-Regular", size: 18))
-//                                                    .foregroundColor(Color.melhorarfoto)
-//                                                    .multilineTextAlignment(.center)
-//                                                    .padding()
-//                                               // HStack{
-//                                                    Button {
-//                                                        shareButton()
-//                                                    } label: {
-//                                                        ButtonsView(imgSistema: "square.and.arrow.up", texto: "Exportar memória")
-//                                                    }
-//                                                    Button {
-//                                                        shareButton()
-//                                                    } label: {
-//                                                        ButtonsView(imgSistema: "square.and.arrow.up", texto: "Exportar memória")
-//                                                    }
-
-// }
-//                                            }
-//                                        }.presentationDetents([.medium]).background(Color.corDeFundo)
-//

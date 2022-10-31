@@ -33,15 +33,14 @@ struct MenuItemView: View {
                     .edgesIgnoringSafeArea(.all)
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 200, height: 200)
-                    .offset(y:-20)
+                    .offset(y:-30)
                 
             }.padding(5)
             
             VStack(alignment: .leading,spacing: -5){
                 Text(title)
                     .foregroundColor(Color.corTexto)
-                    .fontWeight(.bold)
-                    .font(.custom("Poppins-SemiBold", size: 48))
+                    .font(.custom("Poppins-SemiBold", size: 38))
                     .offset(x:30)
                 
                 Text(description)
@@ -49,6 +48,7 @@ struct MenuItemView: View {
                     .font(.custom("Poppins-Regular", size: 16))
                     .offset(x:30)
             }.padding(5)
+                .padding(.bottom,15)
 
             
         }

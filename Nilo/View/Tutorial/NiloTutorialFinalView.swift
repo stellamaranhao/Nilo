@@ -8,31 +8,48 @@
 import SwiftUI
 
 struct NiloTutorialFinalView: View {
+    @Binding var encerrar:Bool
+    let generator = UINotificationFeedbackGenerator()
     var body: some View {
         ZStack(){
             VStack(alignment: .center,spacing: 15){
                 Text("NILO")
-                    .foregroundColor(Color.corTexto)
+                    .foregroundColor(Color.TextoTelaTutorial)
                     .font(.custom("Poppins-Bold", size: 24))
                 
-                Text("Agora é com você! Desfrute das ferramentas do **NILO** para preservar suas memórias e recordações. ")
-                    .foregroundColor(Color.corTexto)
-                    .font(.custom("Poppins-Regular", size: 16))
-                    .frame(maxWidth: UIScreen.main.bounds.width*0.70)
+                Text("Agora é com você!\nDesfrute das ferramentas do **NILO** para preservar suas memórias e recordações. ")
+                    .foregroundColor(Color.TextoTelaTutorial)
+                    .font(.custom("Poppins-Regular", size: 14))
+                    .frame(maxWidth: UIScreen.main.bounds.width*0.80)
                     .multilineTextAlignment(.center)
+                    .padding(.bottom,50)
                 
                 Image("tutorialFinal")
                     .resizable()
                     .edgesIgnoringSafeArea(.all)
                     .aspectRatio(contentMode: .fit)
                 
+                Button(action: {
+                    encerrar.toggle()
+                    UserDefaults.standard.set(false, forKey: "tutorial")
+                    generator.notificationOccurred(.success)
+                }){
+                    ZStack{
+                        RoundedRectangle(cornerRadius: 18).foregroundColor(.melhorarfoto)
+                            .frame(width: 200, height: 70)
+                            .shadow(color: Color.letratelarestauracao.opacity(0.25), radius: 15, y: 8)
+                        Text("Começar !")
+                            .foregroundColor(.corDeFundo)
+                            .fontWeight(.bold)
+                            .font(.title2)
+                            .font(.custom("Poppins-SemiBold", size: 20))
+                                                }
+                    .padding(.bottom,50)
+                    
+                    
+                }
+                
             }
         }
-    }
-}
-
-struct NiloTutorialFinalView_Previews: PreviewProvider {
-    static var previews: some View {
-        NiloTutorialFinalView()
     }
 }

@@ -11,6 +11,7 @@ import SwiftUI
 import PhotosUI
 
 struct ColorirView: View {
+    @State var showingTutorial:Bool
     @State private var isShowingDetailView = false
     private var importtake: Bool {imageShown != nil}
     @State private var image = UIImage()
@@ -22,6 +23,9 @@ struct ColorirView: View {
     @State var teste = ["Melhor qualidade ", "Mais detalhes e personalidade"]
     @State var showingTutorial:Bool
 
+
+    @State var oldImage: UIImage?
+  
     @State var pickedPhotoName: String = ""
     @State private var selectedOptionPickerQualidade = "One"
     @State private var selectedOptionPickerMelhorias = "One"
@@ -31,8 +35,7 @@ struct ColorirView: View {
     @State var progressMsg:String = "progress: not started"
     let apicolor = ColorizeML()
     var body: some View {
-        NavigationView{
-            VStack{
+                    VStack{
                 //            Text(message).font(.largeTitle)
                // Text(progressMsg).font(.subheadline)
                 
@@ -41,7 +44,10 @@ struct ColorirView: View {
                         Image(uiImage: imageShown)
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 250, height: 250)
+                            .scaledToFill()
+                            .cornerRadius(8)
+                            .frame(width: 214, height: 476)
+                            .padding(.bottom, 80)
                         
                     }
                 }
@@ -66,13 +72,12 @@ struct ColorirView: View {
                     }
                 }
                 
-                
-                
-                //NavigationLink(destination: TelaResultado(imageShown: $imageShown), isActive: $isShowingDetailView) { EmptyView() }
+                 
+                NavigationLink(destination: CarregandoView(selectedItem: $selectedItem, oldImage: $oldImage, selectedImageData: $selectedImageData,imageShown: $imageShown,showingTutorial: showingTutorial, showingMyself: $isShowingDetailView, apiUsada: ColorizeML()), isActive: $isShowingDetailView) { EmptyView() }
                 
                 Button(action: {
                     
-                    linkApiRestauracao()
+                    print("presed")
                     isShowingDetailView = true
                 }){
                     ZStack{
@@ -130,8 +135,7 @@ struct ColorirView: View {
         }
     }
     var importPhotoButtom: some View{
-        
-        
+
         ZStack{
             Image("importarFoto")//rever
                 .position(x: 325, y: 40)
@@ -160,7 +164,7 @@ struct ColorirView: View {
                             imageShown = UIImage(data: selectedImageData!)
                         }
                     }
-                }.disabled((imageShown != nil) ? false : true)
+                }
             
         }
     }
