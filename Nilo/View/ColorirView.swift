@@ -21,7 +21,7 @@ struct ColorirView: View {
     @State var imageShown:UIImage?
     @State var options = ["2x", "3x", "5x", "8x"]
     @State var teste = ["Melhor qualidade ", "Mais detalhes e personalidade"]
-    @State var showingTutorial:Bool
+  //  @State var showingTutorial:Bool
 
 
     @State var oldImage: UIImage?
@@ -94,9 +94,10 @@ struct ColorirView: View {
                         .padding(.bottom,50)
                 }
             }
+                    .navigationBarBackButtonHidden(true)
         }
-        .navigationBarBackButtonHidden(true)
-    }
+
+    
     
     var takePhotoButtom: some View {
         ZStack{

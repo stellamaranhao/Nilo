@@ -37,7 +37,7 @@ struct CarregandoView: View{
                 
                 VStack{
                     
-                    NavigationLink(destination: TelaResultado3(selectedItem: $selectedItem, oldImage: $oldImage, selectedImageData: $selectedImageData,imageShown: $imageShown,showingTutorial: showingTutorial), isActive: $isShowingDetailView) { EmptyView() }
+                    NavigationLink(destination: ResultadoView(selectedItem: $selectedItem, oldImage: $oldImage, selectedImageData: $selectedImageData,imageShown: $imageShown,showingTutorial: showingTutorial), isActive: $isShowingDetailView) { EmptyView() }
                     
                     
                     Image("WaitingScreen")

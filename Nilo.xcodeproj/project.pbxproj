@@ -10,7 +10,6 @@
 		AD16386E29061B7A0022713F /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD16386D29061B7A0022713F /* ButtonsView.swift */; };
 		AD1F1168290B1020004D9266 /* ImageResultModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1F1167290B1020004D9266 /* ImageResultModifier.swift */; };
 		AD347B812909763900D16D45 /* (null) in Sources */ = {isa = PBXBuildFile; };
-		AD347B812909763900D16D45 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		AD6F91B728EE221300195F12 /* ReplicateAPIPostModelPrediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6F91B628EE221300195F12 /* ReplicateAPIPostModelPrediction.swift */; };
 		AD7105DF290AB4BA00D6D9B0 /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD7105CC290AB4B900D6D9B0 /* Poppins-ExtraLightItalic.ttf */; };
 		AD7105E0290AB4BA00D6D9B0 /* Poppins-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD7105CD290AB4B900D6D9B0 /* Poppins-LightItalic.ttf */; };
@@ -433,7 +432,6 @@
 				CF0D8D9C290717DE0075A715 /* Menu */,
 				AD16386D29061B7A0022713F /* ButtonsView.swift */,
 				AD9E8B2929032BBD00259CF1 /* ResultadoView.swift */,
-				AD9E8B2929032BBD00259CF1 /* TelaResultado3.swift */,
 				CF86A67A28F5EB6D009B6DE3 /* RestauracaoView.swift */,
 				EC37685C2901F07B00FA802D /* CarregandoView.swift */,
 				EC37685E2908645500FA802D /* LoadingSpinnerView.swift */,
@@ -872,7 +870,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Nilo/Preview Content\"";
-				DEVELOPMENT_TEAM = 5Y8ZK9WBN9;
+				DEVELOPMENT_TEAM = 67AYPRFZH8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Nilo/Info.plist;
@@ -917,7 +915,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Nilo/Preview Content\"";
-				DEVELOPMENT_TEAM = 5Y8ZK9WBN9;
+				DEVELOPMENT_TEAM = 67AYPRFZH8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Nilo/Info.plist;
