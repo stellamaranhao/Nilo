@@ -142,7 +142,7 @@ struct RestauracaoView: View {
         ZStack{
             Group{
                 Image("importarFoto")//rever
-                    .position(x: 280, y: 80)
+                    .position(x: 260, y: 10)
                     .background(
                         RoundedRectangle(cornerRadius: 18).foregroundColor(.white)
                             .frame(width: 275, height: 200)

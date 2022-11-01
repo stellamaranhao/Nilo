@@ -139,7 +139,7 @@ struct ColorirView: View {
 
         ZStack{
             Image("importarFoto")//rever
-                .position(x: 325, y: 40)
+                .position(x: 260, y: 10)
                 .background(
                     RoundedRectangle(cornerRadius: 18).foregroundColor(.white)
                         .frame(width: 275, height: 200)

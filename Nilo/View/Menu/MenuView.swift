@@ -60,7 +60,7 @@ struct MenuView: View {
                         
                         VStack(spacing:30){
                             NavigationLink(destination: RestauracaoView(showingTutorial: showingTutorial), isActive: $showFirstView) {
-                                MenuItemView(imageName: "Lotus", objImageName: "Restaurar fotos", title: "Lotus", description: "Restaure fotos danificadas e antigas")
+                                MenuItemView(imageName: "Lotus", objImageName: "Restaurar fotos", title: "Lótus", description: "Restaure fotos danificadas e antigas")
                                     .modifier(ParallaxMotionModifier(manager: motionManager, magnitude: 12))
                                     .onTapGesture {
                                         generatorSelection.selectionChanged()
@@ -69,7 +69,7 @@ struct MenuView: View {
                             }
                             
                             NavigationLink(destination: ColorirView(showingTutorial: showingTutorial), isActive: $showSecondView) {
-                                MenuItemView(imageName: "Lirio", objImageName: "ColoringTool", title: "Lirio", description: "Colorize fotos antigas")
+                                MenuItemView(imageName: "Lirio", objImageName: "ColoringTool", title: "Lírios", description: "Colorize fotos antigas")
                                     .modifier(ParallaxMotionModifier(manager: motionManager, magnitude: 12))
                                     .onTapGesture {
                                         generatorSelection.selectionChanged()

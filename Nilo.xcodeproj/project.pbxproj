@@ -10,6 +10,7 @@
 		AD16386E29061B7A0022713F /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD16386D29061B7A0022713F /* ButtonsView.swift */; };
 		AD1F1168290B1020004D9266 /* ImageResultModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1F1167290B1020004D9266 /* ImageResultModifier.swift */; };
 		AD347B812909763900D16D45 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		AD41777F29104BA9003B9AB0 /* DeepFakesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD41777E29104BA9003B9AB0 /* DeepFakesView.swift */; };
 		AD6F91B728EE221300195F12 /* ReplicateAPIPostModelPrediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6F91B628EE221300195F12 /* ReplicateAPIPostModelPrediction.swift */; };
 		AD7105DF290AB4BA00D6D9B0 /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD7105CC290AB4B900D6D9B0 /* Poppins-ExtraLightItalic.ttf */; };
 		AD7105E0290AB4BA00D6D9B0 /* Poppins-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD7105CD290AB4B900D6D9B0 /* Poppins-LightItalic.ttf */; };
@@ -121,6 +122,7 @@
 /* Begin PBXFileReference section */
 		AD16386D29061B7A0022713F /* ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
 		AD1F1167290B1020004D9266 /* ImageResultModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResultModifier.swift; sourceTree = "<group>"; };
+		AD41777E29104BA9003B9AB0 /* DeepFakesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepFakesView.swift; sourceTree = "<group>"; };
 		AD6F91B628EE221300195F12 /* ReplicateAPIPostModelPrediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIPostModelPrediction.swift; sourceTree = "<group>"; };
 		AD7105CC290AB4B900D6D9B0 /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
 		AD7105CD290AB4B900D6D9B0 /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-LightItalic.ttf"; sourceTree = "<group>"; };
@@ -433,6 +435,7 @@
 				AD16386D29061B7A0022713F /* ButtonsView.swift */,
 				AD9E8B2929032BBD00259CF1 /* ResultadoView.swift */,
 				CF86A67A28F5EB6D009B6DE3 /* RestauracaoView.swift */,
+				AD41777E29104BA9003B9AB0 /* DeepFakesView.swift */,
 				EC37685C2901F07B00FA802D /* CarregandoView.swift */,
 				EC37685E2908645500FA802D /* LoadingSpinnerView.swift */,
 				ECF4ED5528F9A0B00018965B /* ImagePicker.swift */,
@@ -691,6 +694,7 @@
 				ADA531C428FDE002009053E0 /* ColorirView.swift in Sources */,
 				CF0FB15228EF6AD40009C275 /* cmscnvrt.c in Sources */,
 				CF0FB14128EF6AD40009C275 /* cmsxform.c in Sources */,
+				AD41777F29104BA9003B9AB0 /* DeepFakesView.swift in Sources */,
 				CF0D8D9E2907184F0075A715 /* MenuItemView.swift in Sources */,
 				CF46D40028ECD1CC0052C018 /* ContentViewExtension.swift in Sources */,
 				CFE1570628F747FC00502EB1 /* ImageKitAPIUploadResponse.swift in Sources */,
