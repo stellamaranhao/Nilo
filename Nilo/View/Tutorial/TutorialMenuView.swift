@@ -17,10 +17,10 @@ struct TutorialMenuView: View {
                     .foregroundColor(Color.TextoTelaTutorial)
                     .font(.custom("Poppins-Bold", size: 24))
                 
-                Text("Na primeira tela você tem acesso as \nferramentas de aperfeiçoamento disponivéis: **Restaurar** e **colorir** as fotos")
+                Text("Na primeira tela você tem acesso as ferramentas de aperfeiçoamento disponivéis:\n**Restaurar** e **colorir** as fotos")
                     .foregroundColor(Color.TextoTelaTutorial)
-                    .font(.custom("Poppins-Regular", size: 12))
-                    .frame(maxWidth: UIScreen.main.bounds.width*0.80)
+                    .font(.custom("Poppins-Regular", size: 14))
+                    .frame(maxWidth: UIScreen.main.bounds.width*0.85)
                     .multilineTextAlignment(.center)
                 
                 MenuItemView(imageName: "Lotus", objImageName: "Restaurar fotos", title: "Lotus", description: "Restaure fotos danificadas e antigas")

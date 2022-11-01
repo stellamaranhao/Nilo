@@ -9,9 +9,10 @@ import SwiftUI
 
 struct TutorialView: View {
     @State private var selectedTab = 1
+    @State private var lastTab = 0
     @Binding var showingTutorial:Bool
     
-    let generator = UINotificationFeedbackGenerator()
+    let generator = UISelectionFeedbackGenerator()
     
     var body: some View {
         //let yExtension: CGFloat = 50
@@ -37,13 +38,9 @@ struct TutorialView: View {
                             Image(systemName: "4.square")
                         }).tag(4)
                         
-                        NiloTutorialFinalView().tabItem({
+                        NiloTutorialFinalView(encerrar: $showingTutorial).tabItem({
                             Image(systemName: "5.square")
                         }).tag(5)
-                        
-                        MenuTitleView().tabItem({
-                            Image(systemName: "6.square")
-                        }).tag(6)
                         
                         
                     }
@@ -56,14 +53,10 @@ struct TutorialView: View {
         }
         .edgesIgnoringSafeArea(.all)
         .background(Color.corDeFundo)
-        .onChange(of: selectedTab) { value in
-            print("selected tab = \(value)")
-            generator.notificationOccurred(.success)
-            if(value == 6){
-                showingTutorial.toggle()
-                UserDefaults.standard.set(false, forKey: "tutorial")
+        .onChange(of: selectedTab) { [selectedTab] value in
+            if selectedTab < value{
+                generator.selectionChanged()
             }
-            
         }
     }
 }

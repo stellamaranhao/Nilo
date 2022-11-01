@@ -11,19 +11,28 @@ struct MenuView: View {
     @Namespace var namespace
     @Binding var showingTutorial:Bool
     
+    let generator = UINotificationFeedbackGenerator()
+    let generatorSelection = UISelectionFeedbackGenerator()
     var motionManager = MotionManager()
+    
+    //Views
+    
+    @State var showFirstView:Bool = false
+    @State var showSecondView:Bool = false
     
     //Animations
     @State private var yoffsetTitle: Double = 0
     @State private var opacity: Double = 0
     
+    
     var body: some View {
         GeometryReader{ geometry in
             ZStack{
-                NavigationView {
+                NavigationStack {
                     ZStack{
                         Color.corDeFundo
                             .ignoresSafeArea()
+                        
                         
                         MenuTitleView()
                             .drawingGroup()
@@ -34,19 +43,40 @@ struct MenuView: View {
                                     self.yoffsetTitle = -geometry.size.height*0.7
                                 }
                             }
-                            
+                        
+                        Image(systemName: "questionmark.circle.fill")
+                            .offset(x:geometry.size.width*0.35, y:-geometry.size.height*0.45)
+                            .font(.title)
+                            .foregroundColor(.white)
+                            .onTapGesture {
+                                showingTutorial.toggle()
+                            }
+                            .onLongPressGesture{
+                                generator.notificationOccurred(.success)
+                                UserDefaults.standard.set(true, forKey: "tutorial")
+                                showingTutorial.toggle()
+                            }
+                        
                         
                         
                         VStack(spacing:30){
-                            NavigationLink(destination: RestauracaoView(showingTutorial: showingTutorial)) {
+                            NavigationLink(destination: ProcessarView(apiUtilizada: BasetenAPI()), isActive: $showFirstView) {
                                 MenuItemView(imageName: "Lotus", objImageName: "Restaurar fotos", title: "Lotus", description: "Restaure fotos danificadas e antigas")
                                     .modifier(ParallaxMotionModifier(manager: motionManager, magnitude: 12))
-                            }
+                                    .onTapGesture {
+                                        generatorSelection.selectionChanged()
+                                        showFirstView.toggle()
+                                    }
+                            }.isDetailLink(false)
                             
-                            NavigationLink(destination: ColorirView()) {
+                            NavigationLink(destination: ProcessarView(apiUtilizada: ColorizeML()), isActive: $showSecondView) {
                                 MenuItemView(imageName: "Lirio", objImageName: "ColoringTool", title: "Lirio", description: "Colorize fotos antigas")
                                     .modifier(ParallaxMotionModifier(manager: motionManager, magnitude: 12))
-                            }
+                                    .onTapGesture {
+                                        generatorSelection.selectionChanged()
+                                        showSecondView.toggle()
+                                    }
+                            }.isDetailLink(false)
                         }
                         .opacity(opacity)
                         .onAppear{
@@ -55,22 +85,10 @@ struct MenuView: View {
                             }
                         }
                         
-                    }
+                    }.navigationTitle("")
+                    
                     
                 }
-                .navigationBarBackButtonHidden(true)
-                
-                Image(systemName: "questionmark.circle.fill")
-                    .offset(x:geometry.size.width*0.35, y:-geometry.size.height*0.45)
-                    .font(.title)
-                    .foregroundColor(.white)
-                    .onTapGesture {
-                        showingTutorial.toggle()
-                    }
-                    .onLongPressGesture(){
-                        UserDefaults.standard.set(true, forKey: "tutorial")
-                        showingTutorial.toggle()
-                    }
                 
             }
             

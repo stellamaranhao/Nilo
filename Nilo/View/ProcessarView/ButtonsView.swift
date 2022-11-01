@@ -7,7 +7,6 @@
 import SwiftUI
 
 struct ButtonsView: View {
-    
     @State var imgSistema: String
     @State var texto: String
     
@@ -21,12 +20,12 @@ struct ButtonsView: View {
                 .resizable()
                 .aspectRatio( contentMode: .fit)
                 .frame(width: 22, height: 22)
-                .foregroundColor(.white)
+                .foregroundColor(Color.corDeFundo)
                 .padding(.top)
             
             Text(texto)
                 .font(.custom("Poppins-Regular", size: 12))
-                .foregroundColor(.white)
+                .foregroundColor(Color.corDeFundo)
                 .lineLimit(2)
                 .frame(width: 95 ,height: 95)
                 .multilineTextAlignment(.center)

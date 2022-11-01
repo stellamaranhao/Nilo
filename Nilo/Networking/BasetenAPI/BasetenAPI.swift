@@ -9,7 +9,28 @@ import Foundation
 import UIKit
 
 /// Class to make calls to the BasetenAPI
-final class BasetenAPI{
+final class BasetenAPI:APIProtocol{
+    var algorithm: APIAlgorithm = .GFPGAN
+    
+    func predictImage(fromImage image: UIImage, onCompletion completionCallback: @escaping (Result<UIImage, Error>) -> Void) {
+        imagePredictionPipeline(fromImage: image)
+        { result in
+            switch result {
+            case .success(let success):
+                completionCallback(.success(success))
+                
+            case .failure(let failure):
+                completionCallback(.failure(Error.self as! Error))
+                
+            }
+        }
+        
+    }
+    
+    func cancelImage() {
+        self.imagePredictionPipelineCleanUp()
+    }
+    
     var authToken:String
     var authTokenValid:Bool = false
     var imageKit = ImageKitAPI()
