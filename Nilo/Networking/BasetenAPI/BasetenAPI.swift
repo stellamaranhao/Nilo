@@ -10,6 +10,8 @@ import UIKit
 
 /// Class to make calls to the BasetenAPI
 final class BasetenAPI:APIProtocol{
+    var algorithm: APIAlgorithm = .GFPGAN
+    
     func predictImage(fromImage image: UIImage, onCompletion completionCallback: @escaping (Result<UIImage, Error>) -> Void) {
         imagePredictionPipeline(fromImage: image)
         { result in
@@ -23,6 +25,10 @@ final class BasetenAPI:APIProtocol{
             }
         }
         
+    }
+    
+    func cancelImage() {
+        self.imagePredictionPipelineCleanUp()
     }
     
     var authToken:String

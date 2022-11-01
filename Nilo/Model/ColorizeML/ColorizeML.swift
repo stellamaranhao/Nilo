@@ -10,6 +10,8 @@ import UIKit
 import CoreML
 
 final class ColorizeML:APIProtocol{
+    var algorithm: APIAlgorithm = .colorizeML
+    
     static let inputDimension = 256
     static let inputSize = CGSize(width: inputDimension, height: inputDimension)
     static let coremlInputShape = [1, 1, NSNumber(value: inputDimension), NSNumber(value: inputDimension)]
@@ -28,6 +30,11 @@ final class ColorizeML:APIProtocol{
         }
         
     }
+    
+    func cancelImage() {
+        return
+    }
+    
     
     
     
