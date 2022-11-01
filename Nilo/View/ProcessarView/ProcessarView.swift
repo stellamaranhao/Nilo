@@ -18,23 +18,34 @@ struct ProcessarView: View {
     var body: some View {
             VStack{
             
-                if let imageShown = imageShown{
+                if let maybeimageShown = imageShown{
 
-                    HStack{
-                        Image(uiImage: imageShown)
+                    VStack(){
+                        Image(uiImage: maybeimageShown)
                             .resizable()
                             .scaledToFit()
                             .scaledToFill()
                             .cornerRadius(8)
                             .frame(width: 214, height: 476)
-                            .padding(.bottom, 80)
+                            .padding(.bottom, 10)
+                        
+                        Text("Escolher Outra Fotografia")
+                            .foregroundColor(.letratelarestauracao)
+                            .font(.custom("Poppins-SemiBold", size: 18))
+                            .underline()
+                            .padding(.bottom, 60).onTapGesture {
+                               imageShown = nil
+                            }
+
+                        
                     }
                     
                 }
 
-                if !importtake {
+                if !importtake{
                     VStack(spacing: 130){
                         takePhotoButtom
+                            .shadow(color: Color.corTexto.opacity(0.3), radius: 25, y: 8)
                         importPhotoButtom
                             .padding(.bottom,100)
                     }

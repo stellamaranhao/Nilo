@@ -30,7 +30,7 @@ struct ResultadoView: View {
                         
                         Button(action: {
                             if !shared {
-                                showAlert = true
+                                showAlertExit = true
                                 
                             } else{
                                 exitView()
