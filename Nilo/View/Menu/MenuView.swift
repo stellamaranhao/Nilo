@@ -16,13 +16,14 @@ struct MenuView: View {
     var motionManager = MotionManager()
     
     //Views
+    
     @State var showFirstView:Bool = false
     @State var showSecondView:Bool = false
     
     //Animations
     @State private var yoffsetTitle: Double = 0
     @State private var opacity: Double = 0
-   
+    
     
     var body: some View {
         GeometryReader{ geometry in
@@ -55,27 +56,27 @@ struct MenuView: View {
                                 UserDefaults.standard.set(true, forKey: "tutorial")
                                 showingTutorial.toggle()
                             }
-                            
+                        
                         
                         
                         VStack(spacing:30){
-                            NavigationLink(destination: RestauracaoView(showingTutorial: showingTutorial), isActive: $showFirstView) {
+                            NavigationLink(destination: ProcessarView(apiUtilizada: BasetenAPI()), isActive: $showFirstView) {
                                 MenuItemView(imageName: "Lotus", objImageName: "Restaurar fotos", title: "Lotus", description: "Restaure fotos danificadas e antigas")
                                     .modifier(ParallaxMotionModifier(manager: motionManager, magnitude: 12))
                                     .onTapGesture {
                                         generatorSelection.selectionChanged()
                                         showFirstView.toggle()
                                     }
-                            }
+                            }.isDetailLink(false)
                             
-                            NavigationLink(destination: ColorirView(showingTutorial: showingTutorial), isActive: $showSecondView) {
+                            NavigationLink(destination: ProcessarView(apiUtilizada: ColorizeML()), isActive: $showSecondView) {
                                 MenuItemView(imageName: "Lirio", objImageName: "ColoringTool", title: "Lirio", description: "Colorize fotos antigas")
                                     .modifier(ParallaxMotionModifier(manager: motionManager, magnitude: 12))
                                     .onTapGesture {
                                         generatorSelection.selectionChanged()
                                         showSecondView.toggle()
                                     }
-                            }
+                            }.isDetailLink(false)
                         }
                         .opacity(opacity)
                         .onAppear{
@@ -84,8 +85,8 @@ struct MenuView: View {
                             }
                         }
                         
-                    }
-
+                    }.navigationTitle("")
+                    
                     
                 }
                 

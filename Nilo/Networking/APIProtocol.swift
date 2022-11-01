@@ -7,8 +7,13 @@
 
 import Foundation
 protocol APIProtocol{
+    var algorithm:APIAlgorithm {get}
     func predictImage(fromImage image:UIImage,onCompletion completionCallback:@escaping(Result<UIImage,Error>)->Void)
-    
-    
-    
+    func cancelImage()
+}
+
+enum APIAlgorithm {
+    case GFPGAN
+    case colorizeML
+    case firstOrderModel
 }
