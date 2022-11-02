@@ -72,6 +72,8 @@
 		CF0FB15228EF6AD40009C275 /* cmscnvrt.c in Sources */ = {isa = PBXBuildFile; fileRef = CF0FB13328EF6AD40009C275 /* cmscnvrt.c */; };
 		CF0FB15328EF6AD40009C275 /* cmspack.c in Sources */ = {isa = PBXBuildFile; fileRef = CF0FB13428EF6AD40009C275 /* cmspack.c */; };
 		CF0FB15428EF6AD40009C275 /* cmsgmt.c in Sources */ = {isa = PBXBuildFile; fileRef = CF0FB13528EF6AD40009C275 /* cmsgmt.c */; };
+		CF27AF432910C40600DF0353 /* NiloMLError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA87A5C290A1E0A0019E802 /* NiloMLError.swift */; };
+		CF27AF462910D72800DF0353 /* DeepFakeModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF27AF452910D72800DF0353 /* DeepFakeModalView.swift */; };
 		CF2BFC3E291059DF00B489F3 /* ProcessarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2BFC3D291059DF00B489F3 /* ProcessarView.swift */; };
 		CF2BFC4429107E6F00B489F3 /* ProcessandoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2BFC4329107E6F00B489F3 /* ProcessandoView.swift */; };
 		CF2BFC462910A5E600B489F3 /* BtnProcessarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2BFC452910A5E600B489F3 /* BtnProcessarView.swift */; };
@@ -89,9 +91,9 @@
 		CF86A67428F5E51B009B6DE3 /* BasetenAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF86A67328F5E51B009B6DE3 /* BasetenAPI.swift */; };
 		CF86A67728F5E5FA009B6DE3 /* BasetenAPIInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF86A67628F5E5FA009B6DE3 /* BasetenAPIInput.swift */; };
 		CF86A67928F5E6F3009B6DE3 /* BasetenAPIModelEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF86A67828F5E6F3009B6DE3 /* BasetenAPIModelEnum.swift */; };
+		CF9072CE29119C5A003B8B62 /* coremlColorizer.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = CF9072CD29119C5A003B8B62 /* coremlColorizer.mlmodel */; };
 		CFA274032908F9CF00A8C6D9 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA274022908F9CF00A8C6D9 /* MenuView.swift */; };
 		CFA87A5A290A19200019E802 /* NiloMLAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA87A59290A19200019E802 /* NiloMLAPI.swift */; };
-		CFA87A5D290A1E0A0019E802 /* NiloMLError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA87A5C290A1E0A0019E802 /* NiloMLError.swift */; };
 		CFA87A5F290A1FE10019E802 /* NiloMLTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA87A5E290A1FE10019E802 /* NiloMLTestView.swift */; };
 		CFA87A62290A22E50019E802 /* UniqeArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA87A61290A22E50019E802 /* UniqeArray.swift */; };
 		CFA87A64290A30E60019E802 /* TemporaryMediaFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA87A63290A30E60019E802 /* TemporaryMediaFile.swift */; };
@@ -121,8 +123,6 @@
 		ECC15BE22909CCF300304C65 /* ImageDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC15BE12909CCF300304C65 /* ImageDetailView.swift */; };
 		ECF4ED5428F9919B0018965B /* TelaUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF4ED5328F9919B0018965B /* TelaUpload.swift */; };
 		ECF4ED5628F9A0B00018965B /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF4ED5528F9A0B00018965B /* ImagePicker.swift */; };
-		ECF4ED5828FDD2480018965B /* coremlColorizer.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = ECF4ED5728FDD2480018965B /* coremlColorizer.mlmodel */; };
-		ECF4ED5A28FDE5970018965B /* coremlColorizer.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = ECF4ED5928FDE5970018965B /* coremlColorizer.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -195,6 +195,7 @@
 		CF0FB13328EF6AD40009C275 /* cmscnvrt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cmscnvrt.c; sourceTree = "<group>"; };
 		CF0FB13428EF6AD40009C275 /* cmspack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cmspack.c; sourceTree = "<group>"; };
 		CF0FB13528EF6AD40009C275 /* cmsgmt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cmsgmt.c; sourceTree = "<group>"; };
+		CF27AF452910D72800DF0353 /* DeepFakeModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepFakeModalView.swift; sourceTree = "<group>"; };
 		CF2BFC3D291059DF00B489F3 /* ProcessarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessarView.swift; sourceTree = "<group>"; };
 		CF2BFC4329107E6F00B489F3 /* ProcessandoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessandoView.swift; sourceTree = "<group>"; };
 		CF2BFC452910A5E600B489F3 /* BtnProcessarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BtnProcessarView.swift; sourceTree = "<group>"; };
@@ -214,6 +215,7 @@
 		CF86A67328F5E51B009B6DE3 /* BasetenAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasetenAPI.swift; sourceTree = "<group>"; };
 		CF86A67628F5E5FA009B6DE3 /* BasetenAPIInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasetenAPIInput.swift; sourceTree = "<group>"; };
 		CF86A67828F5E6F3009B6DE3 /* BasetenAPIModelEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasetenAPIModelEnum.swift; sourceTree = "<group>"; };
+		CF9072CD29119C5A003B8B62 /* coremlColorizer.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = coremlColorizer.mlmodel; sourceTree = "<group>"; };
 		CFA274022908F9CF00A8C6D9 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		CFA87A59290A19200019E802 /* NiloMLAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiloMLAPI.swift; sourceTree = "<group>"; };
 		CFA87A5C290A1E0A0019E802 /* NiloMLError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiloMLError.swift; sourceTree = "<group>"; };
@@ -246,8 +248,6 @@
 		ECC15BE12909CCF300304C65 /* ImageDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailView.swift; sourceTree = "<group>"; };
 		ECF4ED5328F9919B0018965B /* TelaUpload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaUpload.swift; sourceTree = "<group>"; };
 		ECF4ED5528F9A0B00018965B /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
-		ECF4ED5728FDD2480018965B /* coremlColorizer.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = coremlColorizer.mlmodel; path = Nilo/Model/ColorizeML/coremlColorizer.mlmodel; sourceTree = SOURCE_ROOT; };
-		ECF4ED5928FDE5970018965B /* coremlColorizer.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = coremlColorizer.mlmodel; path = Nilo/Model/ColorizeML/coremlColorizer.mlmodel; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -324,6 +324,7 @@
 				CF0FB10F28EF6A050009C275 /* Util */,
 				CF0FB08B28EF5AE00009C275 /* ColorizeML.swift */,
 				CF77F8D528EFBD9A00C1BBD2 /* test_colorizeML.swift */,
+				CF9072CD29119C5A003B8B62 /* coremlColorizer.mlmodel */,
 			);
 			path = ColorizeML;
 			sourceTree = "<group>";
@@ -331,8 +332,6 @@
 		CF0FB10F28EF6A050009C275 /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				ECF4ED5728FDD2480018965B /* coremlColorizer.mlmodel */,
-				ECF4ED5928FDE5970018965B /* coremlColorizer.mlmodel */,
 				CF0FB11328EF6ABB0009C275 /* littlecms */,
 				CF0FB10828EF69FD0009C275 /* DispatchQueue+Utils.swift */,
 				CF0FB10628EF69FD0009C275 /* ImageColoriser-Bridging-Header.h */,
@@ -386,9 +385,18 @@
 			path = littlecms;
 			sourceTree = "<group>";
 		};
+		CF27AF442910D71B00DF0353 /* DeepFakeView */ = {
+			isa = PBXGroup;
+			children = (
+				CF27AF452910D72800DF0353 /* DeepFakeModalView.swift */,
+			);
+			path = DeepFakeView;
+			sourceTree = "<group>";
+		};
 		CF2BFC3C2910596A00B489F3 /* ProcessarView */ = {
 			isa = PBXGroup;
 			children = (
+				CF2BFC4329107E6F00B489F3 /* ProcessandoView.swift */,
 				AD16386D29061B7A0022713F /* ButtonsView.swift */,
 				CF2BFC3D291059DF00B489F3 /* ProcessarView.swift */,
 				EC6032CD28EE063F00646F4C /* CameraView.swift */,
@@ -472,6 +480,7 @@
 		CF46D3FB28ECD1060052C018 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CF27AF442910D71B00DF0353 /* DeepFakeView */,
 				CF2BFC4229105ACF00B489F3 /* ResultadoView */,
 				CF2BFC4029105AAA00B489F3 /* CarregandoView */,
 				CF2BFC3C2910596A00B489F3 /* ProcessarView */,
@@ -480,7 +489,6 @@
 				CFC2040429085A5B0012D790 /* Font */,
 				CF0D8D9F290718AA0075A715 /* Misc */,
 				CF0D8D9C290717DE0075A715 /* Menu */,
-				CF2BFC4329107E6F00B489F3 /* ProcessandoView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -741,7 +749,6 @@
 				CF52E58E28F0B64C0074326F /* ReplicateAPIErro.swift in Sources */,
 				CF52E58C28F0ACDA0074326F /* ReplicateAPIInput.swift in Sources */,
 				CFEA98E328F108A10058F16F /* ReplicateAPIMakePredictionResponse.swift in Sources */,
-				ECF4ED5828FDD2480018965B /* coremlColorizer.mlmodel in Sources */,
 				CF0FB13E28EF6AD40009C275 /* cmsgamma.c in Sources */,
 				CF0FB15228EF6AD40009C275 /* cmscnvrt.c in Sources */,
 				CF0FB14128EF6AD40009C275 /* cmsxform.c in Sources */,
@@ -754,12 +761,12 @@
 				CF52E58E28F0B64C0074326F /* ReplicateAPIErro.swift in Sources */,
 				CF52E58C28F0ACDA0074326F /* ReplicateAPIInput.swift in Sources */,
 				CFEA98E328F108A10058F16F /* ReplicateAPIMakePredictionResponse.swift in Sources */,
-				ECF4ED5A28FDE5970018965B /* coremlColorizer.mlmodel in Sources */,
 				CF0FB13E28EF6AD40009C275 /* cmsgamma.c in Sources */,
 				CFE30D782909041E00BBE93E /* TutorialLiriosView.swift in Sources */,
 				CFE30D762908FFC400BBE93E /* SliderView.swift in Sources */,
 				CF0FB15228EF6AD40009C275 /* cmscnvrt.c in Sources */,
 				CF0FB14128EF6AD40009C275 /* cmsxform.c in Sources */,
+				CF27AF432910C40600DF0353 /* NiloMLError.swift in Sources */,
 				CF0D8D9E2907184F0075A715 /* MenuItemView.swift in Sources */,
 				CF46D40028ECD1CC0052C018 /* ContentViewExtension.swift in Sources */,
 				CFE1570628F747FC00502EB1 /* ImageKitAPIUploadResponse.swift in Sources */,
@@ -801,6 +808,7 @@
 				CF0FB14D28EF6AD40009C275 /* cmsvirt.c in Sources */,
 				CF0FB13B28EF6AD40009C275 /* cmsps2.c in Sources */,
 				CF0FB14A28EF6AD40009C275 /* cmsplugin.c in Sources */,
+				CF27AF462910D72800DF0353 /* DeepFakeModalView.swift in Sources */,
 				CF0FB13C28EF6AD40009C275 /* cmswtpnt.c in Sources */,
 				AD1F1168290B1020004D9266 /* ImageResultModifier.swift in Sources */,
 				CF0FB10E28EF69FE0009C275 /* UIImage+Lab.mm in Sources */,
@@ -810,6 +818,7 @@
 				CF0FB15028EF6AD40009C275 /* cmssamp.c in Sources */,
 				ADC14C2A28ECDF9100065D97 /* ReplicateAPIGetModelResponse.swift in Sources */,
 				CF0FB08C28EF5AE00009C275 /* ColorizeML.swift in Sources */,
+				CF9072CE29119C5A003B8B62 /* coremlColorizer.mlmodel in Sources */,
 				CF0FB13728EF6AD40009C275 /* cmsio0.c in Sources */,
 				CF0FB15428EF6AD40009C275 /* cmsgmt.c in Sources */,
 				AD9E8B2A29032BBD00259CF1 /* ResultadoView.swift in Sources */,

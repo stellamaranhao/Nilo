@@ -3,7 +3,6 @@
 //  Nilo
 //
 //  Created by Joao Pedro Monteiro Maia on 31/10/22.
-//CarregandoView(selectedItem: $selectedItem, oldImage: $oldImage, selectedImageData: $selectedImageData,imageShown: $imageShown, apiUsada: apiUtilizada)
 
 import SwiftUI
 

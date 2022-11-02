@@ -47,16 +47,21 @@ struct MenuItemView: View {
                     .foregroundColor(Color.corTexto)
                     .font(.custom("Poppins-Regular", size: 16))
                     .offset(x:30)
-            }.padding(5)
-                .padding(.bottom,15)
+            }
+            .padding(5)
+            .padding(.bottom,15)
 
             
         }
         //PAding na view TODO: padding
         .background(Color.corDeFundo)
         .cornerRadius(18)
-        .shadow(color: Color.corTexto.opacity(0.3), radius: 25, y: 8)
-        .frame(idealWidth: 350, idealHeight: 300)
+        .shadow(color: Color.letratelarestauracao.opacity(0.25), radius: 15, y: 8)
+        //.shadow(color: Color.corTexto.opacity(0.3), radius: 25, y: 8)
+        .ignoresSafeArea(.all)
+        .frame(idealWidth: 350, idealHeight: 225)
+        .padding(.bottom,10)
+        .padding(.horizontal,16)
         
     }
 }

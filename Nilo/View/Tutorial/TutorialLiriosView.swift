@@ -21,7 +21,7 @@ struct TutorialLiriosView: View {
                     .frame(maxWidth: UIScreen.main.bounds.width*0.85)
                     .multilineTextAlignment(.center)
                 
-                MenuItemView(imageName: "Lirio", objImageName: "ColoringTool", title: "Lirios", description: "Colorize fotos antigas")
+                MenuItemView(imageName: "Lirio", objImageName: "ColoringTool", title: "Lírios", description: "Colorize fotos antigas")
                 
                 SliderView(imageBeforeName: "MachadoAntes",imageAferName: "MachadoDepois",
                            containerWidth: 364, containerHeight: 384)

@@ -23,10 +23,10 @@ struct TutorialMenuView: View {
                     .frame(maxWidth: UIScreen.main.bounds.width*0.85)
                     .multilineTextAlignment(.center)
                 
-                MenuItemView(imageName: "Lotus", objImageName: "Restaurar fotos", title: "Lotus", description: "Restaure fotos danificadas e antigas")
+                MenuItemView(imageName: "Lotus", objImageName: "Restaurar fotos", title: "Lótus", description: "Restaure fotos danificadas e antigas")
                     .modifier(ParallaxMotionModifier(manager: motionManager, magnitude: 12))
                 
-                MenuItemView(imageName: "Lirio", objImageName: "ColoringTool", title: "Lirio", description: "Colorize fotos antigas")
+                MenuItemView(imageName: "Lirio", objImageName: "ColoringTool", title: "Lirios", description: "Colorize fotos antigas")
                     .modifier(ParallaxMotionModifier(manager: motionManager, magnitude: 12))
                 
             }

@@ -45,7 +45,7 @@ struct ProcessarView: View {
                 if !importtake{
                     VStack(spacing: 130){
                         takePhotoButtom
-                            .shadow(color: Color.corTexto.opacity(0.3), radius: 25, y: 8)
+//                            .shadow(color: Color.corTexto.opacity(0.3), radius: 25, y: 8)
                         importPhotoButtom
                             .padding(.bottom,100)
                     }
@@ -79,7 +79,8 @@ struct ProcessarView: View {
                         .background(
                             RoundedRectangle(cornerRadius: 18).foregroundColor(.white)
                                 .frame(width: 275, height: 200)
-                                .shadow(color: Color.letratelarestauracao.opacity(0.25), radius: 15, y: 8))
+                                .shadow(color: Color.letratelarestauracao.opacity(0.25), radius: 15, y: 8)
+                        )
                     
                     
                     Text("Tirar Foto")

@@ -53,8 +53,11 @@ struct MenuTitleView: View {
                     
             
                     
-                }.padding(58)
-                .offset(y:-30)
+                }
+                .padding(.leading,21)
+                .padding(.bottom,20)
+                //.padding(58)
+                .offset(y:-20)
             }
             
         }.cornerRadius(18)

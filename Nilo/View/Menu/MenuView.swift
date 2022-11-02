@@ -19,6 +19,7 @@ struct MenuView: View {
     
     @State var showFirstView:Bool = false
     @State var showSecondView:Bool = false
+    @State var showThirdView:Bool = false
     
     //Animations
     @State private var yoffsetTitle: Double = 0
@@ -40,7 +41,7 @@ struct MenuView: View {
                             .offset(y:yoffsetTitle)
                             .onAppear{
                                 withAnimation(.linear(duration: 0.6)){
-                                    self.yoffsetTitle = -geometry.size.height*0.7
+                                    self.yoffsetTitle = -geometry.size.height*0.8
                                 }
                             }
                         
@@ -59,25 +60,40 @@ struct MenuView: View {
                         
                         
                         
-                        VStack(spacing:30){
+                        ScrollView{
                             NavigationLink(destination: ProcessarView(apiUtilizada: BasetenAPI()), isActive: $showFirstView) {
-                                MenuItemView(imageName: "Lotus", objImageName: "Restaurar fotos", title: "Lotus", description: "Restaure fotos danificadas e antigas")
+                                MenuItemView(imageName: "Lotus", objImageName: "Restaurar fotos", title: "Lótus", description: "Restaure fotos danificadas e antigas")
                                     .modifier(ParallaxMotionModifier(manager: motionManager, magnitude: 12))
                                     .onTapGesture {
                                         generatorSelection.selectionChanged()
                                         showFirstView.toggle()
                                     }
-                            }.isDetailLink(false)
+                            }
                             
                             NavigationLink(destination: ProcessarView(apiUtilizada: ColorizeML()), isActive: $showSecondView) {
-                                MenuItemView(imageName: "Lirio", objImageName: "ColoringTool", title: "Lirio", description: "Colorize fotos antigas")
+                                MenuItemView(imageName: "Lirio", objImageName: "ColoringTool", title: "Lírios", description: "Colorize fotos antigas")
                                     .modifier(ParallaxMotionModifier(manager: motionManager, magnitude: 12))
                                     .onTapGesture {
                                         generatorSelection.selectionChanged()
                                         showSecondView.toggle()
                                     }
                             }.isDetailLink(false)
+                            
+                            
+                            
+                            MenuItemView(imageName: "acacia", objImageName: "deepfakes", title: "Acácias", description: "Anime fotos antigas")
+                                .modifier(ParallaxMotionModifier(manager: motionManager, magnitude: 12))
+                                .onTapGesture {
+                                    generatorSelection.selectionChanged()
+                                    showThirdView.toggle()
+                                }
+                                .padding(.bottom,120)
+                            
+                            //Text("").padding(.top,100)
+                            
                         }
+                        .frame(maxWidth: .infinity)
+                        .offset(y:geometry.size.height*0.2)
                         .opacity(opacity)
                         .onAppear{
                             withAnimation(.linear(duration: 0.5).delay(0.5)){
@@ -92,6 +108,8 @@ struct MenuView: View {
                 
             }
             
+        }.sheet(isPresented: $showThirdView) {
+            DeepFakeModalView()
         }
     }
     
