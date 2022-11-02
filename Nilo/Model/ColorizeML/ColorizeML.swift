@@ -46,6 +46,7 @@ final class ColorizeML:APIProtocol{
     }
     
     private func colorize(image inputImage: UIImage) -> Result<UIImage, Error> {
+        print("Starting colorization")
         do {
             let inputImageLab = try preProcess(inputImage: inputImage)
             let input = try coloriserInput(from: inputImageLab)
@@ -54,6 +55,7 @@ final class ColorizeML:APIProtocol{
             let resultImage = try postProcess(outputLAB: outputImageLab, inputImage: inputImage)
             return .success(resultImage)
         } catch {
+            print(error)
             return .failure(error)
         }
     }
