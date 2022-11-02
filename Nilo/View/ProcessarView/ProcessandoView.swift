@@ -25,11 +25,10 @@ struct ProcessandoView: View {
         ZStack{
             switch presentedView{
             case .exit:
-                CarregandoView(
-                    rootView: $presentedView,
-                    oldImage: $imgPre,
-                    imageShown: $imgPos,
-                    apiUsada: apiUtilizada).onAppear{
+                ResultadoView(rootView: $presentedView,
+                              oldImage: $imgPre,
+                              imageShown: $imgPos,
+                              apiUsada: $apiUtilizada).onAppear{
                         presentationMode.wrappedValue.dismiss()
                     }
                 
