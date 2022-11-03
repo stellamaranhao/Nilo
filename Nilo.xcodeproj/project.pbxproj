@@ -206,7 +206,6 @@
 		CF46D3F028ECD0050052C018 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF46D3F328ECD0050052C018 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CF46D3FF28ECD1CC0052C018 /* ContentViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewExtension.swift; sourceTree = "<group>"; };
-		CF46D40128ECD21F0052C018 /* dummyModel.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = dummyModel.md; sourceTree = "<group>"; };
 		CF52E58928F0A8910074326F /* ReplicateAPIModelsEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIModelsEnum.swift; sourceTree = "<group>"; };
 		CF52E58B28F0ACDA0074326F /* ReplicateAPIInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIInput.swift; sourceTree = "<group>"; };
 		CF52E58D28F0B64C0074326F /* ReplicateAPIErro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIErro.swift; sourceTree = "<group>"; };
@@ -498,7 +497,6 @@
 			children = (
 				CF0FB08A28EF56AC0009C275 /* ColorizeML */,
 				ADC14C2828ECDF7300065D97 /* API */,
-				CF46D40128ECD21F0052C018 /* dummyModel.md */,
 			);
 			path = Model;
 			sourceTree = "<group>";

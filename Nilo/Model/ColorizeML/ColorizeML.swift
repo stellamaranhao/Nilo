@@ -8,8 +8,13 @@
 import Foundation
 import UIKit
 import CoreML
+import AVFoundation
 
 final class ColorizeML:APIProtocol{
+    func predictVideo(fromImage image: UIImage, onCompletion completionCallback: @escaping (Result<AVAsset, Error>) -> Void) {
+        fatalError("Not supported")
+    }
+    
     var algorithm: APIAlgorithm = .colorizeML
     
     static let inputDimension = 256

@@ -7,9 +7,14 @@
 
 import Foundation
 import UIKit
+import AVFoundation
 
 /// Class to make calls to the BasetenAPI
 final class BasetenAPI:APIProtocol{
+    func predictVideo(fromImage image: UIImage, onCompletion completionCallback: @escaping (Result<AVAsset, Error>) -> Void) {
+        fatalError("NOT SUPPORTED")
+    }
+    
     var algorithm: APIAlgorithm = .GFPGAN
     
     func predictImage(fromImage image: UIImage, onCompletion completionCallback: @escaping (Result<UIImage, Error>) -> Void) {

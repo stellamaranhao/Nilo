@@ -6,9 +6,11 @@
 //
 
 import Foundation
+import AVFoundation
 protocol APIProtocol{
     var algorithm:APIAlgorithm {get}
     func predictImage(fromImage image:UIImage,onCompletion completionCallback:@escaping(Result<UIImage,Error>)->Void)
+    func predictVideo(fromImage image:UIImage,onCompletion completionCallback:@escaping(Result<AVAsset,Error>)->Void)
     func cancelImage()
 }
 

@@ -108,8 +108,6 @@ struct MenuView: View {
                 
             }
             
-        }.sheet(isPresented: $showThirdView) {
-            DeepFakeModalView()
         }
     }
     
