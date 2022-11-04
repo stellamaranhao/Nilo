@@ -15,11 +15,22 @@ struct DeepFakeModalView: View {
         ZStack(){
             Color.corDeFundo.ignoresSafeArea(.all)
             VStack(alignment: .center,spacing: 15){
-                Text("ACÁCIAS")
+                Text("ACACIAS")
                     .foregroundColor(Color.TextoTelaTutorial)
                     .font(.custom("Poppins-Bold", size: 24))
                 
+                Text("Sem GPU")
+                    .foregroundColor(Color.TextoTelaTutorial)
+                    .font(.custom("Poppins-SemiBold", size: 18))
+                    .padding(.top,-15)
+                
                 Text("Alguns algoritmos de manipulações de imagens utilizados no Nilo necessitam de uma Placa de Video robusta, algo que nenhum dispositivo móvel pode oferecer. Para resolver essa questão, estamos criando um sistema de placas de video descentralizado.")
+                    .foregroundColor(Color.TextoTelaTutorial)
+                    .font(.custom("Poppins-Regular", size: 14))
+                    .frame(maxWidth: UIScreen.main.bounds.width*0.85)
+                    .multilineTextAlignment(.center)
+                
+                Text("No momento temos somente placas de video de uso limitado. Logo, erros como esse podem acontecer - tente refazer essa operação mais tarde")
                     .foregroundColor(Color.TextoTelaTutorial)
                     .font(.custom("Poppins-Regular", size: 14))
                     .frame(maxWidth: UIScreen.main.bounds.width*0.85)

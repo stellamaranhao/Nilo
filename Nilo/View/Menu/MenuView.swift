@@ -90,7 +90,6 @@ struct MenuView: View {
                                 }
                                 .padding(.bottom,120)
                             
-                            //Text("").padding(.top,100)
                             
                         }
                         .frame(maxWidth: .infinity)

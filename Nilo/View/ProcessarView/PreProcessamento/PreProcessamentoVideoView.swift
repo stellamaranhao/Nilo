@@ -2,7 +2,10 @@
 import SwiftUI
 import PhotosUI
 
-struct ProcessarView: View {
+struct PreProcessamentoVideoView: View {
+    @Environment(\.presentationMode) var presentationMode
+    
+    @State var displayErro:Bool = false
     @State private var presentResultModal = false
     private var importtake: Bool {imageShown != nil}
     @State var image = UIImage()
@@ -29,7 +32,7 @@ struct ProcessarView: View {
                             .frame(width: 214, height: 476)
                             .padding(.bottom, 10)
                         
-                        Text("EscolherOutra")
+                        Text("Escolher Outra Fotografia")
                             .foregroundColor(.letratelarestauracao)
                             .font(.custom("Poppins-SemiBold", size: 18))
                             .underline()
@@ -53,19 +56,27 @@ struct ProcessarView: View {
                
                 
                 NavigationLink(destination:
-                                ProcessandoView(presentedView: .carregando,
+                                ProcessandoVideoView(presentedView: .carregando,
                                                 apiUtilizada: apiUtilizada,
-                                                imgPre:$oldImage,
-                                                imgPos:$imageShown),
+                                                imgPre:$oldImage),
                                isActive: $presentResultModal) { EmptyView() }
                 
                 
-                BtnProcessarView(usedAlgo:apiUtilizada.algorithm, btnText: "Melhorar" ,action: {
+                BtnProcessarView(usedAlgo:apiUtilizada.algorithm ,action: {
                     presentResultModal = true
                 })
                 .disabled((imageShown != nil) ? false : true)
                     
-            }.background(Color.corDeFundo.ignoresSafeArea())
+            }
+            .background(Color.corDeFundo.ignoresSafeArea())
+            .onAppear{
+                if apiUtilizada.algorithm == .firstOrderModel{
+                    if !apiUtilizada.checkConnectionHealth(){
+                        displayErro.toggle()
+                    }
+                }
+            }
+            .sheet(isPresented: $presentResultModal, onDismiss: {presentationMode.wrappedValue.dismiss()}, content: {DeepFakeModalView()})
        
     }
     
@@ -83,7 +94,7 @@ struct ProcessarView: View {
                         )
                     
                     
-                    Text("TirarFoto")
+                    Text("Tirar Foto")
                         .foregroundColor(.letratelarestauracao)
                         .fontWeight(.bold)
                         .font(.title2)
@@ -91,8 +102,8 @@ struct ProcessarView: View {
                         .onTapGesture {
                             showSheet = true
                         }
-                        .padding(.top,130)
-                        .padding(.trailing,120)
+                        .padding(.top,120)
+                        .padding(.trailing,130)
                         .sheet(isPresented: $showSheet) {
                             ImagePicker(sourceType: .camera, selectedImage: self.$image)
                         }
@@ -110,7 +121,7 @@ struct ProcessarView: View {
         ZStack{
             Group{
                 Image("importarFoto")//rever
-                    .position(x: 280, y: 20)
+                    .position(x: 280, y: 80)
                     .background(
                         RoundedRectangle(cornerRadius: 18).foregroundColor(.white)
                             .frame(width: 275, height: 200)
@@ -120,13 +131,13 @@ struct ProcessarView: View {
                     selection: $selectedItem,
                     matching: .images,
                     photoLibrary: .shared()) {
-                        Text("ImportarFoto")
+                        Text("Importar Foto")
                             .foregroundColor(.letratelarestauracao)
                             .fontWeight(.bold)
                             .font(.title2)
                             .font(.custom("Poppins-SemiBold", size: 20))
-                            .padding(.top,130)
-                            .padding(.trailing,100)
+                            .padding(.top,120)
+                            .padding(.trailing,80)
                     }
             }
             .onChange(of: selectedItem) { newItem in
