@@ -10,8 +10,8 @@ import SwiftUI
 struct MenuItemView: View {
     @State var imageName:String
     @State var objImageName:String
-    @State var title:String
-    @State var description:String
+    @State var title: LocalizedStringKey
+    @State var description:LocalizedStringKey
     
     
     var body: some View {

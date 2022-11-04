@@ -17,7 +17,7 @@ struct NiloTutorialFinalView: View {
                     .foregroundColor(Color.TextoTelaTutorial)
                     .font(.custom("Poppins-Bold", size: 24))
                 
-                Text("Agora é com você!\nDesfrute das ferramentas do **NILO** para preservar suas memórias e recordações. ")
+                Text("TFinal" )
                     .foregroundColor(Color.TextoTelaTutorial)
                     .font(.custom("Poppins-Regular", size: 14))
                     .frame(maxWidth: UIScreen.main.bounds.width*0.80)
@@ -38,7 +38,7 @@ struct NiloTutorialFinalView: View {
                         RoundedRectangle(cornerRadius: 18).foregroundColor(.melhorarfoto)
                             .frame(width: 200, height: 70)
                             .shadow(color: Color.letratelarestauracao.opacity(0.25), radius: 15, y: 8)
-                        Text("Começar !")
+                        Text("BotaoComecar")
                             .foregroundColor(.corDeFundo)
                             .fontWeight(.bold)
                             .font(.title2)

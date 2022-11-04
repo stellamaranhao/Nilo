@@ -42,11 +42,11 @@ struct ResultadoView: View {
                                 .padding(.leading)
                         }.alert(isPresented: $showAlertExit) {
                             
-                            Alert(title: Text("Tem certeza?")
-                                  ,message: Text("Gostaria de salvar a foto antes de sair ou fazer outra alteração?")
-                                  ,primaryButton: .default(Text("Salvar foto")){
+                            Alert(title: Text("PopT1")
+                                  ,message: Text("PopT2")
+                                  ,primaryButton: .default(Text("PopB1")){
                                 shareButton()
-                            },secondaryButton: .destructive(Text("Continuar mesmo assim")){
+                            },secondaryButton: .destructive(Text("PopB2")){
                                 exitView()
                                 
                             }
@@ -72,11 +72,11 @@ struct ResultadoView: View {
                         VStack(spacing: 5){
                             HStack {
                                 VStack (spacing: 5){
-                                    Text("Memória Resgatada!")
+                                    Text("Titulo1")
                                         .foregroundColor(Color.melhorarfoto)
                                         .font(.custom("Poppins-SemiBold", size: 20))
                                         .font(.title3)
-                                    Text("Não pare por aqui:")
+                                    Text("Titulo2")
                                         .foregroundColor(Color.melhorarfoto)
                                         .font(.custom("Poppins-Regular", size: 16))
                                         .font(.body)
@@ -95,7 +95,7 @@ struct ResultadoView: View {
                                         shareButton()
                                         
                                     } label: {
-                                        ButtonsView(imgSistema: "square.and.arrow.up", texto: "Exportar memória")
+                                        ButtonsView(imgSistema: "square.and.arrow.up", texto: "BotaoExportar")
                                     }
                                     
                                     // Btn nova opt
@@ -111,11 +111,11 @@ struct ResultadoView: View {
                                     }
                                     .alert(isPresented: $showAlert) {
                                         
-                                        Alert(title: Text("Tem certeza?")
-                                              ,message: Text("Gostaria de salvar a foto antes de sair ou fazer outra alteração?")
-                                              ,primaryButton: .default(Text("Salvar foto")){
+                                        Alert(title: Text("PopT1")
+                                              ,message: Text("PopT2")
+                                              ,primaryButton: .default(Text("PopB1")){
                                             shareButton()
-                                        },secondaryButton: .destructive(Text("Continuar mesmo assim")){
+                                        },secondaryButton: .destructive(Text("PopB2")){
                                             switchApi()
                                             exitView(to: .change)
                                             

@@ -14,6 +14,7 @@ struct MenuView: View {
     let generator = UINotificationFeedbackGenerator()
     let generatorSelection = UISelectionFeedbackGenerator()
     var motionManager = MotionManager()
+   // @State var lotusNome: LocalizedStringKey = 
     
     //Views
     
@@ -62,7 +63,7 @@ struct MenuView: View {
                         
                         ScrollView{
                             NavigationLink(destination: ProcessarView(apiUtilizada: BasetenAPI()), isActive: $showFirstView) {
-                                MenuItemView(imageName: "Lotus", objImageName: "Restaurar fotos", title: "Lótus", description: "Restaure fotos danificadas e antigas")
+                                MenuItemView(imageName: "Lotus", objImageName: "Restaurar fotos", title: "LotusNome", description: "LotusTexto")
                                     .modifier(ParallaxMotionModifier(manager: motionManager, magnitude: 12))
                                     .onTapGesture {
                                         generatorSelection.selectionChanged()
@@ -71,7 +72,7 @@ struct MenuView: View {
                             }
                             
                             NavigationLink(destination: ProcessarView(apiUtilizada: ColorizeML()), isActive: $showSecondView) {
-                                MenuItemView(imageName: "Lirio", objImageName: "ColoringTool", title: "Lírios", description: "Colorize fotos antigas")
+                                MenuItemView(imageName: "Lirio", objImageName: "ColoringTool", title: "LiriosNome", description: "LiriosTexto")
                                     .modifier(ParallaxMotionModifier(manager: motionManager, magnitude: 12))
                                     .onTapGesture {
                                         generatorSelection.selectionChanged()
@@ -81,7 +82,7 @@ struct MenuView: View {
                             
                             
                             
-                            MenuItemView(imageName: "acacia", objImageName: "deepfakes", title: "Acácias", description: "Anime fotos antigas")
+                            MenuItemView(imageName: "acacia", objImageName: "deepfakes", title: "AcaciasNome", description: "AcaciasTexto")
                                 .modifier(ParallaxMotionModifier(manager: motionManager, magnitude: 12))
                                 .onTapGesture {
                                     generatorSelection.selectionChanged()
@@ -112,3 +113,4 @@ struct MenuView: View {
     }
     
 }
+

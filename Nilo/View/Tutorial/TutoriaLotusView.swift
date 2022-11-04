@@ -11,17 +11,17 @@ struct TutoriaLotusView: View {
     var body: some View {
         ZStack(){
             VStack(alignment: .center,spacing: 15){
-                Text("LÓTUS")
+                Text("LotusNome")
                     .foregroundColor(Color.TextoTelaTutorial)
                     .font(.custom("Poppins-Bold", size: 24))
                 
-                Text("Use **LÓTUS** para restaurar imagens reduzindo os ruídos e desgastes indesejáveis, além de aprimorar a nitidez e resolução.")
+                Text("TLotus")
                     .foregroundColor(Color.TextoTelaTutorial)
                     .font(.custom("Poppins-Regular", size: 14))
-                    .frame(maxWidth: UIScreen.main.bounds.width*0.85)
+                    .frame(maxWidth: UIScreen.main.bounds.width*0.90)
                     .multilineTextAlignment(.center)
                 
-                MenuItemView(imageName: "Lotus", objImageName: "Restaurar fotos", title: "Lótus", description: "Restaure fotos danificadas e antigas")
+                MenuItemView(imageName: "Lotus", objImageName: "Restaurar fotos", title: "LotusNome", description: "LotusTexto")
 
                 
                 

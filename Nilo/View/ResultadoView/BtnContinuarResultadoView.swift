@@ -18,9 +18,9 @@ struct BtnContinuarResultadoView: View {
         } label: {
             switch apiUtilizada.algorithm{
             case .GFPGAN:
-                ButtonsView(imgSistema: "paintbrush.pointed", texto: "Colorir memória")
+                ButtonsView(imgSistema: "paintbrush.pointed", texto: "BotaoColorir")
             case .colorizeML:
-                ButtonsView(imgSistema: "paintbrush.pointed", texto: "Melhoar Foto")
+                ButtonsView(imgSistema: "paintbrush.pointed", texto: "BotaoMelhorar")
             case .firstOrderModel:
                 EmptyView()
             }
