@@ -74,7 +74,7 @@
 		CF0FB15428EF6AD40009C275 /* cmsgmt.c in Sources */ = {isa = PBXBuildFile; fileRef = CF0FB13528EF6AD40009C275 /* cmsgmt.c */; };
 		CF27AF432910C40600DF0353 /* NiloMLError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA87A5C290A1E0A0019E802 /* NiloMLError.swift */; };
 		CF27AF462910D72800DF0353 /* DeepFakeModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF27AF452910D72800DF0353 /* DeepFakeModalView.swift */; };
-		CF2BFC3E291059DF00B489F3 /* ProcessarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2BFC3D291059DF00B489F3 /* ProcessarView.swift */; };
+		CF2BFC3E291059DF00B489F3 /* PreProcessamentoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2BFC3D291059DF00B489F3 /* PreProcessamentoView.swift */; };
 		CF2BFC4429107E6F00B489F3 /* ProcessandoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2BFC4329107E6F00B489F3 /* ProcessandoView.swift */; };
 		CF2BFC462910A5E600B489F3 /* BtnProcessarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2BFC452910A5E600B489F3 /* BtnProcessarView.swift */; };
 		CF2BFC482910AA8D00B489F3 /* BtnContinuarResultadoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2BFC472910AA8D00B489F3 /* BtnContinuarResultadoView.swift */; };
@@ -88,6 +88,10 @@
 		CF52E58E28F0B64C0074326F /* ReplicateAPIErro.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF52E58D28F0B64C0074326F /* ReplicateAPIErro.swift */; };
 		CF52E59028F0BEB50074326F /* ReplicateAPIPredictionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF52E58F28F0BEB50074326F /* ReplicateAPIPredictionInfo.swift */; };
 		CF77F8D628EFBD9A00C1BBD2 /* test_colorizeML.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF77F8D528EFBD9A00C1BBD2 /* test_colorizeML.swift */; };
+		CF8280292914480500608F1A /* PreProcessamentoVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8280282914480500608F1A /* PreProcessamentoVideoView.swift */; };
+		CF82802B29144B6800608F1A /* CarregandoVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF82802A29144B6800608F1A /* CarregandoVideoView.swift */; };
+		CF82802F29144C9100608F1A /* ProcessandoVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF82802E29144C9100608F1A /* ProcessandoVideoView.swift */; };
+		CF82803129144FAA00608F1A /* ResultadoVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF82803029144FAA00608F1A /* ResultadoVideoView.swift */; };
 		CF86A67428F5E51B009B6DE3 /* BasetenAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF86A67328F5E51B009B6DE3 /* BasetenAPI.swift */; };
 		CF86A67728F5E5FA009B6DE3 /* BasetenAPIInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF86A67628F5E5FA009B6DE3 /* BasetenAPIInput.swift */; };
 		CF86A67928F5E6F3009B6DE3 /* BasetenAPIModelEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF86A67828F5E6F3009B6DE3 /* BasetenAPIModelEnum.swift */; };
@@ -196,7 +200,7 @@
 		CF0FB13428EF6AD40009C275 /* cmspack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cmspack.c; sourceTree = "<group>"; };
 		CF0FB13528EF6AD40009C275 /* cmsgmt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cmsgmt.c; sourceTree = "<group>"; };
 		CF27AF452910D72800DF0353 /* DeepFakeModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepFakeModalView.swift; sourceTree = "<group>"; };
-		CF2BFC3D291059DF00B489F3 /* ProcessarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessarView.swift; sourceTree = "<group>"; };
+		CF2BFC3D291059DF00B489F3 /* PreProcessamentoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreProcessamentoView.swift; sourceTree = "<group>"; };
 		CF2BFC4329107E6F00B489F3 /* ProcessandoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessandoView.swift; sourceTree = "<group>"; };
 		CF2BFC452910A5E600B489F3 /* BtnProcessarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BtnProcessarView.swift; sourceTree = "<group>"; };
 		CF2BFC472910AA8D00B489F3 /* BtnContinuarResultadoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BtnContinuarResultadoView.swift; sourceTree = "<group>"; };
@@ -211,6 +215,10 @@
 		CF52E58D28F0B64C0074326F /* ReplicateAPIErro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIErro.swift; sourceTree = "<group>"; };
 		CF52E58F28F0BEB50074326F /* ReplicateAPIPredictionInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIPredictionInfo.swift; sourceTree = "<group>"; };
 		CF77F8D528EFBD9A00C1BBD2 /* test_colorizeML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_colorizeML.swift; sourceTree = "<group>"; };
+		CF8280282914480500608F1A /* PreProcessamentoVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreProcessamentoVideoView.swift; sourceTree = "<group>"; };
+		CF82802A29144B6800608F1A /* CarregandoVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarregandoVideoView.swift; sourceTree = "<group>"; };
+		CF82802E29144C9100608F1A /* ProcessandoVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessandoVideoView.swift; sourceTree = "<group>"; };
+		CF82803029144FAA00608F1A /* ResultadoVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultadoVideoView.swift; sourceTree = "<group>"; };
 		CF86A67328F5E51B009B6DE3 /* BasetenAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasetenAPI.swift; sourceTree = "<group>"; };
 		CF86A67628F5E5FA009B6DE3 /* BasetenAPIInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasetenAPIInput.swift; sourceTree = "<group>"; };
 		CF86A67828F5E6F3009B6DE3 /* BasetenAPIModelEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasetenAPIModelEnum.swift; sourceTree = "<group>"; };
@@ -395,9 +403,9 @@
 		CF2BFC3C2910596A00B489F3 /* ProcessarView */ = {
 			isa = PBXGroup;
 			children = (
-				CF2BFC4329107E6F00B489F3 /* ProcessandoView.swift */,
+				CF82802D29144C4300608F1A /* Processando */,
+				CF82802C29144C3500608F1A /* PreProcessamento */,
 				AD16386D29061B7A0022713F /* ButtonsView.swift */,
-				CF2BFC3D291059DF00B489F3 /* ProcessarView.swift */,
 				EC6032CD28EE063F00646F4C /* CameraView.swift */,
 				ECF4ED5528F9A0B00018965B /* ImagePicker.swift */,
 				CF2BFC452910A5E600B489F3 /* BtnProcessarView.swift */,
@@ -410,6 +418,7 @@
 			children = (
 				EC37685E2908645500FA802D /* LoadingSpinnerView.swift */,
 				EC37685C2901F07B00FA802D /* CarregandoView.swift */,
+				CF82802A29144B6800608F1A /* CarregandoVideoView.swift */,
 			);
 			path = CarregandoView;
 			sourceTree = "<group>";
@@ -419,6 +428,7 @@
 			children = (
 				AD9E8B2929032BBD00259CF1 /* ResultadoView.swift */,
 				CF2BFC472910AA8D00B489F3 /* BtnContinuarResultadoView.swift */,
+				CF82803029144FAA00608F1A /* ResultadoVideoView.swift */,
 			);
 			path = ResultadoView;
 			sourceTree = "<group>";
@@ -509,6 +519,24 @@
 				CFEA98EC28F120040058F16F /* test_replicateView.swift */,
 			);
 			path = ReplicateAPI;
+			sourceTree = "<group>";
+		};
+		CF82802C29144C3500608F1A /* PreProcessamento */ = {
+			isa = PBXGroup;
+			children = (
+				CF2BFC3D291059DF00B489F3 /* PreProcessamentoView.swift */,
+				CF8280282914480500608F1A /* PreProcessamentoVideoView.swift */,
+			);
+			path = PreProcessamento;
+			sourceTree = "<group>";
+		};
+		CF82802D29144C4300608F1A /* Processando */ = {
+			isa = PBXGroup;
+			children = (
+				CF2BFC4329107E6F00B489F3 /* ProcessandoView.swift */,
+				CF82802E29144C9100608F1A /* ProcessandoVideoView.swift */,
+			);
+			path = Processando;
 			sourceTree = "<group>";
 		};
 		CF86A67228F5E507009B6DE3 /* BasetenAPI */ = {
@@ -725,12 +753,14 @@
 				CFEA98E828F1114F0058F16F /* ReplicateAPIBuffer.swift in Sources */,
 				CF0FB15328EF6AD40009C275 /* cmspack.c in Sources */,
 				CF0FB14F28EF6AD40009C275 /* cmslut.c in Sources */,
+				CF8280292914480500608F1A /* PreProcessamentoVideoView.swift in Sources */,
 				CFE30D7A2909069800BBE93E /* NiloTutorialFinalView.swift in Sources */,
 				EC37685D2901F07B00FA802D /* CarregandoView.swift in Sources */,
 				CF0FB14428EF6AD40009C275 /* cmsmtrx.c in Sources */,
 				CF0FB11228EF6A7D0009C275 /* Nilo-Bridging-Header.h in Sources */,
 				AD16386E29061B7A0022713F /* ButtonsView.swift in Sources */,
 				ECC15BE22909CCF300304C65 /* ImageDetailView.swift in Sources */,
+				CF82803129144FAA00608F1A /* ResultadoVideoView.swift in Sources */,
 				CF0FB13F28EF6AD40009C275 /* cmsopt.c in Sources */,
 				CF0FB13D28EF6AD40009C275 /* cmshalf.c in Sources */,
 				CF77F8D628EFBD9A00C1BBD2 /* test_colorizeML.swift in Sources */,
@@ -778,16 +808,18 @@
 				CF0FB14B28EF6AD40009C275 /* cmserr.c in Sources */,
 				CFA87A5A290A19200019E802 /* NiloMLAPI.swift in Sources */,
 				CF0FB14328EF6AD40009C275 /* cmsmd5.c in Sources */,
+				CF82802F29144C9100608F1A /* ProcessandoVideoView.swift in Sources */,
 				CF0FB10B28EF69FE0009C275 /* UIViewController+Utils.swift in Sources */,
 				CF0FB14028EF6AD40009C275 /* cmsintrp.c in Sources */,
 				CFE30D742908FED500BBE93E /* TutoriaLotusView.swift in Sources */,
-				CF2BFC3E291059DF00B489F3 /* ProcessarView.swift in Sources */,
+				CF2BFC3E291059DF00B489F3 /* PreProcessamentoView.swift in Sources */,
 				CFC2043229086CA90012D790 /* ShakeShake.swift in Sources */,
 				CFC204362908E9370012D790 /* TutorialView.swift in Sources */,
 				EC37685F2908645500FA802D /* LoadingSpinnerView.swift in Sources */,
 				CF0FB10C28EF69FE0009C275 /* UIImage+Utils.swift in Sources */,
 				CF0FB13828EF6AD40009C275 /* cmscam02.c in Sources */,
 				CF46D3EF28ECD0040052C018 /* ContentView.swift in Sources */,
+				CF82802B29144B6800608F1A /* CarregandoVideoView.swift in Sources */,
 				CFE1570828F752D000502EB1 /* BasetenAPIGFPGANResponse.swift in Sources */,
 				EC6032CE28EE063F00646F4C /* CameraView.swift in Sources */,
 				CFC204382908F0630012D790 /* TutorialBVView.swift in Sources */,

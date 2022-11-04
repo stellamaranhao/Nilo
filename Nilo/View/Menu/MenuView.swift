@@ -61,7 +61,7 @@ struct MenuView: View {
                         
                         
                         ScrollView{
-                            NavigationLink(destination: ProcessarView(apiUtilizada: BasetenAPI()), isActive: $showFirstView) {
+                            NavigationLink(destination: PreProcessamentoView(apiUtilizada: BasetenAPI()), isActive: $showFirstView) {
                                 MenuItemView(imageName: "Lotus", objImageName: "Restaurar fotos", title: "Lótus", description: "Restaure fotos danificadas e antigas")
                                     .modifier(ParallaxMotionModifier(manager: motionManager, magnitude: 12))
                                     .onTapGesture {
@@ -70,7 +70,7 @@ struct MenuView: View {
                                     }
                             }
                             
-                            NavigationLink(destination: ProcessarView(apiUtilizada: ColorizeML()), isActive: $showSecondView) {
+                            NavigationLink(destination: PreProcessamentoView(apiUtilizada: ColorizeML()), isActive: $showSecondView) {
                                 MenuItemView(imageName: "Lirio", objImageName: "ColoringTool", title: "Lírios", description: "Colorize fotos antigas")
                                     .modifier(ParallaxMotionModifier(manager: motionManager, magnitude: 12))
                                     .onTapGesture {
@@ -81,15 +81,16 @@ struct MenuView: View {
                             
                             
                             
-                            MenuItemView(imageName: "acacia", objImageName: "deepfakes", title: "Acácias", description: "Anime fotos antigas")
-                                .modifier(ParallaxMotionModifier(manager: motionManager, magnitude: 12))
-                                .onTapGesture {
-                                    generatorSelection.selectionChanged()
-                                    showThirdView.toggle()
-                                }
-                                .padding(.bottom,120)
+                            NavigationLink(destination: PreProcessamentoVideoView(apiUtilizada: NiloMLAPI()), isActive: $showThirdView) {
+                                MenuItemView(imageName: "acacia", objImageName: "deepfakes", title: "Acácias", description: "Anime retratos antigos")
+                                    .modifier(ParallaxMotionModifier(manager: motionManager, magnitude: 12))
+                                    .onTapGesture {
+                                        generatorSelection.selectionChanged()
+                                        showThirdView.toggle()
+                                    }
+                                    .padding(.bottom,120)
+                            }.isDetailLink(false)
                             
-                            //Text("").padding(.top,100)
                             
                         }
                         .frame(maxWidth: .infinity)

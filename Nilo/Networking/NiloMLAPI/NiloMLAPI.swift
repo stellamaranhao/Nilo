@@ -6,9 +6,11 @@
 //
 
 import Foundation
+import AVFoundation
 
 
-class NiloMLAPI{
+class NiloMLAPI:APIProtocol{
+    var algorithm: APIAlgorithm = .firstOrderModel
     private let deviceUniqueID:String = UIDevice.current.identifierForVendor!.uuidString
     private var serverList:[String] = ["https://niloml9d1a9711.loca.lt"]
     private var onLineServerList:[String] = []
@@ -17,6 +19,49 @@ class NiloMLAPI{
         Task{
             await upDateOnlineServerList()
         }
+    }
+    
+    func checkConnectionHealth() -> Bool {
+        if onLineServerList.isEmpty{
+            return false
+        }else{
+            return true
+        }
+    }
+    
+    
+    func predictImage(fromImage image: UIImage, onCompletion completionCallback: @escaping (Result<UIImage, Error>) -> Void) {
+        fatalError("Not implemented")
+    }
+    
+    func predictVideo(fromImage image: UIImage, onCompletion completionCallback: @escaping (Result<TemporaryMediaFile, Error>) -> Void) {
+        Task{
+            _ = await upDateOnlineServerList()
+            if(onLineServerList.isEmpty){
+                completionCallback(.failure(NSError(domain: "No server", code: 401)))
+            }
+            
+            do{
+                let tempFile = try await createDeepFake(fromImage: image)
+                
+                completionCallback(.success(tempFile))
+//                if let videoFile = tempFile {
+//                    completionCallback(.success(tempFile))
+//                }else{
+//                    completionCallback(.failure(NSError(domain: "Erro", code: -1)))
+//                }
+                
+
+            }catch{
+                completionCallback(.failure(NSError(domain: "Erro", code: -1)))
+            }
+            
+        }
+
+    }
+    
+    func cancelImage() {
+        return
     }
     
     
