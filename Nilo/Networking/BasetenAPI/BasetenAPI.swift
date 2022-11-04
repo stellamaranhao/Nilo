@@ -11,7 +11,11 @@ import AVFoundation
 
 /// Class to make calls to the BasetenAPI
 final class BasetenAPI:APIProtocol{
-    func predictVideo(fromImage image: UIImage, onCompletion completionCallback: @escaping (Result<AVAsset, Error>) -> Void) {
+    func checkConnectionHealth() -> Bool {
+        return true
+    }
+    
+    func predictVideo(fromImage image: UIImage, onCompletion completionCallback: @escaping (Result<TemporaryMediaFile, Error>) -> Void) {
         fatalError("NOT SUPPORTED")
     }
     

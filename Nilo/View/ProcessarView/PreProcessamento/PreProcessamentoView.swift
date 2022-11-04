@@ -2,7 +2,7 @@
 import SwiftUI
 import PhotosUI
 
-struct ProcessarView: View {
+struct PreProcessamentoView: View {
     @State private var presentResultModal = false
     private var importtake: Bool {imageShown != nil}
     @State var image = UIImage()
