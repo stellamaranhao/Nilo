@@ -33,7 +33,7 @@ struct CarregandoView: View{
                         .tint(.corTexto)
                         .padding(.bottom,30)
 
-                    Text("   Por favor não feche o app!\nEstamos melhorando sua foto. ")
+                    Text("Carregamento")
                         .bold()
                         .foregroundColor(.corTexto)
                         .padding(.bottom,80)

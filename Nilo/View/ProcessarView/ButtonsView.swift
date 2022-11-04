@@ -8,7 +8,7 @@ import SwiftUI
 
 struct ButtonsView: View {
     @State var imgSistema: String
-    @State var texto: String
+    @State var texto: LocalizedStringKey
     
     
     var body: some View {

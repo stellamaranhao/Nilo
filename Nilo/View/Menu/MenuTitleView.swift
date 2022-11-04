@@ -11,7 +11,9 @@ struct MenuTitleView: View {
     @State var title = "Nilo"
     @State var titleEgypt = "𓆄𓅃𓇶"
     
-    @State var desc = "Ferramentas de Restauração"
+//    @State var desc = "Ferramentas de Restauração"
+    @State var desc: LocalizedStringKey = "Description"
+
     @State var descEgypt = "𓉲𓆄𓅃𓇶𓅀𓌬𓆵𓇇𓇍𓇙𓉤"
   
     @State var egyptText:Bool = false
@@ -29,7 +31,6 @@ struct MenuTitleView: View {
                     
                 }
                 
-                
                 VStack(alignment: .leading,spacing: -10){
                     if(egyptText){
                         Text(titleEgypt)
@@ -40,13 +41,13 @@ struct MenuTitleView: View {
                             .foregroundColor(.white)
                             .font(.custom("Poppins-Regular", size: 16))
                         
-                    }else{
+                    } else {
                         Text(title)
                             .foregroundColor(.white)
                         .font(.custom("Poppins-SemiBold", size: 64))
                         
                         
-                        Text(desc)
+                        Text("Description".localized)
                             .foregroundColor(.white)
                             .font(.custom("Poppins-Regular", size: 16))
                     }
@@ -69,5 +70,14 @@ struct MenuTitleView: View {
 struct MenuTitleView_Previews: PreviewProvider {
     static var previews: some View {
         MenuTitleView()
+    }
+}
+
+
+
+extension String {
+    var localized:String {
+        return NSLocalizedString(self, comment: "Please localize \(self)")
+
     }
 }

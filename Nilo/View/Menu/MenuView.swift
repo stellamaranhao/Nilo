@@ -14,6 +14,7 @@ struct MenuView: View {
     let generator = UINotificationFeedbackGenerator()
     let generatorSelection = UISelectionFeedbackGenerator()
     var motionManager = MotionManager()
+   // @State var lotusNome: LocalizedStringKey = 
     
     //Views
     
@@ -61,8 +62,8 @@ struct MenuView: View {
                         
                         
                         ScrollView{
-                            NavigationLink(destination: PreProcessamentoView(apiUtilizada: BasetenAPI()), isActive: $showFirstView) {
-                                MenuItemView(imageName: "Lotus", objImageName: "Restaurar fotos", title: "Lótus", description: "Restaure fotos danificadas e antigas")
+                            NavigationLink(destination: ProcessarView(apiUtilizada: BasetenAPI()), isActive: $showFirstView) {
+                                MenuItemView(imageName: "Lotus", objImageName: "Restaurar fotos", title: "LotusNome", description: "LotusTexto")
                                     .modifier(ParallaxMotionModifier(manager: motionManager, magnitude: 12))
                                     .onTapGesture {
                                         generatorSelection.selectionChanged()
@@ -70,8 +71,8 @@ struct MenuView: View {
                                     }
                             }
                             
-                            NavigationLink(destination: PreProcessamentoView(apiUtilizada: ColorizeML()), isActive: $showSecondView) {
-                                MenuItemView(imageName: "Lirio", objImageName: "ColoringTool", title: "Lírios", description: "Colorize fotos antigas")
+                            NavigationLink(destination: ProcessarView(apiUtilizada: ColorizeML()), isActive: $showSecondView) {
+                                MenuItemView(imageName: "Lirio", objImageName: "ColoringTool", title: "LiriosNome", description: "LiriosTexto")
                                     .modifier(ParallaxMotionModifier(manager: motionManager, magnitude: 12))
                                     .onTapGesture {
                                         generatorSelection.selectionChanged()
@@ -81,15 +82,13 @@ struct MenuView: View {
                             
                             
                             
-                            NavigationLink(destination: PreProcessamentoVideoView(apiUtilizada: NiloMLAPI()), isActive: $showThirdView) {
-                                MenuItemView(imageName: "acacia", objImageName: "deepfakes", title: "Acácias", description: "Anime retratos antigos")
-                                    .modifier(ParallaxMotionModifier(manager: motionManager, magnitude: 12))
-                                    .onTapGesture {
-                                        generatorSelection.selectionChanged()
-                                        showThirdView.toggle()
-                                    }
-                                    .padding(.bottom,120)
-                            }.isDetailLink(false)
+                            MenuItemView(imageName: "acacia", objImageName: "deepfakes", title: "AcaciasNome", description: "AcaciasTexto")
+                                .modifier(ParallaxMotionModifier(manager: motionManager, magnitude: 12))
+                                .onTapGesture {
+                                    generatorSelection.selectionChanged()
+                                    showThirdView.toggle()
+                                }
+                                .padding(.bottom,120)
                             
                             
                         }
@@ -113,3 +112,4 @@ struct MenuView: View {
     }
     
 }
+

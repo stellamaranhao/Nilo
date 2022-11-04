@@ -29,7 +29,7 @@ struct PreProcessamentoView: View {
                             .frame(width: 214, height: 476)
                             .padding(.bottom, 10)
                         
-                        Text("Escolher Outra Fotografia")
+                        Text("EscolherOutra")
                             .foregroundColor(.letratelarestauracao)
                             .font(.custom("Poppins-SemiBold", size: 18))
                             .underline()
@@ -60,7 +60,7 @@ struct PreProcessamentoView: View {
                                isActive: $presentResultModal) { EmptyView() }
                 
                 
-                BtnProcessarView(usedAlgo:apiUtilizada.algorithm ,action: {
+                BtnProcessarView(usedAlgo:apiUtilizada.algorithm, btnText: "Melhorar" ,action: {
                     presentResultModal = true
                 })
                 .disabled((imageShown != nil) ? false : true)
@@ -83,7 +83,7 @@ struct PreProcessamentoView: View {
                         )
                     
                     
-                    Text("Tirar Foto")
+                    Text("TirarFoto")
                         .foregroundColor(.letratelarestauracao)
                         .fontWeight(.bold)
                         .font(.title2)
@@ -91,8 +91,8 @@ struct PreProcessamentoView: View {
                         .onTapGesture {
                             showSheet = true
                         }
-                        .padding(.top,120)
-                        .padding(.trailing,130)
+                        .padding(.top,130)
+                        .padding(.trailing,120)
                         .sheet(isPresented: $showSheet) {
                             ImagePicker(sourceType: .camera, selectedImage: self.$image)
                         }
@@ -110,7 +110,7 @@ struct PreProcessamentoView: View {
         ZStack{
             Group{
                 Image("importarFoto")//rever
-                    .position(x: 280, y: 80)
+                    .position(x: 280, y: 20)
                     .background(
                         RoundedRectangle(cornerRadius: 18).foregroundColor(.white)
                             .frame(width: 275, height: 200)
@@ -120,13 +120,13 @@ struct PreProcessamentoView: View {
                     selection: $selectedItem,
                     matching: .images,
                     photoLibrary: .shared()) {
-                        Text("Importar Foto")
+                        Text("ImportarFoto")
                             .foregroundColor(.letratelarestauracao)
                             .fontWeight(.bold)
                             .font(.title2)
                             .font(.custom("Poppins-SemiBold", size: 20))
-                            .padding(.top,120)
-                            .padding(.trailing,80)
+                            .padding(.top,130)
+                            .padding(.trailing,100)
                     }
             }
             .onChange(of: selectedItem) { newItem in

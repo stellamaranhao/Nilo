@@ -12,11 +12,11 @@ struct TutorialBVView: View {
     var body: some View {
         ZStack(){
             VStack(alignment: .center,spacing: 15){
-                Text("BEM VINDO!")
+                Text("BemVindo")
                     .foregroundColor(Color.TextoTelaTutorial)
                     .font(.custom("Poppins-Bold", size: 24))
                 
-                Text("Antes de começar, veja algumas ferramentas disponíveis para que possa restaurar suas fotografias.")
+                Text("TEntrada")
                     .foregroundColor(Color.TextoTelaTutorial)
                     .font(.custom("Poppins-Regular", size: 14))
                     .frame(maxWidth: UIScreen.main.bounds.width*0.80)

@@ -1,0 +1,59 @@
+
+
+// Menu
+
+"Ferramentas de Restauração" = "Repair Tools";
+
+
+
+"Description" = "Repair Tools";
+
+"LotusNome" = "Lotus";
+"LotusTexto" = "Restore old and damaged photos";
+
+"LiriosNome" = "Lilies";
+"LiriosTexto" = "Colorize old memories";
+
+"AcaciasNome" = "Acacias";
+"AcaciasTexto" = "Animate old photos";
+
+// Tela Lotus/Lirios
+"TirarFoto" = "Take a picture";
+"ImportarFoto" = "Import photo";
+"Melhorar" = "Improve Photo";
+//Tela Lotus de confirmaçao
+"EscolherOutra" = "Choose another picture";
+
+//Tela de carregamento
+"Carregamento" = "   Please don't close the app! \nWe are improving your picture.";
+
+// Tela Resultado Lotus
+"Titulo1" = "Recovered Memory!";
+"Titulo2" = "Don't stop now:";
+"BotaoExportar" = "Export memory";
+"BotaoColorir" = "Colorize memory";
+"BotaoVoltar" = "Recover another memory";
+// Tela Resultado Lirios
+"BotaoMelhorar" = "Improve memory";
+"BotaoAnimar" = "Animate memory";
+
+//Tutorial
+"BemVindo" = "WELCOME!";
+"TEntrada" = "Before you start, check out some available tools that can be used to restore your photos.";
+"TutMenu" = "MENU";
+"TMenu" = "On the first screen you have access to the Improvement tools available: \ n Restore and Coloring photos";
+// nome lotus
+"TLotus" = "Use LOTUS to restore images reducing \n undesirable noises and wear, \n as well as improving clarity and resolution.";
+// nome llirios
+"TLirios" = "Time to bring your photos to life!\n Use LILIES to add color\n to your old memories.";
+"TFinal" = "Now it's up to you! Enjoy the tools of NILO to preserve your memories. ";
+"BotaoComecar" = "Start";
+
+
+//POPUP
+"PopT1" = "Are you sure?";
+"PopT2" = "Would you like to save the photo before you leave or make another change?";
+"PopB1" = "Save Photo";
+"PopB2" = "Continue anyway";
+
+"BotaoAnimar" = "Animate memory";

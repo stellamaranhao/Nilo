@@ -1,0 +1,55 @@
+//"Dê cor à suas memórias antigas" = "Give color to your old memories";
+//"Dê cor à suas memórias antigas" = "Da color a tus viejos recuerdos";
+
+// Menu
+"Description" = "Ferramentas de Restauração";
+
+"LotusNome" = "Lótus";
+"LotusTexto" = "Restaure fotos danificadas e antigas";
+
+"LiriosNome" = "Lírios";
+"LiriosTexto" = "Dê cor à suas memórias antigas";
+
+"AcaciasNome" = "Acácias";
+"AcaciasTexto" = "Anime fotos antigas";
+
+// Tela Lotus/Lirios
+"TirarFoto" = "Tirar Foto";
+"ImportarFoto" = "Importar Foto";
+"Melhorar" = "Melhorar Foto";
+//Tela Lotus de confirmaçao
+"EscolherOutra" = "Escolher Outra Fotografia";
+
+//Tela de carregamento
+"Carregamento" = "   Por favor não feche o app!\nEstamos melhorando sua foto.";
+
+// Tela Resultado Lotus
+"Titulo1" = "Memória Resgatada!";
+"Titulo2" = "Não pare por aqui:";
+"BotaoExportar" = "Exportar memória";
+"BotaoColorir" = "Colorir memória";
+"BotaoVoltar" = "Resgatar outra memória";
+// Tela Resultado Lirios
+"BotaoMelhorar" = "Melhorar Foto";
+"BotaoAnimar" = "Animar Foto";
+
+//Tutorial
+"BemVindo" = "BEM-VINDO!";
+"TEntrada" = "Antes de começar, veja algumas ferramentas disponíveis para que possa restaurar suas fotografias.";
+"TutMenu" = "MENÚ";
+"TMenu" = "Na primeira tela você tem acesso as ferramentas de aperfeiçoamento disponivéis:\nRestaurar e colorir as fotos";
+// nome lotus
+"TLotus" = "Use LÓTUS para restaurar imagens reduzindo os ruídos e desgastes indesejáveis, além de aprimorar a nitidez e resolução.";
+// nome llirios
+"TLirios" = "Hora de dar vida a suas fotos!\n Use LÍROS para dar cor \n nas suas memórias mais antigas.";
+"TFinal" = "Agora é com você!\nDesfrute das ferramentas do **NILO** para preservar suas memórias e recordações. ";
+"BotaoComecar" = "Começar";
+
+
+//POPUP
+"PopT1" = "Tem Certeza?";
+"PopT2" = "Gostaria de salvar a foto antes de sair ou fazer outra alteração?";
+"PopB1" = "Salvar foto";
+"PopB2" = "Continuar mesmo assim";
+
+"BotaoAnimar" = "Animar memória";

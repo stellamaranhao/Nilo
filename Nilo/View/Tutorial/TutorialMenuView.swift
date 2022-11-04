@@ -13,20 +13,20 @@ struct TutorialMenuView: View {
     var body: some View {
         ZStack(){
             VStack(alignment: .center,spacing: 15){
-                Text("MENU")
+                Text("TutMenu")
                     .foregroundColor(Color.TextoTelaTutorial)
                     .font(.custom("Poppins-Bold", size: 24))
                 
-                Text("Na primeira tela você tem acesso as ferramentas de aperfeiçoamento disponivéis:\n**Restaurar** e **colorir** as fotos")
+                Text("TMenu")
                     .foregroundColor(Color.TextoTelaTutorial)
                     .font(.custom("Poppins-Regular", size: 14))
                     .frame(maxWidth: UIScreen.main.bounds.width*0.85)
                     .multilineTextAlignment(.center)
                 
-                MenuItemView(imageName: "Lotus", objImageName: "Restaurar fotos", title: "Lótus", description: "Restaure fotos danificadas e antigas")
+                MenuItemView(imageName: "Lotus", objImageName: "Restaurar fotos", title: "LotusNome", description: "LotusTexto")
                     .modifier(ParallaxMotionModifier(manager: motionManager, magnitude: 12))
                 
-                MenuItemView(imageName: "Lirio", objImageName: "ColoringTool", title: "Lirios", description: "Colorize fotos antigas")
+                MenuItemView(imageName: "Lirio", objImageName: "ColoringTool", title: "LiriosNome", description: "LiriosTexto")
                     .modifier(ParallaxMotionModifier(manager: motionManager, magnitude: 12))
                 
             }

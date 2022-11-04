@@ -9,7 +9,7 @@ import SwiftUI
 
 struct BtnProcessarView: View {
     @State var usedAlgo: APIAlgorithm
-    @State var btnText:String = ""
+    @State var btnText:LocalizedStringKey
     var action:()->Void
     var body: some View {
         Button(action: {
@@ -35,11 +35,11 @@ struct BtnProcessarView: View {
         }.onAppear{
             switch usedAlgo {
             case .GFPGAN:
-                btnText = "Melhorar Foto"
+                btnText = "Melhorar"
             case .colorizeML:
-                btnText = "Colorir Foto"
+                btnText = "BotaoColorir"
             case .firstOrderModel:
-                btnText = "Animar Foto"
+                btnText = "BotaoAnimar"
             }
         }
     }
