@@ -62,7 +62,7 @@ struct PreProcessamentoVideoView: View {
                                isActive: $presentResultModal) { EmptyView() }
                 
                 
-                BtnProcessarView(usedAlgo:apiUtilizada.algorithm ,action: {
+                BtnProcessarView(usedAlgo:apiUtilizada.algorithm, btnText: "ola",action: {
                     presentResultModal = true
                 })
                 .disabled((imageShown != nil) ? false : true)

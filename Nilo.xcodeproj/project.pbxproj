@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AD16386E29061B7A0022713F /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD16386D29061B7A0022713F /* ButtonsView.swift */; };
 		AD1F1168290B1020004D9266 /* ImageResultModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1F1167290B1020004D9266 /* ImageResultModifier.swift */; };
+		AD2AF1C4291992D000F31EE7 /* ProcessarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2AF1C3291992D000F31EE7 /* ProcessarView.swift */; };
 		AD347B812909763900D16D45 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		AD6F91B728EE221300195F12 /* ReplicateAPIPostModelPrediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6F91B628EE221300195F12 /* ReplicateAPIPostModelPrediction.swift */; };
 		AD7105DF290AB4BA00D6D9B0 /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD7105CC290AB4B900D6D9B0 /* Poppins-ExtraLightItalic.ttf */; };
@@ -133,6 +134,7 @@
 /* Begin PBXFileReference section */
 		AD16386D29061B7A0022713F /* ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
 		AD1F1167290B1020004D9266 /* ImageResultModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResultModifier.swift; sourceTree = "<group>"; };
+		AD2AF1C3291992D000F31EE7 /* ProcessarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessarView.swift; sourceTree = "<group>"; };
 		AD6F91B628EE221300195F12 /* ReplicateAPIPostModelPrediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplicateAPIPostModelPrediction.swift; sourceTree = "<group>"; };
 		AD7105CC290AB4B900D6D9B0 /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
 		AD7105CD290AB4B900D6D9B0 /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-LightItalic.ttf"; sourceTree = "<group>"; };
@@ -311,6 +313,7 @@
 				CF0D8D9D2907184F0075A715 /* MenuItemView.swift */,
 				CFC203FE29080BF40012D790 /* MenuTitleView.swift */,
 				CFA274022908F9CF00A8C6D9 /* MenuView.swift */,
+				AD2AF1C3291992D000F31EE7 /* ProcessarView.swift */,
 				ECC15BE12909CCF300304C65 /* ImageDetailView.swift */,
 			);
 			path = Menu;
@@ -822,6 +825,7 @@
 				CFC2043229086CA90012D790 /* ShakeShake.swift in Sources */,
 				CFC204362908E9370012D790 /* TutorialView.swift in Sources */,
 				EC37685F2908645500FA802D /* LoadingSpinnerView.swift in Sources */,
+				AD2AF1C4291992D000F31EE7 /* ProcessarView.swift in Sources */,
 				CF0FB10C28EF69FE0009C275 /* UIImage+Utils.swift in Sources */,
 				CF0FB13828EF6AD40009C275 /* cmscam02.c in Sources */,
 				CF46D3EF28ECD0040052C018 /* ContentView.swift in Sources */,

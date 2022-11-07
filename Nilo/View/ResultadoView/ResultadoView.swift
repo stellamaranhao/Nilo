@@ -16,7 +16,8 @@ struct ResultadoView: View {
     @State private var shared = false
     @State var showAlertExit:Bool = false
     @State var showAlert:Bool = false
-    
+    @State var showingTutorial = UserDefaults.standard.bool(forKey: "tutorial")
+
     @Binding var apiUsada:APIProtocol
     
     var body: some View {
@@ -24,44 +25,7 @@ struct ResultadoView: View {
             ZStack {
                 if (!isClicked) { ImageDetailView(image:imageShown!) }
                 else {ImageDetailView(image:oldImage!)}
-                
-                HStack {
-                    VStack {
-                        
-                        Button(action: {
-                            if !shared {
-                                showAlertExit = true
                                 
-                            } else{
-                                exitView()
-                            }
-                        }){
-                            Image(systemName: "xmark.circle.fill")
-                                .font(.system(size: 30))
-                                .padding(.top, UIScreen.main.bounds.height / 15)
-                                .padding(.leading)
-                        }.alert(isPresented: $showAlertExit) {
-                            
-                            Alert(title: Text("PopT1")
-                                  ,message: Text("PopT2")
-                                  ,primaryButton: .default(Text("PopB1")){
-                                shareButton()
-                            },secondaryButton: .destructive(Text("PopB2")){
-                                exitView()
-                                
-                            }
-                                  
-                            )
-                        }
-                        
-                        
-                        
-                        
-                        Spacer()
-                    }
-                    Spacer()
-                }
-                
                 VStack {
                     Spacer()
                     ZStack {
@@ -123,7 +87,29 @@ struct ResultadoView: View {
                                               
                                         )
                                     }
-                                    
+                                    Button(action: {
+                                        if !shared {
+                                            showAlertExit = true
+                                            
+                                        } else{
+                                            exitView()
+                                        }
+                                    }){
+                                        ButtonsView(imgSistema: "arrow.turn.down.left", texto: "BotaoVoltar")
+                                    }.alert(isPresented: $showAlertExit) {
+                                        
+                                        Alert(title: Text("PopT1")
+                                              ,message: Text("PopT2")
+                                              ,primaryButton: .default(Text("PopB1")){
+                                            shareButton()
+                                        },secondaryButton: .destructive(Text("PopB2")){
+                                            exitView()
+                                            
+                                        }
+                                              
+                                        )
+                                    }
+                                   
                                     
                                 }.padding(.horizontal,30)
                                 
