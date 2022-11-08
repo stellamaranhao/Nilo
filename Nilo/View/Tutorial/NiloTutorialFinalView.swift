@@ -49,7 +49,7 @@ struct NiloTutorialFinalView: View {
                     
                 }
                 
-            }
+            }.padding(.top, UIScreen.main.bounds.height/14)
         }
     }
 }

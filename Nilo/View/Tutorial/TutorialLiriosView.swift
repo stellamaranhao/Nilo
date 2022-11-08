@@ -20,17 +20,18 @@ struct TutorialLiriosView: View {
                     .font(.custom("Poppins-Regular", size: 14))
                     .frame(maxWidth: UIScreen.main.bounds.width*0.85)
                     .multilineTextAlignment(.center)
+                    .lineLimit(nil)
                 
                 MenuItemView(imageName: "Lirio", objImageName: "ColoringTool", title: "LiriosNome", description: "LiriosTexto")
                 
                 SliderView(imageBeforeName: "MachadoAntes",imageAferName: "MachadoDepois",
-                           containerWidth: 364, containerHeight: 384)
+                           containerWidth: 264, containerHeight: 284)
                     .cornerRadius(18)
                     .shadow(color: Color.corTexto.opacity(0.3), radius: 25, y: 8)
                 
                 
             }
-            .padding(.bottom,45)
+            
         }
     }
 }

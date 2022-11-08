@@ -17,22 +17,22 @@ struct CarregandoView: View{
     var apiUsada:APIProtocol
     
     var body: some View {
-       
+        VStack{
             ZStack{
                 
                 Color.fundoEsperaView
                     .ignoresSafeArea()
                 
                 VStack{
-       
+                    
                     Image("WaitingScreen")
                         .padding(.bottom,80)
                         .animation(.default)
-                    
+                        .padding(.trailing, 30)
                     ProgressView()
                         .tint(.corTexto)
                         .padding(.bottom,30)
-
+                    
                     Text("Carregamento")
                         .bold()
                         .foregroundColor(.corTexto)
@@ -46,7 +46,8 @@ struct CarregandoView: View{
                 apiUsada.cancelImage()
             }
             
-        
+            
+        }
     }
     
     func linkApiRestauracao (){

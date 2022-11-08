@@ -17,9 +17,7 @@ struct CarregandoVideoView: View{
     var apiUsada:APIProtocol
     
     var body: some View {
-       
-            ZStack{
-                
+   
                 Color.fundoEsperaView
                     .ignoresSafeArea()
                 
@@ -28,6 +26,7 @@ struct CarregandoVideoView: View{
                     Image("WaitingScreen")
                         .padding(.bottom,80)
                         .animation(.default)
+                        .padding([.bottom, .trailing], 50)
                     
                     ProgressView()
                         .tint(.corTexto)
@@ -38,7 +37,7 @@ struct CarregandoVideoView: View{
                         .foregroundColor(.corTexto)
                         .padding(.bottom,80)
                 }
-            }
+            
             .onAppear{
                 linkApiRestauracao()
             }

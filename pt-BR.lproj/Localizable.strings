@@ -4,10 +4,10 @@
 // Menu
 "Description" = "Ferramentas de Restauração";
 
-"LotusNome" = "Lótus";
+"LotusNome" = "LÓTUS";
 "LotusTexto" = "Restaure fotos danificadas e antigas";
 
-"LiriosNome" = "Lírios";
+"LiriosNome" = "LÍRIOS";
 "LiriosTexto" = "Dê cor à suas memórias antigas";
 
 "AcaciasNome" = "Acácias";
@@ -36,12 +36,12 @@
 //Tutorial
 "BemVindo" = "BEM-VINDO!";
 "TEntrada" = "Antes de começar, veja algumas ferramentas disponíveis para que possa restaurar suas fotografias.";
-"TutMenu" = "MENÚ";
+"TutMenu" = "MENU";
 "TMenu" = "Na primeira tela você tem acesso as ferramentas de aperfeiçoamento disponivéis:\nRestaurar e colorir as fotos";
 // nome lotus
 "TLotus" = "Use LÓTUS para restaurar imagens reduzindo os ruídos e desgastes indesejáveis, além de aprimorar a nitidez e resolução.";
 // nome llirios
-"TLirios" = "Hora de dar vida a suas fotos!\n Use LÍROS para dar cor \n nas suas memórias mais antigas.";
+"TLirios" = "Hora de dar vida a suas fotos!\n Use LÍROS para dar cor nas suas\n memórias mais antigas.";
 "TFinal" = "Agora é com você!\nDesfrute das ferramentas do **NILO** para preservar suas memórias e recordações. ";
 "BotaoComecar" = "Começar";
 

@@ -14,25 +14,26 @@ struct TutoriaLotusView: View {
                 Text("LotusNome")
                     .foregroundColor(Color.TextoTelaTutorial)
                     .font(.custom("Poppins-Bold", size: 24))
-                
-                Text("TLotus")
-                    .foregroundColor(Color.TextoTelaTutorial)
-                    .font(.custom("Poppins-Regular", size: 14))
-                    .frame(maxWidth: UIScreen.main.bounds.width*0.90)
-                    .multilineTextAlignment(.center)
-                
+                VStack{
+                    Text("TLotus")
+                        .foregroundColor(Color.TextoTelaTutorial)
+                        .font(.custom("Poppins-Regular", size: 14))
+                        .frame(maxWidth: UIScreen.main.bounds.width*0.85)
+                        .multilineTextAlignment(.center)
+                        .lineLimit(nil)
+                }
                 MenuItemView(imageName: "Lotus", objImageName: "Restaurar fotos", title: "LotusNome", description: "LotusTexto")
 
                 
                 
                 SliderView(imageBeforeName: "AnneAntes",imageAferName: "AnneDepois",
-                           containerWidth: 364, containerHeight: 384)
+                           containerWidth: 264, containerHeight: 284)
                     .cornerRadius(18)
                     .shadow(color: Color.corTexto.opacity(0.3), radius: 25, y: 8)
                 
                 
             }
-            .padding(.bottom,45)
+            .padding(.bottom)
         }
     }
 }
